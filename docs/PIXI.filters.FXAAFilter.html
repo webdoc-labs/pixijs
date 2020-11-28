@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -130,7 +129,7 @@ filter is applied to.</p></div>
 <div class="member" id="program">
   <h3 class="member__title">program</h3>
   
-<pre class="signature__container"><code class="signature">program: <a href="PIXI.Program.html">PIXI.Program</a></code></pre>
+<pre class="signature__container"><code class="signature">program: <a href=PIXI.Program.html>PIXI.Program</a></code></pre>
 
 
   <div class="member__brief"><p>Program that the shader uses</p></div>
@@ -163,7 +162,7 @@ increase the performance of the filter.</p></div>
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href="PIXI.State.html">PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=PIXI.State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -211,93 +210,95 @@ increase the performance of the filter.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        filterManager
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.FilterSystem.html">PIXI.FilterSystem</a>
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          filterManager
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.FilterSystem.html">PIXI.FilterSystem</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>The renderer to retrieve the filter from</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          input
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>The renderer to retrieve the filter from</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        input
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>The input render target.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          output
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>The target to output to.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          clearMode
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Should the output be cleared before rendering to it.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          currentState
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>The input render target.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        output
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>The target to output to.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        clearMode
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Should the output be cleared before rendering to it.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        currentState
-      </td>
-      <td class="member-parameter__type">
-        object
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>It's current state of filter.
+        <td class="member-parameter__description"><p>It's current state of filter.
 There are some useful properties in the currentState :
 target, filters, sourceFrame, destinationFrame, renderTarget, resolution</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -314,7 +315,7 @@ target, filters, sourceFrame, destinationFrame, renderTarget, resolution</p></td
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -350,7 +351,7 @@ target, filters, sourceFrame, destinationFrame, renderTarget, resolution</p></td
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -416,7 +417,6 @@ target, filters, sourceFrame, destinationFrame, renderTarget, resolution</p></td
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

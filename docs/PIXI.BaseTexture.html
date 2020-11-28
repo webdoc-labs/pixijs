@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -37,6 +36,274 @@ Therefore you can have many textures all using a single BaseTexture</p></div>
 
     
       
+<div class="members">
+  <h2 class="members__category">Constructor</h2>
+
+  
+    
+<div class="member" id="constructor">
+  <h3 class="member__title"></h3>
+  
+<pre class="signature__container"><code class="signature">new PIXI.BaseTexture(resource: <a href="PIXI.Resource.html">PIXI.Resource</a> | string | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement, options: Object) → {}</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__description"></div>
+
+  
+    
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          resource
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Resource.html">PIXI.Resource</a> | string | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          null
+        </td>
+        <td class="member-parameter__description"><p>The current resource to use, for things that aren't Resource objects, will be converted
+into a Resource.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options
+        </td>
+        <td class="member-parameter__type">
+          Object
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Collection of options</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.mipmap
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.settings.MIPMAP_TEXTURES
+        </td>
+        <td class="member-parameter__description"><p>If mipmapping is enabled for texture</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.anisotropicLevel
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.settings.ANISOTROPIC_LEVEL
+        </td>
+        <td class="member-parameter__description"><p>Anisotropic filtering level of texture</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.wrapMode
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.WRAP_MODES.html">PIXI.WRAP_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.settings.WRAP_MODE
+        </td>
+        <td class="member-parameter__description"><p>Wrap mode for textures</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.scaleMode
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.settings.SCALE_MODE
+        </td>
+        <td class="member-parameter__description"><p>Default scale mode, linear, nearest</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.format
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.FORMATS.html">PIXI.FORMATS</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.FORMATS.RGBA
+        </td>
+        <td class="member-parameter__description"><p>GL format type</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.type
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.TYPES.html">PIXI.TYPES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.TYPES.UNSIGNED_BYTE
+        </td>
+        <td class="member-parameter__description"><p>GL data type</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.target
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.TARGETS.html">PIXI.TARGETS</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.TARGETS.TEXTURE_2D
+        </td>
+        <td class="member-parameter__description"><p>GL texture target</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.alphaMode
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.ALPHA_MODES.html">PIXI.ALPHA_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.ALPHA_MODES.UNPACK
+        </td>
+        <td class="member-parameter__description"><p>Pre multiply the image alpha</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          0
+        </td>
+        <td class="member-parameter__description"><p>Width of the texture</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          0
+        </td>
+        <td class="member-parameter__description"><p>Height of the texture</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Resolution of the base texture</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.resourceOptions
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Optional resource options,
+see <a href=PIXI.autoDetectResource.html>autoDetectResource</a></p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
     
 
     
@@ -112,10 +379,10 @@ Therefore you can have many textures all using a single BaseTexture</p></div>
 <div class="member" id="alphaMode">
   <h3 class="member__title">alphaMode</h3>
   
-<pre class="signature__container"><code class="signature">alphaMode: <a href="PIXI.ALPHA_MODES.html">PIXI.ALPHA_MODES</a></code></pre>
+<pre class="signature__container"><code class="signature">alphaMode: <a href=PIXI.ALPHA_MODES.html>PIXI.ALPHA_MODES</a></code></pre>
 
 
-  <div class="member__brief"><p>How to treat premultiplied alpha, see <a href="PIXI.ALPHA_MODES.html">PIXI.ALPHA_MODES</a>.</p></div>
+  <div class="member__brief"><p>How to treat premultiplied alpha, see <a href=PIXI.ALPHA_MODES.html>PIXI.ALPHA_MODES</a>.</p></div>
   <div class="member__description"></div>
 
   
@@ -193,7 +460,7 @@ Please call <code>update()</code> to increment it.</p></div>
 <div class="member" id="format">
   <h3 class="member__title">format</h3>
   
-<pre class="signature__container"><code class="signature">format: <a href="PIXI.FORMATS.html">PIXI.FORMATS</a></code></pre>
+<pre class="signature__container"><code class="signature">format: <a href=PIXI.FORMATS.html>PIXI.FORMATS</a></code></pre>
 
 
   <div class="member__brief"><p>The pixel format of the texture</p></div>
@@ -274,7 +541,7 @@ as you can</p></div>
 <div class="member" id="mipmap">
   <h3 class="member__title">mipmap</h3>
   
-<pre class="signature__container"><code class="signature">mipmap: <a href="PIXI.MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a></code></pre>
+<pre class="signature__container"><code class="signature">mipmap: <a href=PIXI.MIPMAP_MODES.html>PIXI.MIPMAP_MODES</a></code></pre>
 
 
   <div class="member__brief"><p>Mipmap mode of the texture, affects downscaled images</p></div>
@@ -290,7 +557,7 @@ as you can</p></div>
 <div class="member" id="parentTextureArray">
   <h3 class="member__title">parentTextureArray</h3>
   
-<pre class="signature__container"><code class="signature">parentTextureArray: <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">parentTextureArray: <a href=PIXI.BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"><p>Whether its a part of another texture, handled by ArrayResource or CubeResource</p></div>
@@ -370,7 +637,7 @@ as you can</p></div>
 <div class="member" id="resource">
   <h3 class="member__title">resource</h3>
   
-<pre class="signature__container"><code class="signature">resource: <a href="PIXI.Resource.html">PIXI.Resource</a></code></pre>
+<pre class="signature__container"><code class="signature">resource: <a href=PIXI.Resource.html>PIXI.Resource</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -388,7 +655,7 @@ resources.</p></div>
 <div class="member" id="scaleMode">
   <h3 class="member__title">scaleMode</h3>
   
-<pre class="signature__container"><code class="signature">scaleMode: <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a></code></pre>
+<pre class="signature__container"><code class="signature">scaleMode: <a href=PIXI.SCALE_MODES.html>PIXI.SCALE_MODES</a></code></pre>
 
 
   <div class="member__brief"><p>The scale mode to apply when scaling this texture</p></div>
@@ -420,7 +687,7 @@ resources.</p></div>
 <div class="member" id="target">
   <h3 class="member__title">target</h3>
   
-<pre class="signature__container"><code class="signature">target: <a href="PIXI.TARGETS.html">PIXI.TARGETS</a></code></pre>
+<pre class="signature__container"><code class="signature">target: <a href=PIXI.TARGETS.html>PIXI.TARGETS</a></code></pre>
 
 
   <div class="member__brief"><p>The target type</p></div>
@@ -436,7 +703,7 @@ resources.</p></div>
 <div class="member" id="textureCacheIds">
   <h3 class="member__title">textureCacheIds</h3>
   
-<pre class="signature__container"><code class="signature">textureCacheIds: Array<string></code></pre>
+<pre class="signature__container"><code class="signature">textureCacheIds: Array&lt;string></code></pre>
 
 
   <div class="member__brief"></div>
@@ -453,7 +720,7 @@ can have more than one ID, short name and longer full URL</p></div>
 <div class="member" id="type">
   <h3 class="member__title">type</h3>
   
-<pre class="signature__container"><code class="signature">type: <a href="PIXI.TYPES.html">PIXI.TYPES</a></code></pre>
+<pre class="signature__container"><code class="signature">type: <a href=PIXI.TYPES.html>PIXI.TYPES</a></code></pre>
 
 
   <div class="member__brief"><p>The type of resource data</p></div>
@@ -587,41 +854,43 @@ can have more than one ID, short name and longer full URL</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        baseTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The BaseTexture to add to the cache.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        id
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The id that the BaseTexture will be stored against.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          baseTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The BaseTexture to add to the cache.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          id
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The id that the BaseTexture will be stored against.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -638,7 +907,7 @@ can have more than one ID, short name and longer full URL</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -664,86 +933,88 @@ cache, it will be created and loaded.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        source
-      </td>
-      <td class="member-parameter__type">
-        string | HTMLImageElement | HTMLCanvasElement | SVGElement | HTMLVideoElement
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>The
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          source
+        </td>
+        <td class="member-parameter__type">
+          string | HTMLImageElement | HTMLCanvasElement | SVGElement | HTMLVideoElement
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>The
 source to create base texture from.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options
-      </td>
-      <td class="member-parameter__type">
-        object
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>See <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>'s constructor for options.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.pixiIdPrefix
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        pixiid
-      </td>
-      <td class="member-parameter__description"><p>If a source has no id, this is the prefix of the generated id</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        strict
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>Enforce strict-mode, see <a href="PIXI.settings.html#STRICT_TEXTURE_CACHE">PIXI.settings.STRICT_TEXTURE_CACHE</a>.</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>See <a href=PIXI.BaseTexture.html>PIXI.BaseTexture</a>'s constructor for options.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.pixiIdPrefix
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          pixiid
+        </td>
+        <td class="member-parameter__description"><p>If a source has no id, this is the prefix of the generated id</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          strict
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Enforce strict-mode, see <a href=PIXI.settings.html#STRICT_TEXTURE_CACHE>PIXI.settings.STRICT_TEXTURE_CACHE</a>.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -760,7 +1031,7 @@ source to create base texture from.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>The new base texture.</p></td>
     </tr>
@@ -784,78 +1055,80 @@ RGBA values are floats from 0 to 1.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        buffer
-      </td>
-      <td class="member-parameter__type">
-        Float32Array | Uint8Array
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          buffer
+        </td>
+        <td class="member-parameter__type">
+          Float32Array | Uint8Array
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>The optional array to use, if no data
+        <td class="member-parameter__description"><p>The optional array to use, if no data
 is provided, a new Float32Array is created.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Width of the resource</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Height of the resource</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Width of the resource</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Height of the resource</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options
-      </td>
-      <td class="member-parameter__type">
-        object
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>See <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>'s constructor for options.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>See <a href=PIXI.BaseTexture.html>PIXI.BaseTexture</a>'s constructor for options.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -872,7 +1145,7 @@ is provided, a new Float32Array is created.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>The resulting new BaseTexture</p></td>
     </tr>
@@ -895,41 +1168,43 @@ is provided, a new Float32Array is created.</p></td>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        canvas
-      </td>
-      <td class="member-parameter__type">
-        HTMLCanvasElement
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        scaleMode
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          canvas
+        </td>
+        <td class="member-parameter__type">
+          HTMLCanvasElement
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          scaleMode
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -946,7 +1221,7 @@ is provided, a new Float32Array is created.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -969,61 +1244,63 @@ is provided, a new Float32Array is created.</p></td>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        canvas
-      </td>
-      <td class="member-parameter__type">
-        HTMLCanvasElement
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        crossorigin
-      </td>
-      <td class="member-parameter__type">
-        string | boolean
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        scaleMode
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        scale
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          canvas
+        </td>
+        <td class="member-parameter__type">
+          HTMLCanvasElement
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          crossorigin
+        </td>
+        <td class="member-parameter__type">
+          string | boolean
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          scaleMode
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          scale
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1040,7 +1317,7 @@ is provided, a new Float32Array is created.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1063,31 +1340,33 @@ is provided, a new Float32Array is created.</p></td>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        baseTexture
-      </td>
-      <td class="member-parameter__type">
-        string | <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>id of a BaseTexture to be removed, or a BaseTexture instance itself.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          baseTexture
+        </td>
+        <td class="member-parameter__type">
+          string | <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>id of a BaseTexture to be removed, or a BaseTexture instance itself.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1104,7 +1383,7 @@ is provided, a new Float32Array is created.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a> | unknown</code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a> | unknown
       </td>
       <td class="member-return__description"><p>The BaseTexture that was removed.</p></td>
     </tr>
@@ -1140,7 +1419,7 @@ is provided, a new Float32Array is created.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1178,7 +1457,7 @@ Removes texture from all caches.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1216,7 +1495,7 @@ memory again.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1231,7 +1510,7 @@ memory again.</p></div>
 <div class="member" id="getDrawableSource">
   <h3 class="member__title">getDrawableSource</h3>
   
-<pre class="signature__container"><code class="signature">getDrawableSource() → {PIXI.ICanvasImageSource}</code></pre>
+<pre class="signature__container"><code class="signature">getDrawableSource() → {<a href="PIXI.ICanvasImageSource.html">PIXI.ICanvasImageSource</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -1253,7 +1532,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>PIXI.ICanvasImageSource</code></pre>
+        <a href="PIXI.ICanvasImageSource.html">PIXI.ICanvasImageSource</a>
       </td>
       <td class="member-return__description"><p>Source to render with CanvasRenderer</p></td>
     </tr>
@@ -1276,31 +1555,33 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        image
-      </td>
-      <td class="member-parameter__type">
-        string | HTMLImageElement
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          image
+        </td>
+        <td class="member-parameter__type">
+          string | HTMLImageElement
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1317,7 +1598,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1340,63 +1621,65 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        realWidth
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          realWidth
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Full rendered width</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          realHeight
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Full rendered width</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        realHeight
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>Full rendered height</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Full rendered height</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Optionally set resolution</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Optionally set resolution</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1413,7 +1696,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1436,31 +1719,33 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>res</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>res</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1477,7 +1762,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1500,31 +1785,33 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        resource
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Resource.html">PIXI.Resource</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>that is managing this BaseTexture</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          resource
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Resource.html">PIXI.Resource</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>that is managing this BaseTexture</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1541,7 +1828,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1564,63 +1851,65 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Visual width</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Visual width</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>Visual height</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Visual height</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Optionally set resolution</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Optionally set resolution</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1637,7 +1926,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1660,49 +1949,51 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        scaleMode
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          scaleMode
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Pixi scalemode</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        mipmap
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"><p>Pixi scalemode</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          mipmap
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>enable mipmaps</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>enable mipmaps</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1719,7 +2010,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1755,7 +2046,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1863,7 +2154,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
     
       <li class="page-members-explorer__item"><a href="PIXI.BaseTexture.html#addToCache">addToCache</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI.BaseTexture.html#from">from</a></li>
+      <li class="page-members-explorer__item"><a href=PIXI.BaseTexture.html#from>from</a></li>
     
       <li class="page-members-explorer__item"><a href="PIXI.BaseTexture.html#fromBuffer">fromBuffer</a></li>
     
@@ -1905,7 +2196,6 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

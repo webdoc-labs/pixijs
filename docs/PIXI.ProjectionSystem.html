@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -44,7 +43,7 @@ normalized device coordinates.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.ProjectionSystem(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.ProjectionSystem(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -52,31 +51,33 @@ normalized device coordinates.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The renderer this System works for.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The renderer this System works for.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -97,7 +98,7 @@ normalized device coordinates.</p></div>
 <div class="member" id="defaultFrame">
   <h3 class="member__title">defaultFrame</h3>
   
-<pre class="signature__container"><code class="signature">defaultFrame: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">defaultFrame: <a href=PIXI.Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>Default destination frame</p></div>
@@ -114,7 +115,7 @@ you're doing. The <code>update</code> method will default to this frame if you d
 <div class="member" id="destinationFrame">
   <h3 class="member__title">destinationFrame</h3>
   
-<pre class="signature__container"><code class="signature">destinationFrame: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">destinationFrame: <a href=PIXI.Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>The destination frame used to calculate the current projection matrix.</p></div>
@@ -139,7 +140,7 @@ coordinates are (0,0) unless you know what you're doing.</p></div>
 <div class="member" id="projectionMatrix">
   <h3 class="member__title">projectionMatrix</h3>
   
-<pre class="signature__container"><code class="signature">projectionMatrix: <a href="PIXI.Matrix.html">PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">projectionMatrix: <a href=PIXI.Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>Projection matrix</p></div>
@@ -158,7 +159,7 @@ uniform.</p></div>
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=PIXI.Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -174,7 +175,7 @@ uniform.</p></div>
 <div class="member" id="sourceFrame">
   <h3 class="member__title">sourceFrame</h3>
   
-<pre class="signature__container"><code class="signature">sourceFrame: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">sourceFrame: <a href=PIXI.Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>The source frame used to calculate the current projection matrix.</p></div>
@@ -190,7 +191,7 @@ uniform.</p></div>
 <div class="member" id="transform">
   <h3 class="member__title">transform</h3>
   
-<pre class="signature__container"><code class="signature">transform: <a href="PIXI.Matrix.html">PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">transform: <a href=PIXI.Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>A transform to be appended to the projection matrix.</p></div>
@@ -223,62 +224,64 @@ use to rotate the whole scene, for example. Remember to clear it once you've ren
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        destinationFrame
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The destination frame in the render-target.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        sourceFrame
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The source frame in world space.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The render-target's resolution, i.e. ratio of CSS to physical pixels.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        root
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Whether rendering into the screen. Otherwise, if rendering to a framebuffer, the projection
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          destinationFrame
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The destination frame in the render-target.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          sourceFrame
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The source frame in world space.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The render-target's resolution, i.e. ratio of CSS to physical pixels.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          root
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Whether rendering into the screen. Otherwise, if rendering to a framebuffer, the projection
 is y-flipped.</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -295,7 +298,7 @@ is y-flipped.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -331,7 +334,7 @@ is y-flipped.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -354,31 +357,33 @@ is y-flipped.</p></td>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        matrix
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Matrix.html">PIXI.Matrix</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The transformation matrix</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          matrix
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Matrix.html">PIXI.Matrix</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The transformation matrix</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -395,7 +400,7 @@ is y-flipped.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -421,65 +426,67 @@ that you dirty the current bindings when calling this manually.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        destinationFrame
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The rectangle in the render-target to render the contents
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          destinationFrame
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The rectangle in the render-target to render the contents
 into. If rendering to the canvas, the origin is on the top-left; if rendering to a render-texture, the origin
 is on the bottom-left.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        sourceFrame
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The rectangle in world space that contains the contents being rendered.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The resolution of the render-target, which is the ratio of world-space (or CSS) pixels
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          sourceFrame
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The rectangle in world space that contains the contents being rendered.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The resolution of the render-target, which is the ratio of world-space (or CSS) pixels
 to physical pixels.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        root
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Whether the render-target is the screen. This is required because rendering to textures
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          root
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Whether the render-target is the screen. This is required because rendering to textures
 is y-flipped (i.e. upside down relative to the screen).</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -496,7 +503,7 @@ is y-flipped (i.e. upside down relative to the screen).</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -560,7 +567,6 @@ is y-flipped (i.e. upside down relative to the screen).</p></td>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

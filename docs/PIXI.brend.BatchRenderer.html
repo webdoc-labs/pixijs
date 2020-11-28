@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -47,12 +46,12 @@ instance of PIXI.brend.BatchFactory.</p>
 </li>
 <li>
 <p><strong>Geometry Composition</strong>: The geometries of all display-objects are merged together in a
-composite geometry. This is done using an instance of <a href="PIXI.brend.BatchGeometryFactory.html">PIXI.brend.BatchGeometryFactory</a>.</p>
+composite geometry. This is done using an instance of <a href=PIXI.brend.BatchGeometryFactory.html>PIXI.brend.BatchGeometryFactory</a>.</p>
 </li>
 <li>
 <p><strong>Drawing</strong>: Each batch is rendered in-order using <code>gl.draw*</code>. The textures and
 uniforms of each display-object are uploaded as arrays. This is done using an instance of
-<a href="PIXI.brend.BatchDrawer.html">PIXI.brend.BatchDrawer</a>.</p>
+<a href=PIXI.brend.BatchDrawer.html>PIXI.brend.BatchDrawer</a>.</p>
 </li>
 </ul>
 <p>Each stage in this pipeline can be configured by overriding the appropriate component and passing that
@@ -62,7 +61,7 @@ class to <code>BatchRendererPluginFactory.from*</code>.</p>
 <p>Since the max. display-object count per batch is not known until the WebGL context is created,
 shaders are generated at runtime by processing shader templates. A shader templates has &quot;%macros%&quot;
 that are replaced by constants at runtime.</p>
-<p>To use shader templates, simply use PIXI.brend.BatchShaderFactory#derive. This will generate a
+<p>To use shader templates, simply use <a href="PIXI.brend.BatchShaderFactory.html#derive">PIXI.brend.BatchShaderFactory#derive</a>. This will generate a
 function that derives a shader from your template at runtime.</p>
 <h3>Textures</h3>
 <p>The batch renderer uploads textures in the <code>uniform sampler2D uSamplers[%texturesPerBatch%];</code>. The
@@ -92,7 +91,7 @@ work-in-progress feature.</p>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.brend.BatchRenderer(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>, options: object)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.brend.BatchRenderer(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>, options: object) → {}</code></pre>
 
 
   <div class="member__brief"><p>Creates a batch renderer the renders display-objects with the described geometry.</p></div>
@@ -100,229 +99,231 @@ work-in-progress feature.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>renderer to attach to</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options
-      </td>
-      <td class="member-parameter__type">
-        object
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.attribSet
-      </td>
-      <td class="member-parameter__type">
-        Array<<a href="PIXI.brend.AttributeRedirect.html">PIXI.brend.AttributeRedirect</a>>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.indexProperty
-      </td>
-      <td class="member-parameter__type">
-        string | unknown
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.vertexCountProperty
-      </td>
-      <td class="member-parameter__type">
-        string | number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.textureProperty
-      </td>
-      <td class="member-parameter__type">
-        string | unknown
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.texturesPerObject
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        1
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.texIDAttrib
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>name of texture-id attribute variable</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.stateFunction
-      </td>
-      <td class="member-parameter__type">
-        Function
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        PIXI.State.for2d()
-      </td>
-      <td class="member-parameter__description"><p>returns a <code>PIXI.State</code> for an object</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.shaderFunction
-      </td>
-      <td class="member-parameter__type">
-        Function
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>generates a shader given this instance</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.BatchGeometryFactory
-      </td>
-      <td class="member-parameter__type">
-        Class
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        PIXI.brend.BatchGeometry
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.BatchFactoryClass
-      </td>
-      <td class="member-parameter__type">
-        Class
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        PIXI.brend.StdBatchFactory
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.BatchDrawer
-      </td>
-      <td class="member-parameter__type">
-        Class
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        PIXI.brend.BatchDrawer
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>renderer to attach to</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.attribSet
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;<a href="PIXI.brend.AttributeRedirect.html">PIXI.brend.AttributeRedirect</a>&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.indexProperty
+        </td>
+        <td class="member-parameter__type">
+          string | unknown
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.vertexCountProperty
+        </td>
+        <td class="member-parameter__type">
+          string | number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.textureProperty
+        </td>
+        <td class="member-parameter__type">
+          string | unknown
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.texturesPerObject
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          1
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.texIDAttrib
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>name of texture-id attribute variable</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.stateFunction
+        </td>
+        <td class="member-parameter__type">
+          Function
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.State.for2d()
+        </td>
+        <td class="member-parameter__description"><p>returns a <code>PIXI.State</code> for an object</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.shaderFunction
+        </td>
+        <td class="member-parameter__type">
+          Function
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>generates a shader given this instance</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.BatchGeometryFactory
+        </td>
+        <td class="member-parameter__type">
+          Class
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.brend.BatchGeometry
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.BatchFactoryClass
+        </td>
+        <td class="member-parameter__type">
+          Class
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.brend.StdBatchFactory
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.BatchDrawer
+        </td>
+        <td class="member-parameter__type">
+          Class
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.brend.BatchDrawer
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -347,12 +348,12 @@ work-in-progress feature.</p>
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>This is an advanced feature that allows you to pack the {@code _texIDAttrib}, {@code _uniformIDAttrib},
-{@code _inBatchIDAttrib}, and other information into one 32-bit float attribute. You can then unpack
-them in the vertex shader and pass varyings to the fragment shader (because {@code int} varyings are not
+  <div class="member__description"><p>This is an advanced feature that allows you to pack the <code>_texIDAttrib</code>, <code>_uniformIDAttrib</code>,
+<code>_inBatchIDAttrib</code>, and other information into one 32-bit float attribute. You can then unpack
+them in the vertex shader and pass varyings to the fragment shader (because <code>int</code> varyings are not
 supported).</p>
 <p>To use it, you must provide your own BatchGeometryFactory that overrides
-BatchGeometryFactory#append and sets the {@code _masterIDAttrib}.</p></div>
+BatchGeometryFactory#append and sets the <code>_masterIDAttrib</code>.</p></div>
 
   
 
@@ -364,7 +365,7 @@ BatchGeometryFactory#append and sets the {@code _masterIDAttrib}.</p></div>
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=PIXI.Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -387,7 +388,7 @@ BatchGeometryFactory#append and sets the {@code _masterIDAttrib}.</p></div>
 <div class="member" id="_attribRedirects">
   <h3 class="member__title">_attribRedirects</h3>
   
-<pre class="signature__container"><code class="signature">protected _attribRedirects: Array<<a href="PIXI.brend.AttributeRedirect.html">PIXI.brend.AttributeRedirect</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected _attribRedirects: Array&lt;<a href=PIXI.brend.AttributeRedirect.html>PIXI.brend.AttributeRedirect</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -628,7 +629,7 @@ in-batch ID because equal uniforms are not uploaded twice.</p></div>
 <div class="member" id="_uniformRedirects">
   <h3 class="member__title">_uniformRedirects</h3>
   
-<pre class="signature__container"><code class="signature">protected _uniformRedirects: Array<<a href="PIXI.brend.UniformRedirect.html">PIXI.brend.UniformRedirect</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected _uniformRedirects: Array&lt;<a href=PIXI.brend.UniformRedirect.html>PIXI.brend.UniformRedirect</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -705,7 +706,7 @@ batch factories (like <code>PIXI.brend.AggregateUniformsBatchFactory</code>).</p
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -742,7 +743,7 @@ should be called by subclasses.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -788,7 +789,7 @@ because the PixiJS renderer is not re-entrant.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -810,36 +811,38 @@ because the PixiJS renderer is not re-entrant.</p>
   <div class="member__description"><p>Adds the display-object to be rendered in a batch. Your display-object's render/_render method should call
 this as follows:</p>
 <pre><code class="hljs language-js">renderer.setObjectRenderer(&lt;BatchRenderer&gt;);
-&lt;BatchRenderer&gt;.render(this);
+&lt;BatchRenderer&gt;.render(<span class="hljs-built_in">this</span>);
 </code></pre></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        displayObject
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          displayObject
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -856,7 +859,7 @@ this as follows:</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -893,7 +896,7 @@ This is automatically invoked by the renderer's batch system.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -929,7 +932,7 @@ This is automatically invoked by the renderer's batch system.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1033,7 +1036,6 @@ This is automatically invoked by the renderer's batch system.</p></div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

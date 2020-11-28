@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -46,7 +45,7 @@ reduce to the number of draw calls.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.AbstractBatchRenderer(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.AbstractBatchRenderer(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -55,31 +54,33 @@ and <code>prerender</code> signals.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The renderer this works for.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The renderer this works for.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -100,7 +101,7 @@ and <code>prerender</code> signals.</p></div>
 <div class="member" id="_drawCallPool">
   <h3 class="member__title">_drawCallPool</h3>
   
-<pre class="signature__container"><code class="signature">static _drawCallPool: Array<<a href="PIXI.BatchDrawCall.html">PIXI.BatchDrawCall</a>></code></pre>
+<pre class="signature__container"><code class="signature">static _drawCallPool: Array&lt;<a href=PIXI.BatchDrawCall.html>PIXI.BatchDrawCall</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -119,7 +120,7 @@ Shared between all batch renderers because it can be only one &quot;flush&quot; 
 <div class="member" id="_textureArrayPool">
   <h3 class="member__title">_textureArrayPool</h3>
   
-<pre class="signature__container"><code class="signature">static _textureArrayPool: Array<<a href="PIXI.BatchTextureArray.html">PIXI.BatchTextureArray</a>></code></pre>
+<pre class="signature__container"><code class="signature">static _textureArrayPool: Array&lt;<a href=PIXI.BatchTextureArray.html>PIXI.BatchTextureArray</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -156,7 +157,7 @@ properly in <code>this.contextChange</code>.</p></div>
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=PIXI.Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -189,7 +190,7 @@ occurs automatically.</p></div>
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href="PIXI.State.html">PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=PIXI.State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"><p>The WebGL state in which this renderer will work.</p></div>
@@ -252,7 +253,7 @@ batch-renderer plugin uses 6:</p>
 <div class="member" id="_shader">
   <h3 class="member__title">_shader</h3>
   
-<pre class="signature__container"><code class="signature">protected _shader: <a href="PIXI.Shader.html">PIXI.Shader</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _shader: <a href=PIXI.Shader.html>PIXI.Shader</a></code></pre>
 
 
   <div class="member__brief"><p>This shader is generated by <code>this.shaderGenerator</code>.</p></div>
@@ -286,7 +287,7 @@ that are going to be batched with this.</p></div>
 <div class="member" id="shaderGenerator">
   <h3 class="member__title">shaderGenerator</h3>
   
-<pre class="signature__container"><code class="signature">protected shaderGenerator: <a href="PIXI.BatchShaderGenerator.html">PIXI.BatchShaderGenerator</a></code></pre>
+<pre class="signature__container"><code class="signature">protected shaderGenerator: <a href=PIXI.BatchShaderGenerator.html>PIXI.BatchShaderGenerator</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -323,31 +324,33 @@ custom shader generator.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        texArray
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BatchTextureArray.html">PIXI.BatchTextureArray</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          texArray
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BatchTextureArray.html">PIXI.BatchTextureArray</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -364,7 +367,7 @@ custom shader generator.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -387,51 +390,53 @@ custom shader generator.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        texArray
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BatchTextureArray.html">PIXI.BatchTextureArray</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        start
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        finish
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          texArray
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BatchTextureArray.html">PIXI.BatchTextureArray</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          start
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          finish
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -448,7 +453,7 @@ custom shader generator.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -485,7 +490,7 @@ packed-geometry object pool.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -521,7 +526,7 @@ packed-geometry object pool.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -557,7 +562,7 @@ packed-geometry object pool.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -593,7 +598,7 @@ packed-geometry object pool.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -629,7 +634,7 @@ packed-geometry object pool.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -666,7 +671,7 @@ object again.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -693,71 +698,73 @@ present.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        element
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Sprite.html">PIXI.Sprite</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>element being rendered</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        attributeBuffer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.ViewableBuffer.html">PIXI.ViewableBuffer</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>attribute buffer.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        indexBuffer
-      </td>
-      <td class="member-parameter__type">
-        Uint16Array
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>index buffer</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        aIndex
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>number of floats already in the attribute buffer</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        iIndex
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>number of indices already in <code>indexBuffer</code></p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          element
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Sprite.html">PIXI.Sprite</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>element being rendered</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          attributeBuffer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.ViewableBuffer.html">PIXI.ViewableBuffer</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>attribute buffer.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          indexBuffer
+        </td>
+        <td class="member-parameter__type">
+          Uint16Array
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>index buffer</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          aIndex
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>number of floats already in the attribute buffer</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          iIndex
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>number of indices already in <code>indexBuffer</code></p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -774,7 +781,7 @@ present.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -798,32 +805,34 @@ immediately.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        element
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the element to render when
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          element
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the element to render when
 using this renderer</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -840,7 +849,7 @@ using this renderer</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -876,7 +885,7 @@ using this renderer</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -912,7 +921,7 @@ using this renderer</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1008,7 +1017,6 @@ using this renderer</p></td>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

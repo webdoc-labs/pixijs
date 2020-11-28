@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -31,8 +30,8 @@
 
 
     <div class="document__brief"><p>The TextMetrics object represents the measurement of a block of text with a specified style.</p></div>
-    <div class="document__description"><pre><code class="hljs language-js"><span class="hljs-keyword">let</span> style = <span class="hljs-keyword">new</span> PIXI.TextStyle({<span class="hljs-attr">fontFamily</span> : <span class="hljs-string">'Arial'</span>, <span class="hljs-attr">fontSize</span>: <span class="hljs-number">24</span>, <span class="hljs-attr">fill</span> : <span class="hljs-number">0xff1010</span>, <span class="hljs-attr">align</span> : <span class="hljs-string">'center'</span>})
-<span class="hljs-keyword">let</span> textMetrics = PIXI.TextMetrics.measureText(<span class="hljs-string">'Your text'</span>, style)
+    <div class="document__description"><pre><code class="hljs language-js"><span class="hljs-keyword">let</span> style = <span class="hljs-keyword">new</span> PIXI.TextStyle({<span class="hljs-attr">fontFamily</span> : <span class="hljs-string">&#x27;Arial&#x27;</span>, <span class="hljs-attr">fontSize</span>: <span class="hljs-number">24</span>, <span class="hljs-attr">fill</span> : <span class="hljs-number">0xff1010</span>, <span class="hljs-attr">align</span> : <span class="hljs-string">&#x27;center&#x27;</span>})
+<span class="hljs-keyword">let</span> textMetrics = PIXI.TextMetrics.measureText(<span class="hljs-string">&#x27;Your text&#x27;</span>, style)
 </code></pre></div>
 
     
@@ -45,7 +44,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.TextMetrics(text: string, style: <a href="PIXI.TextStyle.html">PIXI.TextStyle</a>, width: number, height: number, lines: Array<string>, lineWidths: Array<number>, lineHeight: number, maxLineWidth: number, fontProperties: Object)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.TextMetrics(text: string, style: <a href="PIXI.TextStyle.html">PIXI.TextStyle</a>, width: number, height: number, lines: Array&lt;string>, lineWidths: Array&lt;number>, lineHeight: number, maxLineWidth: number, fontProperties: Object) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -53,111 +52,113 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        text
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the text that was measured</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        style
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.TextStyle.html">PIXI.TextStyle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the style that was measured</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the measured width of the text</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the measured height of the text</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        lines
-      </td>
-      <td class="member-parameter__type">
-        Array<string>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>an array of the lines of text broken by new lines and wrapping if specified in style</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        lineWidths
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>an array of the line widths for each line matched to <code>lines</code></p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        lineHeight
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the measured line height for this style</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        maxLineWidth
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the maximum line width for all measured lines</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        fontProperties
-      </td>
-      <td class="member-parameter__type">
-        Object
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the font properties object from TextMetrics.measureFont</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          text
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the text that was measured</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          style
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.TextStyle.html">PIXI.TextStyle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the style that was measured</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the measured width of the text</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the measured height of the text</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          lines
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;string&gt;
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>an array of the lines of text broken by new lines and wrapping if specified in style</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          lineWidths
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>an array of the line widths for each line matched to <code>lines</code></p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          lineHeight
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the measured line height for this style</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          maxLineWidth
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the maximum line width for all measured lines</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          fontProperties
+        </td>
+        <td class="member-parameter__type">
+          Object
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the font properties object from TextMetrics.measureFont</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -275,7 +276,7 @@ These characters are all tall to help calculate the height required for text.</p
 <div class="member" id="lines">
   <h3 class="member__title">lines</h3>
   
-<pre class="signature__container"><code class="signature">lines: Array<string></code></pre>
+<pre class="signature__container"><code class="signature">lines: Array&lt;string></code></pre>
 
 
   <div class="member__brief"><p>An array of lines of the text broken by new lines and wrapping is specified in style</p></div>
@@ -291,7 +292,7 @@ These characters are all tall to help calculate the height required for text.</p
 <div class="member" id="lineWidths">
   <h3 class="member__title">lineWidths</h3>
   
-<pre class="signature__container"><code class="signature">lineWidths: Array<number></code></pre>
+<pre class="signature__container"><code class="signature">lineWidths: Array&lt;number></code></pre>
 
 
   <div class="member__brief"><p>An array of the line widths for each line matched to <code>lines</code></p></div>
@@ -323,7 +324,7 @@ These characters are all tall to help calculate the height required for text.</p
 <div class="member" id="style">
   <h3 class="member__title">style</h3>
   
-<pre class="signature__container"><code class="signature">style: <a href="PIXI.TextStyle.html">PIXI.TextStyle</a></code></pre>
+<pre class="signature__container"><code class="signature">style: <a href=PIXI.TextStyle.html>PIXI.TextStyle</a></code></pre>
 
 
   <div class="member__brief"><p>The style that was measured</p></div>
@@ -390,71 +391,73 @@ It must return a boolean.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        char
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The character</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        nextChar
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The next character</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        token
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The token/word the characters are from</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        index
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The index in the token of the char</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        breakWords
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The style attr break words</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          char
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The character</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          nextChar
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The next character</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          token
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The token/word the characters are from</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          index
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The index in the token of the char</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          breakWords
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The style attr break words</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -471,7 +474,7 @@ It must return a boolean.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"><p>whether to break word or not</p></td>
     </tr>
@@ -496,41 +499,43 @@ It must return a boolean.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        token
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The token</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        breakWords
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The style attr break words</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          token
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The token</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          breakWords
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The style attr break words</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -547,7 +552,7 @@ It must return a boolean.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"><p>whether to break word or not</p></td>
     </tr>
@@ -570,35 +575,37 @@ It must return a boolean.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        font
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          font
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>font name. If font name not set then clear cache for all fonts.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>font name. If font name not set then clear cache for all fonts.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -615,9 +622,95 @@ It must return a boolean.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+</div>
+
+  
+    
+<div class="member" id="isBreakingSpace">
+  <h3 class="member__title">isBreakingSpace</h3>
+  
+<pre class="signature__container"><code class="signature">static isBreakingSpace(char: string, nextChar: string) → {boolean}</code></pre>
+
+
+  <div class="member__brief"><p>Determines if char is a breaking whitespace.</p></div>
+  <div class="member__description"><p>It allows one to determine whether char should be a breaking whitespace
+For example certain characters in CJK langs or numbers.
+It must return a boolean.</p></div>
+
+  
+    
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          char
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        
+        <td class="member-parameter__description"><p>The character</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          nextChar
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        
+        <td class="member-parameter__description"><p>The next character</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+
+  
+    
+<table class="member-returns">
+  <caption class="member-returns__caption">Returns:</caption>
+  <thead class="member-returns__head">
+    <tr class="member-returns-header">
+      <th class="member-returns-header__type">Type</th>
+      <th class="member-returns-header__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="member-returns__body">
+    <tr class="member-return">
+      <td class="member-return__type">
+        boolean
+      </td>
+      <td class="member-return__description"><p>True if whitespace, False otherwise.</p></td>
     </tr>
   </tbody>
 </table>
@@ -638,31 +731,33 @@ It must return a boolean.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        font
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>String representing the style of the font</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          font
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>String representing the style of the font</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -679,7 +774,7 @@ It must return a boolean.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.IFontMetrics.html">PIXI.IFontMetrics</a></code></pre>
+        <a href="PIXI.IFontMetrics.html">PIXI.IFontMetrics</a>
       </td>
       <td class="member-return__description"><p>Font properties object</p></td>
     </tr>
@@ -702,77 +797,79 @@ It must return a boolean.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        text
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          text
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>the text to measure.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          style
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.TextStyle.html">PIXI.TextStyle</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>the text to measure.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        style
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.TextStyle.html">PIXI.TextStyle</a>
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>the text style to use for measuring</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          wordWrap
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>optional override for if word-wrap should be applied to the text.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          canvas
+        </td>
+        <td class="member-parameter__type">
+          HTMLCanvasElement
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>the text style to use for measuring</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        wordWrap
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>optional override for if word-wrap should be applied to the text.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        canvas
-      </td>
-      <td class="member-parameter__type">
-        HTMLCanvasElement
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>optional specification of the canvas to use for measuring.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>optional specification of the canvas to use for measuring.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -789,7 +886,7 @@ It must return a boolean.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.TextMetrics.html">PIXI.TextMetrics</a></code></pre>
+        <a href="PIXI.TextMetrics.html">PIXI.TextMetrics</a>
       </td>
       <td class="member-return__description"><p>measured width and height of the text.</p></td>
     </tr>
@@ -804,7 +901,7 @@ It must return a boolean.</p></div>
 <div class="member" id="wordWrapSplit">
   <h3 class="member__title">wordWrapSplit</h3>
   
-<pre class="signature__container"><code class="signature">static wordWrapSplit(token: string) → {Array<string>}</code></pre>
+<pre class="signature__container"><code class="signature">static wordWrapSplit(token: string) → {Array&lt;string>}</code></pre>
 
 
   <div class="member__brief"><p>Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.</p></div>
@@ -814,31 +911,33 @@ It must return an array of characters.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        token
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The token to split</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          token
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The token to split</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -855,7 +954,7 @@ It must return an array of characters.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>Array<string></code></pre>
+        Array&lt;string&gt;
       </td>
       <td class="member-return__description"><p>The characters of the token</p></td>
     </tr>
@@ -919,6 +1018,8 @@ It must return an array of characters.</p></div>
     
       <li class="page-members-explorer__item"><a href="PIXI.TextMetrics.html#clearMetrics">clearMetrics</a></li>
     
+      <li class="page-members-explorer__item"><a href="PIXI.TextMetrics.html#isBreakingSpace">isBreakingSpace</a></li>
+    
       <li class="page-members-explorer__item"><a href="PIXI.TextMetrics.html#measureFont">measureFont</a></li>
     
       <li class="page-members-explorer__item"><a href="PIXI.TextMetrics.html#measureText">measureText</a></li>
@@ -935,7 +1036,6 @@ It must return an array of characters.</p></div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

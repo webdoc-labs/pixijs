@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -45,7 +44,7 @@ line connecting the two points of tangency.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new Conic()</code></pre>
+<pre class="signature__container"><code class="signature">new Conic() → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -164,7 +163,7 @@ points when creating a graphic.</p>
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>Creates a circular conic of the given {@code radius} that is in the bounding box
+  <div class="member__description"><p>Creates a circular conic of the given <code>radius</code> that is in the bounding box
 (0,0,2_r_,2_r_).</p>
 <p>Implicit form:
 (<em>x</em>/√2 + <em>y</em>/√2 - <em>r</em>/√2)<sup>2</sup> - <em>xy</em> = <em>0</em></p>
@@ -173,31 +172,33 @@ points when creating a graphic.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        radius
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the radius of the circle</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          radius
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the radius of the circle</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -214,7 +215,7 @@ points when creating a graphic.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="Conic.html">Conic</a></code></pre>
+        <a href="Conic.html">Conic</a>
       </td>
       <td class="member-return__description"><p>the conic shape</p></td>
     </tr>
@@ -242,41 +243,43 @@ bounding box (0,0,2_a_,2_b_).</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        a
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>major semi-axis length</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        b
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>minor semi-axis length</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          a
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>major semi-axis length</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          b
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>minor semi-axis length</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -293,7 +296,7 @@ bounding box (0,0,2_a_,2_b_).</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="Conic.html">Conic</a></code></pre>
+        <a href="Conic.html">Conic</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -321,41 +324,43 @@ they do not have a bounding box.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        a
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>major semi-axis</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        b
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>minor semi-axis</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          a
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>major semi-axis</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          b
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>minor semi-axis</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -372,7 +377,7 @@ they do not have a bounding box.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="Conic.html">Conic</a></code></pre>
+        <a href="Conic.html">Conic</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -400,31 +405,33 @@ x<sup>2 - 4_ay_ = 0</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        a
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>distance of directrix, focus from the vertex of the parabola (0,0)</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          a
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>distance of directrix, focus from the vertex of the parabola (0,0)</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -441,7 +448,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="Conic.html">Conic</a></code></pre>
+        <a href="Conic.html">Conic</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -464,51 +471,53 @@ x<sup>2 - 4_ay_ = 0</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        c0
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Point.html">PIXI.Point</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        c1
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Point.html">PIXI.Point</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        c2
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Point.html">PIXI.Point</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          c0
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Point.html">PIXI.Point</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          c1
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Point.html">PIXI.Point</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          c2
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Point.html">PIXI.Point</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -525,7 +534,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -548,51 +557,53 @@ x<sup>2 - 4_ay_ = 0</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        a
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        b
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        c
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          a
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          b
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          c
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -609,7 +620,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -632,51 +643,53 @@ x<sup>2 - 4_ay_ = 0</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        a
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        b
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        c
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          a
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          b
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          c
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -693,7 +706,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -716,51 +729,53 @@ x<sup>2 - 4_ay_ = 0</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        a
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        b
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        c
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          a
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          b
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          c
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -777,7 +792,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -813,7 +828,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -885,7 +900,6 @@ x<sup>2 - 4_ay_ = 0</p></div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

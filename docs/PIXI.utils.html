@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -108,7 +107,7 @@
 <div class="member" id="premultiplyBlendMode">
   <h3 class="member__title">premultiplyBlendMode</h3>
   
-<pre class="signature__container"><code class="signature">premultiplyBlendMode: Array<number<Array>></code></pre>
+<pre class="signature__container"><code class="signature">premultiplyBlendMode: Array&lt;number&lt;Array>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -148,7 +147,7 @@
 <div class="member" id="earcut">
   <h3 class="member__title">earcut</h3>
   
-<pre class="signature__container"><code class="signature">earcut(vertices: Array<number>, holes: Array<number>, dimensions: number) → {Array<number>}</code></pre>
+<pre class="signature__container"><code class="signature">earcut(vertices: Array&lt;number>, holes: Array&lt;number>, dimensions: number) → {Array&lt;number>}</code></pre>
 
 
   <div class="member__brief"><p>A polygon triangulation library</p></div>
@@ -156,69 +155,71 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        vertices
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>A flat array of vertex coordinates</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        holes
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>An array of hole indices</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        dimensions
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        2
-      </td>
-      <td class="member-parameter__description"><p>The number of coordinates per vertex in the input array</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          vertices
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>A flat array of vertex coordinates</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          holes
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>An array of hole indices</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          dimensions
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          2
+        </td>
+        <td class="member-parameter__description"><p>The number of coordinates per vertex in the input array</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -235,7 +236,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>Array<number></code></pre>
+        Array&lt;number&gt;
       </td>
       <td class="member-return__description"><p>Triangulated polygon</p></td>
     </tr>
@@ -260,31 +261,33 @@ creating your renderer. Keep in mind that doing that will forever make you a jer
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        type
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The string renderer type to log.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          type
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The string renderer type to log.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -301,7 +304,7 @@ creating your renderer. Keep in mind that doing that will forever make you a jer
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -337,7 +340,7 @@ creating your renderer. Keep in mind that doing that will forever make you a jer
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -360,41 +363,43 @@ creating your renderer. Keep in mind that doing that will forever make you a jer
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        blendMode
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>supposed blend mode</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        premultiplied
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>whether source is premultiplied</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          blendMode
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>supposed blend mode</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          premultiplied
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>whether source is premultiplied</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -411,7 +416,7 @@ creating your renderer. Keep in mind that doing that will forever make you a jer
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>number</code></pre>
+        number
       </td>
       <td class="member-return__description"><p>true blend mode for this texture</p></td>
     </tr>
@@ -434,49 +439,51 @@ creating your renderer. Keep in mind that doing that will forever make you a jer
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        size
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          size
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Number of quads</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          outBuffer
+        </td>
+        <td class="member-parameter__type">
+          Uint16Array | Uint32Array
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Number of quads</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        outBuffer
-      </td>
-      <td class="member-parameter__type">
-        Uint16Array | Uint32Array
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Buffer for output, length has to be <code>6 * size</code></p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Buffer for output, length has to be <code>6 * size</code></p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -493,7 +500,7 @@ creating your renderer. Keep in mind that doing that will forever make you a jer
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>Uint16Array | Uint32Array</code></pre>
+        Uint16Array | Uint32Array
       </td>
       <td class="member-return__description"><ul>
 <li>Resulting index buffer</li>
@@ -519,31 +526,33 @@ parameter <code>dataUri</code> is not a valid data URI.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        dataUri
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the data URI to check</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          dataUri
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the data URI to check</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -560,7 +569,7 @@ parameter <code>dataUri</code> is not a valid data URI.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.utils.DecomposedDataUri.html">PIXI.utils.DecomposedDataUri</a> | unknown</code></pre>
+        <a href="PIXI.utils.DecomposedDataUri.html">PIXI.utils.DecomposedDataUri</a> | unknown
       </td>
       <td class="member-return__description"><p>The decomposed data uri or undefined</p></td>
     </tr>
@@ -585,70 +594,72 @@ deprecated methods/properties/classes are being used within the code.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        version
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>The version where the feature became deprecated</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        message
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>Message should include what is deprecated, where, and the new solution</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        ignoreDepth
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        3
-      </td>
-      <td class="member-parameter__description"><p>The number of steps to ignore at the top of the error stack
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          version
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>The version where the feature became deprecated</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          message
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Message should include what is deprecated, where, and the new solution</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          ignoreDepth
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          3
+        </td>
+        <td class="member-parameter__description"><p>The number of steps to ignore at the top of the error stack
 this is mostly to ignore internal deprecation calls.</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -665,7 +676,7 @@ this is mostly to ignore internal deprecation calls.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -701,7 +712,7 @@ this is mostly to ignore internal deprecation calls.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -725,53 +736,55 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        url
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>the image path</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        defaultValue
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        1
-      </td>
-      <td class="member-parameter__description"><p>the defaultValue if no filename prefix is set.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          url
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>the image path</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          defaultValue
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          1
+        </td>
+        <td class="member-parameter__description"><p>the defaultValue if no filename prefix is set.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -788,7 +801,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>number</code></pre>
+        number
       </td>
       <td class="member-return__description"><p>resolution / device pixel ratio of an asset</p></td>
     </tr>
@@ -803,7 +816,7 @@ used by spritesheets and image urls</p></div>
 <div class="member" id="hex2rgb">
   <h3 class="member__title">hex2rgb</h3>
   
-<pre class="signature__container"><code class="signature">hex2rgb(hex: number, out: Array<number>) → {Array<number>}</code></pre>
+<pre class="signature__container"><code class="signature">hex2rgb(hex: number, out: Array&lt;number>) → {Array&lt;number>}</code></pre>
 
 
   <div class="member__brief"><p>Converts a hexadecimal color number to an [R, G, B] array of normalized floats (numbers from 0.0 to 1.0).</p></div>
@@ -811,53 +824,55 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        hex
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>The hexadecimal number to convert</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        out
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        []
-      </td>
-      <td class="member-parameter__description"><p>If supplied, this array will be used rather than returning a new one</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          hex
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>The hexadecimal number to convert</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          out
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          []
+        </td>
+        <td class="member-parameter__description"><p>If supplied, this array will be used rather than returning a new one</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -874,7 +889,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>Array<number></code></pre>
+        Array&lt;number&gt;
       </td>
       <td class="member-return__description"><p>An array representing the [R, G, B] of the color where all values are floats.</p></td>
     </tr>
@@ -897,31 +912,33 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        hex
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Number in hex (e.g., <code>0xffffff</code>)</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          hex
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Number in hex (e.g., <code>0xffffff</code>)</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -938,7 +955,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>string</code></pre>
+        string
       </td>
       <td class="member-return__description"><p>The string color (e.g., <code>&quot;#ffffff&quot;</code>).</p></td>
     </tr>
@@ -961,31 +978,33 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        v
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>input value</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          v
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>input value</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1002,7 +1021,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"><p><code>true</code> if value is power of two</p></td>
     </tr>
@@ -1038,7 +1057,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"><p>Is WebGL supported.</p></td>
     </tr>
@@ -1061,31 +1080,33 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        v
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>input value</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          v
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>input value</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1102,7 +1123,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>number</code></pre>
+        number
       </td>
       <td class="member-return__description"><p>logarithm base 2</p></td>
     </tr>
@@ -1125,31 +1146,33 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        v
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>input value</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          v
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>input value</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1166,7 +1189,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>number</code></pre>
+        number
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1181,7 +1204,7 @@ used by spritesheets and image urls</p></div>
 <div class="member" id="premultiplyRgba">
   <h3 class="member__title">premultiplyRgba</h3>
   
-<pre class="signature__container"><code class="signature">premultiplyRgba(rgb: Float32Array | number<Array>, alpha: number, out: Float32Array, premultiply: boolean) → {Float32Array}</code></pre>
+<pre class="signature__container"><code class="signature">premultiplyRgba(rgb: Float32Array | number&lt;Array>, alpha: number, out: Float32Array, premultiply: boolean) → {Float32Array}</code></pre>
 
 
   <div class="member__brief"><p>combines rgb and alpha to out array</p></div>
@@ -1189,85 +1212,87 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        rgb
-      </td>
-      <td class="member-parameter__type">
-        Float32Array | number<Array>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>input rgb</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        alpha
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>alpha param</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        out
-      </td>
-      <td class="member-parameter__type">
-        Float32Array
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>output</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        premultiply
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        true
-      </td>
-      <td class="member-parameter__description"><p>do premultiply it</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          rgb
+        </td>
+        <td class="member-parameter__type">
+          Float32Array | number&lt;Array&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>input rgb</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          alpha
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>alpha param</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          out
+        </td>
+        <td class="member-parameter__type">
+          Float32Array
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>output</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          premultiply
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          true
+        </td>
+        <td class="member-parameter__description"><p>do premultiply it</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1284,7 +1309,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>Float32Array</code></pre>
+        Float32Array
       </td>
       <td class="member-return__description"><p>vec4 rgba</p></td>
     </tr>
@@ -1307,41 +1332,43 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        tint
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>integer RGB</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        alpha
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>floating point alpha (0.0-1.0)</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          tint
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>integer RGB</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          alpha
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>floating point alpha (0.0-1.0)</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1358,7 +1385,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>number</code></pre>
+        number
       </td>
       <td class="member-return__description"><p>tint multiplied by alpha</p></td>
     </tr>
@@ -1381,85 +1408,87 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        tint
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>input tint</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        alpha
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>alpha param</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        out
-      </td>
-      <td class="member-parameter__type">
-        Float32Array
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>output</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        premultiply
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        true
-      </td>
-      <td class="member-parameter__description"><p>do premultiply it</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          tint
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>input tint</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          alpha
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>alpha param</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          out
+        </td>
+        <td class="member-parameter__type">
+          Float32Array
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>output</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          premultiply
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          true
+        </td>
+        <td class="member-parameter__description"><p>do premultiply it</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1476,7 +1505,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>Float32Array</code></pre>
+        Float32Array
       </td>
       <td class="member-return__description"><p>vec4 rgba</p></td>
     </tr>
@@ -1499,51 +1528,53 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        arr
-      </td>
-      <td class="member-parameter__type">
-        Array<any>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Array to remove elements from</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        startIdx
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>starting index</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        removeCount
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>how many to remove</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          arr
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;any&gt;
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Array to remove elements from</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          startIdx
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>starting index</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          removeCount
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>how many to remove</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1560,7 +1591,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1575,7 +1606,7 @@ used by spritesheets and image urls</p></div>
 <div class="member" id="rgb2hex">
   <h3 class="member__title">rgb2hex</h3>
   
-<pre class="signature__container"><code class="signature">rgb2hex(rgb: Array<number>) → {number}</code></pre>
+<pre class="signature__container"><code class="signature">rgb2hex(rgb: Array&lt;number>) → {number}</code></pre>
 
 
   <div class="member__brief"><p>Converts a color as an [R, G, B] array of normalized floats to a hexadecimal number.</p></div>
@@ -1583,31 +1614,33 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        rgb
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Array of numbers where all values are normalized floats from 0.0 to 1.0.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          rgb
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Array of numbers where all values are normalized floats from 0.0 to 1.0.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1624,7 +1657,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>number</code></pre>
+        number
       </td>
       <td class="member-return__description"><p>Number in hexadecimal.</p></td>
     </tr>
@@ -1647,31 +1680,33 @@ used by spritesheets and image urls</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        n
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the number to check the sign of</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          n
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the number to check the sign of</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1688,7 +1723,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>number</code></pre>
+        number
       </td>
       <td class="member-return__description"><p>0 if <code>n</code> is 0, -1 if <code>n</code> is negative, 1 if <code>n</code> is positive</p></td>
     </tr>
@@ -1724,7 +1759,7 @@ used by spritesheets and image urls</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1752,31 +1787,33 @@ css colors: &quot;black&quot;</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        string
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The string color (e.g., <code>&quot;#ffffff&quot;</code>)</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          string
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The string color (e.g., <code>&quot;#ffffff&quot;</code>)</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1793,7 +1830,7 @@ css colors: &quot;black&quot;</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>number</code></pre>
+        number
       </td>
       <td class="member-return__description"><p>Number in hexadecimal.</p></td>
     </tr>
@@ -1816,31 +1853,33 @@ css colors: &quot;black&quot;</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        canvas
-      </td>
-      <td class="member-parameter__type">
-        HTMLCanvasElement
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the canvas to trim</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          canvas
+        </td>
+        <td class="member-parameter__type">
+          HTMLCanvasElement
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the canvas to trim</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1857,7 +1896,7 @@ css colors: &quot;black&quot;</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>object</code></pre>
+        object
       </td>
       <td class="member-return__description"><p>Trim data</p></td>
     </tr>
@@ -1893,7 +1932,7 @@ css colors: &quot;black&quot;</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>number</code></pre>
+        number
       </td>
       <td class="member-return__description"><p>The next unique identifier to use.</p></td>
     </tr>
@@ -1917,11 +1956,11 @@ css colors: &quot;black&quot;</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI.utils.html#BaseTextureCache">BaseTextureCache</a></li>
+      <li class="page-members-explorer__item"><a href=PIXI.utils.html#BaseTextureCache>BaseTextureCache</a></li>
     
       <li class="page-members-explorer__item"><a href="PIXI.utils.html#ProgramCache">ProgramCache</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI.utils.html#TextureCache">TextureCache</a></li>
+      <li class="page-members-explorer__item"><a href=PIXI.utils.html#TextureCache>TextureCache</a></li>
     
       <li class="page-members-explorer__item"><a href="PIXI.utils.html#isMobile">isMobile</a></li>
     
@@ -1951,7 +1990,6 @@ css colors: &quot;black&quot;</p></div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

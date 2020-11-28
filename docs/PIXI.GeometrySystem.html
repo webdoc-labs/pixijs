@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -43,7 +42,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.GeometrySystem(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.GeometrySystem(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -51,31 +50,33 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The renderer this System works for.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The renderer this System works for.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -176,7 +177,7 @@
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=PIXI.Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -208,49 +209,51 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        geometry
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          geometry
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Geometry.html">PIXI.Geometry</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>instance of geometry to bind</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        shader
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Shader.html">PIXI.Shader</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"><p>instance of geometry to bind</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          shader
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Shader.html">PIXI.Shader</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>instance of shader to use vao for</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>instance of shader to use vao for</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -267,7 +270,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -303,7 +306,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -339,7 +342,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -362,37 +365,39 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        contextLost
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>If context was lost, we suppress <code>gl.delete</code> calls</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          contextLost
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>If context was lost, we suppress <code>gl.delete</code> calls</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -409,7 +414,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -432,53 +437,55 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        buffer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Buffer.html">PIXI.Buffer</a>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>buffer with data</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        contextLost
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>If context was lost, we suppress deleteVertexArray</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          buffer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Buffer.html">PIXI.Buffer</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>buffer with data</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          contextLost
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>If context was lost, we suppress deleteVertexArray</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -495,7 +502,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -518,53 +525,55 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        geometry
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>Geometry with buffers. Only VAO will be disposed</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        contextLost
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>If context was lost, we suppress deleteVertexArray</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          geometry
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Geometry.html">PIXI.Geometry</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Geometry with buffers. Only VAO will be disposed</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          contextLost
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>If context was lost, we suppress deleteVertexArray</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -581,7 +590,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -604,77 +613,79 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        type
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          type
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>the type primitive to render</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          size
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>the type primitive to render</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        size
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"><p>the number of elements to be rendered</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          start
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Starting index</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          instanceCount
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>the number of elements to be rendered</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        start
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Starting index</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        instanceCount
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>the number of instances of the set of elements to execute</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>the number of instances of the set of elements to execute</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -691,7 +702,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -727,7 +738,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -757,41 +768,43 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        geometry
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Geometry instance</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        program
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Program.html">PIXI.Program</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Shader program instance</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          geometry
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Geometry.html">PIXI.Geometry</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Geometry instance</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          program
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Program.html">PIXI.Program</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Shader program instance</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -808,7 +821,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -831,41 +844,43 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        geometry
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Geometry instance</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        program
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Program.html">PIXI.Program</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Program instance</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          geometry
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Geometry.html">PIXI.Geometry</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Geometry instance</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          program
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Program.html">PIXI.Program</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Program instance</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -882,7 +897,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -905,41 +920,43 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        geometry
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>to get signature from</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        program
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Program.html">PIXI.Program</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>to test geometry against</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          geometry
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Geometry.html">PIXI.Geometry</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>to get signature from</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          program
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Program.html">PIXI.Program</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>to test geometry against</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -956,7 +973,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>String</code></pre>
+        String
       </td>
       <td class="member-return__description"><p>Unique signature of the geometry and program</p></td>
     </tr>
@@ -980,41 +997,43 @@ If vao is created, it is bound automatically.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        geometry
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Instance of geometry to to generate Vao for</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        program
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Program.html">PIXI.Program</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Instance of program</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          geometry
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Geometry.html">PIXI.Geometry</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Instance of geometry to to generate Vao for</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          program
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Program.html">PIXI.Program</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Instance of program</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1031,7 +1050,7 @@ If vao is created, it is bound automatically.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>WebGLVertexArrayObject</code></pre>
+        WebGLVertexArrayObject
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1067,7 +1086,7 @@ If vao is created, it is bound automatically.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1103,7 +1122,7 @@ If vao is created, it is bound automatically.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1194,7 +1213,6 @@ If vao is created, it is bound automatically.</p></div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

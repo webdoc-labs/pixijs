@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -22,10 +21,11 @@
         <div class="page-explorer" id="explorer-mount-point"></div>
         
         
-<div class="homepage">
-
-  <div class="homepage__readme md">
-    <h1>PixiJS — The HTML5 Creation Engine</h1>
+<div class="page-content">
+  <div class="homepage">
+  
+    <div class="homepage__readme md">
+      <h1>PixiJS — The HTML5 Creation Engine</h1>
 <p><img src="https://pixijs.download/pixijs-banner-v5.png" alt="pixi.js logo"></p>
 <p>The aim of this project is to provide a fast lightweight 2D library that works
 across all devices. The PixiJS renderer allows everyone to enjoy the power of
@@ -37,7 +37,7 @@ hardware acceleration without prior knowledge of WebGL. Also, it's fast. Really 
 <pre><code class="hljs">npm <span class="hljs-keyword">install </span>pixi.<span class="hljs-keyword">js
 </span></code></pre>
 <p>There is no default export. The correct way to import PixiJS is:</p>
-<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> PIXI <span class="hljs-keyword">from</span> <span class="hljs-string">'pixi.js'</span>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> PIXI <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;pixi.js&#x27;</span>
 </code></pre>
 <h3>Basic Usage Example</h3>
 <pre><code class="hljs language-js"><span class="hljs-comment">// The application will create a renderer using WebGL, if possible,</span>
@@ -50,9 +50,9 @@ hardware acceleration without prior knowledge of WebGL. Also, it's fast. Really 
 <span class="hljs-built_in">document</span>.body.appendChild(app.view);
 
 <span class="hljs-comment">// load the texture we need</span>
-PIXI.loader.add(<span class="hljs-string">'bunny'</span>, <span class="hljs-string">'bunny.png'</span>).load(<span class="hljs-function">(<span class="hljs-params">loader, resources</span>) =&gt;</span> {
+PIXI.loader.add(<span class="hljs-string">&#x27;bunny&#x27;</span>, <span class="hljs-string">&#x27;bunny.png&#x27;</span>).load(<span class="hljs-function">(<span class="hljs-params">loader, resources</span>) =&gt;</span> {
 
-    <span class="hljs-comment">// This creates a texture from a 'bunny.png' image.</span>
+    <span class="hljs-comment">// This creates a texture from a &#x27;bunny.png&#x27; image.</span>
     <span class="hljs-keyword">const</span> bunny = <span class="hljs-keyword">new</span> PIXI.Sprite(resources.bunny.texture);
 
     <span class="hljs-comment">// Setup the position of the bunny</span>
@@ -67,7 +67,7 @@ PIXI.loader.add(<span class="hljs-string">'bunny'</span>, <span class="hljs-stri
     app.stage.addChild(bunny);
 
     <span class="hljs-comment">// Listen for frame updates</span>
-    app.ticker.add(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    app.ticker.add(<span class="hljs-function">() =&gt;</span> {
          <span class="hljs-comment">// each frame we spin the bunny around a bit</span>
         bunny.rotation += <span class="hljs-number">0.01</span>;
     });
@@ -77,13 +77,13 @@ PIXI.loader.add(<span class="hljs-string">'bunny'</span>, <span class="hljs-stri
 <p>This content is released under the (http://opensource.org/licenses/MIT) MIT License.</p>
 <p><a href="https://github.com/igrigorik/ga-beacon"><img src="https://ga-beacon.appspot.com/UA-39213431-2/pixi.js/index" alt="Analytics"></a></p>
 
+    </div>
+  
   </div>
-
 </div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

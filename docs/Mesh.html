@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -56,35 +55,37 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        data
-      </td>
-      <td class="member-parameter__type">
-        F
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          data
+        </td>
+        <td class="member-parameter__type">
+          F
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>the data associated with the face, if any</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>the data associated with the face, if any</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -101,7 +102,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="Face.html">Face</a></code></pre>
+        <a href="Face.html">Face</a>
       </td>
       <td class="member-return__description"><p>the newly created degenerate face</p></td>
     </tr>
@@ -119,68 +120,70 @@
 <pre class="signature__container"><code class="signature">addVertex(face: <a href="Face.html">Face</a>, vertexData: V, edgeData: E) → {void}</code></pre>
 
 
-  <div class="member__brief"><p>Adds a vertex to {@code face} by splitting the last edge.</p></div>
+  <div class="member__brief"><p>Adds a vertex to <code>face</code> by splitting the last edge.</p></div>
   <div class="member__description"></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        face
-      </td>
-      <td class="member-parameter__type">
-        <a href="Face.html">Face</a>
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          face
+        </td>
+        <td class="member-parameter__type">
+          <a href="Face.html">Face</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          vertexData
+        </td>
+        <td class="member-parameter__type">
+          V
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        vertexData
-      </td>
-      <td class="member-parameter__type">
-        V
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          edgeData
+        </td>
+        <td class="member-parameter__type">
+          E
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        edgeData
-      </td>
-      <td class="member-parameter__type">
-        E
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -197,7 +200,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -233,7 +236,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="CircularLinkedListIterator.html">CircularLinkedListIterator</a></code></pre>
+        <a href="CircularLinkedListIterator.html">CircularLinkedListIterator</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -269,7 +272,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="CircularLinkedListIterator.html">CircularLinkedListIterator</a></code></pre>
+        <a href="CircularLinkedListIterator.html">CircularLinkedListIterator</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -305,7 +308,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="CircularLinkedListIterator.html">CircularLinkedListIterator</a></code></pre>
+        <a href="CircularLinkedListIterator.html">CircularLinkedListIterator</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -326,7 +329,7 @@
   <div class="member__brief"></div>
   <div class="member__description"><p>Validates the mesh and checks whether the following invariants hold true:</p>
 <ul>
-<li>{@code eachEdge.next.twin.next === eachEdge}</li>
+<li><code>eachEdge.next.twin.next === eachEdge</code></li>
 </ul></div>
 
   
@@ -344,7 +347,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -392,7 +395,6 @@
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

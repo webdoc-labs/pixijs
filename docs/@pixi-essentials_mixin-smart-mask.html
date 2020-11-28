@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -22,10 +21,11 @@
         <div class="page-explorer" id="explorer-mount-point"></div>
         
         
-<div class="homepage">
-
-  <div class="homepage__readme md">
-    <h1>@pixi-essentials/smart-mask</h1>
+<div class="page-content">
+  <div class="homepage">
+  
+    <div class="homepage__readme md">
+      <h1>@pixi-essentials/smart-mask</h1>
 <p>This package is a mixin for <code>DisplayObject</code> that optimizes mask rendering. It is used to prevent masking when the contents of a
 display-object already lie inside the mask's bounds. It should <strong>only be used with rectangular masks</strong>.</p>
 <h2>Installation :package:</h2>
@@ -34,8 +34,8 @@ display-object already lie inside the mask's bounds. It should <strong>only be u
 <h2>Usage :page_facing_up:</h2>
 <p>In order for to use smart-masks, you must set masks on the <code>smartMask</code> property of display-objects instead; before each rendering
 frame, you must call <code>updateSmartMask</code> to re-evalulate which masks are essential for rendering correctly.</p>
-<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> PIXI <span class="hljs-keyword">from</span> <span class="hljs-string">'pixi.js'</span>;
-<span class="hljs-keyword">import</span> <span class="hljs-string">'@pixi-essentials/mixin-smart-mask'</span>;
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> PIXI <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;pixi.js&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;@pixi-essentials/mixin-smart-mask&#x27;</span>;
 
 <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> PIXI.Application();
 
@@ -51,9 +51,9 @@ maskedContainer.smartMask = mask;
 <span class="hljs-comment">/*
  * Before rendering your scene each frame, you must update the smart-masks.
  */</span>
-app.renderer.on(<span class="hljs-string">'prerender'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+app.renderer.on(<span class="hljs-string">&#x27;prerender&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">/* 
-     * This will recalculate the world transforms in the scene graph. You don't need to do this if you
+     * This will recalculate the world transforms in the scene graph. You don&#x27;t need to do this if you
      * are already doing it somewhere else OR you could pass skipUpdate=false to updateSmartMask() instead.
      */</span>
     app.stage.getBounds();
@@ -71,13 +71,13 @@ app.renderer.on(<span class="hljs-string">'prerender'</span>, <span class="hljs-
  */</span>
 </code></pre>
 
+    </div>
+  
   </div>
-
 </div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

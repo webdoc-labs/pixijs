@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -31,7 +30,7 @@
 
 
     <div class="document__brief"></div>
-    <div class="document__description"><p>A framebuffer can be used to render contents off of the screen. <a href="PIXI.BaseRenderTexture.html">PIXI.BaseRenderTexture</a> uses
+    <div class="document__description"><p>A framebuffer can be used to render contents off of the screen. <a href=PIXI.BaseRenderTexture.html>PIXI.BaseRenderTexture</a> uses
 one internally to render into itself. You can attach a depth or stencil buffer to a framebuffer.</p>
 <p>On WebGL 2 machines, shaders can output to multiple textures simultaneously with GLSL 300 ES.</p></div>
 
@@ -45,7 +44,7 @@ one internally to render into itself. You can attach a depth or stencil buffer t
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.Framebuffer(width: number, height: number)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.Framebuffer(width: number, height: number) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -53,41 +52,43 @@ one internally to render into itself. You can attach a depth or stencil buffer t
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Width of the frame buffer</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Height of the frame buffer</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Width of the frame buffer</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Height of the frame buffer</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -108,7 +109,7 @@ one internally to render into itself. You can attach a depth or stencil buffer t
 <div class="member" id="colorTexture">
   <h3 class="member__title">colorTexture</h3>
   
-<pre class="signature__container"><code class="signature">colorTexture: Array<<a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>></code></pre>
+<pre class="signature__container"><code class="signature">colorTexture: Array&lt;<a href=PIXI.BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
 
 
   <div class="member__brief"><p>Reference to the colorTexture.</p></div>
@@ -195,53 +196,55 @@ Seriously affects GPU memory consumption and GPU performance.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        index
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        0
-      </td>
-      <td class="member-parameter__description"><p>Index of the array to add the texture to</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        texture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>Texture to add to the array</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          index
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          0
+        </td>
+        <td class="member-parameter__description"><p>Index of the array to add the texture to</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          texture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Texture to add to the array</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -258,7 +261,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -281,35 +284,37 @@ Seriously affects GPU memory consumption and GPU performance.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        texture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          texture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Texture to add</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Texture to add</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -326,7 +331,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -362,7 +367,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -398,7 +403,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -434,7 +439,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -470,7 +475,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -493,41 +498,43 @@ Seriously affects GPU memory consumption and GPU performance.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Width of the frame buffer to resize to</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Height of the frame buffer to resize to</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Width of the frame buffer to resize to</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Height of the frame buffer to resize to</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -544,7 +551,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -610,7 +617,6 @@ Seriously affects GPU memory consumption and GPU performance.</p>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

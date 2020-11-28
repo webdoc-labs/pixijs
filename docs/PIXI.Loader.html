@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -38,9 +37,9 @@
 <span class="hljs-keyword">const</span> sprites = {};
 
 <span class="hljs-comment">// Chainable `add` to enqueue a resource</span>
-loader.add(<span class="hljs-string">'bunny'</span>, <span class="hljs-string">'data/bunny.png'</span>)
-      .add(<span class="hljs-string">'spaceship'</span>, <span class="hljs-string">'assets/spritesheet.json'</span>);
-loader.add(<span class="hljs-string">'scoreFont'</span>, <span class="hljs-string">'assets/score.fnt'</span>);
+loader.add(<span class="hljs-string">&#x27;bunny&#x27;</span>, <span class="hljs-string">&#x27;data/bunny.png&#x27;</span>)
+      .add(<span class="hljs-string">&#x27;spaceship&#x27;</span>, <span class="hljs-string">&#x27;assets/spritesheet.json&#x27;</span>);
+loader.add(<span class="hljs-string">&#x27;scoreFont&#x27;</span>, <span class="hljs-string">&#x27;assets/score.fnt&#x27;</span>);
 
 <span class="hljs-comment">// Chainable `pre` to add a middleware that runs for each resource, *before* loading that resource.</span>
 <span class="hljs-comment">// This is useful to implement custom caching modules (using filesystem, indexeddb, memory, etc).</span>
@@ -65,14 +64,88 @@ loader.load(<span class="hljs-function">(<span class="hljs-params">loader, resou
 });
 
 <span class="hljs-comment">// throughout the process multiple signals can be dispatched.</span>
-loader.onProgress.add(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {}); <span class="hljs-comment">// called once per loaded/errored file</span>
-loader.onError.add(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {}); <span class="hljs-comment">// called once per errored file</span>
-loader.onLoad.add(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {}); <span class="hljs-comment">// called once per loaded file</span>
-loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {}); <span class="hljs-comment">// called once when the queued resources all load.</span>
+loader.onProgress.add(<span class="hljs-function">() =&gt;</span> {}); <span class="hljs-comment">// called once per loaded/errored file</span>
+loader.onError.add(<span class="hljs-function">() =&gt;</span> {}); <span class="hljs-comment">// called once per errored file</span>
+loader.onLoad.add(<span class="hljs-function">() =&gt;</span> {}); <span class="hljs-comment">// called once per loaded file</span>
+loader.onComplete.add(<span class="hljs-function">() =&gt;</span> {}); <span class="hljs-comment">// called once when the queued resources all load.</span>
 </code></pre></div>
 
     
       
+<div class="members">
+  <h2 class="members__category">Constructor</h2>
+
+  
+    
+<div class="member" id="constructor">
+  <h3 class="member__title"></h3>
+  
+<pre class="signature__container"><code class="signature">new PIXI.Loader(baseUrl: string, concurrency: number) → {}</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__description"></div>
+
+  
+    
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          baseUrl
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          ''
+        </td>
+        <td class="member-parameter__description"><p>The base url for all resources loaded by this loader.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          concurrency
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          10
+        </td>
+        <td class="member-parameter__description"><p>The number of resources to load concurrently.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
     
 
     
@@ -84,7 +157,7 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 <div class="member" id="shared">
   <h3 class="member__title">shared</h3>
   
-<pre class="signature__container"><code class="signature">static shared: <a href="PIXI.Loader.html">PIXI.Loader</a></code></pre>
+<pre class="signature__container"><code class="signature">static shared: <a href=PIXI.Loader.html>PIXI.Loader</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -116,7 +189,7 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 <div class="member" id="onError">
   <h3 class="member__title">onError</h3>
   
-<pre class="signature__container"><code class="signature">onError: <a href="PIXI.Loader.ILoaderSignal.html">PIXI.Loader.ILoaderSignal</a></code></pre>
+<pre class="signature__container"><code class="signature">onError: <a href=PIXI.Loader.ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -132,7 +205,7 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 <div class="member" id="onLoad">
   <h3 class="member__title">onLoad</h3>
   
-<pre class="signature__container"><code class="signature">onLoad: <a href="PIXI.Loader.ILoaderSignal.html">PIXI.Loader.ILoaderSignal</a></code></pre>
+<pre class="signature__container"><code class="signature">onLoad: <a href=PIXI.Loader.ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -148,7 +221,7 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 <div class="member" id="onProgress">
   <h3 class="member__title">onProgress</h3>
   
-<pre class="signature__container"><code class="signature">onProgress: <a href="PIXI.Loader.ILoaderSignal.html">PIXI.Loader.ILoaderSignal</a></code></pre>
+<pre class="signature__container"><code class="signature">onProgress: <a href=PIXI.Loader.ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -164,7 +237,7 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 <div class="member" id="onStart">
   <h3 class="member__title">onStart</h3>
   
-<pre class="signature__container"><code class="signature">onStart: <a href="PIXI.Loader.ILoaderSignal.html">PIXI.Loader.ILoaderSignal</a></code></pre>
+<pre class="signature__container"><code class="signature">onStart: <a href=PIXI.Loader.ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -188,7 +261,7 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 <div class="member" id="off">
   <h3 class="member__title">off</h3>
   
-<pre class="signature__container"><code class="signature">static off(event: any)</code></pre>
+<pre class="signature__container"><code class="signature">static off(event: any) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -196,31 +269,33 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        event
-      </td>
-      <td class="member-parameter__type">
-        any
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          event
+        </td>
+        <td class="member-parameter__type">
+          any
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -232,7 +307,7 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 <div class="member" id="on">
   <h3 class="member__title">on</h3>
   
-<pre class="signature__container"><code class="signature">static on(event: any)</code></pre>
+<pre class="signature__container"><code class="signature">static on(event: any) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -240,31 +315,33 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        event
-      </td>
-      <td class="member-parameter__type">
-        any
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          event
+        </td>
+        <td class="member-parameter__type">
+          any
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -276,7 +353,7 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 <div class="member" id="once">
   <h3 class="member__title">once</h3>
   
-<pre class="signature__container"><code class="signature">static once(event: any)</code></pre>
+<pre class="signature__container"><code class="signature">static once(event: any) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -284,31 +361,33 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        event
-      </td>
-      <td class="member-parameter__type">
-        any
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          event
+        </td>
+        <td class="member-parameter__type">
+          any
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -320,7 +399,7 @@ loader.onComplete.add(<span class="hljs-function"><span class="hljs-params">()</
 <div class="member" id="registerPlugin">
   <h3 class="member__title">registerPlugin</h3>
   
-<pre class="signature__container"><code class="signature">static registerPlugin(plugin: PIXI.ILoaderPlugin) → {<a href="PIXI.Loader.html">PIXI.Loader</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static registerPlugin(plugin: <a href="PIXI.ILoaderPlugin.html">PIXI.ILoaderPlugin</a>) → {<a href="PIXI.Loader.html">PIXI.Loader</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -329,31 +408,33 @@ new Loader instances created.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        plugin
-      </td>
-      <td class="member-parameter__type">
-        PIXI.ILoaderPlugin
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The plugin to add</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          plugin
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.ILoaderPlugin.html">PIXI.ILoaderPlugin</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The plugin to add</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -370,7 +451,7 @@ new Loader instances created.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Loader.html">PIXI.Loader</a></code></pre>
+        <a href="PIXI.Loader.html">PIXI.Loader</a>
       </td>
       <td class="member-return__description"><p>Reference to PIXI.Loader for chaining</p></td>
     </tr>
@@ -406,7 +487,7 @@ new Loader instances created.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -472,7 +553,6 @@ new Loader instances created.</p></div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -31,7 +30,7 @@
 
 
     <div class="document__brief"></div>
-    <div class="document__description"><p>{@code InstancedRenderer} is an object-renderer for drawing meshes/shapes/display-objects
+    <div class="document__description"><p><code>InstancedRenderer</code> is an object-renderer for drawing meshes/shapes/display-objects
 that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 
     
@@ -44,7 +43,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new InstancedRenderer(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>, options: <a href="PIXI.IInstancedRendererOptions.html">PIXI.IInstancedRendererOptions</a>)</code></pre>
+<pre class="signature__container"><code class="signature">new InstancedRenderer(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>, options: <a href="PIXI.IInstancedRendererOptions.html">PIXI.IInstancedRendererOptions</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -52,41 +51,43 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the WebGL renderer to attach to</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.IInstancedRendererOptions.html">PIXI.IInstancedRendererOptions</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the pipeline description</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the WebGL renderer to attach to</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.IInstancedRendererOptions.html">PIXI.IInstancedRendererOptions</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the pipeline description</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -107,7 +108,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_instanceBuffer">
   <h3 class="member__title">_instanceBuffer</h3>
   
-<pre class="signature__container"><code class="signature">_instanceBuffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a></code></pre>
+<pre class="signature__container"><code class="signature">_instanceBuffer: <a href=PIXI.Buffer.html>PIXI.Buffer</a></code></pre>
 
 
   <div class="member__brief"><p>The instance buffer holds all instanced attributes in an interleaved fashion.</p></div>
@@ -123,7 +124,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_shader">
   <h3 class="member__title">_shader</h3>
   
-<pre class="signature__container"><code class="signature">_shader: <a href="PIXI.Shader.html">PIXI.Shader</a></code></pre>
+<pre class="signature__container"><code class="signature">_shader: <a href=PIXI.Shader.html>PIXI.Shader</a></code></pre>
 
 
   <div class="member__brief"><p>The shader used to draw all instances.</p></div>
@@ -139,7 +140,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_state">
   <h3 class="member__title">_state</h3>
   
-<pre class="signature__container"><code class="signature">_state: <a href="PIXI.State.html">PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">_state: <a href=PIXI.State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"><p>The WebGL state required for using the shader.</p></div>
@@ -155,7 +156,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=PIXI.Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -178,7 +179,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_geometry">
   <h3 class="member__title">_geometry</h3>
   
-<pre class="signature__container"><code class="signature">protected _geometry: <a href="PIXI.Geometry.html">PIXI.Geometry</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _geometry: <a href=PIXI.Geometry.html>PIXI.Geometry</a></code></pre>
 
 
   <div class="member__brief"><p>The reference geometry specifying the &quot;attribute style&quot;.</p></div>
@@ -194,7 +195,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_instanceAttribSizes">
   <h3 class="member__title">_instanceAttribSizes</h3>
   
-<pre class="signature__container"><code class="signature">protected _instanceAttribSizes: Object<string, number></code></pre>
+<pre class="signature__container"><code class="signature">protected _instanceAttribSizes: Object&lt;string, number></code></pre>
 
 
   <div class="member__brief"><p>Object mapping (instanced) attribute IDs to their sizes in bytes.</p></div>
@@ -210,7 +211,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_instanceAttribViews">
   <h3 class="member__title">_instanceAttribViews</h3>
   
-<pre class="signature__container"><code class="signature">protected _instanceAttribViews: Object<string, string></code></pre>
+<pre class="signature__container"><code class="signature">protected _instanceAttribViews: Object&lt;string, string></code></pre>
 
 
   <div class="member__brief"></div>
@@ -227,7 +228,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_instanceBuilder">
   <h3 class="member__title">_instanceBuilder</h3>
   
-<pre class="signature__container"><code class="signature">protected _instanceBuilder: Object<string, string></code></pre>
+<pre class="signature__container"><code class="signature">protected _instanceBuilder: Object&lt;string, string></code></pre>
 
 
   <div class="member__brief"></div>
@@ -260,7 +261,7 @@ names.</p></div>
 <div class="member" id="_objectBuffer">
   <h3 class="member__title">_objectBuffer</h3>
   
-<pre class="signature__container"><code class="signature">protected _objectBuffer: Array<<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected _objectBuffer: Array&lt;<a href=PIXI.DisplayObject.html>PIXI.DisplayObject</a>></code></pre>
 
 
   <div class="member__brief"><p>Buffered display-objects</p></div>
@@ -281,7 +282,7 @@ names.</p></div>
 
   <div class="member__brief"></div>
   <div class="member__description"><p>The number of display-objects buffered. This is different from the buffer's capacity
-{@code this._objectBuffer.length}.</p></div>
+<code>this._objectBuffer.length</code>.</p></div>
 
   
 
@@ -320,7 +321,7 @@ names.</p></div>
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>Replaces {@code this._geometry} with a new geometry such that each instanced attribute
+  <div class="member__description"><p>Replaces <code>this._geometry</code> with a new geometry such that each instanced attribute
 points to the same buffer. Uninstanced attributes refer to their original buffers.</p></div>
 
   
@@ -338,7 +339,7 @@ points to the same buffer. Uninstanced attributes refer to their original buffer
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -375,7 +376,7 @@ should be called by subclasses.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -411,7 +412,7 @@ should be called by subclasses.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -434,31 +435,33 @@ should be called by subclasses.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        displayObject
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          displayObject
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -475,7 +478,7 @@ should be called by subclasses.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -490,7 +493,7 @@ should be called by subclasses.</p></div>
 <div class="member" id="start">
   <h3 class="member__title">start</h3>
   
-<pre class="signature__container"><code class="signature">start()</code></pre>
+<pre class="signature__container"><code class="signature">start() → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -528,7 +531,7 @@ become dormant.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -616,7 +619,6 @@ become dormant.</p></div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

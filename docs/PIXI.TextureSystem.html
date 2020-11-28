@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -43,7 +42,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.TextureSystem(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.TextureSystem(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -51,31 +50,33 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The renderer this System works for.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The renderer this System works for.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -96,7 +97,7 @@
 <div class="member" id="boundTextures">
   <h3 class="member__title">boundTextures</h3>
   
-<pre class="signature__container"><code class="signature">boundTextures: Array<<a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>></code></pre>
+<pre class="signature__container"><code class="signature">boundTextures: Array&lt;<a href=PIXI.BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -128,7 +129,7 @@
 <div class="member" id="managedTextures">
   <h3 class="member__title">managedTextures</h3>
   
-<pre class="signature__container"><code class="signature">managedTextures: Array<<a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>></code></pre>
+<pre class="signature__container"><code class="signature">managedTextures: Array&lt;<a href=PIXI.BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -144,7 +145,7 @@
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=PIXI.Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -160,7 +161,7 @@
 <div class="member" id="unknownTexture">
   <h3 class="member__title">unknownTexture</h3>
   
-<pre class="signature__container"><code class="signature">unknownTexture: <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">unknownTexture: <a href=PIXI.BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -192,53 +193,55 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        texture_
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Texture.html">PIXI.Texture</a> | <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>Texture to bind</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        location
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        0
-      </td>
-      <td class="member-parameter__description"><p>Location to bind at</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          texture_
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Texture.html">PIXI.Texture</a> | <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Texture to bind</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          location
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          0
+        </td>
+        <td class="member-parameter__description"><p>Location to bind at</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -255,7 +258,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -291,7 +294,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -327,7 +330,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -363,7 +366,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -386,35 +389,37 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        texture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          texture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Texture to bind</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Texture to bind</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -431,7 +436,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -495,7 +500,6 @@
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

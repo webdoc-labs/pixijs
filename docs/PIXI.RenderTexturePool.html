@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -46,7 +45,7 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.RenderTexturePool(textureOptions: object)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.RenderTexturePool(textureOptions: object) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -54,49 +53,51 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        textureOptions
-      </td>
-      <td class="member-parameter__type">
-        object
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          textureOptions
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>options that will be passed to BaseRenderTexture constructor</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        textureOptions.scaleMode
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"><p>options that will be passed to BaseRenderTexture constructor</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          textureOptions.scaleMode
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>See <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a> for possible values.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>See <a href=PIXI.SCALE_MODES.html>PIXI.SCALE_MODES</a> for possible values.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -165,37 +166,39 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        destroyTextures
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        true
-      </td>
-      <td class="member-parameter__description"><p>destroy all stored textures</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          destroyTextures
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          true
+        </td>
+        <td class="member-parameter__description"><p>destroy all stored textures</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -212,7 +215,7 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -235,41 +238,43 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        realWidth
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>width of texture in pixels</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        realHeight
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>height of texture in pixels</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          realWidth
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>width of texture in pixels</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          realHeight
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>height of texture in pixels</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -286,7 +291,7 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>RenderTexture</code></pre>
+        RenderTexture
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -309,50 +314,52 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        input
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          input
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>renderTexture from which size and resolution will be copied</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>renderTexture from which size and resolution will be copied</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>override resolution of the renderTexture
+        <td class="member-parameter__description"><p>override resolution of the renderTexture
 It overrides, it does not multiply</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -369,7 +376,7 @@ It overrides, it does not multiply</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a></code></pre>
+        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -392,31 +399,33 @@ It overrides, it does not multiply</p></td>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The renderTexture to free</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The renderTexture to free</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -433,7 +442,7 @@ It overrides, it does not multiply</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -456,31 +465,33 @@ It overrides, it does not multiply</p></td>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The renderTexture to free</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The renderTexture to free</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -497,7 +508,7 @@ It overrides, it does not multiply</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -512,7 +523,7 @@ It overrides, it does not multiply</p></td>
 <div class="member" id="setScreenSize">
   <h3 class="member__title">setScreenSize</h3>
   
-<pre class="signature__container"><code class="signature">setScreenSize(size: PIXI.ISize) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">setScreenSize(size: <a href="PIXI.ISize.html">PIXI.ISize</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -522,31 +533,33 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        size
-      </td>
-      <td class="member-parameter__type">
-        PIXI.ISize
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Initial size of screen</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          size
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.ISize.html">PIXI.ISize</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Initial size of screen</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -563,7 +576,7 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -593,69 +606,71 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        minWidth
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>The minimum width of the render texture in real pixels.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        minHeight
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>The minimum height of the render texture in real pixels.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        1
-      </td>
-      <td class="member-parameter__description"><p>The resolution of the render texture.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          minWidth
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>The minimum width of the render texture in real pixels.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          minHeight
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>The minimum height of the render texture in real pixels.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          1
+        </td>
+        <td class="member-parameter__description"><p>The resolution of the render texture.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -672,7 +687,7 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a></code></pre>
+        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"><p>The new render texture.</p></td>
     </tr>
@@ -741,7 +756,6 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

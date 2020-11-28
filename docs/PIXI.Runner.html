@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -34,10 +33,10 @@
     <div class="document__description"><p>A Runner is a highly performant and simple alternative to signals. Best used in situations
 where events are dispatched to many objects at high frequency (say every frame!)</p>
 <p>like a signal..</p>
-<pre><code class="hljs"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">'@pixi/runner'</span>;
+<pre><code class="hljs"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@pixi/runner&#x27;</span>;
 
 <span class="hljs-keyword">const</span> myObject = {
-    <span class="hljs-attr">loaded</span>: <span class="hljs-keyword">new</span> Runner(<span class="hljs-string">'loaded'</span>)
+    <span class="hljs-attr">loaded</span>: <span class="hljs-keyword">new</span> Runner(<span class="hljs-string">&#x27;loaded&#x27;</span>)
 }
 
 <span class="hljs-keyword">const</span> listener = {
@@ -51,10 +50,10 @@ myObject.update.add(listener);
 myObject.loaded.emit();
 </code></pre>
 <p>Or for handling calling the same function on many items</p>
-<pre><code class="hljs"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">'@pixi/runner'</span>;
+<pre><code class="hljs"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@pixi/runner&#x27;</span>;
 
 const myGame = {
-    <span class="hljs-keyword">update</span>: <span class="hljs-built_in">new</span> Runner(<span class="hljs-string">'update'</span>)
+    <span class="hljs-keyword">update</span>: <span class="hljs-built_in">new</span> Runner(<span class="hljs-string">&#x27;update&#x27;</span>)
 }
 
 const gameObject = {
@@ -78,7 +77,7 @@ myGame.<span class="hljs-keyword">update</span>.emit(<span class="hljs-type">tim
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.Runner(name: string)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.Runner(name: string) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -86,31 +85,33 @@ myGame.<span class="hljs-keyword">update</span>.emit(<span class="hljs-type">tim
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        name
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the function name that will be executed on the listeners added to this Runner.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          name
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the function name that will be executed on the listeners added to this Runner.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -179,39 +180,41 @@ myGame.<span class="hljs-keyword">update</span>.emit(<span class="hljs-type">tim
 All that is required is to pass the listening object and ensure that it has contains a function that has the same name
 as the name provided to the Runner when it was created.</p>
 <p>Eg A listener passed to this Runner will require a 'complete' function.</p>
-<pre><code class="hljs"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">'@pixi/runner'</span>;
+<pre><code class="hljs"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@pixi/runner&#x27;</span>;
 
-<span class="hljs-keyword">const</span> complete = <span class="hljs-keyword">new</span> Runner(<span class="hljs-string">'complete'</span>);
+<span class="hljs-keyword">const</span> complete = <span class="hljs-keyword">new</span> Runner(<span class="hljs-string">&#x27;complete&#x27;</span>);
 </code></pre>
 <p>The scope used will be the object itself.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        item
-      </td>
-      <td class="member-parameter__type">
-        any
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The object that will be listening.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          item
+        </td>
+        <td class="member-parameter__type">
+          any
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The object that will be listening.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -228,7 +231,7 @@ as the name provided to the Runner when it was created.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Runner.html">PIXI.Runner</a></code></pre>
+        <a href="PIXI.Runner.html">PIXI.Runner</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -251,31 +254,33 @@ as the name provided to the Runner when it was created.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        item
-      </td>
-      <td class="member-parameter__type">
-        any
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The listener that you would like to check.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          item
+        </td>
+        <td class="member-parameter__type">
+          any
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The listener that you would like to check.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -292,7 +297,7 @@ as the name provided to the Runner when it was created.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -328,7 +333,7 @@ as the name provided to the Runner when it was created.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -367,35 +372,37 @@ as the name provided to the Runner when it was created.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        params
-      </td>
-      <td class="member-parameter__type">
-        any
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          params
+        </td>
+        <td class="member-parameter__type">
+          any
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>optional parameters to pass to each listener</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>optional parameters to pass to each listener</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -412,7 +419,7 @@ as the name provided to the Runner when it was created.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Runner.html">PIXI.Runner</a></code></pre>
+        <a href="PIXI.Runner.html">PIXI.Runner</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -435,31 +442,33 @@ as the name provided to the Runner when it was created.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        item
-      </td>
-      <td class="member-parameter__type">
-        any
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The listenr that you would like to remove.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          item
+        </td>
+        <td class="member-parameter__type">
+          any
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The listenr that you would like to remove.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -476,7 +485,7 @@ as the name provided to the Runner when it was created.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Runner.html">PIXI.Runner</a></code></pre>
+        <a href="PIXI.Runner.html">PIXI.Runner</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -512,7 +521,7 @@ as the name provided to the Runner when it was created.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Runner.html">PIXI.Runner</a></code></pre>
+        <a href="PIXI.Runner.html">PIXI.Runner</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -592,7 +601,6 @@ as the name provided to the Runner when it was created.</p>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

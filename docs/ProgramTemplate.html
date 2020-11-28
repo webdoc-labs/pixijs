@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -43,7 +42,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new ProgramTemplate(vertexTemplateSrc: string, fragmentTemplateSrc: string, name)</code></pre>
+<pre class="signature__container"><code class="signature">new ProgramTemplate(vertexTemplateSrc: string, fragmentTemplateSrc: string, name) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -51,63 +50,65 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        vertexTemplateSrc
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          vertexTemplateSrc
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>vertex shader template</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        fragmentTemplateSrc
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"><p>vertex shader template</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          fragmentTemplateSrc
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>fragment shader template</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          name
+        </td>
+        <td class="member-parameter__type">
+          
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>fragment shader template</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        name
-      </td>
-      <td class="member-parameter__type">
-        
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>name of the shader template. This is used to generate the names for generated programs.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>name of the shader template. This is used to generate the names for generated programs.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -240,31 +241,33 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        templateSrc
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the shader template source</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          templateSrc
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the shader template source</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -281,7 +284,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>TemplateData</code></pre>
+        TemplateData
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -304,41 +307,43 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        data
-      </td>
-      <td class="member-parameter__type">
-        MacroData
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>data providing the values of the macros in the shader template</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        name
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>optional name, if another name is desired</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          data
+        </td>
+        <td class="member-parameter__type">
+          MacroData
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>data providing the values of the macros in the shader template</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          name
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>optional name, if another name is desired</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -355,7 +360,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Program.html">PIXI.Program</a></code></pre>
+        <a href="PIXI.Program.html">PIXI.Program</a>
       </td>
       <td class="member-return__description"><p>the generated shader program</p></td>
     </tr>
@@ -378,51 +383,53 @@
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        templateSrc
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>template source</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        macros
-      </td>
-      <td class="member-parameter__type">
-        TemplateData
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>data defining the macros in the template source</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        data
-      </td>
-      <td class="member-parameter__type">
-        MacroData
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>data providing the values for the macros</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          templateSrc
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>template source</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          macros
+        </td>
+        <td class="member-parameter__type">
+          TemplateData
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>data defining the macros in the template source</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          data
+        </td>
+        <td class="member-parameter__type">
+          MacroData
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>data providing the values for the macros</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -439,7 +446,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>string</code></pre>
+        string
       </td>
       <td class="member-return__description"><p>the generated shader source</p></td>
     </tr>
@@ -501,7 +508,6 @@
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

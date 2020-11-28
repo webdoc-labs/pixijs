@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -34,8 +33,8 @@
     <div class="document__description"><p>Geometry can be defined without passing in a style or data if required.</p>
 <pre><code class="hljs language-js"><span class="hljs-keyword">const</span> geometry = <span class="hljs-keyword">new</span> PIXI.Geometry();
 
-geometry.addAttribute(<span class="hljs-string">'positions'</span>, [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>], <span class="hljs-number">2</span>);
-geometry.addAttribute(<span class="hljs-string">'uvs'</span>, [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>], <span class="hljs-number">2</span>);
+geometry.addAttribute(<span class="hljs-string">&#x27;positions&#x27;</span>, [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>], <span class="hljs-number">2</span>);
+geometry.addAttribute(<span class="hljs-string">&#x27;uvs&#x27;</span>, [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>], <span class="hljs-number">2</span>);
 geometry.addIndex([<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>]);
 
 </code></pre></div>
@@ -50,7 +49,7 @@ geometry.addIndex([<span class="hljs-number">0</span>,<span class="hljs-number">
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.MeshGeometry(vertices: Float32Array | number<Array>, uvs: Float32Array | number<Array>, index: Uint16Array | number<Array>)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.MeshGeometry(vertices: Float32Array | number&lt;Array>, uvs: Float32Array | number&lt;Array>, index: Uint16Array | number&lt;Array>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -58,63 +57,65 @@ geometry.addIndex([<span class="hljs-number">0</span>,<span class="hljs-number">
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        vertices
-      </td>
-      <td class="member-parameter__type">
-        Float32Array | number<Array>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          vertices
+        </td>
+        <td class="member-parameter__type">
+          Float32Array | number&lt;Array&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Positional data on geometry.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        uvs
-      </td>
-      <td class="member-parameter__type">
-        Float32Array | number<Array>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"><p>Positional data on geometry.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          uvs
+        </td>
+        <td class="member-parameter__type">
+          Float32Array | number&lt;Array&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Texture UVs.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          index
+        </td>
+        <td class="member-parameter__type">
+          Uint16Array | number&lt;Array&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Texture UVs.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        index
-      </td>
-      <td class="member-parameter__type">
-        Uint16Array | number<Array>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>IndexBuffer</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>IndexBuffer</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -197,7 +198,7 @@ geometry.addIndex([<span class="hljs-number">0</span>,<span class="hljs-number">
 <div class="member" id="addAttribute">
   <h3 class="member__title">addAttribute</h3>
   
-<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number<Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="PIXI.Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number&lt;Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="PIXI.Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -206,149 +207,151 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        id
-      </td>
-      <td class="member-parameter__type">
-        String
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>the name of the attribute (matching up to a shader)</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        buffer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number<Array>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>the buffer that holds the data of the attribute . You can also provide an Array and a buffer will be created from it.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        size
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        0
-      </td>
-      <td class="member-parameter__description"><p>the size of the attribute. If you have 2 floats per vertex (eg position x and y) this would be 2</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        normalized
-      </td>
-      <td class="member-parameter__type">
-        Boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>should the data be normalized.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        type
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        PIXI.TYPES.FLOAT
-      </td>
-      <td class="member-parameter__description"><p>what type of number is the attribute. Check {PIXI.TYPES} to see the ones available</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        stride
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>How far apart (in floats) the start of each value is. (used for interleaving data)</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        start
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>How far into the array to start reading values (used for interleaving data)</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        instance
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>Instancing flag</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          id
+        </td>
+        <td class="member-parameter__type">
+          String
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>the name of the attribute (matching up to a shader)</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          buffer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>the buffer that holds the data of the attribute . You can also provide an Array and a buffer will be created from it.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          size
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          0
+        </td>
+        <td class="member-parameter__description"><p>the size of the attribute. If you have 2 floats per vertex (eg position x and y) this would be 2</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          normalized
+        </td>
+        <td class="member-parameter__type">
+          Boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>should the data be normalized.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          type
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.TYPES.FLOAT
+        </td>
+        <td class="member-parameter__description"><p>what type of number is the attribute. Check {PIXI.TYPES} to see the ones available</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          stride
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>How far apart (in floats) the start of each value is. (used for interleaving data)</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          start
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>How far into the array to start reading values (used for interleaving data)</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          instance
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>Instancing flag</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -365,7 +368,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Geometry.html">PIXI.Geometry</a></code></pre>
+        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -380,7 +383,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
 <div class="member" id="addIndex">
   <h3 class="member__title">addIndex</h3>
   
-<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number<Array>) → {<a href="PIXI.Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number&lt;Array>) → {<a href="PIXI.Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -389,35 +392,37 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        buffer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number<Array>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          buffer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>the buffer that holds the data of the index buffer. You can also provide an Array and a buffer will be created from it.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>the buffer that holds the data of the index buffer. You can also provide an Array and a buffer will be created from it.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -434,7 +439,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Geometry.html">PIXI.Geometry</a></code></pre>
+        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -470,7 +475,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Geometry.html">PIXI.Geometry</a></code></pre>
+        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>a new clone of this geometry</p></td>
     </tr>
@@ -506,7 +511,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -542,7 +547,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -565,31 +570,33 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        id
-      </td>
-      <td class="member-parameter__type">
-        String
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the name of the attribute required</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          id
+        </td>
+        <td class="member-parameter__type">
+          String
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the name of the attribute required</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -606,7 +613,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Attribute.html">PIXI.Attribute</a></code></pre>
+        <a href="PIXI.Attribute.html">PIXI.Attribute</a>
       </td>
       <td class="member-return__description"><p>the attribute requested.</p></td>
     </tr>
@@ -629,31 +636,33 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        id
-      </td>
-      <td class="member-parameter__type">
-        String
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the name of the buffer required</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          id
+        </td>
+        <td class="member-parameter__type">
+          String
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the name of the buffer required</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -670,7 +679,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Buffer.html">PIXI.Buffer</a></code></pre>
+        <a href="PIXI.Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the buffer requested.</p></td>
     </tr>
@@ -706,7 +715,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Buffer.html">PIXI.Buffer</a></code></pre>
+        <a href="PIXI.Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the index buffer.</p></td>
     </tr>
@@ -743,7 +752,7 @@ This can be useful if your model remains static as it offers a little performanc
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Geometry.html">PIXI.Geometry</a></code></pre>
+        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -819,7 +828,6 @@ This can be useful if your model remains static as it offers a little performanc
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

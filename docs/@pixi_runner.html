@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -22,32 +21,33 @@
         <div class="page-explorer" id="explorer-mount-point"></div>
         
         
-<div class="homepage">
-
-  <div class="homepage__readme md">
-    <h1>@pixi/runner</h1>
+<div class="page-content">
+  <div class="homepage">
+  
+    <div class="homepage__readme md">
+      <h1>@pixi/runner</h1>
 <p>A simple alternative to events and signals with an emphasis on performance.</p>
 <p>Can be used as an alternative to events / signals.</p>
 <h2>Installation</h2>
 <pre><code class="hljs language-bash">npm install @pixi/runner
 </code></pre>
 <h2>Usage</h2>
-<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">'@pixi/runner'</span>;
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@pixi/runner&#x27;</span>;
 
-<span class="hljs-keyword">const</span> onComplete = <span class="hljs-keyword">new</span> Runner(<span class="hljs-string">'onComplete'</span>);
+<span class="hljs-keyword">const</span> onComplete = <span class="hljs-keyword">new</span> Runner(<span class="hljs-string">&#x27;onComplete&#x27;</span>);
 
-<span class="hljs-comment">//listenerObject needs to have a 'onComplete' function</span>
+<span class="hljs-comment">//listenerObject needs to have a &#x27;onComplete&#x27; function</span>
 onComplete.add(listenerObject);
 
-<span class="hljs-comment">//emit and all listeners will have their 'onComplete' functions called</span>
+<span class="hljs-comment">//emit and all listeners will have their &#x27;onComplete&#x27; functions called</span>
 onComplete.emit(data);
 </code></pre>
 <p>Can be used to execute a funcition on many objects. Handy for games. If you need to update you game elements each frame:</p>
-<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">'@pixi/runner'</span>;
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { Runner } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@pixi/runner&#x27;</span>;
 
-<span class="hljs-keyword">const</span> updateRunner = <span class="hljs-keyword">new</span> Runner(<span class="hljs-string">'update'</span>);
+<span class="hljs-keyword">const</span> updateRunner = <span class="hljs-keyword">new</span> Runner(<span class="hljs-string">&#x27;update&#x27;</span>);
 
-<span class="hljs-comment">// gameItems should all have a 'update' function</span>
+<span class="hljs-comment">// gameItems should all have a &#x27;update&#x27; function</span>
 updateRunner.add(gameItem1);
 updateRunner.add(gameItem2);
 updateRunner.add(gameItem3);
@@ -91,13 +91,13 @@ updateRunner.emit();
 The test result above comes from macbook pro chrome 58.</p>
 <p>Any thoughts or comments hit me up on twitter <a href="https://twitter.com/doormat23">@doormat23</a>, I'd love to hear them!</p>
 
+    </div>
+  
   </div>
-
 </div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

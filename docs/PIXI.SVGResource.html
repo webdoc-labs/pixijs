@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -35,6 +34,144 @@
 
     
       
+<div class="members">
+  <h2 class="members__category">Constructor</h2>
+
+  
+    
+<div class="member" id="constructor">
+  <h3 class="member__title"></h3>
+  
+<pre class="signature__container"><code class="signature">new PIXI.SVGResource(source: string, options: object) → {}</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__description"></div>
+
+  
+    
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          source
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Base64 encoded SVG element or URL for SVG file.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Options to use</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.scale
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          1
+        </td>
+        <td class="member-parameter__description"><p>Scale to apply to SVG. Overridden by...</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Rasterize SVG this wide. Aspect ratio preserved if height not specified.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Rasterize SVG this high. Aspect ratio preserved if width not specified.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.autoLoad
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          true
+        </td>
+        <td class="member-parameter__description"><p>Start loading right away.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
     
 
     
@@ -271,7 +408,7 @@ externally.</p></div>
 <div class="member" id="getSize">
   <h3 class="member__title">getSize</h3>
   
-<pre class="signature__container"><code class="signature">static getSize(svgString: string) → {PIXI.ISize}</code></pre>
+<pre class="signature__container"><code class="signature">static getSize(svgString: string) → {<a href="PIXI.ISize.html">PIXI.ISize</a>}</code></pre>
 
 
   <div class="member__brief"><p>Get size from an svg string using regexp.</p></div>
@@ -279,35 +416,37 @@ externally.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        svgString
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          svgString
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>a serialized svg element</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>a serialized svg element</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -324,7 +463,7 @@ externally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>PIXI.ISize</code></pre>
+        <a href="PIXI.ISize.html">PIXI.ISize</a>
       </td>
       <td class="member-return__description"><p>image extension</p></td>
     </tr>
@@ -347,49 +486,51 @@ externally.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        source
-      </td>
-      <td class="member-parameter__type">
-        unknown
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          source
+        </td>
+        <td class="member-parameter__type">
+          unknown
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>The source object</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          extension
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>The source object</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        extension
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>The extension of source, if set</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>The extension of source, if set</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -406,7 +547,7 @@ externally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -429,31 +570,33 @@ externally.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        baseTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Parent texture</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          baseTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Parent texture</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -470,7 +613,7 @@ externally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -508,7 +651,7 @@ internally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -544,43 +687,7 @@ internally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
-      </td>
-      <td class="member-return__description"></td>
-    </tr>
-  </tbody>
-</table>
-
-  
-</div>
-
-  
-    
-<div class="member" id="load">
-  <h3 class="member__title">load</h3>
-  
-<pre class="signature__container"><code class="signature">load() → {Promise}</code></pre>
-
-
-  <div class="member__brief"></div>
-  <div class="member__description"></div>
-
-  
-
-  
-    
-<table class="member-returns">
-  <caption class="member-returns__caption">Returns:</caption>
-  <thead class="member-returns__head">
-    <tr class="member-returns-header">
-      <th class="member-returns-header__type">Type</th>
-      <th class="member-returns-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-returns__body">
-    <tr class="member-return">
-      <td class="member-return__type">
-        <pre><code>Promise</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -603,41 +710,43 @@ internally.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>X dimension</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Y dimension</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>X dimension</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Y dimension</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -654,7 +763,7 @@ internally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -677,51 +786,53 @@ internally.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>yeah, renderer!</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        baseTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the texture</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        glTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.GLTexture.html">PIXI.GLTexture</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>texture instance for this webgl context</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>yeah, renderer!</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          baseTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the texture</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          glTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.GLTexture.html">PIXI.GLTexture</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>texture instance for this webgl context</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -738,7 +849,7 @@ internally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"><p><code>true</code> is success</p></td>
     </tr>
@@ -761,31 +872,33 @@ internally.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        baseTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Parent texture</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          baseTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Parent texture</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -802,7 +915,7 @@ internally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -839,7 +952,7 @@ Triggers one update in any case.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -862,77 +975,79 @@ Triggers one update in any case.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Upload to the renderer</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          baseTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Upload to the renderer</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        baseTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>Reference to parent texture</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          glTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.GLTexture.html">PIXI.GLTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          source
+        </td>
+        <td class="member-parameter__type">
+          HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | SVGElement
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Reference to parent texture</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        glTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.GLTexture.html">PIXI.GLTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        source
-      </td>
-      <td class="member-parameter__type">
-        HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | SVGElement
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>(optional)</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>(optional)</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -949,7 +1064,7 @@ Triggers one update in any case.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"><p>true is success</p></td>
     </tr>
@@ -963,6 +1078,49 @@ Triggers one update in any case.</p></div>
 </div>
 
     
+<div class="members">
+  <h2 class="members__category">Protected Methods</h2>
+
+  
+    
+<div class="member" id="load">
+  <h3 class="member__title">load</h3>
+  
+<pre class="signature__container"><code class="signature">protected load() → {Promise&lt;void>}</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__description"><p>This can be overridden to start preloading a resource
+or do any other prepare step.</p></div>
+
+  
+
+  
+    
+<table class="member-returns">
+  <caption class="member-returns__caption">Returns:</caption>
+  <thead class="member-returns__head">
+    <tr class="member-returns-header">
+      <th class="member-returns-header__type">Type</th>
+      <th class="member-returns-header__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="member-returns__body">
+    <tr class="member-return">
+      <td class="member-return__type">
+        Promise&lt;void&gt;
+      </td>
+      <td class="member-return__description"><p>Handle the validate event</p></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+</div>
+
+  
+</div>
+
   </div>
 </div>
 
@@ -1027,8 +1185,6 @@ Triggers one update in any case.</p></div>
     
       <li class="page-members-explorer__item"><a href="PIXI.SVGResource.html#dispose">dispose</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI.SVGResource.html#load">load</a></li>
-    
       <li class="page-members-explorer__item"><a href="PIXI.SVGResource.html#resize">resize</a></li>
     
       <li class="page-members-explorer__item"><a href="PIXI.SVGResource.html#style">style</a></li>
@@ -1043,13 +1199,22 @@ Triggers one update in any case.</p></div>
 </div>
 
   
+
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Protected Methods</h3>
+  <ul class="page-members-explorer-category__items">
+    
+      <li class="page-members-explorer__item"><a href="PIXI.SVGResource.html#load">load</a></li>
+    
+  </ul>
+</div>
+
 </nav>
 
 
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

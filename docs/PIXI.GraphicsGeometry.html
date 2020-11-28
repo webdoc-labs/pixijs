@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -34,7 +33,7 @@
     <div class="document__description"><p>The Graphics class contains methods used to draw primitive shapes such as lines, circles and
 rectangles to the display, and to color and fill them.</p>
 <p>GraphicsGeometry is designed to not be continually updating the geometry since it's expensive
-to re-tesselate using <strong>earcut</strong>. Consider using <a href="PIXI.Mesh_.html">PIXI.Mesh</a> for this use-case, it's much faster.</p></div>
+to re-tesselate using <strong>earcut</strong>. Consider using <a href=PIXI.Mesh.html>PIXI.Mesh</a> for this use-case, it's much faster.</p></div>
 
     
       
@@ -66,7 +65,7 @@ able to be batched by the renderer's batch system.</p></div>
 <div class="member" id="bounds">
   <h3 class="member__title">bounds</h3>
   
-<pre class="signature__container"><code class="signature">bounds: <a href="PIXI.Bounds.html">PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">bounds: <a href=PIXI.Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Get the current bounds of the graphic geometry.</p></div>
@@ -154,7 +153,7 @@ Affects line tesselation.</p></div>
 <div class="member" id="_bounds">
   <h3 class="member__title">_bounds</h3>
   
-<pre class="signature__container"><code class="signature">protected _bounds: <a href="PIXI.Bounds.html">PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _bounds: <a href=PIXI.Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Cached bounds.</p></div>
@@ -170,7 +169,7 @@ Affects line tesselation.</p></div>
 <div class="member" id="_buffer">
   <h3 class="member__title">_buffer</h3>
   
-<pre class="signature__container"><code class="signature">protected _buffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _buffer: <a href=PIXI.Buffer.html>PIXI.Buffer</a></code></pre>
 
 
   <div class="member__brief"><p>Buffer used for position, color, texture IDs</p></div>
@@ -186,7 +185,7 @@ Affects line tesselation.</p></div>
 <div class="member" id="_indexBuffer">
   <h3 class="member__title">_indexBuffer</h3>
   
-<pre class="signature__container"><code class="signature">protected _indexBuffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _indexBuffer: <a href=PIXI.Buffer.html>PIXI.Buffer</a></code></pre>
 
 
   <div class="member__brief"><p>Index buffer data</p></div>
@@ -218,7 +217,7 @@ Affects line tesselation.</p></div>
 <div class="member" id="batches">
   <h3 class="member__title">batches</h3>
   
-<pre class="signature__container"><code class="signature">protected batches: Array<<a href="PIXI.graphicsUtils.BatchPart.html">PIXI.graphicsUtils.BatchPart</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected batches: Array&lt;<a href=PIXI.graphicsUtils.BatchPart.html>PIXI.graphicsUtils.BatchPart</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -283,7 +282,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="colors">
   <h3 class="member__title">colors</h3>
   
-<pre class="signature__container"><code class="signature">protected colors: Array<number></code></pre>
+<pre class="signature__container"><code class="signature">protected colors: Array&lt;number></code></pre>
 
 
   <div class="member__brief"><p>The collection of colors</p></div>
@@ -315,7 +314,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="drawCalls">
   <h3 class="member__title">drawCalls</h3>
   
-<pre class="signature__container"><code class="signature">protected drawCalls: Array<object></code></pre>
+<pre class="signature__container"><code class="signature">protected drawCalls: Array&lt;object></code></pre>
 
 
   <div class="member__brief"><p>List of current draw calls drived from the batches.</p></div>
@@ -347,7 +346,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="graphicsData">
   <h3 class="member__title">graphicsData</h3>
   
-<pre class="signature__container"><code class="signature">protected graphicsData: Array<<a href="PIXI.GraphicsData.html">PIXI.GraphicsData</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected graphicsData: Array&lt;<a href=PIXI.GraphicsData.html>PIXI.GraphicsData</a>></code></pre>
 
 
   <div class="member__brief"><p>The collection of drawn shapes.</p></div>
@@ -363,7 +362,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="indices">
   <h3 class="member__title">indices</h3>
   
-<pre class="signature__container"><code class="signature">protected indices: Array<number></code></pre>
+<pre class="signature__container"><code class="signature">protected indices: Array&lt;number></code></pre>
 
 
   <div class="member__brief"><p>The indices of the vertices</p></div>
@@ -379,7 +378,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="points">
   <h3 class="member__title">points</h3>
   
-<pre class="signature__container"><code class="signature">protected points: Array<number></code></pre>
+<pre class="signature__container"><code class="signature">protected points: Array&lt;number></code></pre>
 
 
   <div class="member__brief"><p>An array of points to draw, 2 numbers per point</p></div>
@@ -411,7 +410,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="textureIds">
   <h3 class="member__title">textureIds</h3>
   
-<pre class="signature__container"><code class="signature">protected textureIds: Array<number></code></pre>
+<pre class="signature__container"><code class="signature">protected textureIds: Array&lt;number></code></pre>
 
 
   <div class="member__brief"><p>Reference to the texture IDs.</p></div>
@@ -427,7 +426,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="uvs">
   <h3 class="member__title">uvs</h3>
   
-<pre class="signature__container"><code class="signature">protected uvs: Array<number></code></pre>
+<pre class="signature__container"><code class="signature">protected uvs: Array&lt;number></code></pre>
 
 
   <div class="member__brief"><p>The UVs collection</p></div>
@@ -458,41 +457,43 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        styleA
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.FillStyle.html">PIXI.FillStyle</a> | <a href="PIXI.LineStyle.html">PIXI.LineStyle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        styleB
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.FillStyle.html">PIXI.FillStyle</a> | <a href="PIXI.LineStyle.html">PIXI.LineStyle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          styleA
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.FillStyle.html">PIXI.FillStyle</a> | <a href="PIXI.LineStyle.html">PIXI.LineStyle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          styleB
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.FillStyle.html">PIXI.FillStyle</a> | <a href="PIXI.LineStyle.html">PIXI.LineStyle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -509,7 +510,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -524,7 +525,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="addAttribute">
   <h3 class="member__title">addAttribute</h3>
   
-<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number<Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="PIXI.Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number&lt;Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="PIXI.Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -533,149 +534,151 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        id
-      </td>
-      <td class="member-parameter__type">
-        String
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>the name of the attribute (matching up to a shader)</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        buffer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number<Array>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>the buffer that holds the data of the attribute . You can also provide an Array and a buffer will be created from it.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        size
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        0
-      </td>
-      <td class="member-parameter__description"><p>the size of the attribute. If you have 2 floats per vertex (eg position x and y) this would be 2</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        normalized
-      </td>
-      <td class="member-parameter__type">
-        Boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>should the data be normalized.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        type
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        PIXI.TYPES.FLOAT
-      </td>
-      <td class="member-parameter__description"><p>what type of number is the attribute. Check {PIXI.TYPES} to see the ones available</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        stride
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>How far apart (in floats) the start of each value is. (used for interleaving data)</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        start
-      </td>
-      <td class="member-parameter__type">
-        Number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>How far into the array to start reading values (used for interleaving data)</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        instance
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>Instancing flag</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          id
+        </td>
+        <td class="member-parameter__type">
+          String
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>the name of the attribute (matching up to a shader)</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          buffer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>the buffer that holds the data of the attribute . You can also provide an Array and a buffer will be created from it.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          size
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          0
+        </td>
+        <td class="member-parameter__description"><p>the size of the attribute. If you have 2 floats per vertex (eg position x and y) this would be 2</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          normalized
+        </td>
+        <td class="member-parameter__type">
+          Boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>should the data be normalized.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          type
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          PIXI.TYPES.FLOAT
+        </td>
+        <td class="member-parameter__description"><p>what type of number is the attribute. Check {PIXI.TYPES} to see the ones available</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          stride
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>How far apart (in floats) the start of each value is. (used for interleaving data)</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          start
+        </td>
+        <td class="member-parameter__type">
+          Number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>How far into the array to start reading values (used for interleaving data)</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          instance
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>Instancing flag</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -692,7 +695,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Geometry.html">PIXI.Geometry</a></code></pre>
+        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -707,7 +710,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
 <div class="member" id="addIndex">
   <h3 class="member__title">addIndex</h3>
   
-<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number<Array>) → {<a href="PIXI.Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number&lt;Array>) → {<a href="PIXI.Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -716,35 +719,37 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        buffer
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number<Array>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          buffer
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>the buffer that holds the data of the index buffer. You can also provide an Array and a buffer will be created from it.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>the buffer that holds the data of the index buffer. You can also provide an Array and a buffer will be created from it.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -761,7 +766,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Geometry.html">PIXI.Geometry</a></code></pre>
+        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -776,7 +781,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="adjustUvs">
   <h3 class="member__title">adjustUvs</h3>
   
-<pre class="signature__container"><code class="signature">adjustUvs(uvs: Array<number>, texture: <a href="PIXI.Texture.html">PIXI.Texture</a>, start: number, size: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">adjustUvs(uvs: Array&lt;number>, texture: <a href="PIXI.Texture.html">PIXI.Texture</a>, start: number, size: number) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -785,61 +790,63 @@ Does not work with rotated or trimmed textures</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        uvs
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>array</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        texture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Texture.html">PIXI.Texture</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>region</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        start
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>starting index for uvs</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        size
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>how many points to adjust</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          uvs
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>array</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          texture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Texture.html">PIXI.Texture</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>region</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          start
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>starting index for uvs</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          size
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>how many points to adjust</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -856,7 +863,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -892,7 +899,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.GraphicsGeometry.html">PIXI.GraphicsGeometry</a></code></pre>
+        <a href="PIXI.GraphicsGeometry.html">PIXI.GraphicsGeometry</a>
       </td>
       <td class="member-return__description"><p>This GraphicsGeometry object. Good for chaining method calls</p></td>
     </tr>
@@ -928,7 +935,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Geometry.html">PIXI.Geometry</a></code></pre>
+        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>a new clone of this geometry</p></td>
     </tr>
@@ -951,31 +958,33 @@ Does not work with rotated or trimmed textures</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        point
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.IPointData.html">PIXI.IPointData</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Point to check if it's contained.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          point
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.IPointData.html">PIXI.IPointData</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Point to check if it's contained.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -992,7 +1001,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>Boolean</code></pre>
+        Boolean
       </td>
       <td class="member-return__description"><p><code>true</code> if the point is contained within geometry.</p></td>
     </tr>
@@ -1028,7 +1037,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1064,7 +1073,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1087,41 +1096,43 @@ Does not work with rotated or trimmed textures</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        shape
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Circle.html">PIXI.Circle</a> | <a href="PIXI.Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI.Polygon.html">PIXI.Polygon</a> | <a href="PIXI.Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI.RoundedRectangle.html">PIXI.RoundedRectangle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The shape object to draw.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        matrix
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Matrix.html">PIXI.Matrix</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Transform applied to the points of the shape.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          shape
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Circle.html">PIXI.Circle</a> | <a href="PIXI.Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI.Polygon.html">PIXI.Polygon</a> | <a href="PIXI.Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI.RoundedRectangle.html">PIXI.RoundedRectangle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The shape object to draw.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          matrix
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Matrix.html">PIXI.Matrix</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Transform applied to the points of the shape.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1138,7 +1149,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.GraphicsGeometry.html">PIXI.GraphicsGeometry</a></code></pre>
+        <a href="PIXI.GraphicsGeometry.html">PIXI.GraphicsGeometry</a>
       </td>
       <td class="member-return__description"><p>Returns geometry for chaining.</p></td>
     </tr>
@@ -1161,61 +1172,63 @@ Does not work with rotated or trimmed textures</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        shape
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Circle.html">PIXI.Circle</a> | <a href="PIXI.Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI.Polygon.html">PIXI.Polygon</a> | <a href="PIXI.Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI.RoundedRectangle.html">PIXI.RoundedRectangle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The shape object to draw.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        fillStyle
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.FillStyle.html">PIXI.FillStyle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Defines style of the fill.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        lineStyle
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.LineStyle.html">PIXI.LineStyle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Defines style of the lines.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        matrix
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Matrix.html">PIXI.Matrix</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Transform applied to the points of the shape.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          shape
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Circle.html">PIXI.Circle</a> | <a href="PIXI.Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI.Polygon.html">PIXI.Polygon</a> | <a href="PIXI.Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI.RoundedRectangle.html">PIXI.RoundedRectangle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The shape object to draw.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          fillStyle
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.FillStyle.html">PIXI.FillStyle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Defines style of the fill.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          lineStyle
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.LineStyle.html">PIXI.LineStyle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Defines style of the lines.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          matrix
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Matrix.html">PIXI.Matrix</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Transform applied to the points of the shape.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1232,7 +1245,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.GraphicsGeometry.html">PIXI.GraphicsGeometry</a></code></pre>
+        <a href="PIXI.GraphicsGeometry.html">PIXI.GraphicsGeometry</a>
       </td>
       <td class="member-return__description"><p>Returns geometry for chaining.</p></td>
     </tr>
@@ -1255,31 +1268,33 @@ Does not work with rotated or trimmed textures</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        id
-      </td>
-      <td class="member-parameter__type">
-        String
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the name of the attribute required</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          id
+        </td>
+        <td class="member-parameter__type">
+          String
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the name of the attribute required</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1296,7 +1311,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Attribute.html">PIXI.Attribute</a></code></pre>
+        <a href="PIXI.Attribute.html">PIXI.Attribute</a>
       </td>
       <td class="member-return__description"><p>the attribute requested.</p></td>
     </tr>
@@ -1319,31 +1334,33 @@ Does not work with rotated or trimmed textures</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        id
-      </td>
-      <td class="member-parameter__type">
-        String
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the name of the buffer required</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          id
+        </td>
+        <td class="member-parameter__type">
+          String
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the name of the buffer required</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1360,7 +1377,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Buffer.html">PIXI.Buffer</a></code></pre>
+        <a href="PIXI.Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the buffer requested.</p></td>
     </tr>
@@ -1396,7 +1413,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Buffer.html">PIXI.Buffer</a></code></pre>
+        <a href="PIXI.Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the index buffer.</p></td>
     </tr>
@@ -1433,7 +1450,7 @@ This can be useful if your model remains static as it offers a little performanc
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Geometry.html">PIXI.Geometry</a></code></pre>
+        <a href="PIXI.Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -1470,7 +1487,7 @@ Empties all batch buffers.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1494,35 +1511,37 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        aloow32Indices
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          aloow32Indices
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Allow using 32-bit indices for preventings artefacts when more that 65535 vertices</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Allow using 32-bit indices for preventings artefacts when more that 65535 vertices</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1539,7 +1558,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1561,7 +1580,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
 <div class="member" id="addColors">
   <h3 class="member__title">addColors</h3>
   
-<pre class="signature__container"><code class="signature">protected addColors(colors: Array<number>, color: number, alpha: number, size: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected addColors(colors: Array&lt;number>, color: number, alpha: number, size: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Add colors.</p></div>
@@ -1569,61 +1588,63 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        colors
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>List of colors to add to</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        color
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Color to add</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        alpha
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Alpha to use</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        size
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Number of colors to add</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          colors
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>List of colors to add to</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          color
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Color to add</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          alpha
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Alpha to use</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          size
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Number of colors to add</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1640,7 +1661,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1655,7 +1676,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
 <div class="member" id="addTextureIds">
   <h3 class="member__title">addTextureIds</h3>
   
-<pre class="signature__container"><code class="signature">protected addTextureIds(textureIds: Array<number>, id: number, size: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected addTextureIds(textureIds: Array&lt;number>, id: number, size: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Add texture id that the shader/fragment wants to use.</p></div>
@@ -1663,51 +1684,53 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        textureIds
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        id
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        size
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          textureIds
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          id
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          size
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1724,7 +1747,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1739,7 +1762,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
 <div class="member" id="addUvs">
   <h3 class="member__title">addUvs</h3>
   
-<pre class="signature__container"><code class="signature">protected addUvs(verts: Array<number>, uvs: Array<number>, texture: <a href="PIXI.Texture.html">PIXI.Texture</a>, start: number, size: number, matrix: <a href="PIXI.Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected addUvs(verts: Array&lt;number>, uvs: Array&lt;number>, texture: <a href="PIXI.Texture.html">PIXI.Texture</a>, start: number, size: number, matrix: <a href="PIXI.Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Generates the UVs for a shape.</p></div>
@@ -1747,105 +1770,107 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        verts
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          verts
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Vertices</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          uvs
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Vertices</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        uvs
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>UVs</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          texture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Texture.html">PIXI.Texture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Reference to Texture</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          start
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Index buffer start index.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          size
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>UVs</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        texture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Texture.html">PIXI.Texture</a>
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>The size/length for index buffer.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          matrix
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Matrix.html">PIXI.Matrix</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Reference to Texture</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        start
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Index buffer start index.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        size
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>The size/length for index buffer.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        matrix
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Matrix.html">PIXI.Matrix</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Optional transform for all points.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Optional transform for all points.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1862,7 +1887,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1898,7 +1923,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1934,7 +1959,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1971,7 +1996,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -2007,7 +2032,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -2043,7 +2068,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -2066,31 +2091,33 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        data
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.GraphicsData.html">PIXI.GraphicsData</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          data
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.GraphicsData.html">PIXI.GraphicsData</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -2107,7 +2134,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -2122,7 +2149,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 <div class="member" id="processHoles">
   <h3 class="member__title">processHoles</h3>
   
-<pre class="signature__container"><code class="signature">protected processHoles(holes: Array<<a href="PIXI.GraphicsData.html">PIXI.GraphicsData</a>>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected processHoles(holes: Array&lt;<a href="PIXI.GraphicsData.html">PIXI.GraphicsData</a>>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Process the holes data.</p></div>
@@ -2130,31 +2157,33 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        holes
-      </td>
-      <td class="member-parameter__type">
-        Array<<a href="PIXI.GraphicsData.html">PIXI.GraphicsData</a>>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Holes to render</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          holes
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;<a href="PIXI.GraphicsData.html">PIXI.GraphicsData</a>&gt;
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Holes to render</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -2171,7 +2200,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -2194,31 +2223,33 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        data
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.GraphicsData.html">PIXI.GraphicsData</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          data
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.GraphicsData.html">PIXI.GraphicsData</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -2235,7 +2266,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -2250,7 +2281,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 <div class="member" id="transformPoints">
   <h3 class="member__title">transformPoints</h3>
   
-<pre class="signature__container"><code class="signature">protected transformPoints(points: Array<number>, matrix: <a href="PIXI.Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected transformPoints(points: Array&lt;number>, matrix: <a href="PIXI.Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Transform points using matrix.</p></div>
@@ -2258,41 +2289,43 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        points
-      </td>
-      <td class="member-parameter__type">
-        Array<number>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Points to transform</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        matrix
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Matrix.html">PIXI.Matrix</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>Transform matrix</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          points
+        </td>
+        <td class="member-parameter__type">
+          Array&lt;number&gt;
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Points to transform</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          matrix
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Matrix.html">PIXI.Matrix</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>Transform matrix</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -2309,7 +2342,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -2345,7 +2378,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -2512,7 +2545,6 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

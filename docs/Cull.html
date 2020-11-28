@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -44,7 +43,7 @@ can run it on the <code>prerender</code> event fired by the renderer.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new Cull(options)</code></pre>
+<pre class="signature__container"><code class="signature">new Cull(options) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -52,70 +51,72 @@ can run it on the <code>prerender</code> event fired by the renderer.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        options
-      </td>
-      <td class="member-parameter__type">
-        
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.recursive
-      </td>
-      <td class="member-parameter__type">
-        
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>whether culling should be recursive</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.toggle
-      </td>
-      <td class="member-parameter__type">
-        
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        'renderable'
-      </td>
-      <td class="member-parameter__description"><p>which property of display-object was be set to indicate
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          options
+        </td>
+        <td class="member-parameter__type">
+          
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.recursive
+        </td>
+        <td class="member-parameter__type">
+          
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>whether culling should be recursive</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.toggle
+        </td>
+        <td class="member-parameter__type">
+          
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          'renderable'
+        </td>
+        <td class="member-parameter__description"><p>which property of display-object was be set to indicate
 its culling state. It should be one of <code>renderable</code>, <code>visible</code>.</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -146,31 +147,33 @@ its culling state. It should be one of <code>renderable</code>, <code>visible</c
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        target
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the display-object to be culled</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          target
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the display-object to be culled</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -187,7 +190,7 @@ its culling state. It should be one of <code>renderable</code>, <code>visible</c
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -210,31 +213,33 @@ its culling state. It should be one of <code>renderable</code>, <code>visible</c
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        targets
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>[]
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the display-objects to be culled</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          targets
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>[]
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the display-objects to be culled</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -251,7 +256,7 @@ its culling state. It should be one of <code>renderable</code>, <code>visible</c
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -287,7 +292,7 @@ its culling state. It should be one of <code>renderable</code>, <code>visible</c
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -310,43 +315,45 @@ its culling state. It should be one of <code>renderable</code>, <code>visible</c
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        rect
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the rectangle outside of which display-objects should be culled</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        skipUpdate
-      </td>
-      <td class="member-parameter__type">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
         
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>whether to skip unculling, transform update, bounds calculation. It is
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          rect
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the rectangle outside of which display-objects should be culled</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          skipUpdate
+        </td>
+        <td class="member-parameter__type">
+          
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>whether to skip unculling, transform update, bounds calculation. It is
 highly recommended you enable this by calling <em>this.uncull()</em> and <em>root.getBounds(false)</em> manually
 before your render loop.</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -363,7 +370,7 @@ before your render loop.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -381,68 +388,70 @@ before your render loop.</p></td>
 <pre class="signature__container"><code class="signature">cullRecursive(rect: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>, displayObject: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>, skipUpdate: boolean) → {void}</code></pre>
 
 
-  <div class="member__brief"><p>Recursively culls the subtree of {@code displayObject}.</p></div>
+  <div class="member__brief"><p>Recursively culls the subtree of <code>displayObject</code>.</p></div>
   <div class="member__description"></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        rect
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          rect
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>the visiblity rectangle</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          displayObject
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>the visiblity rectangle</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        displayObject
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>the root of the subtree to cull</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          skipUpdate
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>the root of the subtree to cull</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        skipUpdate
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>whether to skip bounds calculation. However, transforms are expected to be updated by the caller.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>whether to skip bounds calculation. However, transforms are expected to be updated by the caller.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -459,7 +468,7 @@ before your render loop.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -482,31 +491,33 @@ before your render loop.</p></td>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        target
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the display-object to be removed</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          target
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the display-object to be removed</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -523,7 +534,7 @@ before your render loop.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -546,31 +557,33 @@ before your render loop.</p></td>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        targets
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>[]
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>the display-objects to be removed</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          targets
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>[]
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>the display-objects to be removed</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -587,7 +600,7 @@ before your render loop.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -606,7 +619,7 @@ before your render loop.</p></td>
 
 
   <div class="member__brief"><p>Sets all display-objects to the unculled state.</p></div>
-  <div class="member__description"><p>This happens regardless of whether the culling toggle was set by {@code this.cull} or manually. This
+  <div class="member__description"><p>This happens regardless of whether the culling toggle was set by <code>this.cull</code> or manually. This
 is why it is recommended to one of <code>visible</code> or <code>renderable</code> for normal use and the other for culling.</p></div>
 
   
@@ -624,7 +637,7 @@ is why it is recommended to one of <code>visible</code> or <code>renderable</cod
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -642,36 +655,38 @@ is why it is recommended to one of <code>visible</code> or <code>renderable</cod
 <pre class="signature__container"><code class="signature">uncullRecursive(displayObject: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
 
 
-  <div class="member__brief"><p>Recursively unculls the subtree of {@code displayObject}.</p></div>
+  <div class="member__brief"><p>Recursively unculls the subtree of <code>displayObject</code>.</p></div>
   <div class="member__description"></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        displayObject
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          displayObject
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -688,7 +703,7 @@ is why it is recommended to one of <code>visible</code> or <code>renderable</cod
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -742,7 +757,6 @@ is why it is recommended to one of <code>visible</code> or <code>renderable</cod
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

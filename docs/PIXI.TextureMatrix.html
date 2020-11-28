@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -47,7 +46,7 @@ Use <code>update()</code> method call to track it from outside.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.TextureMatrix(texture: <a href="PIXI.Texture.html">PIXI.Texture</a>, clampMargin: number)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.TextureMatrix(texture: <a href="PIXI.Texture.html">PIXI.Texture</a>, clampMargin: number) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -55,49 +54,51 @@ Use <code>update()</code> method call to track it from outside.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        texture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Texture.html">PIXI.Texture</a>
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          texture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Texture.html">PIXI.Texture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>observed texture</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          clampMargin
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>observed texture</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        clampMargin
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Changes frame clamping, 0.5 by default. Use -0.5 for extra border.</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Changes frame clamping, 0.5 by default. Use -0.5 for extra border.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -170,7 +171,7 @@ Change to 1.5 if you texture has repeated right and bottom lines, that leads to 
 <div class="member" id="mapCoord">
   <h3 class="member__title">mapCoord</h3>
   
-<pre class="signature__container"><code class="signature">mapCoord: <a href="PIXI.Matrix.html">PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">mapCoord: <a href=PIXI.Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -186,7 +187,7 @@ Change to 1.5 if you texture has repeated right and bottom lines, that leads to 
 <div class="member" id="texture">
   <h3 class="member__title">texture</h3>
   
-<pre class="signature__container"><code class="signature">texture: <a href="PIXI.Texture.html">PIXI.Texture</a></code></pre>
+<pre class="signature__container"><code class="signature">texture: <a href=PIXI.Texture.html>PIXI.Texture</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -290,53 +291,55 @@ Calculated based on clampOffset.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        uvs
-      </td>
-      <td class="member-parameter__type">
-        Float32Array
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>mesh uvs</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        out
-      </td>
-      <td class="member-parameter__type">
-        Float32Array
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        uvs
-      </td>
-      <td class="member-parameter__description"><p>output</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          uvs
+        </td>
+        <td class="member-parameter__type">
+          Float32Array
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>mesh uvs</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          out
+        </td>
+        <td class="member-parameter__type">
+          Float32Array
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          uvs
+        </td>
+        <td class="member-parameter__description"><p>output</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -353,7 +356,7 @@ Calculated based on clampOffset.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>Float32Array</code></pre>
+        Float32Array
       </td>
       <td class="member-return__description"><p>output</p></td>
     </tr>
@@ -376,37 +379,39 @@ Calculated based on clampOffset.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        forceUpdate
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>if true, matrices will be updated any case</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          forceUpdate
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>if true, matrices will be updated any case</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -423,7 +428,7 @@ Calculated based on clampOffset.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"><p>whether or not it was updated</p></td>
     </tr>
@@ -497,7 +502,6 @@ Calculated based on clampOffset.</p></div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

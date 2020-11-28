@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -45,59 +44,59 @@ whenever you create a renderer:</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="PIXI.BatchSystem.html">PIXI.BatchSystem</a></td>
+<td><a href=PIXI.BatchSystem.html>PIXI.BatchSystem</a></td>
 <td>This manages object renderers that defer rendering until a flush.</td>
 </tr>
 <tr>
-<td><a href="PIXI.ContextSystem.html">PIXI.ContextSystem</a></td>
+<td><a href=PIXI.ContextSystem.html>PIXI.ContextSystem</a></td>
 <td>This manages the WebGL context and extensions.</td>
 </tr>
 <tr>
-<td><a href="PIXI.FilterSystem.html">PIXI.FilterSystem</a></td>
+<td><a href=PIXI.FilterSystem.html>PIXI.FilterSystem</a></td>
 <td>This manages the filtering pipeline for post-processing effects.</td>
 </tr>
 <tr>
-<td><a href="PIXI.FramebufferSystem.html">PIXI.FramebufferSystem</a></td>
+<td><a href=PIXI.FramebufferSystem.html>PIXI.FramebufferSystem</a></td>
 <td>This manages framebuffers, which are used for offscreen rendering.</td>
 </tr>
 <tr>
-<td><a href="PIXI.GeometrySystem.html">PIXI.GeometrySystem</a></td>
+<td><a href=PIXI.GeometrySystem.html>PIXI.GeometrySystem</a></td>
 <td>This manages geometries &amp; buffers, which are used to draw object meshes.</td>
 </tr>
 <tr>
-<td><a href="PIXI.MaskSystem.html">PIXI.MaskSystem</a></td>
+<td><a href=PIXI.MaskSystem.html>PIXI.MaskSystem</a></td>
 <td>This manages masking operations.</td>
 </tr>
 <tr>
-<td><a href="PIXI.ProjectionSystem.html">PIXI.ProjectionSystem</a></td>
+<td><a href=PIXI.ProjectionSystem.html>PIXI.ProjectionSystem</a></td>
 <td>This manages the <code>projectionMatrix</code>, used by shaders to get NDC coordinates.</td>
 </tr>
 <tr>
-<td><a href="PIXI.RenderTextureSystem.html">PIXI.RenderTextureSystem</a></td>
+<td><a href=PIXI.RenderTextureSystem.html>PIXI.RenderTextureSystem</a></td>
 <td>This manages render-textures, which are an abstraction over framebuffers.</td>
 </tr>
 <tr>
-<td><a href="PIXI.ScissorSystem.html">PIXI.ScissorSystem</a></td>
+<td><a href=PIXI.ScissorSystem.html>PIXI.ScissorSystem</a></td>
 <td>This handles scissor masking, and is used internally by MaskSystem</td>
 </tr>
 <tr>
-<td><a href="PIXI.ShaderSystem.html">PIXI.ShaderSystem</a></td>
+<td><a href=PIXI.ShaderSystem.html>PIXI.ShaderSystem</a></td>
 <td>This manages shaders, programs that run on the GPU to calculate 'em pixels.</td>
 </tr>
 <tr>
-<td><a href="PIXI.StateSystem.html">PIXI.StateSystem</a></td>
+<td><a href=PIXI.StateSystem.html>PIXI.StateSystem</a></td>
 <td>This manages the WebGL state variables like blend mode, depth testing, etc.</td>
 </tr>
 <tr>
-<td><a href="PIXI.StencilSystem.html">PIXI.StencilSystem</a></td>
+<td><a href=PIXI.StencilSystem.html>PIXI.StencilSystem</a></td>
 <td>This handles stencil masking, and is used internally by MaskSystem</td>
 </tr>
 <tr>
-<td><a href="PIXI.TextureSystem.html">PIXI.TextureSystem</a></td>
+<td><a href=PIXI.TextureSystem.html>PIXI.TextureSystem</a></td>
 <td>This manages textures and their resources on the GPU.</td>
 </tr>
 <tr>
-<td><a href="PIXI.TextureGCSystem.html">PIXI.TextureGCSystem</a></td>
+<td><a href=PIXI.TextureGCSystem.html>PIXI.TextureGCSystem</a></td>
 <td>This will automatically remove textures from the GPU if they are not used.</td>
 </tr>
 </tbody>
@@ -114,7 +113,7 @@ whenever you create a renderer:</p>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.Renderer(options: IRendererOptions)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.Renderer(options: IRendererOptions) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -122,237 +121,239 @@ whenever you create a renderer:</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        options
-      </td>
-      <td class="member-parameter__type">
-        IRendererOptions
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>The optional renderer parameters.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        800
-      </td>
-      <td class="member-parameter__description"><p>The width of the screen.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        600
-      </td>
-      <td class="member-parameter__description"><p>The height of the screen.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.view
-      </td>
-      <td class="member-parameter__type">
-        HTMLCanvasElement
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>The canvas to use as a view, optional.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.transparent
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>If the render view is transparent.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.autoDensity
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>Resizes renderer view in CSS pixels to allow for
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          options
+        </td>
+        <td class="member-parameter__type">
+          IRendererOptions
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>The optional renderer parameters.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          800
+        </td>
+        <td class="member-parameter__description"><p>The width of the screen.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          600
+        </td>
+        <td class="member-parameter__description"><p>The height of the screen.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.view
+        </td>
+        <td class="member-parameter__type">
+          HTMLCanvasElement
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>The canvas to use as a view, optional.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.transparent
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>If the render view is transparent.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.autoDensity
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>Resizes renderer view in CSS pixels to allow for
 resolutions other than 1.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.antialias
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>Sets antialias. If not available natively then FXAA
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.antialias
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>Sets antialias. If not available natively then FXAA
 antialiasing is used.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        1
-      </td>
-      <td class="member-parameter__description"><p>The resolution / device pixel ratio of the renderer.
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          1
+        </td>
+        <td class="member-parameter__description"><p>The resolution / device pixel ratio of the renderer.
 The resolution of the renderer retina would be 2.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.clearBeforeRender
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        true
-      </td>
-      <td class="member-parameter__description"><p>This sets if the renderer will clear
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.clearBeforeRender
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          true
+        </td>
+        <td class="member-parameter__description"><p>This sets if the renderer will clear
 the canvas or not before the new render pass. If you wish to set this to false, you <em>must</em> set
 preserveDrawingBuffer to <code>true</code>.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.preserveDrawingBuffer
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>Enables drawing buffer preservation,
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.preserveDrawingBuffer
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>Enables drawing buffer preservation,
 enable this if you need to call toDataUrl on the WebGL context.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.backgroundColor
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        0x000000
-      </td>
-      <td class="member-parameter__description"><p>The background color of the rendered area
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.backgroundColor
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          0x000000
+        </td>
+        <td class="member-parameter__description"><p>The background color of the rendered area
 (shown if not transparent).</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.powerPreference
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>Parameter passed to WebGL context, set to &quot;high-performance&quot;
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.powerPreference
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>Parameter passed to WebGL context, set to &quot;high-performance&quot;
 for devices with dual graphics card.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.context
-      </td>
-      <td class="member-parameter__type">
-        object
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>If WebGL context already exists, all parameters must be taken from it.</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.context
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>If WebGL context already exists, all parameters must be taken from it.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -391,7 +392,7 @@ builds and excluding plugins.</p></div>
 <div class="member" id="textureManager">
   <h3 class="member__title">textureManager</h3>
   
-<pre class="signature__container"><code class="signature">static textureManager: <a href="PIXI.TextureSystem.html">PIXI.TextureSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">static textureManager: <a href=PIXI.TextureSystem.html>PIXI.TextureSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -439,7 +440,7 @@ builds and excluding plugins.</p></div>
 <div class="member" id="batch">
   <h3 class="member__title">batch</h3>
   
-<pre class="signature__container"><code class="signature">batch: <a href="PIXI.BatchSystem.html">PIXI.BatchSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">batch: <a href=PIXI.BatchSystem.html>PIXI.BatchSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -475,7 +476,7 @@ your game has a canvas filling background image you often don't need this set.</
 <div class="member" id="context">
   <h3 class="member__title">context</h3>
   
-<pre class="signature__container"><code class="signature">context: <a href="PIXI.ContextSystem.html">PIXI.ContextSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">context: <a href=PIXI.ContextSystem.html>PIXI.ContextSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -491,7 +492,7 @@ your game has a canvas filling background image you often don't need this set.</
 <div class="member" id="extract">
   <h3 class="member__title">extract</h3>
   
-<pre class="signature__container"><code class="signature">extract: <a href="PIXI.Extract_.html">PIXI.Extract</a></code></pre>
+<pre class="signature__container"><code class="signature">extract: <a href=PIXI.Extract.html>PIXI.Extract</a></code></pre>
 
 
   <div class="member__brief"><p>Collection of methods for extracting data (image, pixels, etc.) from a display object or render texture</p></div>
@@ -507,7 +508,7 @@ your game has a canvas filling background image you often don't need this set.</
 <div class="member" id="filter">
   <h3 class="member__title">filter</h3>
   
-<pre class="signature__container"><code class="signature">filter: <a href="PIXI.FilterSystem.html">PIXI.FilterSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">filter: <a href=PIXI.FilterSystem.html>PIXI.FilterSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -523,7 +524,7 @@ your game has a canvas filling background image you often don't need this set.</
 <div class="member" id="framebuffer">
   <h3 class="member__title">framebuffer</h3>
   
-<pre class="signature__container"><code class="signature">framebuffer: <a href="PIXI.FramebufferSystem.html">PIXI.FramebufferSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">framebuffer: <a href=PIXI.FramebufferSystem.html>PIXI.FramebufferSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -539,7 +540,7 @@ your game has a canvas filling background image you often don't need this set.</
 <div class="member" id="geometry">
   <h3 class="member__title">geometry</h3>
   
-<pre class="signature__container"><code class="signature">geometry: <a href="PIXI.GeometrySystem.html">PIXI.GeometrySystem</a></code></pre>
+<pre class="signature__container"><code class="signature">geometry: <a href=PIXI.GeometrySystem.html>PIXI.GeometrySystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -571,7 +572,7 @@ your game has a canvas filling background image you often don't need this set.</
 <div class="member" id="globalUniforms">
   <h3 class="member__title">globalUniforms</h3>
   
-<pre class="signature__container"><code class="signature">globalUniforms: <a href="PIXI.UniformGroup.html">PIXI.UniformGroup</a></code></pre>
+<pre class="signature__container"><code class="signature">globalUniforms: <a href=PIXI.UniformGroup.html>PIXI.UniformGroup</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -603,7 +604,7 @@ your game has a canvas filling background image you often don't need this set.</
 <div class="member" id="mask">
   <h3 class="member__title">mask</h3>
   
-<pre class="signature__container"><code class="signature">mask: <a href="PIXI.MaskSystem.html">PIXI.MaskSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">mask: <a href=PIXI.MaskSystem.html>PIXI.MaskSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -652,7 +653,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="projection">
   <h3 class="member__title">projection</h3>
   
-<pre class="signature__container"><code class="signature">projection: <a href="PIXI.ProjectionSystem.html">PIXI.ProjectionSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">projection: <a href=PIXI.ProjectionSystem.html>PIXI.ProjectionSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -684,7 +685,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="renderTexture">
   <h3 class="member__title">renderTexture</h3>
   
-<pre class="signature__container"><code class="signature">renderTexture: <a href="PIXI.RenderTextureSystem.html">PIXI.RenderTextureSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">renderTexture: <a href=PIXI.RenderTextureSystem.html>PIXI.RenderTextureSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -716,7 +717,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="scissor">
   <h3 class="member__title">scissor</h3>
   
-<pre class="signature__container"><code class="signature">scissor: <a href="PIXI.ScissorSystem.html">PIXI.ScissorSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">scissor: <a href=PIXI.ScissorSystem.html>PIXI.ScissorSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -732,7 +733,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="screen">
   <h3 class="member__title">screen</h3>
   
-<pre class="signature__container"><code class="signature">screen: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">screen: <a href=PIXI.Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>Measurements of the screen. (0, 0, screenWidth, screenHeight).</p></div>
@@ -748,7 +749,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="shader">
   <h3 class="member__title">shader</h3>
   
-<pre class="signature__container"><code class="signature">shader: <a href="PIXI.ShaderSystem.html">PIXI.ShaderSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">shader: <a href=PIXI.ShaderSystem.html>PIXI.ShaderSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -764,7 +765,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href="PIXI.StateSystem.html">PIXI.StateSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=PIXI.StateSystem.html>PIXI.StateSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -780,7 +781,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="stencil">
   <h3 class="member__title">stencil</h3>
   
-<pre class="signature__container"><code class="signature">stencil: <a href="PIXI.StencilSystem.html">PIXI.StencilSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">stencil: <a href=PIXI.StencilSystem.html>PIXI.StencilSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -796,7 +797,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="texture">
   <h3 class="member__title">texture</h3>
   
-<pre class="signature__container"><code class="signature">texture: <a href="PIXI.TextureSystem.html">PIXI.TextureSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">texture: <a href=PIXI.TextureSystem.html>PIXI.TextureSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -812,7 +813,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="textureGC">
   <h3 class="member__title">textureGC</h3>
   
-<pre class="signature__container"><code class="signature">textureGC: <a href="PIXI.TextureGCSystem.html">PIXI.TextureGCSystem</a></code></pre>
+<pre class="signature__container"><code class="signature">textureGC: <a href=PIXI.TextureGCSystem.html>PIXI.TextureGCSystem</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -915,7 +916,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="_backgroundColorRgba">
   <h3 class="member__title">_backgroundColorRgba</h3>
   
-<pre class="signature__container"><code class="signature">protected _backgroundColorRgba: Array<number></code></pre>
+<pre class="signature__container"><code class="signature">protected _backgroundColorRgba: Array&lt;number></code></pre>
 
 
   <div class="member__brief"><p>The background color as an [R, G, B] array.</p></div>
@@ -947,7 +948,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="_lastObjectRendered">
   <h3 class="member__title">_lastObjectRendered</h3>
   
-<pre class="signature__container"><code class="signature">protected _lastObjectRendered: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _lastObjectRendered: <a href=PIXI.DisplayObject.html>PIXI.DisplayObject</a></code></pre>
 
 
   <div class="member__brief"><p>The last root object that the renderer tried to render.</p></div>
@@ -978,41 +979,43 @@ the stencil buffer is retained after rendering.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        pluginName
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The name of the plugin.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        ctor
-      </td>
-      <td class="member-parameter__type">
-        IRendererPluginConstructor
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The constructor function or class for the plugin.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          pluginName
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The name of the plugin.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          ctor
+        </td>
+        <td class="member-parameter__type">
+          IRendererPluginConstructor
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The constructor function or class for the plugin.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1029,7 +1032,7 @@ the stencil buffer is retained after rendering.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1052,52 +1055,54 @@ the stencil buffer is retained after rendering.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        ClassRef
-      </td>
-      <td class="member-parameter__type">
-        { new (renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>): T }
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          ClassRef
+        </td>
+        <td class="member-parameter__type">
+          { new (renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>): T }
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Class reference</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          name
+        </td>
+        <td class="member-parameter__type">
+          string
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Class reference</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        name
-      </td>
-      <td class="member-parameter__type">
-        string
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Property name for system, if not specified
+        <td class="member-parameter__description"><p>Property name for system, if not specified
 will use a static <code>name</code> property on the class itself. This
 name will be assigned as s property on the Renderer so make
 sure it doesn't collide with properties on Renderer.</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1114,7 +1119,7 @@ sure it doesn't collide with properties on Renderer.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Renderer.html">PIXI.Renderer</a></code></pre>
+        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
       </td>
       <td class="member-return__description"><p>Return instance of renderer</p></td>
     </tr>
@@ -1150,7 +1155,7 @@ sure it doesn't collide with properties on Renderer.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1173,38 +1178,40 @@ sure it doesn't collide with properties on Renderer.</p></td>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        removeView
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>Removes the Canvas element from the DOM.
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          removeView
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>Removes the Canvas element from the DOM.
 See: https://github.com/pixijs/pixi.js/issues/2233</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1221,7 +1228,7 @@ See: https://github.com/pixijs/pixi.js/issues/2233</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1245,78 +1252,80 @@ This can be quite useful if your displayObject is complicated and needs to be re
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        displayObject
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          displayObject
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>The displayObject the object will be generated from.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          scaleMode
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>The displayObject the object will be generated from.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        scaleMode
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"><p>The scale mode of the texture.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>The resolution / device pixel ratio of the texture being generated.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          region
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>The scale mode of the texture.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>The resolution / device pixel ratio of the texture being generated.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        region
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>The region of the displayObject, that shall be rendered,
+        <td class="member-parameter__description"><p>The region of the displayObject, that shall be rendered,
 if no region is specified, defaults to the local bounds of the displayObject.</p></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1333,7 +1342,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a></code></pre>
+        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"><p>A texture of the graphics object.</p></td>
     </tr>
@@ -1356,101 +1365,103 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        displayObject
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
-      </td>
-      <td class="member-parameter__attributes">
-        
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>The object to be rendered.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        renderTexture
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>The render texture to render to.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        clear
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        true
-      </td>
-      <td class="member-parameter__description"><p>Should the canvas be cleared before the new render.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        transform
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Matrix.html">PIXI.Matrix</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>A transform to apply to the render texture before rendering.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        skipUpdateTransform
-      </td>
-      <td class="member-parameter__type">
-        boolean
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        false
-      </td>
-      <td class="member-parameter__description"><p>Should we skip the update transform pass?</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          displayObject
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>The object to be rendered.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          renderTexture
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>The render texture to render to.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          clear
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          true
+        </td>
+        <td class="member-parameter__description"><p>Should the canvas be cleared before the new render.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          transform
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Matrix.html">PIXI.Matrix</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>A transform to apply to the render texture before rendering.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          skipUpdateTransform
+        </td>
+        <td class="member-parameter__type">
+          boolean
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          false
+        </td>
+        <td class="member-parameter__description"><p>Should we skip the update transform pass?</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1467,7 +1478,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1503,7 +1514,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.Renderer.html">PIXI.Renderer</a></code></pre>
+        <a href="PIXI.Renderer.html">PIXI.Renderer</a>
       </td>
       <td class="member-return__description"><p>Returns itself.</p></td>
     </tr>
@@ -1526,41 +1537,43 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        screenWidth
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The new width of the screen.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        screenHeight
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The new height of the screen.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          screenWidth
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The new width of the screen.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          screenHeight
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The new height of the screen.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1577,7 +1590,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1607,31 +1620,33 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        staticMap
-      </td>
-      <td class="member-parameter__type">
-        object
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The dictionary of statically saved plugins.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          staticMap
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The dictionary of statically saved plugins.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1648,7 +1663,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1797,7 +1812,6 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -32,13 +31,13 @@ implements <a href="ILinkedListNode.html">ILinkedListNode</a></code></pre>
 
 
     <div class="document__brief"><p>A directed edge from its origin to destination.</p></div>
-    <div class="document__description"><p>{@code HalfEdge} is a node of the following circular linked-lists:</p>
+    <div class="document__description"><p><code>HalfEdge</code> is a node of the following circular linked-lists:</p>
 <ul>
 <li>the list of edges in the whole mesh: HalfEdge#next</li>
-<li>the list of edges around its left face: HalfEdge#lnext</li>
-<li>the list of edges directed from its origin vertex: HalfEdge#onext</li>
-<li>the list of edges directed to its destination vertex: HalfEdge#dnext</li>
-<li>the list of edges around its right face: HalfEdge#rnext</li>
+<li>the list of edges around its left face: <a href="HalfEdge.html#lnext">HalfEdge#lnext</a></li>
+<li>the list of edges directed from its origin vertex: <a href="HalfEdge.html#onext">HalfEdge#onext</a></li>
+<li>the list of edges directed to its destination vertex: <a href="HalfEdge.html#dnext">HalfEdge#dnext</a></li>
+<li>the list of edges around its right face: <a href="HalfEdge.html#rnext">HalfEdge#rnext</a></li>
 </ul></div>
 
     
@@ -57,7 +56,7 @@ implements <a href="ILinkedListNode.html">ILinkedListNode</a></code></pre>
 <pre class="signature__container"><code class="signature">dlast</code></pre>
 
 
-  <div class="member__brief"><p>The last edge sharing {@code this.dst} in the counterclockwise direction.</p></div>
+  <div class="member__brief"><p>The last edge sharing <code>this.dst</code> in the counterclockwise direction.</p></div>
   <div class="member__description"></div>
 
   
@@ -73,7 +72,7 @@ implements <a href="ILinkedListNode.html">ILinkedListNode</a></code></pre>
 <pre class="signature__container"><code class="signature">dnext</code></pre>
 
 
-  <div class="member__brief"><p>The next edge sharing {@code this.dst} in the counterclockwise direction.</p></div>
+  <div class="member__brief"><p>The next edge sharing <code>this.dst</code> in the counterclockwise direction.</p></div>
   <div class="member__description"></div>
 
   
@@ -122,7 +121,7 @@ implements <a href="ILinkedListNode.html">ILinkedListNode</a></code></pre>
 
 
   <div class="member__brief"><p>The next edge on the left face (pointing counterclockwise direction).</p></div>
-  <div class="member__description"><p>{@code this.lnext}'s origin vertex is this edge's destination vertex.</p></div>
+  <div class="member__description"><p><code>this.lnext</code>'s origin vertex is this edge's destination vertex.</p></div>
 
   
 
@@ -138,7 +137,7 @@ implements <a href="ILinkedListNode.html">ILinkedListNode</a></code></pre>
 
 
   <div class="member__brief"><p>The previous edge on the left face (pointing counterclockwise direction).</p></div>
-  <div class="member__description"><p>{@code this.lprev}'s destination vertex is this edge's origin vertex.</p></div>
+  <div class="member__description"><p><code>this.lprev</code>'s destination vertex is this edge's origin vertex.</p></div>
 
   
 
@@ -153,7 +152,7 @@ implements <a href="ILinkedListNode.html">ILinkedListNode</a></code></pre>
 <pre class="signature__container"><code class="signature">onext</code></pre>
 
 
-  <div class="member__brief"><p>The next edge sharing {@code this.org} in the counterclockwise direction.</p></div>
+  <div class="member__brief"><p>The next edge sharing <code>this.org</code> in the counterclockwise direction.</p></div>
   <div class="member__description"></div>
 
   
@@ -170,7 +169,7 @@ implements <a href="ILinkedListNode.html">ILinkedListNode</a></code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>The previous edge sharing {@code this.org} in the counterclockwise direction. It is also
+  <div class="member__description"><p>The previous edge sharing <code>this.org</code> in the counterclockwise direction. It is also
 the next edge in the clockwise direction.</p></div>
 
   
@@ -219,9 +218,9 @@ the next edge in the clockwise direction.</p></div>
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>The next edge on the right face in counterclockwise direction; however, this and {@code this.rlast}
+  <div class="member__description"><p>The next edge on the right face in counterclockwise direction; however, this and <code>this.rlast</code>
 are directed in the clockwise direction of the right face.</p>
-<p>{@code this.rlast}'s origin vertex is this edge's destination vertex.</p></div>
+<p><code>this.rlast</code>'s origin vertex is this edge's destination vertex.</p></div>
 
   
 
@@ -237,9 +236,9 @@ are directed in the clockwise direction of the right face.</p>
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>The next edge on the right face in counterclockwise direction; however, this and {@code this.rnext}
+  <div class="member__description"><p>The next edge on the right face in counterclockwise direction; however, this and <code>this.rnext</code>
 are directed in the clockwise direction of the right face.</p>
-<p>{@code this.rnext}'s destination vertex is this edge's origin vertex.</p></div>
+<p><code>this.rnext</code>'s destination vertex is this edge's origin vertex.</p></div>
 
   
 
@@ -254,7 +253,7 @@ are directed in the clockwise direction of the right face.</p>
 <pre class="signature__container"><code class="signature">twin</code></pre>
 
 
-  <div class="member__brief"><p>The half-edge directed from {@code this.dst}.</p></div>
+  <div class="member__brief"><p>The half-edge directed from <code>this.dst</code>.</p></div>
   <div class="member__description"></div>
 
   
@@ -283,63 +282,65 @@ are directed in the clockwise direction of the right face.</p>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        origin
-      </td>
-      <td class="member-parameter__type">
-        <a href="Vertex.html">Vertex</a>
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          origin
+        </td>
+        <td class="member-parameter__type">
+          <a href="Vertex.html">Vertex</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          twin
+        </td>
+        <td class="member-parameter__type">
+          <a href="HalfEdge.html">HalfEdge</a>
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        twin
-      </td>
-      <td class="member-parameter__type">
-        <a href="HalfEdge.html">HalfEdge</a>
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          leftFace
+        </td>
+        <td class="member-parameter__type">
+          <a href="Face.html">Face</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        leftFace
-      </td>
-      <td class="member-parameter__type">
-        <a href="Face.html">Face</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -356,7 +357,7 @@ are directed in the clockwise direction of the right face.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -428,7 +429,6 @@ are directed in the clockwise direction of the right face.</p>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

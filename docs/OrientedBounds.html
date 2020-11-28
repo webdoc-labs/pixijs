@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -31,7 +30,7 @@
 
 
     <div class="document__brief"><p>An oriented bounding box is a rotated rectangle.</p></div>
-    <div class="document__description"><p>An oriented bounding box is modelled by rotating its (axis-aligned) OrientedBounds#innerBounds
+    <div class="document__description"><p>An oriented bounding box is modelled by rotating its (axis-aligned) <a href="OrientedBounds.html#innerBounds">OrientedBounds#innerBounds</a>
 by an angle OrientedBounds#angle around its center. The center of an oriented bounding box and
 its axis-aligned inner-bounds coincide.</p></div>
 
@@ -45,7 +44,7 @@ its axis-aligned inner-bounds coincide.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new OrientedBounds(innerBounds, angle)</code></pre>
+<pre class="signature__container"><code class="signature">new OrientedBounds(innerBounds, angle) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -53,41 +52,43 @@ its axis-aligned inner-bounds coincide.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        innerBounds
-      </td>
-      <td class="member-parameter__type">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
         
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        angle
-      </td>
-      <td class="member-parameter__type">
         
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          innerBounds
+        </td>
+        <td class="member-parameter__type">
+          
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          angle
+        </td>
+        <td class="member-parameter__type">
+          
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -99,7 +100,7 @@ its axis-aligned inner-bounds coincide.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new OrientedBounds(x: number, y: number, width: number, height: number, angle: number)</code></pre>
+<pre class="signature__container"><code class="signature">new OrientedBounds(x: number, y: number, width: number, height: number, angle: number) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -107,91 +108,93 @@ its axis-aligned inner-bounds coincide.</p></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        x
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          x
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        y
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          y
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          angle
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        angle
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -248,7 +251,7 @@ its axis-aligned inner-bounds coincide.</p></div>
 
 
   <div class="member__brief"><p>The center of this bounding box.</p></div>
-  <div class="member__description"><p>The center of this and {@code this.innerBounds} will always coincide.</p></div>
+  <div class="member__description"><p>The center of this and <code>this.innerBounds</code> will always coincide.</p></div>
 
   
 
@@ -345,42 +348,44 @@ its axis-aligned inner-bounds coincide.</p></div>
 
   
     
-<div class="member" id="copyFrom">
-  <h3 class="member__title">copyFrom</h3>
+<div class="member" id="contains">
+  <h3 class="member__title">contains</h3>
   
-<pre class="signature__container"><code class="signature">copyFrom(bounds: <a href="OrientedBounds.html">OrientedBounds</a>) → {this}</code></pre>
+<pre class="signature__container"><code class="signature">contains(point: <a href="PIXI.Point.html">PIXI.Point</a> | number) → {boolean}</code></pre>
 
 
-  <div class="member__brief"><p>Copies {@code bounds} into this instance.</p></div>
+  <div class="member__brief"><p>Whether this bounding box contains the given point</p></div>
   <div class="member__description"></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        bounds
-      </td>
-      <td class="member-parameter__type">
-        <a href="OrientedBounds.html">OrientedBounds</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          point
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Point.html">PIXI.Point</a> | number
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -397,7 +402,73 @@ its axis-aligned inner-bounds coincide.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>this</code></pre>
+        boolean
+      </td>
+      <td class="member-return__description"></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+</div>
+
+  
+    
+<div class="member" id="copyFrom">
+  <h3 class="member__title">copyFrom</h3>
+  
+<pre class="signature__container"><code class="signature">copyFrom(bounds: <a href="OrientedBounds.html">OrientedBounds</a>) → {this}</code></pre>
+
+
+  <div class="member__brief"><p>Copies <code>bounds</code> into this instance.</p></div>
+  <div class="member__description"></div>
+
+  
+    
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          bounds
+        </td>
+        <td class="member-parameter__type">
+          <a href="OrientedBounds.html">OrientedBounds</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+
+  
+    
+<table class="member-returns">
+  <caption class="member-returns__caption">Returns:</caption>
+  <thead class="member-returns__head">
+    <tr class="member-returns-header">
+      <th class="member-returns-header__type">Type</th>
+      <th class="member-returns-header__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="member-returns__body">
+    <tr class="member-return">
+      <td class="member-return__type">
+        this
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -415,36 +486,38 @@ its axis-aligned inner-bounds coincide.</p></div>
 <pre class="signature__container"><code class="signature">equals(bounds: <a href="OrientedBounds.html">OrientedBounds</a>) → {boolean}</code></pre>
 
 
-  <div class="member__brief"><p>Checks whether the given {@code bounds} are equal to this.</p></div>
+  <div class="member__brief"><p>Checks whether the given <code>bounds</code> are equal to this.</p></div>
   <div class="member__description"></div>
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        bounds
-      </td>
-      <td class="member-parameter__type">
-        <a href="OrientedBounds.html">OrientedBounds</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          bounds
+        </td>
+        <td class="member-parameter__type">
+          <a href="OrientedBounds.html">OrientedBounds</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -461,7 +534,7 @@ its axis-aligned inner-bounds coincide.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -497,7 +570,7 @@ its axis-aligned inner-bounds coincide.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>boolean</code></pre>
+        boolean
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -517,7 +590,7 @@ its axis-aligned inner-bounds coincide.</p></div>
 
   <div class="member__brief"></div>
   <div class="member__description"><p>This will recalculate the center, orientation matrix, and the hull vertices. It should be called only if
-{@code this.isDirty} returns true.</p></div>
+<code>this.isDirty</code> returns true.</p></div>
 
   
 
@@ -534,7 +607,7 @@ its axis-aligned inner-bounds coincide.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -570,7 +643,7 @@ its axis-aligned inner-bounds coincide.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -620,6 +693,8 @@ its axis-aligned inner-bounds coincide.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
+      <li class="page-members-explorer__item"><a href="OrientedBounds.html#contains">contains</a></li>
+    
       <li class="page-members-explorer__item"><a href="OrientedBounds.html#copyFrom">copyFrom</a></li>
     
       <li class="page-members-explorer__item"><a href="OrientedBounds.html#equals">equals</a></li>
@@ -640,7 +715,6 @@ its axis-aligned inner-bounds coincide.</p></div>
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>

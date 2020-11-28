@@ -8,12 +8,11 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
-    <script src="scripts/prettify.js"></script>
-    <script src="scripts/lang-css.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -38,7 +37,7 @@ and rotation of the given Display Objects is ignored. For example:</p>
 <pre><code class="hljs language-js"><span class="hljs-keyword">let</span> renderer = PIXI.autoDetectRenderer();
 <span class="hljs-keyword">let</span> baseRenderTexture = <span class="hljs-keyword">new</span> PIXI.BaseRenderTexture({ <span class="hljs-attr">width</span>: <span class="hljs-number">800</span>, <span class="hljs-attr">height</span>: <span class="hljs-number">600</span> });
 <span class="hljs-keyword">let</span> renderTexture = <span class="hljs-keyword">new</span> PIXI.RenderTexture(baseRenderTexture);
-<span class="hljs-keyword">let</span> sprite = PIXI.Sprite.from(<span class="hljs-string">"spinObj_01.png"</span>);
+<span class="hljs-keyword">let</span> sprite = PIXI.Sprite.from(<span class="hljs-string">&quot;spinObj_01.png&quot;</span>);
 
 sprite.position.x = <span class="hljs-number">800</span>/<span class="hljs-number">2</span>;
 sprite.position.y = <span class="hljs-number">600</span>/<span class="hljs-number">2</span>;
@@ -68,7 +67,7 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.BaseRenderTexture(options: object)</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.BaseRenderTexture(options: object) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -76,101 +75,103 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      <th class="member-parameter-header__default">Default</th>
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        options
-      </td>
-      <td class="member-parameter__type">
-        object
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        100
-      </td>
-      <td class="member-parameter__description"><p>The width of the base render texture.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        100
-      </td>
-      <td class="member-parameter__description"><p>The height of the base render texture.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.scaleMode
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        
-      </td>
-      <td class="member-parameter__description"><p>See <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a> for possible values.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        options.resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      <td class="member-parameter__default">
-        1
-      </td>
-      <td class="member-parameter__description"><p>The resolution / device pixel ratio of the texture being generated.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
+        <th class="member-parameter-header__default">Default</th>
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          options
+        </td>
+        <td class="member-parameter__type">
+          object
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          100
+        </td>
+        <td class="member-parameter__description"><p>The width of the base render texture.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          100
+        </td>
+        <td class="member-parameter__description"><p>The height of the base render texture.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.scaleMode
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          
+        </td>
+        <td class="member-parameter__description"><p>See <a href=PIXI.SCALE_MODES.html>PIXI.SCALE_MODES</a> for possible values.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          options.resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
+        <td class="member-parameter__default">
+          1
+        </td>
+        <td class="member-parameter__description"><p>The resolution / device pixel ratio of the texture being generated.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -242,7 +243,7 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 <pre class="signature__container"><code class="signature">alphaMode: <a href="PIXI.ALPHA_MODES.html">PIXI.ALPHA_MODES</a></code></pre>
 
 
-  <div class="member__brief"><p>How to treat premultiplied alpha, see <a href="PIXI.ALPHA_MODES.html">PIXI.ALPHA_MODES</a>.</p></div>
+  <div class="member__brief"><p>How to treat premultiplied alpha, see <a href=PIXI.ALPHA_MODES.html>PIXI.ALPHA_MODES</a>.</p></div>
   <div class="member__description"></div>
 
   
@@ -320,7 +321,7 @@ Please call <code>update()</code> to increment it.</p></div>
 <div class="member" id="filterStack">
   <h3 class="member__title">filterStack</h3>
   
-<pre class="signature__container"><code class="signature">filterStack: Array<Object></code></pre>
+<pre class="signature__container"><code class="signature">filterStack: Array&lt;Object></code></pre>
 
 
   <div class="member__brief"><p>The data structure for the filters.</p></div>
@@ -417,7 +418,7 @@ as you can</p></div>
 <div class="member" id="maskStack">
   <h3 class="member__title">maskStack</h3>
   
-<pre class="signature__container"><code class="signature">maskStack: Array<<a href="PIXI.MaskData.html">PIXI.MaskData</a>></code></pre>
+<pre class="signature__container"><code class="signature">maskStack: Array&lt;<a href=PIXI.MaskData.html>PIXI.MaskData</a>></code></pre>
 
 
   <div class="member__brief"><p>The data structure for the stencil masks.</p></div>
@@ -433,7 +434,7 @@ as you can</p></div>
 <div class="member" id="mipmap">
   <h3 class="member__title">mipmap</h3>
   
-<pre class="signature__container"><code class="signature">mipmap: <a href="PIXI.MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a></code></pre>
+<pre class="signature__container"><code class="signature">mipmap: <a href=PIXI.MIPMAP_MODES.html>PIXI.MIPMAP_MODES</a></code></pre>
 
 
   <div class="member__brief"><p>Mipmap mode of the texture, affects downscaled images</p></div>
@@ -449,7 +450,7 @@ as you can</p></div>
 <div class="member" id="parentTextureArray">
   <h3 class="member__title">parentTextureArray</h3>
   
-<pre class="signature__container"><code class="signature">parentTextureArray: <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">parentTextureArray: <a href=PIXI.BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"><p>Whether its a part of another texture, handled by ArrayResource or CubeResource</p></div>
@@ -529,7 +530,7 @@ as you can</p></div>
 <div class="member" id="resource">
   <h3 class="member__title">resource</h3>
   
-<pre class="signature__container"><code class="signature">resource: <a href="PIXI.Resource.html">PIXI.Resource</a></code></pre>
+<pre class="signature__container"><code class="signature">resource: <a href=PIXI.Resource.html>PIXI.Resource</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -547,7 +548,7 @@ resources.</p></div>
 <div class="member" id="scaleMode">
   <h3 class="member__title">scaleMode</h3>
   
-<pre class="signature__container"><code class="signature">scaleMode: <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a></code></pre>
+<pre class="signature__container"><code class="signature">scaleMode: <a href=PIXI.SCALE_MODES.html>PIXI.SCALE_MODES</a></code></pre>
 
 
   <div class="member__brief"><p>The scale mode to apply when scaling this texture</p></div>
@@ -595,7 +596,7 @@ resources.</p></div>
 <div class="member" id="textureCacheIds">
   <h3 class="member__title">textureCacheIds</h3>
   
-<pre class="signature__container"><code class="signature">textureCacheIds: Array<string></code></pre>
+<pre class="signature__container"><code class="signature">textureCacheIds: Array&lt;string></code></pre>
 
 
   <div class="member__brief"></div>
@@ -612,7 +613,7 @@ can have more than one ID, short name and longer full URL</p></div>
 <div class="member" id="type">
   <h3 class="member__title">type</h3>
   
-<pre class="signature__container"><code class="signature">type: <a href="PIXI.TYPES.html">PIXI.TYPES</a></code></pre>
+<pre class="signature__container"><code class="signature">type: <a href=PIXI.TYPES.html>PIXI.TYPES</a></code></pre>
 
 
   <div class="member__brief"><p>The type of resource data</p></div>
@@ -683,7 +684,7 @@ can have more than one ID, short name and longer full URL</p></div>
 <div class="member" id="_canvasRenderTarget">
   <h3 class="member__title">_canvasRenderTarget</h3>
   
-<pre class="signature__container"><code class="signature">protected _canvasRenderTarget: <a href="PIXI.utils.CanvasRenderTarget.html">PIXI.utils.CanvasRenderTarget</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _canvasRenderTarget: <a href=PIXI.utils.CanvasRenderTarget.html>PIXI.utils.CanvasRenderTarget</a></code></pre>
 
 
   <div class="member__brief"><p>A reference to the canvas render target (we only need one as this can be shared across renderers)</p></div>
@@ -775,7 +776,7 @@ can have more than one ID, short name and longer full URL</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -811,7 +812,7 @@ can have more than one ID, short name and longer full URL</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -849,7 +850,7 @@ memory again.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -864,7 +865,7 @@ memory again.</p></div>
 <div class="member" id="getDrawableSource">
   <h3 class="member__title">getDrawableSource</h3>
   
-<pre class="signature__container"><code class="signature">getDrawableSource() → {PIXI.ICanvasImageSource}</code></pre>
+<pre class="signature__container"><code class="signature">getDrawableSource() → {<a href="PIXI.ICanvasImageSource.html">PIXI.ICanvasImageSource</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -886,7 +887,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>PIXI.ICanvasImageSource</code></pre>
+        <a href="PIXI.ICanvasImageSource.html">PIXI.ICanvasImageSource</a>
       </td>
       <td class="member-return__description"><p>Source to render with CanvasRenderer</p></td>
     </tr>
@@ -909,31 +910,33 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        image
-      </td>
-      <td class="member-parameter__type">
-        string | HTMLImageElement
-      </td>
-      
-      
-      <td class="member-parameter__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          image
+        </td>
+        <td class="member-parameter__type">
+          string | HTMLImageElement
+        </td>
+        
+        
+        <td class="member-parameter__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -950,7 +953,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -973,41 +976,43 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The width to resize to.</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>The height to resize to.</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The width to resize to.</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>The height to resize to.</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1024,7 +1029,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1047,63 +1052,65 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        realWidth
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          realWidth
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Full rendered width</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          realHeight
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Full rendered width</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        realHeight
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>Full rendered height</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Full rendered height</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Optionally set resolution</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Optionally set resolution</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1120,7 +1127,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1143,31 +1150,33 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>res</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>res</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1184,7 +1193,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1207,31 +1216,33 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        resource
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.Resource.html">PIXI.Resource</a>
-      </td>
-      
-      
-      <td class="member-parameter__description"><p>that is managing this BaseTexture</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          resource
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.Resource.html">PIXI.Resource</a>
+        </td>
+        
+        
+        <td class="member-parameter__description"><p>that is managing this BaseTexture</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1248,7 +1259,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1271,63 +1282,65 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        width
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          width
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
+        <td class="member-parameter__description"><p>Visual width</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          height
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Visual width</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        height
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
+        <td class="member-parameter__description"><p>Visual height</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          resolution
+        </td>
+        <td class="member-parameter__type">
+          number
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Visual height</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        resolution
-      </td>
-      <td class="member-parameter__type">
-        number
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
-        
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>Optionally set resolution</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>Optionally set resolution</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1344,7 +1357,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1367,49 +1380,51 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
   
     
-<table class="member-parameters">
-  <caption class="member-parameters__caption">Parameters:</caption>
-  <thead class="member-parameters__head">
-    <tr class="member-parameter-header">
-      <th class="member-parameter-header__name">Name</th>
-      <th class="member-parameter-header__type">Type</th>
-      <th class="member-parameter-header__attributes">Attributes</th>
-      
-      <th class="member-parameter-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-parameters__body">
-    <tr class="member-parameter">
-      <td class="member-parameter__name">
-        scaleMode
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        <th class="member-parameter-header__attributes">Attributes</th>
         
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          scaleMode
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-      </td>
-      
-      <td class="member-parameter__description"><p>Pixi scalemode</p></td>
-    </tr><tr class="member-parameter">
-      <td class="member-parameter__name">
-        mipmap
-      </td>
-      <td class="member-parameter__type">
-        <a href="PIXI.MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a>
-      </td>
-      <td class="member-parameter__attributes">
-        <p>&lt;optional&gt;</p>
+        <td class="member-parameter__description"><p>Pixi scalemode</p></td>
+      </tr><tr class="member-parameter">
+        <td class="member-parameter__name">
+          mipmap
+        </td>
+        <td class="member-parameter__type">
+          <a href="PIXI.MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a>
+        </td>
+        <td class="member-parameter__attributes">
+          <p>&lt;optional&gt;</p>
+          
+          
+        </td>
         
-        
-      </td>
-      
-      <td class="member-parameter__description"><p>enable mipmaps</p></td>
-    </tr>
-  </tbody>
-</table>
+        <td class="member-parameter__description"><p>enable mipmaps</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 
@@ -1426,7 +1441,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code><a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+        <a href="PIXI.BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1462,7 +1477,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <pre><code>void</code></pre>
+        void
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -1606,7 +1621,6 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
-      <script>prettyPrint();</script>
       <script src="scripts/linenumber.js"> </script>
     </body>
   </div>
