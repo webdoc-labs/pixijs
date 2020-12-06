@@ -5,14 +5,14 @@
     <meta charset="utf-8" />
     <title>webdoc: TransformerHandle</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="scripts/default-template.js"></script>
+    <script src="/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +26,7 @@
     <div class="document__package">@pixi-essentials/transformer</div>
     <h1 class="document__title">TransformerHandle</h1>
     
-<pre class="signature__container"><code class="signature">class TransformerHandle extends <a href="PIXI.Graphics.html">PIXI.Graphics</a></code></pre>
+<pre class="signature__container"><code class="signature">class TransformerHandle extends <a href="PIXI/Graphics.html">PIXI.Graphics</a></code></pre>
 
 
     <div class="document__brief"><p>The transfomer handle base implementation.</p></div>
@@ -199,7 +199,7 @@
 <div class="member" id="_bounds">
   <h3 class="member__title">_bounds</h3>
   
-<pre class="signature__container"><code class="signature">_bounds: <a href=PIXI.Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">_bounds: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>The bounds object, this is used to calculate and store the bounds of the displayObject.</p></div>
@@ -231,7 +231,7 @@
 <div class="member" id="_localBounds">
   <h3 class="member__title">_localBounds</h3>
   
-<pre class="signature__container"><code class="signature">_localBounds: <a href=PIXI.Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">_localBounds: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Local bounds object, swapped with <code>_bounds</code> when using <code>getLocalBounds()</code>.</p></div>
@@ -468,7 +468,7 @@ you are constantly redrawing the graphics element.</p></div>
 <div class="member" id="children">
   <h3 class="member__title">children</h3>
   
-<pre class="signature__container"><code class="signature">children: Array&lt;<a href=PIXI.DisplayObject.html>PIXI.DisplayObject</a>></code></pre>
+<pre class="signature__container"><code class="signature">children: Array&lt;<a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a>></code></pre>
 
 
   <div class="member__brief"><p>The array of children of this container.</p></div>
@@ -501,7 +501,7 @@ is hovered over the displayObject.</p></div>
 <div class="member" id="fill">
   <h3 class="member__title">fill</h3>
   
-<pre class="signature__container"><code class="signature">fill: <a href=PIXI.FillStyle.html>PIXI.FillStyle</a></code></pre>
+<pre class="signature__container"><code class="signature">fill: <a href=PIXI/FillStyle.html>PIXI.FillStyle</a></code></pre>
 
 
   <div class="member__brief"><p>The current fill style.</p></div>
@@ -517,7 +517,7 @@ is hovered over the displayObject.</p></div>
 <div class="member" id="filterArea">
   <h3 class="member__title">filterArea</h3>
   
-<pre class="signature__container"><code class="signature">filterArea: ?<a href=PIXI.Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">filterArea: ?<a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -535,7 +535,7 @@ rather than figuring out the dimensions of the displayObject each frame you can 
 <div class="member" id="filters">
   <h3 class="member__title">filters</h3>
   
-<pre class="signature__container"><code class="signature">filters: Array&lt;<a href=PIXI.Filter.html>PIXI.Filter</a>></code></pre>
+<pre class="signature__container"><code class="signature">filters: Array&lt;<a href=PIXI/Filter.html>PIXI.Filter</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -555,7 +555,7 @@ To remove filters simply set this property to <code>'null'</code>.</li>
 <div class="member" id="geometry">
   <h3 class="member__title">geometry</h3>
   
-<pre class="signature__container"><code class="signature">geometry: <a href=PIXI.GraphicsGeometry.html>PIXI.GraphicsGeometry</a></code></pre>
+<pre class="signature__container"><code class="signature">geometry: <a href=PIXI/GraphicsGeometry.html>PIXI.GraphicsGeometry</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -605,7 +605,7 @@ this data to the GPU. Can be shared between multiple Mesh or Graphics objects.</
 <div class="member" id="hitArea">
   <h3 class="member__title">hitArea</h3>
   
-<pre class="signature__container"><code class="signature">hitArea: <a href=PIXI.IHitArea.html>PIXI.IHitArea</a></code></pre>
+<pre class="signature__container"><code class="signature">hitArea: <a href=PIXI/IHitArea.html>PIXI.IHitArea</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -688,7 +688,7 @@ Setting this to false allows PixiJS to bypass a recursive <code>hitTest</code> f
 <div class="member" id="line">
   <h3 class="member__title">line</h3>
   
-<pre class="signature__container"><code class="signature">line: <a href=PIXI.LineStyle.html>PIXI.LineStyle</a></code></pre>
+<pre class="signature__container"><code class="signature">line: <a href=PIXI/LineStyle.html>PIXI.LineStyle</a></code></pre>
 
 
   <div class="member__brief"><p>The current line style.</p></div>
@@ -704,7 +704,7 @@ Setting this to false allows PixiJS to bypass a recursive <code>hitTest</code> f
 <div class="member" id="localTransform">
   <h3 class="member__title">localTransform</h3>
   
-<pre class="signature__container"><code class="signature">localTransform: <a href=PIXI.Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">localTransform: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>Current transform of the object based on local factors: position, scale, other stuff.</p></div>
@@ -720,13 +720,13 @@ Setting this to false allows PixiJS to bypass a recursive <code>hitTest</code> f
 <div class="member" id="mask">
   <h3 class="member__title">mask</h3>
   
-<pre class="signature__container"><code class="signature">mask: <a href=PIXI.Container.html>PIXI.Container</a> | <a href=PIXI.MaskData.html>PIXI.MaskData</a> | unknown</code></pre>
+<pre class="signature__container"><code class="signature">mask: <a href=PIXI/Container.html>PIXI.Container</a> | <a href=PIXI/MaskData.html>PIXI.MaskData</a> | unknown</code></pre>
 
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Sets a mask for the displayObject. A mask is an object that limits the visibility of an
 object to the shape of the mask applied to it. In PixiJS a regular mask must be a
-<a href=PIXI.Graphics.html>PIXI.Graphics</a> or a <a href=PIXI.Sprite.html>PIXI.Sprite</a> object. This allows for much faster masking in canvas as it
+<a href=PIXI/Graphics.html>PIXI.Graphics</a> or a <a href=PIXI/Sprite.html>PIXI.Sprite</a> object. This allows for much faster masking in canvas as it
 utilities shape clipping. To remove a mask, set this property to <code>null</code>.</p>
 <p>For sprite mask both alpha and red channel are used. Black mask is the same as transparent mask.</p></div>
 
@@ -756,7 +756,7 @@ utilities shape clipping. To remove a mask, set this property to <code>null</cod
 <div class="member" id="parent">
   <h3 class="member__title">parent</h3>
   
-<pre class="signature__container"><code class="signature">parent: <a href=PIXI.Container.html>PIXI.Container</a></code></pre>
+<pre class="signature__container"><code class="signature">parent: <a href=PIXI/Container.html>PIXI.Container</a></code></pre>
 
 
   <div class="member__brief"><p>The display object container that contains this display object.</p></div>
@@ -772,7 +772,7 @@ utilities shape clipping. To remove a mask, set this property to <code>null</cod
 <div class="member" id="pivot">
   <h3 class="member__title">pivot</h3>
   
-<pre class="signature__container"><code class="signature">pivot: <a href=PIXI.ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">pivot: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -806,7 +806,7 @@ is the projection of <code>pivot</code> in the parent's local space.</p>
 <div class="member" id="position">
   <h3 class="member__title">position</h3>
   
-<pre class="signature__container"><code class="signature">position: <a href=PIXI.ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">position: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The coordinate of the object relative to the local coordinates of the parent.</p></div>
@@ -857,7 +857,7 @@ methods will still be called.</p>
 <div class="member" id="scale">
   <h3 class="member__title">scale</h3>
   
-<pre class="signature__container"><code class="signature">scale: <a href=PIXI.ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">scale: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The scale factors of this object along the local coordinate axes.</p></div>
@@ -873,7 +873,7 @@ methods will still be called.</p>
 <div class="member" id="shader">
   <h3 class="member__title">shader</h3>
   
-<pre class="signature__container"><code class="signature">shader: <a href=PIXI.Shader.html>PIXI.Shader</a></code></pre>
+<pre class="signature__container"><code class="signature">shader: <a href=PIXI/Shader.html>PIXI.Shader</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -890,7 +890,7 @@ Can be shared between multiple Graphics objects.</p></div>
 <div class="member" id="skew">
   <h3 class="member__title">skew</h3>
   
-<pre class="signature__container"><code class="signature">skew: <a href=PIXI.ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">skew: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The skew factor for the object in radians.</p></div>
@@ -906,7 +906,7 @@ Can be shared between multiple Graphics objects.</p></div>
 <div class="member" id="smartMask">
   <h3 class="member__title">smartMask</h3>
   
-<pre class="signature__container"><code class="signature">smartMask: <a href=PIXI.DisplayObject.html>PIXI.DisplayObject</a></code></pre>
+<pre class="signature__container"><code class="signature">smartMask: <a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -961,7 +961,7 @@ as the zIndex sorting may cause the child to automatically sorted to another pos
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href=PIXI.State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -1011,7 +1011,7 @@ blend mode, culling, depth testing, direction of rendering triangles, backface, 
 <div class="member" id="transform">
   <h3 class="member__title">transform</h3>
   
-<pre class="signature__container"><code class="signature">transform: <a href=PIXI.Transform.html>PIXI.Transform</a></code></pre>
+<pre class="signature__container"><code class="signature">transform: <a href=PIXI/Transform.html>PIXI.Transform</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -1078,7 +1078,7 @@ the updateTransform function will not be called.</p>
 <div class="member" id="worldTransform">
   <h3 class="member__title">worldTransform</h3>
   
-<pre class="signature__container"><code class="signature">worldTransform: <a href=PIXI.Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">worldTransform: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>Current transform of the object based on world (parent) factors.</p></div>
@@ -1185,7 +1185,7 @@ and thus rendered on top of other display objects within the same container.</p>
 <div class="member" id="_boundsRect">
   <h3 class="member__title">_boundsRect</h3>
   
-<pre class="signature__container"><code class="signature">protected _boundsRect: <a href=PIXI.Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _boundsRect: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Cache of this display-object's bounds-rectangle.</p></div>
@@ -1217,7 +1217,7 @@ and thus rendered on top of other display objects within the same container.</p>
 <div class="member" id="_enabledFilters">
   <h3 class="member__title">_enabledFilters</h3>
   
-<pre class="signature__container"><code class="signature">protected _enabledFilters: Array&lt;<a href=PIXI.Filter.html>PIXI.Filter</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected _enabledFilters: Array&lt;<a href=PIXI/Filter.html>PIXI.Filter</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -1233,7 +1233,7 @@ and thus rendered on top of other display objects within the same container.</p>
 <div class="member" id="_fillStyle">
   <h3 class="member__title">_fillStyle</h3>
   
-<pre class="signature__container"><code class="signature">protected _fillStyle: <a href=PIXI.FillStyle.html>PIXI.FillStyle</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _fillStyle: <a href=PIXI/FillStyle.html>PIXI.FillStyle</a></code></pre>
 
 
   <div class="member__brief"><p>Current fill style</p></div>
@@ -1282,7 +1282,7 @@ Used by containers to help sort objects with the same zIndex, by using previous 
 <div class="member" id="_lineStyle">
   <h3 class="member__title">_lineStyle</h3>
   
-<pre class="signature__container"><code class="signature">protected _lineStyle: <a href=PIXI.LineStyle.html>PIXI.LineStyle</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _lineStyle: <a href=PIXI/LineStyle.html>PIXI.LineStyle</a></code></pre>
 
 
   <div class="member__brief"><p>Current line style</p></div>
@@ -1298,7 +1298,7 @@ Used by containers to help sort objects with the same zIndex, by using previous 
 <div class="member" id="_localBoundsRect">
   <h3 class="member__title">_localBoundsRect</h3>
   
-<pre class="signature__container"><code class="signature">protected _localBoundsRect: <a href=PIXI.Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _localBoundsRect: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Cache of this display-object's local-bounds rectangle.</p></div>
@@ -1314,7 +1314,7 @@ Used by containers to help sort objects with the same zIndex, by using previous 
 <div class="member" id="_mask">
   <h3 class="member__title">_mask</h3>
   
-<pre class="signature__container"><code class="signature">protected _mask: <a href=PIXI.Container.html>PIXI.Container</a> | <a href=PIXI.MaskData.html>PIXI.MaskData</a> | unknown</code></pre>
+<pre class="signature__container"><code class="signature">protected _mask: <a href=PIXI/Container.html>PIXI.Container</a> | <a href=PIXI/MaskData.html>PIXI.MaskData</a> | unknown</code></pre>
 
 
   <div class="member__brief"><p>The original, cached mask of the object.</p></div>
@@ -1330,7 +1330,7 @@ Used by containers to help sort objects with the same zIndex, by using previous 
 <div class="member" id="_matrix">
   <h3 class="member__title">_matrix</h3>
   
-<pre class="signature__container"><code class="signature">protected _matrix: <a href=PIXI.Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _matrix: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>Current shape transform matrix.</p></div>
@@ -1346,7 +1346,7 @@ Used by containers to help sort objects with the same zIndex, by using previous 
 <div class="member" id="_tempDisplayObjectParent">
   <h3 class="member__title">_tempDisplayObjectParent</h3>
   
-<pre class="signature__container"><code class="signature">protected _tempDisplayObjectParent: <a href=PIXI.Container.html>PIXI.Container</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _tempDisplayObjectParent: <a href=PIXI/Container.html>PIXI.Container</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -1427,7 +1427,7 @@ A higher value will mean it will be rendered on top of other displayObjects with
 <div class="member" id="currentPath">
   <h3 class="member__title">currentPath</h3>
   
-<pre class="signature__container"><code class="signature">protected currentPath: <a href=PIXI.Polygon.html>PIXI.Polygon</a></code></pre>
+<pre class="signature__container"><code class="signature">protected currentPath: <a href=PIXI/Polygon.html>PIXI.Polygon</a></code></pre>
 
 
   <div class="member__brief"><p>Current path</p></div>
@@ -1503,7 +1503,7 @@ internal function for toLocal()</p></div>
 <div class="member" id="_renderDrawCallDirect">
   <h3 class="member__title">_renderDrawCallDirect</h3>
   
-<pre class="signature__container"><code class="signature">_renderDrawCallDirect(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>, drawCall: <a href="PIXI.BatchDrawCall.html">PIXI.BatchDrawCall</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">_renderDrawCallDirect(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>, drawCall: <a href="PIXI/BatchDrawCall.html">PIXI.BatchDrawCall</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Renders specific DrawCall</p></div>
@@ -1529,7 +1529,7 @@ internal function for toLocal()</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -1539,7 +1539,7 @@ internal function for toLocal()</p></div>
           drawCall
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.BatchDrawCall.html">PIXI.BatchDrawCall</a>
+          <a href="PIXI/BatchDrawCall.html">PIXI.BatchDrawCall</a>
         </td>
         
         
@@ -1579,7 +1579,7 @@ internal function for toLocal()</p></div>
 <div class="member" id="addChild">
   <h3 class="member__title">addChild</h3>
   
-<pre class="signature__container"><code class="signature">addChild(children: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>) → {<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addChild(children: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Adds one or more children to the container.</p></div>
@@ -1605,7 +1605,7 @@ internal function for toLocal()</p></div>
           children
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -1630,7 +1630,7 @@ internal function for toLocal()</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The first child that was added.</p></td>
     </tr>
@@ -1645,7 +1645,7 @@ internal function for toLocal()</p></div>
 <div class="member" id="addChildAt">
   <h3 class="member__title">addChildAt</h3>
   
-<pre class="signature__container"><code class="signature">addChildAt(child: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>, index: number) → {<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addChildAt(child: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, index: number) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Adds a child to the container at a specified index. If the index is out of bounds an error will be thrown</p></div>
@@ -1671,7 +1671,7 @@ internal function for toLocal()</p></div>
           child
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -1706,7 +1706,7 @@ internal function for toLocal()</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The child that was added.</p></td>
     </tr>
@@ -1721,7 +1721,7 @@ internal function for toLocal()</p></div>
 <div class="member" id="arc">
   <h3 class="member__title">arc</h3>
   
-<pre class="signature__container"><code class="signature">arc(cx: number, cy: number, radius: number, startAngle: number, endAngle: number, anticlockwise: boolean) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">arc(cx: number, cy: number, radius: number, startAngle: number, endAngle: number, anticlockwise: boolean) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>The arc method creates an arc/curve (used to create circles, or parts of circles).</p></div>
@@ -1861,7 +1861,7 @@ indicates counter-clockwise.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -1876,7 +1876,7 @@ indicates counter-clockwise.</p></td>
 <div class="member" id="arcTo">
   <h3 class="member__title">arcTo</h3>
   
-<pre class="signature__container"><code class="signature">arcTo(x1: number, y1: number, x2: number, y2: number, radius: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">arcTo(x1: number, y1: number, x2: number, y2: number, radius: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>The arcTo() method creates an arc/curve between two tangents on the canvas.</p></div>
@@ -1967,7 +1967,7 @@ indicates counter-clockwise.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -1982,7 +1982,7 @@ indicates counter-clockwise.</p></td>
 <div class="member" id="beginFill">
   <h3 class="member__title">beginFill</h3>
   
-<pre class="signature__container"><code class="signature">beginFill(color: number, alpha: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">beginFill(color: number, alpha: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -2056,7 +2056,7 @@ indicates counter-clockwise.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -2071,7 +2071,7 @@ indicates counter-clockwise.</p></td>
 <div class="member" id="beginHole">
   <h3 class="member__title">beginHole</h3>
   
-<pre class="signature__container"><code class="signature">beginHole() → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">beginHole() → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -2096,7 +2096,7 @@ please use <code>moveTo</code> <code>lineTo</code>, <code>quadraticCurveTo</code
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>Returns itself.</p></td>
     </tr>
@@ -2111,7 +2111,7 @@ please use <code>moveTo</code> <code>lineTo</code>, <code>quadraticCurveTo</code
 <div class="member" id="beginTextureFill">
   <h3 class="member__title">beginTextureFill</h3>
   
-<pre class="signature__container"><code class="signature">beginTextureFill(options: object) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">beginTextureFill(options: object) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Begin the texture fill</p></div>
@@ -2153,7 +2153,7 @@ please use <code>moveTo</code> <code>lineTo</code>, <code>quadraticCurveTo</code
           options.texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Texture.html">PIXI.Texture</a>
+          <a href="PIXI/Texture.html">PIXI.Texture</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -2201,7 +2201,7 @@ please use <code>moveTo</code> <code>lineTo</code>, <code>quadraticCurveTo</code
           options.matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Matrix.html">PIXI.Matrix</a>
+          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -2232,7 +2232,7 @@ please use <code>moveTo</code> <code>lineTo</code>, <code>quadraticCurveTo</code
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -2247,7 +2247,7 @@ please use <code>moveTo</code> <code>lineTo</code>, <code>quadraticCurveTo</code
 <div class="member" id="bezierCurveTo">
   <h3 class="member__title">bezierCurveTo</h3>
   
-<pre class="signature__container"><code class="signature">bezierCurveTo(cpX: number, cpY: number, cpX2: number, cpY2: number, toX: number, toY: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">bezierCurveTo(cpX: number, cpY: number, cpX2: number, cpY2: number, toX: number, toY: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Calculate the points for a bezier curve and then draws it.</p></div>
@@ -2348,7 +2348,7 @@ please use <code>moveTo</code> <code>lineTo</code>, <code>quadraticCurveTo</code
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -2400,7 +2400,7 @@ is limited to its mask's bounds or filterArea, if any is applied.</p></div>
 <div class="member" id="clear">
   <h3 class="member__title">clear</h3>
   
-<pre class="signature__container"><code class="signature">clear() → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clear() → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Clears the graphics that were drawn to this Graphics object, and resets fill and line style settings.</p></div>
@@ -2421,7 +2421,7 @@ is limited to its mask's bounds or filterArea, if any is applied.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -2436,7 +2436,7 @@ is limited to its mask's bounds or filterArea, if any is applied.</p></div>
 <div class="member" id="clone">
   <h3 class="member__title">clone</h3>
   
-<pre class="signature__container"><code class="signature">clone() → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clone() → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -2458,7 +2458,7 @@ Note that only the geometry of the object is cloned, not its transform (position
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>A clone of the graphics object</p></td>
     </tr>
@@ -2473,7 +2473,7 @@ Note that only the geometry of the object is cloned, not its transform (position
 <div class="member" id="closePath">
   <h3 class="member__title">closePath</h3>
   
-<pre class="signature__container"><code class="signature">closePath() → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">closePath() → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Closes the current path.</p></div>
@@ -2494,7 +2494,7 @@ Note that only the geometry of the object is cloned, not its transform (position
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>Returns itself.</p></td>
     </tr>
@@ -2526,7 +2526,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="containsPoint">
   <h3 class="member__title">containsPoint</h3>
   
-<pre class="signature__container"><code class="signature">containsPoint(point: <a href="PIXI.IPointData.html">PIXI.IPointData</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">containsPoint(point: <a href="PIXI/IPointData.html">PIXI.IPointData</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Tests if a point is inside this graphics object</p></div>
@@ -2552,7 +2552,7 @@ Will crash if there's no parent element.</p></div>
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.IPointData.html">PIXI.IPointData</a>
+          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         
         
@@ -2716,7 +2716,7 @@ Should it destroy the base texture of the child sprite</p></td>
 <div class="member" id="disableTempParent">
   <h3 class="member__title">disableTempParent</h3>
   
-<pre class="signature__container"><code class="signature">disableTempParent(cacheParent: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">disableTempParent(cacheParent: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Pair method for <code>enableTempParent</code></p></div>
@@ -2742,7 +2742,7 @@ Should it destroy the base texture of the child sprite</p></td>
           cacheParent
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -2835,7 +2835,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="drawCircle">
   <h3 class="member__title">drawCircle</h3>
   
-<pre class="signature__container"><code class="signature">drawCircle(x: number, y: number, radius: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">drawCircle(x: number, y: number, radius: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Draws a circle.</p></div>
@@ -2906,7 +2906,7 @@ Will crash if there's no parent element.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -2921,7 +2921,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="drawEllipse">
   <h3 class="member__title">drawEllipse</h3>
   
-<pre class="signature__container"><code class="signature">drawEllipse(x: number, y: number, width: number, height: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">drawEllipse(x: number, y: number, width: number, height: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Draws an ellipse.</p></div>
@@ -3002,7 +3002,7 @@ Will crash if there's no parent element.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -3017,7 +3017,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="drawPolygon">
   <h3 class="member__title">drawPolygon</h3>
   
-<pre class="signature__container"><code class="signature">drawPolygon(path: Array&lt;number> | Array&lt;<a href="PIXI.Point.html">PIXI.Point</a>> | <a href="PIXI.Polygon.html">PIXI.Polygon</a>) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">drawPolygon(path: Array&lt;number> | Array&lt;<a href="PIXI/Point.html">PIXI.Point</a>> | <a href="PIXI/Polygon.html">PIXI.Polygon</a>) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Draws a polygon using the given path.</p></div>
@@ -3043,7 +3043,7 @@ Will crash if there's no parent element.</p></div>
           path
         </td>
         <td class="member-parameter__type">
-          Array&lt;number&gt; | Array&lt;<a href="PIXI.Point.html">PIXI.Point</a>&gt; | <a href="PIXI.Polygon.html">PIXI.Polygon</a>
+          Array&lt;number&gt; | Array&lt;<a href="PIXI/Point.html">PIXI.Point</a>&gt; | <a href="PIXI/Polygon.html">PIXI.Polygon</a>
         </td>
         
         
@@ -3068,7 +3068,7 @@ Will crash if there's no parent element.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -3083,7 +3083,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="drawRect">
   <h3 class="member__title">drawRect</h3>
   
-<pre class="signature__container"><code class="signature">drawRect(x: number, y: number, width: number, height: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">drawRect(x: number, y: number, width: number, height: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Draws a rectangle shape.</p></div>
@@ -3164,7 +3164,7 @@ Will crash if there's no parent element.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -3179,7 +3179,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="drawRoundedRect">
   <h3 class="member__title">drawRoundedRect</h3>
   
-<pre class="signature__container"><code class="signature">drawRoundedRect(x: number, y: number, width: number, height: number, radius: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">drawRoundedRect(x: number, y: number, width: number, height: number, radius: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Draw a rectangle shape with rounded/beveled corners.</p></div>
@@ -3270,7 +3270,7 @@ Will crash if there's no parent element.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -3285,7 +3285,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="drawShape">
   <h3 class="member__title">drawShape</h3>
   
-<pre class="signature__container"><code class="signature">drawShape(shape: <a href="PIXI.Circle.html">PIXI.Circle</a> | <a href="PIXI.Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI.Polygon.html">PIXI.Polygon</a> | <a href="PIXI.Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI.RoundedRectangle.html">PIXI.RoundedRectangle</a>) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">drawShape(shape: <a href="PIXI/Circle.html">PIXI.Circle</a> | <a href="PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI/Polygon.html">PIXI.Polygon</a> | <a href="PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Draw any shape.</p></div>
@@ -3311,7 +3311,7 @@ Will crash if there's no parent element.</p></div>
           shape
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Circle.html">PIXI.Circle</a> | <a href="PIXI.Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI.Polygon.html">PIXI.Polygon</a> | <a href="PIXI.Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI.RoundedRectangle.html">PIXI.RoundedRectangle</a>
+          <a href="PIXI/Circle.html">PIXI.Circle</a> | <a href="PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI/Polygon.html">PIXI.Polygon</a> | <a href="PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>
         </td>
         
         
@@ -3336,7 +3336,7 @@ Will crash if there's no parent element.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -3351,7 +3351,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="drawStar">
   <h3 class="member__title">drawStar</h3>
   
-<pre class="signature__container"><code class="signature">drawStar(x: number, y: number, points: number, radius: number, innerRadius: number, rotation: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">drawStar(x: number, y: number, points: number, radius: number, innerRadius: number, rotation: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Draw a star shape with an arbitrary number of points.</p></div>
@@ -3488,7 +3488,7 @@ Will crash if there's no parent element.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -3503,7 +3503,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="enableTempParent">
   <h3 class="member__title">enableTempParent</h3>
   
-<pre class="signature__container"><code class="signature">enableTempParent() → {<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">enableTempParent() → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Used in Renderer, cacheAsBitmap and other places where you call an <code>updateTransform</code> on root</p></div>
@@ -3527,7 +3527,7 @@ elem.disable<span class="hljs-constructor">TempParent(<span class="hljs-params">
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>current parent</p></td>
     </tr>
@@ -3542,7 +3542,7 @@ elem.disable<span class="hljs-constructor">TempParent(<span class="hljs-params">
 <div class="member" id="endFill">
   <h3 class="member__title">endFill</h3>
   
-<pre class="signature__container"><code class="signature">endFill() → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">endFill() → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Applies a fill to the lines and shapes that were added since the last call to the beginFill() method.</p></div>
@@ -3563,7 +3563,7 @@ elem.disable<span class="hljs-constructor">TempParent(<span class="hljs-params">
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -3578,7 +3578,7 @@ elem.disable<span class="hljs-constructor">TempParent(<span class="hljs-params">
 <div class="member" id="endHole">
   <h3 class="member__title">endHole</h3>
   
-<pre class="signature__container"><code class="signature">endHole() → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">endHole() → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -3599,7 +3599,7 @@ elem.disable<span class="hljs-constructor">TempParent(<span class="hljs-params">
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>Returns itself.</p></td>
     </tr>
@@ -3614,7 +3614,7 @@ elem.disable<span class="hljs-constructor">TempParent(<span class="hljs-params">
 <div class="member" id="generateCanvasTexture">
   <h3 class="member__title">generateCanvasTexture</h3>
   
-<pre class="signature__container"><code class="signature">generateCanvasTexture(scaleMode: <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>, resolution: number) → {<a href="PIXI.Texture.html">PIXI.Texture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">generateCanvasTexture(scaleMode: <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>, resolution: number) → {<a href="PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -3641,7 +3641,7 @@ or the <strong>@pixi/canvas-graphics</strong> package.</p></div>
           scaleMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.SCALE_MODES.html">PIXI.SCALE_MODES</a>
+          <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
         </td>
         
         
@@ -3676,7 +3676,7 @@ or the <strong>@pixi/canvas-graphics</strong> package.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Texture.html">PIXI.Texture</a>
+        <a href="PIXI/Texture.html">PIXI.Texture</a>
       </td>
       <td class="member-return__description"><p>The new texture.</p></td>
     </tr>
@@ -3691,10 +3691,10 @@ or the <strong>@pixi/canvas-graphics</strong> package.</p></div>
 <div class="member" id="getBounds">
   <h3 class="member__title">getBounds</h3>
   
-<pre class="signature__container"><code class="signature">getBounds(skipUpdate: boolean, rect: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI.Rectangle.html">PIXI.Rectangle</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getBounds(skipUpdate: boolean, rect: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
 
 
-  <div class="member__brief"><p>Calculates and returns the (world) bounds of the display object as a <a href=PIXI.Rectangle.html>Rectangle</a>.</p></div>
+  <div class="member__brief"><p>Calculates and returns the (world) bounds of the display object as a <a href=PIXI/Rectangle.html>Rectangle</a>.</p></div>
   <div class="member__description"><p>This method is expensive on containers with a large subtree (like the stage). This is because the bounds
 of a container depend on its children's bounds, which recursively causes all bounds in the subtree to
 be recalculated. The upside, however, is that calling <code>getBounds</code> once on a container will indeed update
@@ -3711,7 +3711,7 @@ calculation if needed.</p>
 <pre><code class="hljs language-js"><span class="hljs-keyword">const</span> lastCalculatedBounds = displayObject._bounds.getRectangle(optionalRect);
 </code></pre>
 <p>Do know that usage of <code>getLocalBounds</code> can corrupt the <code>_bounds</code> of children (the whole subtree, actually). This
-is a known issue that has not been solved. See <a href=PIXI.DisplayObject.html#getLocalBounds>getLocalBounds</a> for more
+is a known issue that has not been solved. See <a href=PIXI/DisplayObject.html#getLocalBounds>getLocalBounds</a> for more
 details.</p>
 <p><code>getBounds</code> should be called with <code>skipUpdate</code> equal to <code>true</code> in a render() call. This is because the transforms
 are guaranteed to be update-to-date. In fact, recalculating inside a render() call may cause corruption in certain
@@ -3753,7 +3753,7 @@ nice performance boost.</p></td>
           rect
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -3782,7 +3782,7 @@ nice performance boost.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
       </td>
       <td class="member-return__description"><p>The minimum axis-aligned rectangle in world space that fits around this object.</p></td>
     </tr>
@@ -3797,7 +3797,7 @@ nice performance boost.</p></td>
 <div class="member" id="getChildAt">
   <h3 class="member__title">getChildAt</h3>
   
-<pre class="signature__container"><code class="signature">getChildAt(index: number) → {<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getChildAt(index: number) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Returns the child at the specified index</p></div>
@@ -3848,7 +3848,7 @@ nice performance boost.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The child at the given index, if any.</p></td>
     </tr>
@@ -3863,7 +3863,7 @@ nice performance boost.</p></td>
 <div class="member" id="getChildByName">
   <h3 class="member__title">getChildByName</h3>
   
-<pre class="signature__container"><code class="signature">getChildByName(name: string, deep: boolean) → {<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getChildByName(name: string, deep: boolean) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Returns the display object in the container.</p></div>
@@ -3936,7 +3936,7 @@ nice performance boost.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The child with the specified name.</p></td>
     </tr>
@@ -3951,7 +3951,7 @@ nice performance boost.</p></td>
 <div class="member" id="getChildIndex">
   <h3 class="member__title">getChildIndex</h3>
   
-<pre class="signature__container"><code class="signature">getChildIndex(child: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>) → {number}</code></pre>
+<pre class="signature__container"><code class="signature">getChildIndex(child: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {number}</code></pre>
 
 
   <div class="member__brief"><p>Returns the index position of a child DisplayObject instance</p></div>
@@ -3977,7 +3977,7 @@ nice performance boost.</p></td>
           child
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -4017,7 +4017,7 @@ nice performance boost.</p></td>
 <div class="member" id="getGlobalPosition">
   <h3 class="member__title">getGlobalPosition</h3>
   
-<pre class="signature__container"><code class="signature">getGlobalPosition(point: <a href="PIXI.Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="PIXI.Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getGlobalPosition(point: <a href="PIXI/Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"><p>Returns the global position of the displayObject. Does not depend on object scale, rotation and pivot.</p></div>
@@ -4043,7 +4043,7 @@ nice performance boost.</p></td>
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Point.html">PIXI.Point</a>
+          <a href="PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -4092,7 +4092,7 @@ nice performance boost.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Point.html">PIXI.Point</a>
+        <a href="PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"><p>The updated point.</p></td>
     </tr>
@@ -4107,7 +4107,7 @@ nice performance boost.</p></td>
 <div class="member" id="getLocalBounds">
   <h3 class="member__title">getLocalBounds</h3>
   
-<pre class="signature__container"><code class="signature">getLocalBounds(rect: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>, skipChildrenUpdate: boolean) → {<a href="PIXI.Rectangle.html">PIXI.Rectangle</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getLocalBounds(rect: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>, skipChildrenUpdate: boolean) → {<a href="PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
 
 
   <div class="member__brief"><p>Retrieves the local bounds of the displayObject as a rectangle object.</p></div>
@@ -4134,7 +4134,7 @@ call, it is advised to call <code>getBounds()</code> immediately after to recalc
           rect
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -4182,7 +4182,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
       </td>
       <td class="member-return__description"><p>The rectangular bounding area.</p></td>
     </tr>
@@ -4234,7 +4234,7 @@ masked with gl.scissor.</p></div>
 <div class="member" id="lineStyle">
   <h3 class="member__title">lineStyle</h3>
   
-<pre class="signature__container"><code class="signature">lineStyle(options: object) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">lineStyle(options: object) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -4357,7 +4357,7 @@ method or the drawCircle() method.</p></div>
           options.cap
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.LINE_CAP.html">PIXI.LINE_CAP</a>
+          <a href="PIXI/LINE_CAP.html">PIXI.LINE_CAP</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -4373,7 +4373,7 @@ method or the drawCircle() method.</p></div>
           options.join
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.LINE_JOIN.html">PIXI.LINE_JOIN</a>
+          <a href="PIXI/LINE_JOIN.html">PIXI.LINE_JOIN</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -4420,7 +4420,7 @@ method or the drawCircle() method.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -4435,7 +4435,7 @@ method or the drawCircle() method.</p></div>
 <div class="member" id="lineTextureStyle">
   <h3 class="member__title">lineTextureStyle</h3>
   
-<pre class="signature__container"><code class="signature">lineTextureStyle(options: object) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">lineTextureStyle(options: object) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Like line style but support texture for line fill.</p></div>
@@ -4493,7 +4493,7 @@ method or the drawCircle() method.</p></div>
           options.texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Texture.html">PIXI.Texture</a>
+          <a href="PIXI/Texture.html">PIXI.Texture</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -4542,7 +4542,7 @@ Default 0xFFFFFF if texture present.</p></td>
           options.matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Matrix.html">PIXI.Matrix</a>
+          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -4590,7 +4590,7 @@ Default 0xFFFFFF if texture present.</p></td>
           options.cap
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.LINE_CAP.html">PIXI.LINE_CAP</a>
+          <a href="PIXI/LINE_CAP.html">PIXI.LINE_CAP</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -4606,7 +4606,7 @@ Default 0xFFFFFF if texture present.</p></td>
           options.join
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.LINE_JOIN.html">PIXI.LINE_JOIN</a>
+          <a href="PIXI/LINE_JOIN.html">PIXI.LINE_JOIN</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -4653,7 +4653,7 @@ Default 0xFFFFFF if texture present.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -4668,7 +4668,7 @@ Default 0xFFFFFF if texture present.</p></td>
 <div class="member" id="lineTo">
   <h3 class="member__title">lineTo</h3>
   
-<pre class="signature__container"><code class="signature">lineTo(x: number, y: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">lineTo(x: number, y: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -4730,7 +4730,7 @@ The current drawing position is then set to (x, y).</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -4745,7 +4745,7 @@ The current drawing position is then set to (x, y).</p></div>
 <div class="member" id="moveTo">
   <h3 class="member__title">moveTo</h3>
   
-<pre class="signature__container"><code class="signature">moveTo(x: number, y: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">moveTo(x: number, y: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Moves the current drawing position to x, y.</p></div>
@@ -4806,7 +4806,7 @@ The current drawing position is then set to (x, y).</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -4821,7 +4821,7 @@ The current drawing position is then set to (x, y).</p></div>
 <div class="member" id="onDrag">
   <h3 class="member__title">onDrag</h3>
   
-<pre class="signature__container"><code class="signature">onDrag(e: <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">onDrag(e: <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Called on a <code>pointermove</code> when <code>this._pointerDown</code> &amp; <code>this._pointerDragging</code>.</p></div>
@@ -4847,7 +4847,7 @@ The current drawing position is then set to (x, y).</p></div>
           e
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>
+          <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>
         </td>
         
         
@@ -4887,7 +4887,7 @@ The current drawing position is then set to (x, y).</p></div>
 <div class="member" id="onDragEnd">
   <h3 class="member__title">onDragEnd</h3>
   
-<pre class="signature__container"><code class="signature">onDragEnd(_: <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">onDragEnd(_: <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Called on a <code>pointerup</code> or <code>pointerupoutside</code> &amp; <code>this._pointerDragging</code> was true.</p></div>
@@ -4913,7 +4913,7 @@ The current drawing position is then set to (x, y).</p></div>
           _
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>
+          <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>
         </td>
         
         
@@ -4953,7 +4953,7 @@ The current drawing position is then set to (x, y).</p></div>
 <div class="member" id="onDragStart">
   <h3 class="member__title">onDragStart</h3>
   
-<pre class="signature__container"><code class="signature">onDragStart(e: <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">onDragStart(e: <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Called on the first <code>pointermove</code> when <code>this._pointerDown</code> is true. You must call the super implementation.</p></div>
@@ -4979,7 +4979,7 @@ The current drawing position is then set to (x, y).</p></div>
           e
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>
+          <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>
         </td>
         
         
@@ -5019,7 +5019,7 @@ The current drawing position is then set to (x, y).</p></div>
 <div class="member" id="onPointerDown">
   <h3 class="member__title">onPointerDown</h3>
   
-<pre class="signature__container"><code class="signature">onPointerDown(e: <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">onPointerDown(e: <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Handles the <code>pointerdown</code> event. You must call the super implementation.</p></div>
@@ -5045,7 +5045,7 @@ The current drawing position is then set to (x, y).</p></div>
           e
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>
+          <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>
         </td>
         
         
@@ -5085,7 +5085,7 @@ The current drawing position is then set to (x, y).</p></div>
 <div class="member" id="onPointerMove">
   <h3 class="member__title">onPointerMove</h3>
   
-<pre class="signature__container"><code class="signature">onPointerMove(e: <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">onPointerMove(e: <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Handles the <code>pointermove</code> event. You must call the super implementation.</p></div>
@@ -5111,7 +5111,7 @@ The current drawing position is then set to (x, y).</p></div>
           e
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>
+          <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>
         </td>
         
         
@@ -5151,7 +5151,7 @@ The current drawing position is then set to (x, y).</p></div>
 <div class="member" id="onPointerUp">
   <h3 class="member__title">onPointerUp</h3>
   
-<pre class="signature__container"><code class="signature">onPointerUp(e: <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">onPointerUp(e: <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Handles the <code>pointerup</code> event. You must call the super implementation.</p></div>
@@ -5177,7 +5177,7 @@ The current drawing position is then set to (x, y).</p></div>
           e
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.InteractionEvent.html">PIXI.InteractionEvent</a>
+          <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>
         </td>
         
         
@@ -5217,7 +5217,7 @@ The current drawing position is then set to (x, y).</p></div>
 <div class="member" id="quadraticCurveTo">
   <h3 class="member__title">quadraticCurveTo</h3>
   
-<pre class="signature__container"><code class="signature">quadraticCurveTo(cpX: number, cpY: number, toX: number, toY: number) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">quadraticCurveTo(cpX: number, cpY: number, toX: number, toY: number) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -5299,7 +5299,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>This Graphics object. Good for chaining method calls</p></td>
     </tr>
@@ -5314,7 +5314,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="removeChild">
   <h3 class="member__title">removeChild</h3>
   
-<pre class="signature__container"><code class="signature">removeChild(children: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>) → {<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">removeChild(children: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Removes one or more children from the container.</p></div>
@@ -5340,7 +5340,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           children
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -5365,7 +5365,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The first child that was removed.</p></td>
     </tr>
@@ -5380,7 +5380,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="removeChildAt">
   <h3 class="member__title">removeChildAt</h3>
   
-<pre class="signature__container"><code class="signature">removeChildAt(index: number) → {<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">removeChildAt(index: number) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Removes a child from the specified index position.</p></div>
@@ -5431,7 +5431,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The child that was removed.</p></td>
     </tr>
@@ -5446,7 +5446,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="removeChildren">
   <h3 class="member__title">removeChildren</h3>
   
-<pre class="signature__container"><code class="signature">removeChildren(beginIndex: number, endIndex: number) → {Array&lt;<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>>}</code></pre>
+<pre class="signature__container"><code class="signature">removeChildren(beginIndex: number, endIndex: number) → {Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>>}</code></pre>
 
 
   <div class="member__brief"><p>Removes all children from this container that are within the begin and end indexes.</p></div>
@@ -5519,7 +5519,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        Array&lt;<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>&gt;
+        Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
       </td>
       <td class="member-return__description"><p>List of removed children</p></td>
     </tr>
@@ -5534,7 +5534,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="render">
   <h3 class="member__title">render</h3>
   
-<pre class="signature__container"><code class="signature">render(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">render(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -5560,7 +5560,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -5600,7 +5600,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="renderCanvas">
   <h3 class="member__title">renderCanvas</h3>
   
-<pre class="signature__container"><code class="signature">renderCanvas(renderer: <a href="PIXI.CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">renderCanvas(renderer: <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -5626,7 +5626,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.CanvasRenderer.html">PIXI.CanvasRenderer</a>
+          <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>
         </td>
         
         
@@ -5666,7 +5666,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="renderWebGL">
   <h3 class="member__title">renderWebGL</h3>
   
-<pre class="signature__container"><code class="signature">renderWebGL(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">renderWebGL(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -5692,7 +5692,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -5732,7 +5732,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="setChildIndex">
   <h3 class="member__title">setChildIndex</h3>
   
-<pre class="signature__container"><code class="signature">setChildIndex(child: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>, index: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">setChildIndex(child: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, index: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Changes the position of an existing child in the display object container</p></div>
@@ -5758,7 +5758,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           child
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -5808,7 +5808,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="setMatrix">
   <h3 class="member__title">setMatrix</h3>
   
-<pre class="signature__container"><code class="signature">setMatrix(matrix: <a href="PIXI.Matrix.html">PIXI.Matrix</a>) → {<a href="PIXI.Graphics.html">PIXI.Graphics</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setMatrix(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="PIXI/Graphics.html">PIXI.Graphics</a>}</code></pre>
 
 
   <div class="member__brief"><p>Apply a matrix to the positional data.</p></div>
@@ -5834,7 +5834,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Matrix.html">PIXI.Matrix</a>
+          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -5859,7 +5859,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Graphics.html">PIXI.Graphics</a>
+        <a href="PIXI/Graphics.html">PIXI.Graphics</a>
       </td>
       <td class="member-return__description"><p>Returns itself.</p></td>
     </tr>
@@ -5874,7 +5874,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="setParent">
   <h3 class="member__title">setParent</h3>
   
-<pre class="signature__container"><code class="signature">setParent(container: <a href="PIXI.Container.html">PIXI.Container</a>) → {<a href="PIXI.Container.html">PIXI.Container</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setParent(container: <a href="PIXI/Container.html">PIXI.Container</a>) → {<a href="PIXI/Container.html">PIXI.Container</a>}</code></pre>
 
 
   <div class="member__brief"><p>Set the parent Container of this DisplayObject.</p></div>
@@ -5900,7 +5900,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           container
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Container.html">PIXI.Container</a>
+          <a href="PIXI/Container.html">PIXI.Container</a>
         </td>
         
         
@@ -5925,7 +5925,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Container.html">PIXI.Container</a>
+        <a href="PIXI/Container.html">PIXI.Container</a>
       </td>
       <td class="member-return__description"><p>The Container that this DisplayObject was added to.</p></td>
     </tr>
@@ -5940,7 +5940,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="setTransform">
   <h3 class="member__title">setTransform</h3>
   
-<pre class="signature__container"><code class="signature">setTransform(x: number, y: number, scaleX: number, scaleY: number, rotation: number, skewX: number, skewY: number, pivotX: number, pivotY: number) → {<a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setTransform(x: number, y: number, scaleX: number, scaleY: number, rotation: number, skewX: number, skewY: number, pivotX: number, pivotY: number) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Convenience function to set the position, scale, skew and pivot at once.</p></div>
@@ -6125,7 +6125,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The DisplayObject instance</p></td>
     </tr>
@@ -6176,7 +6176,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="swapChildren">
   <h3 class="member__title">swapChildren</h3>
   
-<pre class="signature__container"><code class="signature">swapChildren(child: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>, child2: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">swapChildren(child: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, child2: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Swaps the position of 2 Display Objects within this container.</p></div>
@@ -6202,7 +6202,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           child
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -6212,7 +6212,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           child2
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -6252,7 +6252,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="toGlobal">
   <h3 class="member__title">toGlobal</h3>
   
-<pre class="signature__container"><code class="signature">toGlobal(position: <a href="PIXI.IPointData.html">PIXI.IPointData</a>, point: <a href="PIXI.Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="PIXI.Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">toGlobal(position: <a href="PIXI/IPointData.html">PIXI.IPointData</a>, point: <a href="PIXI/Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"><p>Calculates the global position of the display object.</p></div>
@@ -6278,7 +6278,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           position
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.IPointData.html">PIXI.IPointData</a>
+          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -6294,7 +6294,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Point.html">PIXI.Point</a>
+          <a href="PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -6342,7 +6342,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Point.html">PIXI.Point</a>
+        <a href="PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"><p>A point object representing the position of this object.</p></td>
     </tr>
@@ -6357,7 +6357,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="toLocal">
   <h3 class="member__title">toLocal</h3>
   
-<pre class="signature__container"><code class="signature">toLocal(position: <a href="PIXI.IPointData.html">PIXI.IPointData</a>, from: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>, point: <a href="PIXI.Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="PIXI.Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">toLocal(position: <a href="PIXI/IPointData.html">PIXI.IPointData</a>, from: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, point: <a href="PIXI/Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"><p>Calculates the local position of the display object relative to another point.</p></div>
@@ -6383,7 +6383,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           position
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.IPointData.html">PIXI.IPointData</a>
+          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -6399,7 +6399,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           from
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -6415,7 +6415,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Point.html">PIXI.Point</a>
+          <a href="PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -6463,7 +6463,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Point.html">PIXI.Point</a>
+        <a href="PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"><p>A point object representing the position of this object</p></td>
     </tr>
@@ -6681,7 +6681,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="_render">
   <h3 class="member__title">_render</h3>
   
-<pre class="signature__container"><code class="signature">protected _render(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected _render(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Renders the object using the WebGL renderer</p></div>
@@ -6707,7 +6707,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -6747,7 +6747,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="_renderBatched">
   <h3 class="member__title">_renderBatched</h3>
   
-<pre class="signature__container"><code class="signature">protected _renderBatched(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected _renderBatched(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Renders the batches using the BathedRenderer plugin</p></div>
@@ -6773,7 +6773,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -6813,7 +6813,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="_renderDirect">
   <h3 class="member__title">_renderDirect</h3>
   
-<pre class="signature__container"><code class="signature">protected _renderDirect(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected _renderDirect(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Renders the graphics direct</p></div>
@@ -6839,7 +6839,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -6879,7 +6879,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
 <div class="member" id="_resolveDirectShader">
   <h3 class="member__title">_resolveDirectShader</h3>
   
-<pre class="signature__container"><code class="signature">protected _resolveDirectShader(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {<a href="PIXI.Shader.html">PIXI.Shader</a>}</code></pre>
+<pre class="signature__container"><code class="signature">protected _resolveDirectShader(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {<a href="PIXI/Shader.html">PIXI.Shader</a>}</code></pre>
 
 
   <div class="member__brief"><p>Resolves shader for direct rendering</p></div>
@@ -6905,7 +6905,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -6930,7 +6930,7 @@ Based on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Shader.html">PIXI.Shader</a>
+        <a href="PIXI/Shader.html">PIXI.Shader</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -7120,7 +7120,7 @@ geometry, recaculate the vertices.</p></div>
 <div class="member" id="renderAdvanced">
   <h3 class="member__title">renderAdvanced</h3>
   
-<pre class="signature__container"><code class="signature">protected renderAdvanced(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected renderAdvanced(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Render the object using the WebGL renderer and advanced features.</p></div>
@@ -7146,7 +7146,7 @@ geometry, recaculate the vertices.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         

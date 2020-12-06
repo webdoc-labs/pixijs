@@ -5,14 +5,14 @@
     <meta charset="utf-8" />
     <title>webdoc: DiffGeometryFactory</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="scripts/default-template.js"></script>
+    <script src="/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +26,7 @@
     <div class="document__package">@pixi-pbr/diffy</div>
     <h1 class="document__title">DiffGeometryFactory</h1>
     
-<pre class="signature__container"><code class="signature">class DiffGeometryFactory extends <a href="PIXI.brend.BatchGeometryFactory.html">PIXI.brend.BatchGeometryFactory</a></code></pre>
+<pre class="signature__container"><code class="signature">class DiffGeometryFactory extends <a href="PIXI/brend/BatchGeometryFactory.html">PIXI.brend.BatchGeometryFactory</a></code></pre>
 
 
     <div class="document__brief"></div>
@@ -42,7 +42,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new DiffGeometryFactory(renderer: <a href="PIXI.brend.BatchRenderer.html">PIXI.brend.BatchRenderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new DiffGeometryFactory(renderer: <a href="PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -68,7 +68,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.brend.BatchRenderer.html">PIXI.brend.BatchRenderer</a>
+          <a href="PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>
         </td>
         
         
@@ -136,7 +136,7 @@
 <div class="member" id="_geometryPool">
   <h3 class="member__title">_geometryPool</h3>
   
-<pre class="signature__container"><code class="signature">protected _geometryPool: <a href=PIXI.Geometry.html>PIXI.Geometry</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _geometryPool: <a href=PIXI/Geometry.html>PIXI.Geometry</a></code></pre>
 
 
   <div class="member__brief"><p>Batch geometries that can be reused.</p></div>
@@ -179,7 +179,7 @@ if customizing <code>PIXI.brend.BatchGeometryFactory</code>.</p></div>
 <div class="member" id="append">
   <h3 class="member__title">append</h3>
   
-<pre class="signature__container"><code class="signature">append(targetObject: <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>, batch: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">append(targetObject: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, batch: number) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -207,7 +207,7 @@ the composite geometry (for example, adding an ID to a special uniform)</p></div
           targetObject
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -370,7 +370,7 @@ than the updated data.</p></div>
 <div class="member" id="getAttributeBuffer">
   <h3 class="member__title">getAttributeBuffer</h3>
   
-<pre class="signature__container"><code class="signature">getAttributeBuffer(size: number) → {<a href="PIXI.ViewableBuffer.html">PIXI.ViewableBuffer</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getAttributeBuffer(size: number) → {<a href="PIXI/ViewableBuffer.html">PIXI.ViewableBuffer</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -421,7 +421,7 @@ than the updated data.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.ViewableBuffer.html">PIXI.ViewableBuffer</a>
+        <a href="PIXI/ViewableBuffer.html">PIXI.ViewableBuffer</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -726,7 +726,7 @@ batch.</p></div>
 <div class="member" id="updateCache">
   <h3 class="member__title">updateCache</h3>
   
-<pre class="signature__container"><code class="signature">updateCache(geometry: <a href="PIXI.BatchGeometry.html">PIXI.BatchGeometry</a>, type: "attribBuffer" | "indexBuffer", data: Uint32Array | Uint16Array) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">updateCache(geometry: <a href="PIXI/BatchGeometry.html">PIXI.BatchGeometry</a>, type: "attribBuffer" | "indexBuffer", data: Uint32Array | Uint16Array) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -752,7 +752,7 @@ batch.</p></div>
           geometry
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.BatchGeometry.html">PIXI.BatchGeometry</a>
+          <a href="PIXI/BatchGeometry.html">PIXI.BatchGeometry</a>
         </td>
         
         

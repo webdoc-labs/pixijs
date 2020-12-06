@@ -5,14 +5,14 @@
     <meta charset="utf-8" />
     <title>webdoc: PaintServer</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="scripts/default-template.js"></script>
+    <script src="/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -43,7 +43,7 @@ wrapper around paint textures, which can only be generated using the <code>rende
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PaintServer(paintServer: SVGGradientElement | SVGPatternElement, paintTexture: <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PaintServer(paintServer: SVGGradientElement | SVGPatternElement, paintTexture: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>) → {}</code></pre>
 
 
   <div class="member__brief"><p>Creates a <code>PaintServer</code> wrapper.</p></div>
@@ -79,7 +79,7 @@ wrapper around paint textures, which can only be generated using the <code>rende
           paintTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         
         
@@ -176,7 +176,7 @@ wrapper around paint textures, which can only be generated using the <code>rende
 <div class="member" id="linearGradient">
   <h3 class="member__title">linearGradient</h3>
   
-<pre class="signature__container"><code class="signature">linearGradient(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {<a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">linearGradient(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {<a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Renders <code>this.paintServer</code> as a <code>SVGLinearGradientElement</code>.</p></div>
@@ -202,7 +202,7 @@ wrapper around paint textures, which can only be generated using the <code>rende
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -227,7 +227,7 @@ wrapper around paint textures, which can only be generated using the <code>rende
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
+        <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -242,7 +242,7 @@ wrapper around paint textures, which can only be generated using the <code>rende
 <div class="member" id="radialGradient">
   <h3 class="member__title">radialGradient</h3>
   
-<pre class="signature__container"><code class="signature">radialGradient(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {<a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">radialGradient(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {<a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Renders <code>this.paintServer</code> as a <code>SVGRadialGradientElement</code>.</p></div>
@@ -268,7 +268,7 @@ wrapper around paint textures, which can only be generated using the <code>rende
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -293,7 +293,7 @@ wrapper around paint textures, which can only be generated using the <code>rende
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.RenderTexture.html">PIXI.RenderTexture</a>
+        <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -308,7 +308,7 @@ wrapper around paint textures, which can only be generated using the <code>rende
 <div class="member" id="resolvePaint">
   <h3 class="member__title">resolvePaint</h3>
   
-<pre class="signature__container"><code class="signature">resolvePaint(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">resolvePaint(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -335,7 +335,7 @@ paint texture to render anything.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -375,7 +375,7 @@ paint texture to render anything.</p></div>
 <div class="member" id="resolvePaintDimensions">
   <h3 class="member__title">resolvePaintDimensions</h3>
   
-<pre class="signature__container"><code class="signature">resolvePaintDimensions(bbox: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">resolvePaintDimensions(bbox: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -404,7 +404,7 @@ be scaled up to fit it.</p></div>
           bbox
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         
         
@@ -444,7 +444,7 @@ be scaled up to fit it.</p></div>
 <div class="member" id="updatePaint">
   <h3 class="member__title">updatePaint</h3>
   
-<pre class="signature__container"><code class="signature">updatePaint(renderer: <a href="PIXI.Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">updatePaint(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Renders the paint texture using the renderer immediately.</p></div>
@@ -470,7 +470,7 @@ be scaled up to fit it.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Renderer.html">PIXI.Renderer</a>
+          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         

@@ -5,14 +5,14 @@
     <meta charset="utf-8" />
     <title>webdoc: GuilloteneAllocator</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="scripts/default-template.js"></script>
+    <script src="/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -70,7 +70,7 @@ implements AreaAllocator</code></pre>
 <div class="member" id="allocate">
   <h3 class="member__title">allocate</h3>
   
-<pre class="signature__container"><code class="signature">allocate(width: number, height: number, rect: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI.Rectangle.html">PIXI.Rectangle</a> &amp; AreaPtr}</code></pre>
+<pre class="signature__container"><code class="signature">allocate(width: number, height: number, rect: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI/Rectangle.html">PIXI.Rectangle</a> &amp; AreaPtr}</code></pre>
 
 
   <div class="member__brief"><p>Allocates an area of the given <code>width</code> and <code>height</code>.</p></div>
@@ -124,7 +124,7 @@ implements AreaAllocator</code></pre>
           rect
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -153,7 +153,7 @@ implements AreaAllocator</code></pre>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a> & AreaPtr
+        <a href="PIXI/Rectangle.html">PIXI.Rectangle</a> & AreaPtr
       </td>
       <td class="member-return__description"><p>The rectangle frame of the area allocated.</p></td>
     </tr>
@@ -529,7 +529,7 @@ implements AreaAllocator</code></pre>
 <div class="member" id="getFrame">
   <h3 class="member__title">getFrame</h3>
   
-<pre class="signature__container"><code class="signature">getFrame(node: AreaNode, rect: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI.Rectangle.html">PIXI.Rectangle</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getFrame(node: AreaNode, rect: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
 
 
   <div class="member__brief"><p>Returns the rectangle covered by the area node.</p></div>
@@ -569,7 +569,7 @@ implements AreaAllocator</code></pre>
           rect
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -598,7 +598,7 @@ implements AreaAllocator</code></pre>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+        <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
       </td>
       <td class="member-return__description"><p>The rectangle covered by <code>node</code>.</p></td>
     </tr>
@@ -791,7 +791,7 @@ implements AreaAllocator</code></pre>
 <div class="member" id="splitOrientation">
   <h3 class="member__title">splitOrientation</h3>
   
-<pre class="signature__container"><code class="signature">splitOrientation(host: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>, hole: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>) → {SPLIT_ORIENTATION}</code></pre>
+<pre class="signature__container"><code class="signature">splitOrientation(host: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>, hole: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {SPLIT_ORIENTATION}</code></pre>
 
 
   <div class="member__brief"><p>Returns the orientation of the primary split of host.</p></div>
@@ -817,7 +817,7 @@ implements AreaAllocator</code></pre>
           host
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         
         
@@ -827,7 +827,7 @@ implements AreaAllocator</code></pre>
           hole
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         
         
@@ -867,7 +867,7 @@ implements AreaAllocator</code></pre>
 <div class="member" id="splitPrimaryHorizontal">
   <h3 class="member__title">splitPrimaryHorizontal</h3>
   
-<pre class="signature__container"><code class="signature">splitPrimaryHorizontal(area: AreaNode, areaFrame: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>, holeFrame: <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>) → {AreaNode}</code></pre>
+<pre class="signature__container"><code class="signature">splitPrimaryHorizontal(area: AreaNode, areaFrame: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>, holeFrame: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {AreaNode}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -903,7 +903,7 @@ implements AreaAllocator</code></pre>
           areaFrame
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         
         
@@ -913,7 +913,7 @@ implements AreaAllocator</code></pre>
           holeFrame
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI.Rectangle.html">PIXI.Rectangle</a>
+          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         
         
