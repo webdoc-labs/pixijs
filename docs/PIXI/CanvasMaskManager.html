@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: CanvasMaskManager</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -42,7 +47,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.CanvasMaskManager(renderer: <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.CanvasMaskManager(renderer: <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -68,7 +73,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>
+          <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>
         </td>
         
         
@@ -135,7 +140,7 @@
 <div class="member" id="popMask">
   <h3 class="member__title">popMask</h3>
   
-<pre class="signature__container"><code class="signature">popMask(renderer: <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">popMask(renderer: <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Restores the current drawing context to the state it was before the mask was applied.</p></div>
@@ -161,7 +166,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>
+          <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>
         </td>
         
         
@@ -201,7 +206,7 @@
 <div class="member" id="pushMask">
   <h3 class="member__title">pushMask</h3>
   
-<pre class="signature__container"><code class="signature">pushMask(maskData: <a href="PIXI/MaskData.html">PIXI.MaskData</a> | <a href="PIXI/Graphics.html">PIXI.Graphics</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">pushMask(maskData: <a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a> | <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>This method adds it to the current stack of masks.</p></div>
@@ -227,7 +232,7 @@
           maskData
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/MaskData.html">PIXI.MaskData</a> | <a href="PIXI/Graphics.html">PIXI.Graphics</a>
+          <a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a> | <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a>
         </td>
         
         
@@ -267,7 +272,7 @@
 <div class="member" id="recursiveFindShapes">
   <h3 class="member__title">recursiveFindShapes</h3>
   
-<pre class="signature__container"><code class="signature">recursiveFindShapes(container: <a href="PIXI/Container.html">PIXI.Container</a>, out: Array&lt;<a href="PIXI/Graphics.html">PIXI.Graphics</a>>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">recursiveFindShapes(container: <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a>, out: Array&lt;<a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a>>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Renders all PIXI.Graphics shapes in a subtree.</p></div>
@@ -293,7 +298,7 @@
           container
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Container.html">PIXI.Container</a>
+          <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a>
         </td>
         
         
@@ -303,7 +308,7 @@
           out
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/Graphics.html">PIXI.Graphics</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a>&gt;
         </td>
         
         
@@ -343,7 +348,7 @@
 <div class="member" id="renderGraphicsShape">
   <h3 class="member__title">renderGraphicsShape</h3>
   
-<pre class="signature__container"><code class="signature">renderGraphicsShape(graphics: <a href="PIXI/Graphics.html">PIXI.Graphics</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">renderGraphicsShape(graphics: <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Renders a PIXI.Graphics shape.</p></div>
@@ -369,7 +374,7 @@
           graphics
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Graphics.html">PIXI.Graphics</a>
+          <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a>
         </td>
         
         
@@ -420,15 +425,15 @@
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasMaskManager.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasMaskManager.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasMaskManager.html#popMask">popMask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasMaskManager.html#popMask">popMask</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasMaskManager.html#pushMask">pushMask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasMaskManager.html#pushMask">pushMask</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasMaskManager.html#recursiveFindShapes">recursiveFindShapes</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasMaskManager.html#recursiveFindShapes">recursiveFindShapes</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasMaskManager.html#renderGraphicsShape">renderGraphicsShape</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasMaskManager.html#renderGraphicsShape">renderGraphicsShape</a></li>
     
   </ul>
 </div>

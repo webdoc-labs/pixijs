@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: BasePrepare</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -31,7 +36,7 @@
 
     <div class="document__brief"><p>The prepare manager provides functionality to upload content to the GPU.</p></div>
     <div class="document__description"><p>BasePrepare handles basic queuing functionality and is extended by
-<a href=PIXI/Prepare.html>PIXI.Prepare</a> and <a href=PIXI/CanvasPrepare.html>PIXI.CanvasPrepare</a>
+<a href=/pixi-api/PIXI/Prepare.html>PIXI.Prepare</a> and <a href=/pixi-api/PIXI/CanvasPrepare.html>PIXI.CanvasPrepare</a>
 to provide preparation capabilities specific to their respective renderers.</p></div>
 
     
@@ -44,7 +49,7 @@ to provide preparation capabilities specific to their respective renderers.</p><
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.BasePrepare(renderer: <a href="PIXI/AbstractRenderer.html">PIXI.AbstractRenderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.BasePrepare(renderer: <a href="/pixi-api/PIXI/AbstractRenderer.html">PIXI.AbstractRenderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -70,7 +75,7 @@ to provide preparation capabilities specific to their respective renderers.</p><
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/AbstractRenderer.html">PIXI.AbstractRenderer</a>
+          <a href="/pixi-api/PIXI/AbstractRenderer.html">PIXI.AbstractRenderer</a>
         </td>
         
         
@@ -99,7 +104,7 @@ to provide preparation capabilities specific to their respective renderers.</p><
 <div class="member" id="limiter">
   <h3 class="member__title">limiter</h3>
   
-<pre class="signature__container"><code class="signature">limiter: <a href=PIXI/CountLimiter.html>PIXI.CountLimiter</a> | <a href=PIXI/TimeLimiter.html>PIXI.TimeLimiter</a></code></pre>
+<pre class="signature__container"><code class="signature">limiter: <a href=/pixi-api/PIXI/CountLimiter.html>PIXI.CountLimiter</a> | <a href=/pixi-api/PIXI/TimeLimiter.html>PIXI.TimeLimiter</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -122,7 +127,7 @@ to provide preparation capabilities specific to their respective renderers.</p><
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">protected renderer: <a href=PIXI/AbstractRenderer.html>PIXI.AbstractRenderer</a></code></pre>
+<pre class="signature__container"><code class="signature">protected renderer: <a href=/pixi-api/PIXI/AbstractRenderer.html>PIXI.AbstractRenderer</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -162,7 +167,7 @@ to upload hooks. That different parameter is stored here.</p></div>
 <div class="member" id="add">
   <h3 class="member__title">add</h3>
   
-<pre class="signature__container"><code class="signature">add(item: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a> | <a href="PIXI/Container.html">PIXI.Container</a> | <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="PIXI/Texture.html">PIXI.Texture</a> | <a href="PIXI/Graphics.html">PIXI.Graphics</a> | <a href="PIXI/Text.html">PIXI.Text</a> | unknown) → {this}</code></pre>
+<pre class="signature__container"><code class="signature">add(item: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a> | <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a> | <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a> | <a href="/pixi-api/PIXI/Text.html">PIXI.Text</a> | unknown) → {this}</code></pre>
 
 
   <div class="member__brief"><p>Manually add an item to the uploading queue.</p></div>
@@ -188,7 +193,7 @@ to upload hooks. That different parameter is stored here.</p></div>
           item
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a> | <a href="PIXI/Container.html">PIXI.Container</a> | <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="PIXI/Texture.html">PIXI.Texture</a> | <a href="PIXI/Graphics.html">PIXI.Graphics</a> | <a href="PIXI/Text.html">PIXI.Text</a> | unknown
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a> | <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a> | <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a> | <a href="/pixi-api/PIXI/Text.html">PIXI.Text</a> | unknown
         </td>
         
         
@@ -399,7 +404,7 @@ function must return <code>true</code> if it was able to handle upload of item.<
 <div class="member" id="upload">
   <h3 class="member__title">upload</h3>
   
-<pre class="signature__container"><code class="signature">upload(item: Function | <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a> | <a href="PIXI/Container.html">PIXI.Container</a> | <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="PIXI/Texture.html">PIXI.Texture</a> | <a href="PIXI/Graphics.html">PIXI.Graphics</a> | <a href="PIXI/Text.html">PIXI.Text</a>, done: Function) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">upload(item: Function | <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a> | <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a> | <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a> | <a href="/pixi-api/PIXI/Text.html">PIXI.Text</a>, done: Function) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Upload all the textures and graphics to the GPU.</p></div>
@@ -425,7 +430,7 @@ function must return <code>true</code> if it was able to handle upload of item.<
           item
         </td>
         <td class="member-parameter__type">
-          Function | <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a> | <a href="PIXI/Container.html">PIXI.Container</a> | <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="PIXI/Texture.html">PIXI.Texture</a> | <a href="PIXI/Graphics.html">PIXI.Graphics</a> | <a href="PIXI/Text.html">PIXI.Text</a>
+          Function | <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a> | <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a> | <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a> | <a href="/pixi-api/PIXI/Text.html">PIXI.Text</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -493,7 +498,7 @@ or the callback function, if items have been added using <code>prepare.add</code
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BasePrepare.html#limiter">limiter</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BasePrepare.html#limiter">limiter</a></li>
     
   </ul>
 </div>
@@ -504,9 +509,9 @@ or the callback function, if items have been added using <code>prepare.add</code
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BasePrepare.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BasePrepare.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BasePrepare.html#uploadHookHelper">uploadHookHelper</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BasePrepare.html#uploadHookHelper">uploadHookHelper</a></li>
     
   </ul>
 </div>
@@ -517,15 +522,15 @@ or the callback function, if items have been added using <code>prepare.add</code
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BasePrepare.html#add">add</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BasePrepare.html#add">add</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BasePrepare.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BasePrepare.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BasePrepare.html#registerFindHook">registerFindHook</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BasePrepare.html#registerFindHook">registerFindHook</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BasePrepare.html#registerUploadHook">registerUploadHook</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BasePrepare.html#registerUploadHook">registerUploadHook</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BasePrepare.html#upload">upload</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BasePrepare.html#upload">upload</a></li>
     
   </ul>
 </div>

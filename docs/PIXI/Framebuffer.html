@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: Framebuffer</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -30,7 +35,7 @@
 
 
     <div class="document__brief"></div>
-    <div class="document__description"><p>A framebuffer can be used to render contents off of the screen. <a href=PIXI/BaseRenderTexture.html>PIXI.BaseRenderTexture</a> uses
+    <div class="document__description"><p>A framebuffer can be used to render contents off of the screen. <a href=/pixi-api/PIXI/BaseRenderTexture.html>PIXI.BaseRenderTexture</a> uses
 one internally to render into itself. You can attach a depth or stencil buffer to a framebuffer.</p>
 <p>On WebGL 2 machines, shaders can output to multiple textures simultaneously with GLSL 300 ES.</p></div>
 
@@ -109,7 +114,7 @@ one internally to render into itself. You can attach a depth or stencil buffer t
 <div class="member" id="colorTexture">
   <h3 class="member__title">colorTexture</h3>
   
-<pre class="signature__container"><code class="signature">colorTexture: Array&lt;<a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
+<pre class="signature__container"><code class="signature">colorTexture: Array&lt;<a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
 
 
   <div class="member__brief"><p>Reference to the colorTexture.</p></div>
@@ -141,7 +146,7 @@ one internally to render into itself. You can attach a depth or stencil buffer t
 <div class="member" id="multisample">
   <h3 class="member__title">multisample</h3>
   
-<pre class="signature__container"><code class="signature">multisample: <a href="PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a></code></pre>
+<pre class="signature__container"><code class="signature">multisample: <a href="/pixi-api/PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a></code></pre>
 
 
   <div class="member__brief"><p>Desired number of samples for antialiasing. 0 means AA should not be used.</p></div>
@@ -188,7 +193,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
 <div class="member" id="addColorTexture">
   <h3 class="member__title">addColorTexture</h3>
   
-<pre class="signature__container"><code class="signature">addColorTexture(index: number, texture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {this}</code></pre>
+<pre class="signature__container"><code class="signature">addColorTexture(index: number, texture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {this}</code></pre>
 
 
   <div class="member__brief"><p>Add texture to the colorTexture array</p></div>
@@ -230,7 +235,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -276,7 +281,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
 <div class="member" id="addDepthTexture">
   <h3 class="member__title">addDepthTexture</h3>
   
-<pre class="signature__container"><code class="signature">addDepthTexture(texture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {this}</code></pre>
+<pre class="signature__container"><code class="signature">addDepthTexture(texture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {this}</code></pre>
 
 
   <div class="member__brief"><p>Add a depth texture to the frame buffer</p></div>
@@ -302,7 +307,7 @@ Seriously affects GPU memory consumption and GPU performance.</p>
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -575,13 +580,13 @@ Seriously affects GPU memory consumption and GPU performance.</p>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#colorTexture">colorTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#colorTexture">colorTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#multisample">multisample</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#multisample">multisample</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#width">width</a></li>
     
   </ul>
 </div>
@@ -593,19 +598,19 @@ Seriously affects GPU memory consumption and GPU performance.</p>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#addColorTexture">addColorTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#addColorTexture">addColorTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#addDepthTexture">addDepthTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#addDepthTexture">addDepthTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#destroyDepthTexture">destroyDepthTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#destroyDepthTexture">destroyDepthTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#dispose">dispose</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#dispose">dispose</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#enableDepth">enableDepth</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#enableDepth">enableDepth</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#enableStencil">enableStencil</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#enableStencil">enableStencil</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Framebuffer.html#resize">resize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Framebuffer.html#resize">resize</a></li>
     
   </ul>
 </div>

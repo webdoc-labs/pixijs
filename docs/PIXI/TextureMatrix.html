@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: TextureMatrix</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -46,7 +51,7 @@ Use <code>update()</code> method call to track it from outside.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.TextureMatrix(texture: <a href="PIXI/Texture.html">PIXI.Texture</a>, clampMargin: number) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.TextureMatrix(texture: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>, clampMargin: number) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -72,7 +77,7 @@ Use <code>update()</code> method call to track it from outside.</p></div>
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a>
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -171,7 +176,7 @@ Change to 1.5 if you texture has repeated right and bottom lines, that leads to 
 <div class="member" id="mapCoord">
   <h3 class="member__title">mapCoord</h3>
   
-<pre class="signature__container"><code class="signature">mapCoord: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">mapCoord: <a href=/pixi-api/PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -187,7 +192,7 @@ Change to 1.5 if you texture has repeated right and bottom lines, that leads to 
 <div class="member" id="texture">
   <h3 class="member__title">texture</h3>
   
-<pre class="signature__container"><code class="signature">texture: <a href=PIXI/Texture.html>PIXI.Texture</a></code></pre>
+<pre class="signature__container"><code class="signature">texture: <a href=/pixi-api/PIXI/Texture.html>PIXI.Texture</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -452,19 +457,19 @@ Calculated based on clampOffset.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#clampMargin">clampMargin</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#clampMargin">clampMargin</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#clampOffset">clampOffset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#clampOffset">clampOffset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#isSimple">isSimple</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#isSimple">isSimple</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#mapCoord">mapCoord</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#mapCoord">mapCoord</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#texture">texture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#texture">texture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#uClampFrame">uClampFrame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#uClampFrame">uClampFrame</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#uClampOffset">uClampOffset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#uClampOffset">uClampOffset</a></li>
     
   </ul>
 </div>
@@ -475,9 +480,9 @@ Calculated based on clampOffset.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#_textureID">_textureID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#_textureID">_textureID</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#_updateID">_updateID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#_updateID">_updateID</a></li>
     
   </ul>
 </div>
@@ -488,9 +493,9 @@ Calculated based on clampOffset.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#multiplyUvs">multiplyUvs</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#multiplyUvs">multiplyUvs</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureMatrix.html#update">update</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureMatrix.html#update">update</a></li>
     
   </ul>
 </div>

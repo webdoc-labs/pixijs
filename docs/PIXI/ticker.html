@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: Ticker</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -46,14 +51,14 @@ Animation frames are requested only when necessary, e.g. When the ticker is star
 <div class="member" id="shared">
   <h3 class="member__title">shared</h3>
   
-<pre class="signature__container"><code class="signature">static shared: <a href=PIXI/Ticker.html>PIXI.Ticker</a></code></pre>
+<pre class="signature__container"><code class="signature">static shared: <a href=/pixi-api/PIXI/Ticker.html>PIXI.Ticker</a></code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>The shared ticker instance used by <a href=PIXI/AnimatedSprite.html>PIXI.AnimatedSprite</a> and by
-<a href=PIXI/VideoResource.html>PIXI.VideoResource</a> to update animation frames / video textures.</p>
-<p>It may also be used by <a href=PIXI/Application.html>PIXI.Application</a> if created with the <code>sharedTicker</code> option property set to true.</p>
-<p>The property <a href="PIXI/Ticker.html#autoStart">PIXI.Ticker#autoStart</a> is set to <code>true</code> for this instance.
+  <div class="member__description"><p>The shared ticker instance used by <a href=/pixi-api/PIXI/AnimatedSprite.html>PIXI.AnimatedSprite</a> and by
+<a href=/pixi-api/PIXI/VideoResource.html>PIXI.VideoResource</a> to update animation frames / video textures.</p>
+<p>It may also be used by <a href=/pixi-api/PIXI/Application.html>PIXI.Application</a> if created with the <code>sharedTicker</code> option property set to true.</p>
+<p>The property <a href="/pixi-api/PIXI/Ticker.html#autoStart">PIXI.Ticker#autoStart</a> is set to <code>true</code> for this instance.
 Please follow the examples for usage, including how to opt-out of auto-starting the shared ticker.</p></div>
 
   
@@ -66,14 +71,14 @@ Please follow the examples for usage, including how to opt-out of auto-starting 
 <div class="member" id="system">
   <h3 class="member__title">system</h3>
   
-<pre class="signature__container"><code class="signature">static system: <a href=PIXI/Ticker.html>PIXI.Ticker</a></code></pre>
+<pre class="signature__container"><code class="signature">static system: <a href=/pixi-api/PIXI/Ticker.html>PIXI.Ticker</a></code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>The system ticker instance used by <a href=PIXI/InteractionManager.html>PIXI.InteractionManager</a> and by
-<a href=PIXI/BasePrepare.html>PIXI.BasePrepare</a> for core timing functionality that shouldn't usually need to be paused,
+  <div class="member__description"><p>The system ticker instance used by <a href=/pixi-api/PIXI/InteractionManager.html>PIXI.InteractionManager</a> and by
+<a href=/pixi-api/PIXI/BasePrepare.html>PIXI.BasePrepare</a> for core timing functionality that shouldn't usually need to be paused,
 unlike the <code>shared</code> ticker which drives visual animations and rendering which may want to be paused.</p>
-<p>The property <a href=PIXI/Ticker.html#autoStart>PIXI.Ticker#autoStart</a> is set to <code>true</code> for this instance.</p></div>
+<p>The property <a href=/pixi-api/PIXI/Ticker.html#autoStart>PIXI.Ticker#autoStart</a> is set to <code>true</code> for this instance.</p></div>
 
   
 
@@ -90,7 +95,7 @@ unlike the <code>shared</code> ticker which drives visual animations and renderi
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Whether or not this ticker should invoke the method
-<a href="PIXI/Ticker.html#start">PIXI.Ticker#start</a> automatically
+<a href="/pixi-api/PIXI/Ticker.html#start">PIXI.Ticker#start</a> automatically
 when a listener is added.</p></div>
 
   
@@ -124,8 +129,8 @@ when a listener is added.</p></div>
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Scaler time elapsed in milliseconds from last frame to this frame.
-This value is capped by setting <a href="PIXI/Ticker.html#minFPS">PIXI.Ticker#minFPS</a>
-and is scaled with <a href="PIXI/Ticker.html#speed">PIXI.Ticker#speed</a>.
+This value is capped by setting <a href="/pixi-api/PIXI/Ticker.html#minFPS">PIXI.Ticker#minFPS</a>
+and is scaled with <a href="/pixi-api/PIXI/Ticker.html#speed">PIXI.Ticker#speed</a>.
 <strong>Note:</strong> The cap may be exceeded by scaling.
 If the platform supports DOMHighResTimeStamp,
 this value will have a precision of 1 µs.
@@ -146,8 +151,8 @@ Defaults to target frame time</p></div>
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Scalar time value from last frame to this frame.
-This value is capped by setting <a href=PIXI/Ticker.html#minFPS>PIXI.Ticker#minFPS</a>
-and is scaled with <a href=PIXI/Ticker.html#speed>PIXI.Ticker#speed</a>.
+This value is capped by setting <a href=/pixi-api/PIXI/Ticker.html#minFPS>PIXI.Ticker#minFPS</a>
+and is scaled with <a href=/pixi-api/PIXI/Ticker.html#speed>PIXI.Ticker#speed</a>.
 <strong>Note:</strong> The cap may be exceeded by scaling.</p></div>
 
   
@@ -165,7 +170,7 @@ and is scaled with <a href=PIXI/Ticker.html#speed>PIXI.Ticker#speed</a>.
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Time elapsed in milliseconds from last frame to this frame.
-Opposed to what the scalar <a href="PIXI/Ticker.html#deltaTime">PIXI.Ticker#deltaTime</a>
+Opposed to what the scalar <a href="/pixi-api/PIXI/Ticker.html#deltaTime">PIXI.Ticker#deltaTime</a>
 is based, this value is neither capped nor scaled.
 If the platform supports DOMHighResTimeStamp,
 this value will have a precision of 1 µs.
@@ -188,8 +193,8 @@ Defaults to target frame time</p></div>
   <div class="member__description"><p>The frames per second at which this ticker is running.
 The default is approximately 60 in most modern browsers.
 <strong>Note:</strong> This does not factor in the value of
-<a href=PIXI/Ticker.html#speed>PIXI.Ticker#speed</a>, which is specific
-to scaling <a href=PIXI/Ticker.html#deltaTime>PIXI.Ticker#deltaTime</a>.</p></div>
+<a href=/pixi-api/PIXI/Ticker.html#speed>PIXI.Ticker#speed</a>, which is specific
+to scaling <a href=/pixi-api/PIXI/Ticker.html#deltaTime>PIXI.Ticker#deltaTime</a>.</p></div>
 
   
 
@@ -205,7 +210,7 @@ to scaling <a href=PIXI/Ticker.html#deltaTime>PIXI.Ticker#deltaTime</a>.</p></di
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>The last time <a href="PIXI/Ticker.html#update">PIXI.Ticker#update</a> was invoked.
+  <div class="member__description"><p>The last time <a href="/pixi-api/PIXI/Ticker.html#update">PIXI.Ticker#update</a> was invoked.
 This value is also reset internally outside of invoking
 update, but only when a new animation frame is requested.
 If the platform supports DOMHighResTimeStamp,
@@ -226,8 +231,8 @@ this value will have a precision of 1 µs.</p></div>
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Manages the minimum amount of milliseconds required to
-elapse between invoking <a href=PIXI/Ticker.html#update>PIXI.Ticker#update</a>.
-This will effect the measured value of <a href="PIXI/Ticker.html#FPS">PIXI.Ticker#FPS</a>.
+elapse between invoking <a href=/pixi-api/PIXI/Ticker.html#update>PIXI.Ticker#update</a>.
+This will effect the measured value of <a href="/pixi-api/PIXI/Ticker.html#FPS">PIXI.Ticker#FPS</a>.
 If it is set to <code>0</code>, then there is no limit; PixiJS will render as many frames as it can.
 Otherwise it will be at least <code>minFPS</code></p></div>
 
@@ -246,9 +251,9 @@ Otherwise it will be at least <code>minFPS</code></p></div>
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Manages the maximum amount of milliseconds allowed to
-elapse between invoking <a href=PIXI/Ticker.html#update>PIXI.Ticker#update</a>.
-This value is used to cap <a href=PIXI/Ticker.html#deltaTime>PIXI.Ticker#deltaTime</a>,
-but does not effect the measured value of <a href=PIXI/Ticker.html#FPS>PIXI.Ticker#FPS</a>.
+elapse between invoking <a href=/pixi-api/PIXI/Ticker.html#update>PIXI.Ticker#update</a>.
+This value is used to cap <a href=/pixi-api/PIXI/Ticker.html#deltaTime>PIXI.Ticker#deltaTime</a>,
+but does not effect the measured value of <a href=/pixi-api/PIXI/Ticker.html#FPS>PIXI.Ticker#FPS</a>.
 When setting this property it is clamped to a value between
 <code>0</code> and <code>PIXI.settings.TARGET_FPMS * 1000</code>.</p></div>
 
@@ -266,7 +271,7 @@ When setting this property it is clamped to a value between
 
 
   <div class="member__brief"></div>
-  <div class="member__description"><p>Factor of current <a href=PIXI/Ticker.html#deltaTime>PIXI.Ticker#deltaTime</a>.</p></div>
+  <div class="member__description"><p>Factor of current <a href=/pixi-api/PIXI/Ticker.html#deltaTime>PIXI.Ticker#deltaTime</a>.</p></div>
 
   
 
@@ -283,10 +288,10 @@ When setting this property it is clamped to a value between
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Whether or not this ticker has been started.
-<code>true</code> if <a href=PIXI/Ticker.html#start>PIXI.Ticker#start</a> has been called.
-<code>false</code> if <a href="PIXI/Ticker.html#stop">PIXI.Ticker#stop</a> has been called.
+<code>true</code> if <a href=/pixi-api/PIXI/Ticker.html#start>PIXI.Ticker#start</a> has been called.
+<code>false</code> if <a href="/pixi-api/PIXI/Ticker.html#stop">PIXI.Ticker#stop</a> has been called.
 While <code>false</code>, this value may change to <code>true</code> in the
-event of <a href=PIXI/Ticker.html#autoStart>PIXI.Ticker#autoStart</a> being <code>true</code>
+event of <a href=/pixi-api/PIXI/Ticker.html#autoStart>PIXI.Ticker#autoStart</a> being <code>true</code>
 and a listener is added.</p></div>
 
   
@@ -307,7 +312,7 @@ and a listener is added.</p></div>
 <div class="member" id="add">
   <h3 class="member__title">add</h3>
   
-<pre class="signature__container"><code class="signature">add(fn: Function, context: unknown, priority: number) → {<a href="PIXI/Ticker.html">PIXI.Ticker</a>}</code></pre>
+<pre class="signature__container"><code class="signature">add(fn: Function, context: unknown, priority: number) → {<a href="/pixi-api/PIXI/Ticker.html">PIXI.Ticker</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -397,7 +402,7 @@ it is removed or the ticker is stopped.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Ticker.html">PIXI.Ticker</a>
+        <a href="/pixi-api/PIXI/Ticker.html">PIXI.Ticker</a>
       </td>
       <td class="member-return__description"><p>This instance of a ticker</p></td>
     </tr>
@@ -412,7 +417,7 @@ it is removed or the ticker is stopped.</p></div>
 <div class="member" id="addOnce">
   <h3 class="member__title">addOnce</h3>
   
-<pre class="signature__container"><code class="signature">addOnce(fn: Function, context: unknown, priority: number) → {<a href="PIXI/Ticker.html">PIXI.Ticker</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addOnce(fn: Function, context: unknown, priority: number) → {<a href="/pixi-api/PIXI/Ticker.html">PIXI.Ticker</a>}</code></pre>
 
 
   <div class="member__brief"><p>Add a handler for the tick event which is only execute once.</p></div>
@@ -501,7 +506,7 @@ it is removed or the ticker is stopped.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Ticker.html">PIXI.Ticker</a>
+        <a href="/pixi-api/PIXI/Ticker.html">PIXI.Ticker</a>
       </td>
       <td class="member-return__description"><p>This instance of a ticker</p></td>
     </tr>
@@ -553,7 +558,7 @@ this method removes all references to internal events.</p></div>
 <div class="member" id="remove">
   <h3 class="member__title">remove</h3>
   
-<pre class="signature__container"><code class="signature">remove(fn: Function, context: unknown) → {<a href="PIXI/Ticker.html">PIXI.Ticker</a>}</code></pre>
+<pre class="signature__container"><code class="signature">remove(fn: Function, context: unknown) → {<a href="/pixi-api/PIXI/Ticker.html">PIXI.Ticker</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -623,7 +628,7 @@ If no handlers are left after removing, then it cancels the animation frame.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Ticker.html">PIXI.Ticker</a>
+        <a href="/pixi-api/PIXI/Ticker.html">PIXI.Ticker</a>
       </td>
       <td class="member-return__description"><p>This instance of a ticker</p></td>
     </tr>
@@ -717,10 +722,10 @@ an animation frame it is canceled at this point.</p></div>
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Triggers an update. An update entails setting the
-current <a href="PIXI/Ticker.html#elapsedMS">PIXI.Ticker#elapsedMS</a>,
-the current <a href=PIXI/Ticker.html#deltaTime>PIXI.Ticker#deltaTime</a>,
+current <a href="/pixi-api/PIXI/Ticker.html#elapsedMS">PIXI.Ticker#elapsedMS</a>,
+the current <a href=/pixi-api/PIXI/Ticker.html#deltaTime>PIXI.Ticker#deltaTime</a>,
 invoking all listeners with current deltaTime,
-and then finally setting <a href="PIXI/Ticker.html#lastTime">PIXI.Ticker#lastTime</a>
+and then finally setting <a href="/pixi-api/PIXI/Ticker.html#lastTime">PIXI.Ticker#lastTime</a>
 with the value of currentTime that was provided.
 This method will be called automatically by animation
 frame callbacks if the ticker instance has been started
@@ -801,31 +806,31 @@ and listeners are added.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#shared">shared</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#shared">shared</a></li>
     
-      <li class="page-members-explorer__item"><a href=PIXI/Ticker.html#system>system</a></li>
+      <li class="page-members-explorer__item"><a href=/pixi-api/PIXI/Ticker.html#system>system</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#autoStart">autoStart</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#autoStart">autoStart</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#count">count</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#count">count</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#deltaMS">deltaMS</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#deltaMS">deltaMS</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#deltaTime">deltaTime</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#deltaTime">deltaTime</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#elapsedMS">elapsedMS</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#elapsedMS">elapsedMS</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#FPS">FPS</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#FPS">FPS</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#lastTime">lastTime</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#lastTime">lastTime</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#maxFPS">maxFPS</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#maxFPS">maxFPS</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#minFPS">minFPS</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#minFPS">minFPS</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#speed">speed</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#speed">speed</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#started">started</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#started">started</a></li>
     
   </ul>
 </div>
@@ -837,19 +842,19 @@ and listeners are added.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#add">add</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#add">add</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#addOnce">addOnce</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#addOnce">addOnce</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#remove">remove</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#remove">remove</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#start">start</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#start">start</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#stop">stop</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#stop">stop</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Ticker.html#update">update</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Ticker.html#update">update</a></li>
     
   </ul>
 </div>

@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: AbstractRenderer</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,12 +31,12 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.AbstractRenderer</h1>
     
-<pre class="signature__container"><code class="signature">class AbstractRenderer extends <a href="PIXI/utils/EventEmitter.html">PIXI.utils.EventEmitter</a></code></pre>
+<pre class="signature__container"><code class="signature">class AbstractRenderer extends <a href="/pixi-api/PIXI/utils/EventEmitter.html">PIXI.utils.EventEmitter</a></code></pre>
 
 
     <div class="document__brief"></div>
-    <div class="document__description"><p>The AbstractRenderer is the base for a PixiJS Renderer. It is extended by the <a href=PIXI/CanvasRenderer.html>PIXI.CanvasRenderer</a>
-and <a href=PIXI/Renderer.html>PIXI.Renderer</a> which can be used for rendering a PixiJS scene.</p></div>
+    <div class="document__description"><p>The AbstractRenderer is the base for a PixiJS Renderer. It is extended by the <a href=/pixi-api/PIXI/CanvasRenderer.html>PIXI.CanvasRenderer</a>
+and <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a> which can be used for rendering a PixiJS scene.</p></div>
 
     
       
@@ -434,7 +439,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="screen">
   <h3 class="member__title">screen</h3>
   
-<pre class="signature__container"><code class="signature">screen: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">screen: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>Measurements of the screen. (0, 0, screenWidth, screenHeight).</p></div>
@@ -569,7 +574,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="_lastObjectRendered">
   <h3 class="member__title">_lastObjectRendered</h3>
   
-<pre class="signature__container"><code class="signature">protected _lastObjectRendered: <a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _lastObjectRendered: <a href=/pixi-api/PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
 
 
   <div class="member__brief"><p>The last root object that the renderer tried to render.</p></div>
@@ -664,7 +669,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="generateTexture">
   <h3 class="member__title">generateTexture</h3>
   
-<pre class="signature__container"><code class="signature">generateTexture(displayObject: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, scaleMode: <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>, resolution: number, region: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">generateTexture(displayObject: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, scaleMode: <a href="/pixi-api/PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>, resolution: number, region: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -691,7 +696,7 @@ This can be quite useful if your displayObject is complicated and needs to be re
           displayObject
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -705,7 +710,7 @@ This can be quite useful if your displayObject is complicated and needs to be re
           scaleMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
+          <a href="/pixi-api/PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -733,7 +738,7 @@ This can be quite useful if your displayObject is complicated and needs to be re
           region
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -763,7 +768,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+        <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"><p>A texture of the graphics object.</p></td>
     </tr>
@@ -936,33 +941,33 @@ Canvas dimensions are multiplied by resolution.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#autoResize">autoResize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#autoResize">autoResize</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#autoDensity">autoDensity</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#autoDensity">autoDensity</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#backgroundColor">backgroundColor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#backgroundColor">backgroundColor</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#clearBeforeRender">clearBeforeRender</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#clearBeforeRender">clearBeforeRender</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#options">options</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#options">options</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#plugins">plugins</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#plugins">plugins</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#preserveDrawingBuffer">preserveDrawingBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#preserveDrawingBuffer">preserveDrawingBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#screen">screen</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#screen">screen</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#transparent">transparent</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#transparent">transparent</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#type">type</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#type">type</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#view">view</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#view">view</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#width">width</a></li>
     
   </ul>
 </div>
@@ -973,13 +978,13 @@ Canvas dimensions are multiplied by resolution.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#_backgroundColor">_backgroundColor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#_backgroundColor">_backgroundColor</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#_backgroundColorRgba">_backgroundColorRgba</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#_backgroundColorRgba">_backgroundColorRgba</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#_backgroundColorString">_backgroundColorString</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#_backgroundColorString">_backgroundColorString</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#_lastObjectRendered">_lastObjectRendered</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#_lastObjectRendered">_lastObjectRendered</a></li>
     
   </ul>
 </div>
@@ -990,11 +995,11 @@ Canvas dimensions are multiplied by resolution.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#generateTexture">generateTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#generateTexture">generateTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#resize">resize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#resize">resize</a></li>
     
   </ul>
 </div>
@@ -1005,7 +1010,7 @@ Canvas dimensions are multiplied by resolution.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractRenderer.html#initPlugins">initPlugins</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractRenderer.html#initPlugins">initPlugins</a></li>
     
   </ul>
 </div>

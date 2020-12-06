@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: InteractionManager</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/interaction</div>
     <h1 class="document__title">PIXI.InteractionManager</h1>
     
-<pre class="signature__container"><code class="signature">class InteractionManager extends <a href="PIXI/utils/EventEmitter.html">PIXI.utils.EventEmitter</a></code></pre>
+<pre class="signature__container"><code class="signature">class InteractionManager extends <a href="/pixi-api/PIXI/utils/EventEmitter.html">PIXI.utils.EventEmitter</a></code></pre>
 
 
     <div class="document__brief"><p>The interaction manager deals with mouse, touch and pointer events.</p></div>
@@ -44,7 +49,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.InteractionManager(renderer: <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a> | <a href="PIXI/Renderer.html">PIXI.Renderer</a>, options: object) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.InteractionManager(renderer: <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a> | <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>, options: object) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -70,7 +75,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a> | <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a> | <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -256,7 +261,7 @@ Default CSS cursor values are provided for 'default' and 'pointer' modes.</p></d
 <div class="member" id="mouse">
   <h3 class="member__title">mouse</h3>
   
-<pre class="signature__container"><code class="signature">mouse: <a href=PIXI/InteractionData.html>PIXI.InteractionData</a></code></pre>
+<pre class="signature__container"><code class="signature">mouse: <a href=/pixi-api/PIXI/InteractionData.html>PIXI.InteractionData</a></code></pre>
 
 
   <div class="member__brief"><p>The mouse data</p></div>
@@ -293,7 +298,7 @@ future versions of pixi.</p></div>
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/AbstractRenderer.html>PIXI.AbstractRenderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/AbstractRenderer.html>PIXI.AbstractRenderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this interaction manager works for.</p></div>
@@ -414,7 +419,7 @@ https://www.w3.org/TR/touch-events/</p></div>
 <div class="member" id="lastObjectRendered">
   <h3 class="member__title">lastObjectRendered</h3>
   
-<pre class="signature__container"><code class="signature">protected lastObjectRendered: <a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
+<pre class="signature__container"><code class="signature">protected lastObjectRendered: <a href=/pixi-api/PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -505,7 +510,7 @@ https://www.w3.org/TR/touch-events/</p></div>
 <div class="member" id="hitTest">
   <h3 class="member__title">hitTest</h3>
   
-<pre class="signature__container"><code class="signature">hitTest(globalPoint: <a href="PIXI/Point.html">PIXI.Point</a>, root: <a href="PIXI/Container.html">PIXI.Container</a>) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">hitTest(globalPoint: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>, root: <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a>) → {<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Hit tests a point against the display tree, returning the first interactive object that is hit.</p></div>
@@ -531,7 +536,7 @@ https://www.w3.org/TR/touch-events/</p></div>
           globalPoint
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -545,7 +550,7 @@ https://www.w3.org/TR/touch-events/</p></div>
           root
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Container.html">PIXI.Container</a>
+          <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -575,7 +580,7 @@ to the last rendered root of the associated renderer.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The hit display object, if any.</p></td>
     </tr>
@@ -590,7 +595,7 @@ to the last rendered root of the associated renderer.</p></td>
 <div class="member" id="mapPositionToPoint">
   <h3 class="member__title">mapPositionToPoint</h3>
   
-<pre class="signature__container"><code class="signature">mapPositionToPoint(point: <a href="PIXI/IPointData.html">PIXI.IPointData</a>, x: number, y: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">mapPositionToPoint(point: <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>, x: number, y: number) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -618,7 +623,7 @@ element could be scaled and positioned anywhere on the screen.</p></div>
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
+          <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         
         
@@ -840,7 +845,7 @@ another DOM element to receive those events.</p></div>
   <div class="member__brief"></div>
   <div class="member__description"><p>Updates the state of interactive objects if at least interactionFrequency
 milliseconds have passed since the last invocation.</p>
-<p>Invoked by a throttled ticker update from <a href="PIXI/Ticker.html#system">PIXI.Ticker.system</a>.</p></div>
+<p>Invoked by a throttled ticker update from <a href="/pixi-api/PIXI/Ticker.html#system">PIXI.Ticker.system</a>.</p></div>
 
   
     
@@ -945,7 +950,7 @@ milliseconds have passed since the last invocation.</p>
 <div class="member" id="processInteractive">
   <h3 class="member__title">processInteractive</h3>
   
-<pre class="signature__container"><code class="signature">protected processInteractive(interactionEvent: <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>, displayObject: <a href="PIXI/Container.html">PIXI.Container</a> | <a href="PIXI/Sprite.html">PIXI.Sprite</a> | <a href="PIXI/TilingSprite.html">PIXI.TilingSprite</a>, func: Function, hitTest: boolean) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected processInteractive(interactionEvent: <a href="/pixi-api/PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>, displayObject: <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a> | <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a> | <a href="/pixi-api/PIXI/TilingSprite.html">PIXI.TilingSprite</a>, func: Function, hitTest: boolean) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -973,7 +978,7 @@ testing the interactive objects and passes the hit across in the function.</p></
           interactionEvent
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>
+          <a href="/pixi-api/PIXI/InteractionEvent.html">PIXI.InteractionEvent</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -988,7 +993,7 @@ is tested for collision</p></td>
           displayObject
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Container.html">PIXI.Container</a> | <a href="PIXI/Sprite.html">PIXI.Sprite</a> | <a href="PIXI/TilingSprite.html">PIXI.TilingSprite</a>
+          <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a> | <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a> | <a href="/pixi-api/PIXI/TilingSprite.html">PIXI.TilingSprite</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -1071,29 +1076,29 @@ or just iterate through all interactive objects</p></td>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#autoPreventDefault">autoPreventDefault</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#autoPreventDefault">autoPreventDefault</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#currentCursorMode">currentCursorMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#currentCursorMode">currentCursorMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#cursorStyles">cursorStyles</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#cursorStyles">cursorStyles</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#eventData">eventData</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#eventData">eventData</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#interactionFrequency">interactionFrequency</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#interactionFrequency">interactionFrequency</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#mouse">mouse</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#mouse">mouse</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#moveWhenInside">moveWhenInside</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#moveWhenInside">moveWhenInside</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#supportsPointerEvents">supportsPointerEvents</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#supportsPointerEvents">supportsPointerEvents</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#supportsTouchEvents">supportsTouchEvents</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#supportsTouchEvents">supportsTouchEvents</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#useSystemTicker">useSystemTicker</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#useSystemTicker">useSystemTicker</a></li>
     
   </ul>
 </div>
@@ -1104,15 +1109,15 @@ or just iterate through all interactive objects</p></td>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#eventsAdded">eventsAdded</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#eventsAdded">eventsAdded</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#interactionDOMElement">interactionDOMElement</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#interactionDOMElement">interactionDOMElement</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#lastObjectRendered">lastObjectRendered</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#lastObjectRendered">lastObjectRendered</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#mouseOverRenderer">mouseOverRenderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#mouseOverRenderer">mouseOverRenderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#tickerAdded">tickerAdded</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#tickerAdded">tickerAdded</a></li>
     
   </ul>
 </div>
@@ -1123,19 +1128,19 @@ or just iterate through all interactive objects</p></td>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#hitTest">hitTest</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#hitTest">hitTest</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#mapPositionToPoint">mapPositionToPoint</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#mapPositionToPoint">mapPositionToPoint</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#setCursorMode">setCursorMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#setCursorMode">setCursorMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#setTargetElement">setTargetElement</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#setTargetElement">setTargetElement</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#tickerUpdate">tickerUpdate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#tickerUpdate">tickerUpdate</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#update">update</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#update">update</a></li>
     
   </ul>
 </div>
@@ -1146,7 +1151,7 @@ or just iterate through all interactive objects</p></td>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionManager.html#processInteractive">processInteractive</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionManager.html#processInteractive">processInteractive</a></li>
     
   </ul>
 </div>

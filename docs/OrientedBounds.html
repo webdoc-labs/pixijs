@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: OrientedBounds</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -30,7 +35,7 @@
 
 
     <div class="document__brief"><p>An oriented bounding box is a rotated rectangle.</p></div>
-    <div class="document__description"><p>An oriented bounding box is modelled by rotating its (axis-aligned) <a href="OrientedBounds.html#innerBounds">OrientedBounds#innerBounds</a>
+    <div class="document__description"><p>An oriented bounding box is modelled by rotating its (axis-aligned) <a href="/pixi-api/OrientedBounds.html#innerBounds">OrientedBounds#innerBounds</a>
 by an angle OrientedBounds#angle around its center. The center of an oriented bounding box and
 its axis-aligned inner-bounds coincide.</p></div>
 
@@ -351,7 +356,7 @@ its axis-aligned inner-bounds coincide.</p></div>
 <div class="member" id="contains">
   <h3 class="member__title">contains</h3>
   
-<pre class="signature__container"><code class="signature">contains(point: <a href="PIXI/Point.html">PIXI.Point</a> | number) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">contains(point: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a> | number) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Whether this bounding box contains the given point</p></div>
@@ -377,7 +382,7 @@ its axis-aligned inner-bounds coincide.</p></div>
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a> | number
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a> | number
         </td>
         
         
@@ -417,7 +422,7 @@ its axis-aligned inner-bounds coincide.</p></div>
 <div class="member" id="copyFrom">
   <h3 class="member__title">copyFrom</h3>
   
-<pre class="signature__container"><code class="signature">copyFrom(bounds: <a href="OrientedBounds.html">OrientedBounds</a>) → {this}</code></pre>
+<pre class="signature__container"><code class="signature">copyFrom(bounds: <a href="/pixi-api/OrientedBounds.html">OrientedBounds</a>) → {this}</code></pre>
 
 
   <div class="member__brief"><p>Copies <code>bounds</code> into this instance.</p></div>
@@ -443,7 +448,7 @@ its axis-aligned inner-bounds coincide.</p></div>
           bounds
         </td>
         <td class="member-parameter__type">
-          <a href="OrientedBounds.html">OrientedBounds</a>
+          <a href="/pixi-api/OrientedBounds.html">OrientedBounds</a>
         </td>
         
         
@@ -483,7 +488,7 @@ its axis-aligned inner-bounds coincide.</p></div>
 <div class="member" id="equals">
   <h3 class="member__title">equals</h3>
   
-<pre class="signature__container"><code class="signature">equals(bounds: <a href="OrientedBounds.html">OrientedBounds</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">equals(bounds: <a href="/pixi-api/OrientedBounds.html">OrientedBounds</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Checks whether the given <code>bounds</code> are equal to this.</p></div>
@@ -509,7 +514,7 @@ its axis-aligned inner-bounds coincide.</p></div>
           bounds
         </td>
         <td class="member-parameter__type">
-          <a href="OrientedBounds.html">OrientedBounds</a>
+          <a href="/pixi-api/OrientedBounds.html">OrientedBounds</a>
         </td>
         
         
@@ -667,21 +672,21 @@ its axis-aligned inner-bounds coincide.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#bottomLeft">bottomLeft</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#bottomLeft">bottomLeft</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#bottomRight">bottomRight</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#bottomRight">bottomRight</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#center">center</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#center">center</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#hull">hull</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#hull">hull</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#innerBounds">innerBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#innerBounds">innerBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#rotation">rotation</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#rotation">rotation</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#topLeft">topLeft</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#topLeft">topLeft</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#topRight">topRight</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#topRight">topRight</a></li>
     
   </ul>
 </div>
@@ -693,17 +698,17 @@ its axis-aligned inner-bounds coincide.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#contains">contains</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#contains">contains</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#copyFrom">copyFrom</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#copyFrom">copyFrom</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#equals">equals</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#equals">equals</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#isDirty">isDirty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#isDirty">isDirty</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#update">update</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#update">update</a></li>
     
-      <li class="page-members-explorer__item"><a href="OrientedBounds.html#updateCenter">updateCenter</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/OrientedBounds.html#updateCenter">updateCenter</a></li>
     
   </ul>
 </div>

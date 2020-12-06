@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: ContextSystem</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.ContextSystem</h1>
     
-<pre class="signature__container"><code class="signature">class ContextSystem extends <a href="PIXI/System.html">PIXI.System</a></code></pre>
+<pre class="signature__container"><code class="signature">class ContextSystem extends <a href="/pixi-api/PIXI/System.html">PIXI.System</a></code></pre>
 
 
     <div class="document__brief"><p>System plugin to the renderer to manage the context.</p></div>
@@ -42,7 +47,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.ContextSystem(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.ContextSystem(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -68,7 +73,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -129,7 +134,7 @@
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -735,13 +740,13 @@ context attributes</p></td>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#extensions">extensions</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#extensions">extensions</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#isLost">isLost</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#isLost">isLost</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#webGLVersion">webGLVersion</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#webGLVersion">webGLVersion</a></li>
     
   </ul>
 </div>
@@ -753,11 +758,11 @@ context attributes</p></td>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#contextChange">contextChange</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#contextChange">contextChange</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#createContext">createContext</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#createContext">createContext</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#destroy">destroy</a></li>
     
   </ul>
 </div>
@@ -768,19 +773,19 @@ context attributes</p></td>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#getExtensions">getExtensions</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#getExtensions">getExtensions</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#handleContextLost">handleContextLost</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#handleContextLost">handleContextLost</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#handleContextRestored">handleContextRestored</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#handleContextRestored">handleContextRestored</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#initFromContext">initFromContext</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#initFromContext">initFromContext</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#initFromOptions">initFromOptions</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#initFromOptions">initFromOptions</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#postrender">postrender</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#postrender">postrender</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ContextSystem.html#validateContext">validateContext</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ContextSystem.html#validateContext">validateContext</a></li>
     
   </ul>
 </div>

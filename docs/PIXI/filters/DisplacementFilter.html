@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: DisplacementFilter</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/filter-displacement</div>
     <h1 class="document__title">PIXI.filters.DisplacementFilter</h1>
     
-<pre class="signature__container"><code class="signature">class DisplacementFilter extends <a href="PIXI/Filter.html">PIXI.Filter</a></code></pre>
+<pre class="signature__container"><code class="signature">class DisplacementFilter extends <a href="/pixi-api/PIXI/Filter.html">PIXI.Filter</a></code></pre>
 
 
     <div class="document__brief"></div>
@@ -51,7 +56,7 @@ this filter will output the pixel approximately 20 pixels to the right of the or
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.filters.DisplacementFilter(sprite: <a href="PIXI/Sprite.html">PIXI.Sprite</a>, scale: number) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.filters.DisplacementFilter(sprite: <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a>, scale: number) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -77,7 +82,7 @@ this filter will output the pixel approximately 20 pixels to the right of the or
           sprite
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Sprite.html">PIXI.Sprite</a>
+          <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -189,7 +194,7 @@ Switch it off if it does not work for specific shader.</p></div>
 <div class="member" id="map">
   <h3 class="member__title">map</h3>
   
-<pre class="signature__container"><code class="signature">map: <a href=PIXI/Texture.html>PIXI.Texture</a></code></pre>
+<pre class="signature__container"><code class="signature">map: <a href=/pixi-api/PIXI/Texture.html>PIXI.Texture</a></code></pre>
 
 
   <div class="member__brief"><p>The texture used for the displacement map. Must be power of 2 sized texture.</p></div>
@@ -223,7 +228,7 @@ filter is applied to.</p></div>
 <div class="member" id="program">
   <h3 class="member__title">program</h3>
   
-<pre class="signature__container"><code class="signature">program: <a href=PIXI/Program.html>PIXI.Program</a></code></pre>
+<pre class="signature__container"><code class="signature">program: <a href=/pixi-api/PIXI/Program.html>PIXI.Program</a></code></pre>
 
 
   <div class="member__brief"><p>Program that the shader uses</p></div>
@@ -256,7 +261,7 @@ increase the performance of the filter.</p></div>
 <div class="member" id="scale">
   <h3 class="member__title">scale</h3>
   
-<pre class="signature__container"><code class="signature">scale: <a href=PIXI/Point.html>PIXI.Point</a></code></pre>
+<pre class="signature__container"><code class="signature">scale: <a href=/pixi-api/PIXI/Point.html>PIXI.Point</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -272,7 +277,7 @@ increase the performance of the filter.</p></div>
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -312,7 +317,7 @@ increase the performance of the filter.</p></div>
 <div class="member" id="apply">
   <h3 class="member__title">apply</h3>
   
-<pre class="signature__container"><code class="signature">apply(filterManager: <a href="PIXI/FilterSystem.html">PIXI.FilterSystem</a>, input: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, output: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clearMode: <a href="PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">apply(filterManager: <a href="/pixi-api/PIXI/FilterSystem.html">PIXI.FilterSystem</a>, input: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, output: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clearMode: <a href="/pixi-api/PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Applies the filter.</p></div>
@@ -338,7 +343,7 @@ increase the performance of the filter.</p></div>
           filterManager
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/FilterSystem.html">PIXI.FilterSystem</a>
+          <a href="/pixi-api/PIXI/FilterSystem.html">PIXI.FilterSystem</a>
         </td>
         
         
@@ -348,7 +353,7 @@ increase the performance of the filter.</p></div>
           input
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         
         
@@ -358,7 +363,7 @@ increase the performance of the filter.</p></div>
           output
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         
         
@@ -368,7 +373,7 @@ increase the performance of the filter.</p></div>
           clearMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
+          <a href="/pixi-api/PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
         </td>
         
         
@@ -453,27 +458,27 @@ increase the performance of the filter.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#autoFit">autoFit</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#autoFit">autoFit</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#blendMode">blendMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#blendMode">blendMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#enabled">enabled</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#enabled">enabled</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#legacy">legacy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#legacy">legacy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#map">map</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#map">map</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#padding">padding</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#padding">padding</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#program">program</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#program">program</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#scale">scale</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#scale">scale</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#state">state</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#state">state</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#uniforms">uniforms</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#uniforms">uniforms</a></li>
     
   </ul>
 </div>
@@ -485,9 +490,9 @@ increase the performance of the filter.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#apply">apply</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#apply">apply</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/DisplacementFilter.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/DisplacementFilter.html#destroy">destroy</a></li>
     
   </ul>
 </div>

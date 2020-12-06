@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: Spritesheet</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -43,7 +48,7 @@ of Textures on a single Spritesheet.</p>
 <p>With the <code>sheet.textures</code> you can create Sprite objects,<code>sheet.animations</code> can be used to create an AnimatedSprite.</p>
 <p>Sprite sheets can be packed using tools like <a href="https://codeandweb.com/texturepacker">TexturePacker</a>,
 <a href="https://renderhjs.net/shoebox/">Shoebox</a> or <a href="https://github.com/krzysztof-o/spritesheet.js">Spritesheet.js</a>.
-Default anchor points (see <a href=PIXI/Texture.html#defaultAnchor>PIXI.Texture#defaultAnchor</a>) and grouping of animation sprites are currently only
+Default anchor points (see <a href=/pixi-api/PIXI/Texture.html#defaultAnchor>PIXI.Texture#defaultAnchor</a>) and grouping of animation sprites are currently only
 supported by TexturePacker.</p></div>
 
     
@@ -56,7 +61,7 @@ supported by TexturePacker.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.Spritesheet(baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="PIXI/Texture.html">PIXI.Texture</a>, data: Object, resolutionFilename: string) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.Spritesheet(baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>, data: Object, resolutionFilename: string) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -82,7 +87,7 @@ supported by TexturePacker.</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="PIXI/Texture.html">PIXI.Texture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a> | <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -166,7 +171,7 @@ be used on the BaseTexture.</p></td>
 
   <div class="member__brief"></div>
   <div class="member__description"><p>A map containing the textures for each animation.
-Can be used to create an <a href=PIXI/AnimatedSprite.html>AnimatedSprite</a>:</p>
+Can be used to create an <a href=/pixi-api/PIXI/AnimatedSprite.html>AnimatedSprite</a>:</p>
 <pre><code class="hljs language-js"><span class="hljs-keyword">new</span> PIXI.AnimatedSprite(sheet.animations[<span class="hljs-string">&quot;anim_name&quot;</span>])
 </code></pre></div>
 
@@ -180,7 +185,7 @@ Can be used to create an <a href=PIXI/AnimatedSprite.html>AnimatedSprite</a>:</p
 <div class="member" id="baseTexture">
   <h3 class="member__title">baseTexture</h3>
   
-<pre class="signature__container"><code class="signature">baseTexture: <a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">baseTexture: <a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -233,7 +238,7 @@ Can be used to create an <a href=PIXI/AnimatedSprite.html>AnimatedSprite</a>:</p
 
   <div class="member__brief"></div>
   <div class="member__description"><p>A map containing all textures of the sprite sheet.
-Can be used to create a <a href=PIXI/Sprite.html>Sprite</a>:</p>
+Can be used to create a <a href=/pixi-api/PIXI/Sprite.html>Sprite</a>:</p>
 <pre><code class="hljs language-js"><span class="hljs-keyword">new</span> PIXI.Sprite(sheet.textures[<span class="hljs-string">&quot;image.png&quot;</span>]);
 </code></pre></div>
 
@@ -404,17 +409,17 @@ a map of the Textures for this spritesheet.</p></td>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Spritesheet.html#BATCH_SIZE">BATCH_SIZE</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Spritesheet.html#BATCH_SIZE">BATCH_SIZE</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Spritesheet.html#animations">animations</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Spritesheet.html#animations">animations</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Spritesheet.html#baseTexture">baseTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Spritesheet.html#baseTexture">baseTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Spritesheet.html#data">data</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Spritesheet.html#data">data</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Spritesheet.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Spritesheet.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Spritesheet.html#textures">textures</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Spritesheet.html#textures">textures</a></li>
     
   </ul>
 </div>
@@ -426,9 +431,9 @@ a map of the Textures for this spritesheet.</p></td>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Spritesheet.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Spritesheet.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Spritesheet.html#parse">parse</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Spritesheet.html#parse">parse</a></li>
     
   </ul>
 </div>

@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: AxisAlignedBounds</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -376,7 +381,7 @@ point (x, y) and by its width and its height.</p></div>
 <div class="member" id="clone">
   <h3 class="member__title">clone</h3>
   
-<pre class="signature__container"><code class="signature">clone() → {<a href="AxisAlignedBounds.html">AxisAlignedBounds</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clone() → {<a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>}</code></pre>
 
 
   <div class="member__brief"><p>Creates a clone of this Rectangle</p></div>
@@ -397,7 +402,7 @@ point (x, y) and by its width and its height.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>
+        <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>
       </td>
       <td class="member-return__description"><p>A copy of this AxisAlignedBounds.</p></td>
     </tr>
@@ -488,7 +493,7 @@ point (x, y) and by its width and its height.</p></div>
 <div class="member" id="copyFrom">
   <h3 class="member__title">copyFrom</h3>
   
-<pre class="signature__container"><code class="signature">copyFrom(rectangle: <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>) → {<a href="AxisAlignedBounds.html">AxisAlignedBounds</a>}</code></pre>
+<pre class="signature__container"><code class="signature">copyFrom(rectangle: <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>) → {<a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>}</code></pre>
 
 
   <div class="member__brief"><p>Copies another rectangle to this one.</p></div>
@@ -514,7 +519,7 @@ point (x, y) and by its width and its height.</p></div>
           rectangle
         </td>
         <td class="member-parameter__type">
-          <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>
+          <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>
         </td>
         
         
@@ -539,7 +544,7 @@ point (x, y) and by its width and its height.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>
+        <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>
       </td>
       <td class="member-return__description"><p>Returns itself.</p></td>
     </tr>
@@ -554,7 +559,7 @@ point (x, y) and by its width and its height.</p></div>
 <div class="member" id="copyTo">
   <h3 class="member__title">copyTo</h3>
   
-<pre class="signature__container"><code class="signature">copyTo(rectangle: <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>) → {<a href="AxisAlignedBounds.html">AxisAlignedBounds</a>}</code></pre>
+<pre class="signature__container"><code class="signature">copyTo(rectangle: <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>) → {<a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>}</code></pre>
 
 
   <div class="member__brief"><p>Copies this rectangle to another one.</p></div>
@@ -580,7 +585,7 @@ point (x, y) and by its width and its height.</p></div>
           rectangle
         </td>
         <td class="member-parameter__type">
-          <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>
+          <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>
         </td>
         
         
@@ -605,7 +610,7 @@ point (x, y) and by its width and its height.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>
+        <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>
       </td>
       <td class="member-return__description"><p>Returns given parameter.</p></td>
     </tr>
@@ -620,7 +625,7 @@ point (x, y) and by its width and its height.</p></div>
 <div class="member" id="enlarge">
   <h3 class="member__title">enlarge</h3>
   
-<pre class="signature__container"><code class="signature">enlarge(rectangle: <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>) → {this}</code></pre>
+<pre class="signature__container"><code class="signature">enlarge(rectangle: <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>) → {this}</code></pre>
 
 
   <div class="member__brief"><p>Enlarges this rectangle to include the passed rectangle.</p></div>
@@ -646,7 +651,7 @@ point (x, y) and by its width and its height.</p></div>
           rectangle
         </td>
         <td class="member-parameter__type">
-          <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>
+          <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>
         </td>
         
         
@@ -686,7 +691,7 @@ point (x, y) and by its width and its height.</p></div>
 <div class="member" id="equals">
   <h3 class="member__title">equals</h3>
   
-<pre class="signature__container"><code class="signature">equals(bounds: <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">equals(bounds: <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Checks whether the given bounds are equal to this.</p></div>
@@ -712,7 +717,7 @@ point (x, y) and by its width and its height.</p></div>
           bounds
         </td>
         <td class="member-parameter__type">
-          <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>
+          <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>
         </td>
         
         
@@ -752,7 +757,7 @@ point (x, y) and by its width and its height.</p></div>
 <div class="member" id="fit">
   <h3 class="member__title">fit</h3>
   
-<pre class="signature__container"><code class="signature">fit(rectangle: <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>) → {this}</code></pre>
+<pre class="signature__container"><code class="signature">fit(rectangle: <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>) → {this}</code></pre>
 
 
   <div class="member__brief"><p>Fits this rectangle around the passed one.</p></div>
@@ -778,7 +783,7 @@ point (x, y) and by its width and its height.</p></div>
           rectangle
         </td>
         <td class="member-parameter__type">
-          <a href="AxisAlignedBounds.html">AxisAlignedBounds</a>
+          <a href="/pixi-api/AxisAlignedBounds.html">AxisAlignedBounds</a>
         </td>
         
         
@@ -952,21 +957,21 @@ If paddingY is omitted, both paddingX and paddingY will be set to paddingX.</p><
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#bottom">bottom</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#bottom">bottom</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#bottomRight">bottomRight</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#bottomRight">bottomRight</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#left">left</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#left">left</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#right">right</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#right">right</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#top">top</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#top">top</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#topLeft">topLeft</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#topLeft">topLeft</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#y">y</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#y">y</a></li>
     
   </ul>
 </div>
@@ -978,25 +983,25 @@ If paddingY is omitted, both paddingX and paddingY will be set to paddingX.</p><
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#ceil">ceil</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#ceil">ceil</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#clone">clone</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#clone">clone</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#contains">contains</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#contains">contains</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#copyFrom">copyFrom</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#copyFrom">copyFrom</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#copyTo">copyTo</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#copyTo">copyTo</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#enlarge">enlarge</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#enlarge">enlarge</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#equals">equals</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#equals">equals</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#fit">fit</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#fit">fit</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#isDirty">isDirty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#isDirty">isDirty</a></li>
     
-      <li class="page-members-explorer__item"><a href="AxisAlignedBounds.html#pad">pad</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AxisAlignedBounds.html#pad">pad</a></li>
     
   </ul>
 </div>

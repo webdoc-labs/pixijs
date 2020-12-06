@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: AbstractMultiResource</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.AbstractMultiResource</h1>
     
-<pre class="signature__container"><code class="signature">class AbstractMultiResource extends <a href="PIXI/Resource.html">PIXI.Resource</a></code></pre>
+<pre class="signature__container"><code class="signature">class AbstractMultiResource extends <a href="/pixi-api/PIXI/Resource.html">PIXI.Resource</a></code></pre>
 
 
     <div class="document__brief"></div>
@@ -145,7 +150,7 @@ Parent class for CubeResource and ArrayResource</p></div>
 <div class="member" id="baseTexture">
   <h3 class="member__title">baseTexture</h3>
   
-<pre class="signature__container"><code class="signature">baseTexture: <a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">baseTexture: <a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -161,7 +166,7 @@ Parent class for CubeResource and ArrayResource</p></div>
 <div class="member" id="bind">
   <h3 class="member__title">bind</h3>
   
-<pre class="signature__container"><code class="signature">bind: <a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">bind: <a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -187,7 +192,7 @@ Parent class for CubeResource and ArrayResource</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -275,7 +280,7 @@ Parent class for CubeResource and ArrayResource</p></div>
 <div class="member" id="items">
   <h3 class="member__title">items</h3>
   
-<pre class="signature__container"><code class="signature">items: Array&lt;<a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
+<pre class="signature__container"><code class="signature">items: Array&lt;<a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -307,7 +312,7 @@ Parent class for CubeResource and ArrayResource</p></div>
 <div class="member" id="unbind">
   <h3 class="member__title">unbind</h3>
   
-<pre class="signature__container"><code class="signature">unbind: <a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">unbind: <a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -333,7 +338,7 @@ Parent class for CubeResource and ArrayResource</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -470,7 +475,7 @@ externally.</p></div>
 <div class="member" id="addBaseTextureAt">
   <h3 class="member__title">addBaseTextureAt</h3>
   
-<pre class="signature__container"><code class="signature">addBaseTextureAt(baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>, index: number) → {<a href="PIXI/AbstractMultiResource.html">PIXI.AbstractMultiResource</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addBaseTextureAt(baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>, index: number) → {<a href="/pixi-api/PIXI/AbstractMultiResource.html">PIXI.AbstractMultiResource</a>}</code></pre>
 
 
   <div class="member__brief"><p>Set a baseTexture by ID</p></div>
@@ -496,7 +501,7 @@ externally.</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -531,7 +536,7 @@ externally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/AbstractMultiResource.html">PIXI.AbstractMultiResource</a>
+        <a href="/pixi-api/PIXI/AbstractMultiResource.html">PIXI.AbstractMultiResource</a>
       </td>
       <td class="member-return__description"><p>Instance for chaining</p></td>
     </tr>
@@ -546,7 +551,7 @@ externally.</p></div>
 <div class="member" id="addResourceAt">
   <h3 class="member__title">addResourceAt</h3>
   
-<pre class="signature__container"><code class="signature">addResourceAt(resource: <a href="PIXI/Resource.html">PIXI.Resource</a>, index: number) → {<a href="PIXI/ArrayResource.html">PIXI.ArrayResource</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addResourceAt(resource: <a href="/pixi-api/PIXI/Resource.html">PIXI.Resource</a>, index: number) → {<a href="/pixi-api/PIXI/ArrayResource.html">PIXI.ArrayResource</a>}</code></pre>
 
 
   <div class="member__brief"><p>Set a resource by ID</p></div>
@@ -572,7 +577,7 @@ externally.</p></div>
           resource
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Resource.html">PIXI.Resource</a>
+          <a href="/pixi-api/PIXI/Resource.html">PIXI.Resource</a>
         </td>
         
         
@@ -607,7 +612,7 @@ externally.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/ArrayResource.html">PIXI.ArrayResource</a>
+        <a href="/pixi-api/PIXI/ArrayResource.html">PIXI.ArrayResource</a>
       </td>
       <td class="member-return__description"><p>Instance for chaining</p></td>
     </tr>
@@ -808,7 +813,7 @@ internally.</p></div>
 <div class="member" id="style">
   <h3 class="member__title">style</h3>
   
-<pre class="signature__container"><code class="signature">style(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>, baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>, glTexture: <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">style(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>, baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>, glTexture: <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Set the style, optional to override</p></div>
@@ -834,7 +839,7 @@ internally.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -844,7 +849,7 @@ internally.</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -854,7 +859,7 @@ internally.</p></div>
           glTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>
+          <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>
         </td>
         
         
@@ -930,7 +935,7 @@ internally.</p></div>
 <div class="member" id="upload">
   <h3 class="member__title">upload</h3>
   
-<pre class="signature__container"><code class="signature">upload(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>, baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>, glTexture: <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">upload(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>, baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>, glTexture: <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Uploads the texture or returns false if it cant for some reason. Override this.</p></div>
@@ -956,7 +961,7 @@ internally.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -966,7 +971,7 @@ internally.</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -976,7 +981,7 @@ internally.</p></div>
           glTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>
+          <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>
         </td>
         
         
@@ -1116,25 +1121,25 @@ length should be same as constructor length</p></td>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#baseTexture">baseTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#baseTexture">baseTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#bind">bind</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#bind">bind</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#destroyed">destroyed</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#destroyed">destroyed</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#itemDirtyIds">itemDirtyIds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#itemDirtyIds">itemDirtyIds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#items">items</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#items">items</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#length">length</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#length">length</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#unbind">unbind</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#unbind">unbind</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#valid">valid</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#valid">valid</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#width">width</a></li>
     
   </ul>
 </div>
@@ -1145,11 +1150,11 @@ length should be same as constructor length</p></td>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#_height">_height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#_height">_height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#_width">_width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#_width">_width</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#internal">internal</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#internal">internal</a></li>
     
   </ul>
 </div>
@@ -1160,23 +1165,23 @@ length should be same as constructor length</p></td>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#addBaseTextureAt">addBaseTextureAt</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#addBaseTextureAt">addBaseTextureAt</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#addResourceAt">addResourceAt</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#addResourceAt">addResourceAt</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#dispose">dispose</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#dispose">dispose</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#load">load</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#load">load</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#resize">resize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#resize">resize</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#style">style</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#style">style</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#update">update</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#update">update</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#upload">upload</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#upload">upload</a></li>
     
   </ul>
 </div>
@@ -1187,7 +1192,7 @@ length should be same as constructor length</p></td>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractMultiResource.html#initFromArray">initFromArray</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractMultiResource.html#initFromArray">initFromArray</a></li>
     
   </ul>
 </div>

@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: AbstractBatchRenderer</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.AbstractBatchRenderer</h1>
     
-<pre class="signature__container"><code class="signature">protected class AbstractBatchRenderer extends <a href="PIXI/ObjectRenderer.html">PIXI.ObjectRenderer</a></code></pre>
+<pre class="signature__container"><code class="signature">protected class AbstractBatchRenderer extends <a href="/pixi-api/PIXI/ObjectRenderer.html">PIXI.ObjectRenderer</a></code></pre>
 
 
     <div class="document__brief"><p>Renderer dedicated to drawing and batching sprites.</p></div>
@@ -45,7 +50,7 @@ reduce to the number of draw calls.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.AbstractBatchRenderer(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.AbstractBatchRenderer(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -72,7 +77,7 @@ and <code>prerender</code> signals.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -101,7 +106,7 @@ and <code>prerender</code> signals.</p></div>
 <div class="member" id="_drawCallPool">
   <h3 class="member__title">_drawCallPool</h3>
   
-<pre class="signature__container"><code class="signature">static _drawCallPool: Array&lt;<a href=PIXI/BatchDrawCall.html>PIXI.BatchDrawCall</a>></code></pre>
+<pre class="signature__container"><code class="signature">static _drawCallPool: Array&lt;<a href=/pixi-api/PIXI/BatchDrawCall.html>PIXI.BatchDrawCall</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -120,7 +125,7 @@ Shared between all batch renderers because it can be only one &quot;flush&quot; 
 <div class="member" id="_textureArrayPool">
   <h3 class="member__title">_textureArrayPool</h3>
   
-<pre class="signature__container"><code class="signature">static _textureArrayPool: Array&lt;<a href=PIXI/BatchTextureArray.html>PIXI.BatchTextureArray</a>></code></pre>
+<pre class="signature__container"><code class="signature">static _textureArrayPool: Array&lt;<a href=/pixi-api/PIXI/BatchTextureArray.html>PIXI.BatchTextureArray</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -157,7 +162,7 @@ properly in <code>this.contextChange</code>.</p></div>
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -190,7 +195,7 @@ occurs automatically.</p></div>
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"><p>The WebGL state in which this renderer will work.</p></div>
@@ -253,7 +258,7 @@ batch-renderer plugin uses 6:</p>
 <div class="member" id="_shader">
   <h3 class="member__title">_shader</h3>
   
-<pre class="signature__container"><code class="signature">protected _shader: <a href=PIXI/Shader.html>PIXI.Shader</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _shader: <a href=/pixi-api/PIXI/Shader.html>PIXI.Shader</a></code></pre>
 
 
   <div class="member__brief"><p>This shader is generated by <code>this.shaderGenerator</code>.</p></div>
@@ -287,7 +292,7 @@ that are going to be batched with this.</p></div>
 <div class="member" id="shaderGenerator">
   <h3 class="member__title">shaderGenerator</h3>
   
-<pre class="signature__container"><code class="signature">protected shaderGenerator: <a href=PIXI/BatchShaderGenerator.html>PIXI.BatchShaderGenerator</a></code></pre>
+<pre class="signature__container"><code class="signature">protected shaderGenerator: <a href=/pixi-api/PIXI/BatchShaderGenerator.html>PIXI.BatchShaderGenerator</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -316,7 +321,7 @@ custom shader generator.</p></div>
 <div class="member" id="bindAndClearTexArray">
   <h3 class="member__title">bindAndClearTexArray</h3>
   
-<pre class="signature__container"><code class="signature">bindAndClearTexArray(texArray: <a href="PIXI/BatchTextureArray.html">PIXI.BatchTextureArray</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">bindAndClearTexArray(texArray: <a href="/pixi-api/PIXI/BatchTextureArray.html">PIXI.BatchTextureArray</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Bind textures for current rendering</p></div>
@@ -342,7 +347,7 @@ custom shader generator.</p></div>
           texArray
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BatchTextureArray.html">PIXI.BatchTextureArray</a>
+          <a href="/pixi-api/PIXI/BatchTextureArray.html">PIXI.BatchTextureArray</a>
         </td>
         
         
@@ -382,7 +387,7 @@ custom shader generator.</p></div>
 <div class="member" id="buildDrawCalls">
   <h3 class="member__title">buildDrawCalls</h3>
   
-<pre class="signature__container"><code class="signature">buildDrawCalls(texArray: <a href="PIXI/BatchTextureArray.html">PIXI.BatchTextureArray</a>, start: number, finish: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">buildDrawCalls(texArray: <a href="/pixi-api/PIXI/BatchTextureArray.html">PIXI.BatchTextureArray</a>, start: number, finish: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Populating drawcalls for rendering</p></div>
@@ -408,7 +413,7 @@ custom shader generator.</p></div>
           texArray
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BatchTextureArray.html">PIXI.BatchTextureArray</a>
+          <a href="/pixi-api/PIXI/BatchTextureArray.html">PIXI.BatchTextureArray</a>
         </td>
         
         
@@ -686,7 +691,7 @@ object again.</p></div>
 <div class="member" id="packInterleavedGeometry">
   <h3 class="member__title">packInterleavedGeometry</h3>
   
-<pre class="signature__container"><code class="signature">packInterleavedGeometry(element: <a href="PIXI/Sprite.html">PIXI.Sprite</a>, attributeBuffer: <a href="PIXI/ViewableBuffer.html">PIXI.ViewableBuffer</a>, indexBuffer: Uint16Array, aIndex: number, iIndex: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">packInterleavedGeometry(element: <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a>, attributeBuffer: <a href="/pixi-api/PIXI/ViewableBuffer.html">PIXI.ViewableBuffer</a>, indexBuffer: Uint16Array, aIndex: number, iIndex: number) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -716,7 +721,7 @@ present.</p></div>
           element
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Sprite.html">PIXI.Sprite</a>
+          <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a>
         </td>
         
         
@@ -726,7 +731,7 @@ present.</p></div>
           attributeBuffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/ViewableBuffer.html">PIXI.ViewableBuffer</a>
+          <a href="/pixi-api/PIXI/ViewableBuffer.html">PIXI.ViewableBuffer</a>
         </td>
         
         
@@ -796,7 +801,7 @@ present.</p></div>
 <div class="member" id="render">
   <h3 class="member__title">render</h3>
   
-<pre class="signature__container"><code class="signature">render(element: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">render(element: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -823,7 +828,7 @@ immediately.</p></div>
           element
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -945,19 +950,19 @@ using this renderer</p></td>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#_drawCallPool">_drawCallPool</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#_drawCallPool">_drawCallPool</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#_textureArrayPool">_textureArrayPool</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#_textureArrayPool">_textureArrayPool</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#MAX_TEXTURES">MAX_TEXTURES</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#MAX_TEXTURES">MAX_TEXTURES</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#size">size</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#size">size</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#state">state</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#state">state</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#vertexSize">vertexSize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#vertexSize">vertexSize</a></li>
     
   </ul>
 </div>
@@ -968,11 +973,11 @@ using this renderer</p></td>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#_shader">_shader</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#_shader">_shader</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#geometryClass">geometryClass</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#geometryClass">geometryClass</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#shaderGenerator">shaderGenerator</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#shaderGenerator">shaderGenerator</a></li>
     
   </ul>
 </div>
@@ -983,29 +988,29 @@ using this renderer</p></td>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#bindAndClearTexArray">bindAndClearTexArray</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#bindAndClearTexArray">bindAndClearTexArray</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#buildDrawCalls">buildDrawCalls</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#buildDrawCalls">buildDrawCalls</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#contextChange">contextChange</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#contextChange">contextChange</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#drawBatches">drawBatches</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#drawBatches">drawBatches</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#flush">flush</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#flush">flush</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#initFlushBuffers">initFlushBuffers</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#initFlushBuffers">initFlushBuffers</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#onPrerender">onPrerender</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#onPrerender">onPrerender</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#packInterleavedGeometry">packInterleavedGeometry</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#packInterleavedGeometry">packInterleavedGeometry</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#render">render</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#render">render</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#start">start</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#start">start</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/AbstractBatchRenderer.html#stop">stop</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/AbstractBatchRenderer.html#stop">stop</a></li>
     
   </ul>
 </div>

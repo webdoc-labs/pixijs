@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: Loader</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -157,7 +162,7 @@ loader.onComplete.add(<span class="hljs-function">() =&gt;</span> {}); <span cla
 <div class="member" id="shared">
   <h3 class="member__title">shared</h3>
   
-<pre class="signature__container"><code class="signature">static shared: <a href=PIXI/Loader.html>PIXI.Loader</a></code></pre>
+<pre class="signature__container"><code class="signature">static shared: <a href=/pixi-api/PIXI/Loader.html>PIXI.Loader</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -173,7 +178,7 @@ loader.onComplete.add(<span class="hljs-function">() =&gt;</span> {}); <span cla
 <div class="member" id="onComplete">
   <h3 class="member__title">onComplete</h3>
   
-<pre class="signature__container"><code class="signature">onComplete: <a href="PIXI/Loader/ILoaderSignal.html">PIXI.Loader.ILoaderSignal</a></code></pre>
+<pre class="signature__container"><code class="signature">onComplete: <a href="/pixi-api/PIXI/Loader/ILoaderSignal.html">PIXI.Loader.ILoaderSignal</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -189,7 +194,7 @@ loader.onComplete.add(<span class="hljs-function">() =&gt;</span> {}); <span cla
 <div class="member" id="onError">
   <h3 class="member__title">onError</h3>
   
-<pre class="signature__container"><code class="signature">onError: <a href=PIXI/Loader/ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
+<pre class="signature__container"><code class="signature">onError: <a href=/pixi-api/PIXI/Loader/ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -205,7 +210,7 @@ loader.onComplete.add(<span class="hljs-function">() =&gt;</span> {}); <span cla
 <div class="member" id="onLoad">
   <h3 class="member__title">onLoad</h3>
   
-<pre class="signature__container"><code class="signature">onLoad: <a href=PIXI/Loader/ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
+<pre class="signature__container"><code class="signature">onLoad: <a href=/pixi-api/PIXI/Loader/ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -221,7 +226,7 @@ loader.onComplete.add(<span class="hljs-function">() =&gt;</span> {}); <span cla
 <div class="member" id="onProgress">
   <h3 class="member__title">onProgress</h3>
   
-<pre class="signature__container"><code class="signature">onProgress: <a href=PIXI/Loader/ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
+<pre class="signature__container"><code class="signature">onProgress: <a href=/pixi-api/PIXI/Loader/ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -237,7 +242,7 @@ loader.onComplete.add(<span class="hljs-function">() =&gt;</span> {}); <span cla
 <div class="member" id="onStart">
   <h3 class="member__title">onStart</h3>
   
-<pre class="signature__container"><code class="signature">onStart: <a href=PIXI/Loader/ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
+<pre class="signature__container"><code class="signature">onStart: <a href=/pixi-api/PIXI/Loader/ILoaderSignal.html>PIXI.Loader.ILoaderSignal</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -399,7 +404,7 @@ loader.onComplete.add(<span class="hljs-function">() =&gt;</span> {}); <span cla
 <div class="member" id="registerPlugin">
   <h3 class="member__title">registerPlugin</h3>
   
-<pre class="signature__container"><code class="signature">static registerPlugin(plugin: <a href="PIXI/ILoaderPlugin.html">PIXI.ILoaderPlugin</a>) → {<a href="PIXI/Loader.html">PIXI.Loader</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static registerPlugin(plugin: <a href="/pixi-api/PIXI/ILoaderPlugin.html">PIXI.ILoaderPlugin</a>) → {<a href="/pixi-api/PIXI/Loader.html">PIXI.Loader</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -426,7 +431,7 @@ new Loader instances created.</p></div>
           plugin
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/ILoaderPlugin.html">PIXI.ILoaderPlugin</a>
+          <a href="/pixi-api/PIXI/ILoaderPlugin.html">PIXI.ILoaderPlugin</a>
         </td>
         
         
@@ -451,7 +456,7 @@ new Loader instances created.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Loader.html">PIXI.Loader</a>
+        <a href="/pixi-api/PIXI/Loader.html">PIXI.Loader</a>
       </td>
       <td class="member-return__description"><p>Reference to PIXI.Loader for chaining</p></td>
     </tr>
@@ -511,17 +516,17 @@ new Loader instances created.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#shared">shared</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#shared">shared</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#onComplete">onComplete</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#onComplete">onComplete</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#onError">onError</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#onError">onError</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#onLoad">onLoad</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#onLoad">onLoad</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#onProgress">onProgress</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#onProgress">onProgress</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#onStart">onStart</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#onStart">onStart</a></li>
     
   </ul>
 </div>
@@ -533,15 +538,15 @@ new Loader instances created.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#off">off</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#off">off</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#on">on</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#on">on</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#once">once</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#once">once</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#registerPlugin">registerPlugin</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#registerPlugin">registerPlugin</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Loader.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Loader.html#destroy">destroy</a></li>
     
   </ul>
 </div>

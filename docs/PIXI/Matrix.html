@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: Matrix</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -187,7 +192,7 @@
 <div class="member" id="IDENTITY">
   <h3 class="member__title">IDENTITY</h3>
   
-<pre class="signature__container"><code class="signature">static IDENTITY: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">static IDENTITY: <a href=/pixi-api/PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>A default (identity) matrix</p></div>
@@ -203,7 +208,7 @@
 <div class="member" id="TEMP_MATRIX">
   <h3 class="member__title">TEMP_MATRIX</h3>
   
-<pre class="signature__container"><code class="signature">static TEMP_MATRIX: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">static TEMP_MATRIX: <a href=/pixi-api/PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>A temp matrix</p></div>
@@ -323,7 +328,7 @@
 <div class="member" id="append">
   <h3 class="member__title">append</h3>
   
-<pre class="signature__container"><code class="signature">append(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">append(matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Appends the given Matrix to this Matrix.</p></div>
@@ -349,7 +354,7 @@
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -374,7 +379,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>This matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -389,7 +394,7 @@
 <div class="member" id="apply">
   <h3 class="member__title">apply</h3>
   
-<pre class="signature__container"><code class="signature">apply(pos: <a href="PIXI/IPointData.html">PIXI.IPointData</a>, newPos: <a href="PIXI/Point.html">PIXI.Point</a>) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">apply(pos: <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>, newPos: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>) → {<a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -416,7 +421,7 @@ Can be used to go from a child's coordinate space to the world coordinate space.
           pos
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
+          <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -430,7 +435,7 @@ Can be used to go from a child's coordinate space to the world coordinate space.
           newPos
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -459,7 +464,7 @@ Can be used to go from a child's coordinate space to the world coordinate space.
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Point.html">PIXI.Point</a>
+        <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"><p>The new point, transformed through this matrix</p></td>
     </tr>
@@ -474,7 +479,7 @@ Can be used to go from a child's coordinate space to the world coordinate space.
 <div class="member" id="applyInverse">
   <h3 class="member__title">applyInverse</h3>
   
-<pre class="signature__container"><code class="signature">applyInverse(pos: <a href="PIXI/IPointData.html">PIXI.IPointData</a>, newPos: <a href="PIXI/Point.html">PIXI.Point</a>) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">applyInverse(pos: <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>, newPos: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>) → {<a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -501,7 +506,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
           pos
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
+          <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -515,7 +520,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
           newPos
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -544,7 +549,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Point.html">PIXI.Point</a>
+        <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"><p>The new point, inverse-transformed through this matrix</p></td>
     </tr>
@@ -559,7 +564,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
 <div class="member" id="clone">
   <h3 class="member__title">clone</h3>
   
-<pre class="signature__container"><code class="signature">clone() → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clone() → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Creates a new Matrix object with the same values as this one.</p></div>
@@ -580,7 +585,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>A copy of this matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -595,7 +600,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
 <div class="member" id="copyFrom">
   <h3 class="member__title">copyFrom</h3>
   
-<pre class="signature__container"><code class="signature">copyFrom(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">copyFrom(matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Changes the values of the matrix to be the same as the ones in given matrix</p></div>
@@ -621,7 +626,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -646,7 +651,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -661,7 +666,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
 <div class="member" id="copyTo">
   <h3 class="member__title">copyTo</h3>
   
-<pre class="signature__container"><code class="signature">copyTo(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">copyTo(matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Changes the values of the given matrix to be the same as the ones in this matrix</p></div>
@@ -687,7 +692,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -712,7 +717,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>The matrix given in parameter with its values updated.</p></td>
     </tr>
@@ -727,7 +732,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
 <div class="member" id="decompose">
   <h3 class="member__title">decompose</h3>
   
-<pre class="signature__container"><code class="signature">decompose(transform: <a href="PIXI/Transform.html">PIXI.Transform</a>) → {<a href="PIXI/Transform.html">PIXI.Transform</a>}</code></pre>
+<pre class="signature__container"><code class="signature">decompose(transform: <a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>) → {<a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>}</code></pre>
 
 
   <div class="member__brief"><p>Decomposes the matrix (x, y, scaleX, scaleY, and rotation) and sets the properties on to a transform.</p></div>
@@ -753,7 +758,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
           transform
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Transform.html">PIXI.Transform</a>
+          <a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>
         </td>
         
         
@@ -778,7 +783,7 @@ Can be used to go from the world coordinate space to a child's coordinate space.
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Transform.html">PIXI.Transform</a>
+        <a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>
       </td>
       <td class="member-return__description"><p>The transform with the newly applied properties</p></td>
     </tr>
@@ -864,7 +869,7 @@ ty = array[5]</p></div>
 <div class="member" id="identity">
   <h3 class="member__title">identity</h3>
   
-<pre class="signature__container"><code class="signature">identity() → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">identity() → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Resets this Matrix to an identity (default) matrix.</p></div>
@@ -885,7 +890,7 @@ ty = array[5]</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>This matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -900,7 +905,7 @@ ty = array[5]</p></div>
 <div class="member" id="invert">
   <h3 class="member__title">invert</h3>
   
-<pre class="signature__container"><code class="signature">invert() → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">invert() → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Inverts this matrix</p></div>
@@ -921,7 +926,7 @@ ty = array[5]</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>This matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -936,7 +941,7 @@ ty = array[5]</p></div>
 <div class="member" id="prepend">
   <h3 class="member__title">prepend</h3>
   
-<pre class="signature__container"><code class="signature">prepend(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">prepend(matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Prepends the given Matrix to this Matrix.</p></div>
@@ -962,7 +967,7 @@ ty = array[5]</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -987,7 +992,7 @@ ty = array[5]</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>This matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -1002,7 +1007,7 @@ ty = array[5]</p></div>
 <div class="member" id="rotate">
   <h3 class="member__title">rotate</h3>
   
-<pre class="signature__container"><code class="signature">rotate(angle: number) → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">rotate(angle: number) → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Applies a rotation transformation to the matrix.</p></div>
@@ -1053,7 +1058,7 @@ ty = array[5]</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>This matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -1068,7 +1073,7 @@ ty = array[5]</p></div>
 <div class="member" id="scale">
   <h3 class="member__title">scale</h3>
   
-<pre class="signature__container"><code class="signature">scale(x: number, y: number) → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">scale(x: number, y: number) → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Applies a scale transformation to the matrix.</p></div>
@@ -1129,7 +1134,7 @@ ty = array[5]</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>This matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -1144,7 +1149,7 @@ ty = array[5]</p></div>
 <div class="member" id="set">
   <h3 class="member__title">set</h3>
   
-<pre class="signature__container"><code class="signature">set(a: number, b: number, c: number, d: number, tx: number, ty: number) → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">set(a: number, b: number, c: number, d: number, tx: number, ty: number) → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>sets the matrix properties</p></div>
@@ -1245,7 +1250,7 @@ ty = array[5]</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>This matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -1260,7 +1265,7 @@ ty = array[5]</p></div>
 <div class="member" id="setTransform">
   <h3 class="member__title">setTransform</h3>
   
-<pre class="signature__container"><code class="signature">setTransform(x: number, y: number, pivotX: number, pivotY: number, scaleX: number, scaleY: number, rotation: number, skewX: number, skewY: number) → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setTransform(x: number, y: number, pivotX: number, pivotY: number, scaleX: number, scaleY: number, rotation: number, skewX: number, skewY: number) → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Sets the matrix based on all the available properties</p></div>
@@ -1391,7 +1396,7 @@ ty = array[5]</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>This matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -1494,7 +1499,7 @@ ty = array[5]</p></div>
 <div class="member" id="translate">
   <h3 class="member__title">translate</h3>
   
-<pre class="signature__container"><code class="signature">translate(x: number, y: number) → {<a href="PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
+<pre class="signature__container"><code class="signature">translate(x: number, y: number) → {<a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>}</code></pre>
 
 
   <div class="member__brief"><p>Translates the matrix on the x and y.</p></div>
@@ -1555,7 +1560,7 @@ ty = array[5]</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+        <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
       </td>
       <td class="member-return__description"><p>This matrix. Good for chaining method calls.</p></td>
     </tr>
@@ -1579,21 +1584,21 @@ ty = array[5]</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#IDENTITY">IDENTITY</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#IDENTITY">IDENTITY</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#TEMP_MATRIX">TEMP_MATRIX</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#TEMP_MATRIX">TEMP_MATRIX</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#a">a</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#a">a</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#b">b</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#b">b</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#c">c</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#c">c</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#d">d</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#d">d</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#tx">tx</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#tx">tx</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#ty">ty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#ty">ty</a></li>
     
   </ul>
 </div>
@@ -1605,39 +1610,39 @@ ty = array[5]</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#append">append</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#append">append</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#apply">apply</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#apply">apply</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#applyInverse">applyInverse</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#applyInverse">applyInverse</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#clone">clone</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#clone">clone</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#copyFrom">copyFrom</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#copyFrom">copyFrom</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#copyTo">copyTo</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#copyTo">copyTo</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#decompose">decompose</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#decompose">decompose</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#fromArray">fromArray</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#fromArray">fromArray</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#identity">identity</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#identity">identity</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#invert">invert</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#invert">invert</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#prepend">prepend</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#prepend">prepend</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#rotate">rotate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#rotate">rotate</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#scale">scale</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#scale">scale</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#set">set</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#set">set</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#setTransform">setTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#setTransform">setTransform</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#toArray">toArray</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#toArray">toArray</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Matrix.html#translate">translate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Matrix.html#translate">translate</a></li>
     
   </ul>
 </div>

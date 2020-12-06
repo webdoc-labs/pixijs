@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: Bounds</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -135,7 +140,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addBounds">
   <h3 class="member__title">addBounds</h3>
   
-<pre class="signature__container"><code class="signature">addBounds(bounds: <a href="PIXI/Bounds.html">PIXI.Bounds</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addBounds(bounds: <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Adds other Bounds.</p></div>
@@ -161,7 +166,7 @@ Updated from outside, thus public modifier.</p></div>
           bounds
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Bounds.html">PIXI.Bounds</a>
+          <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>
         </td>
         
         
@@ -201,7 +206,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addBoundsArea">
   <h3 class="member__title">addBoundsArea</h3>
   
-<pre class="signature__container"><code class="signature">addBoundsArea(bounds: <a href="PIXI/Bounds.html">PIXI.Bounds</a>, area: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addBoundsArea(bounds: <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>, area: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Adds other Bounds, masked with Rectangle.</p></div>
@@ -227,7 +232,7 @@ Updated from outside, thus public modifier.</p></div>
           bounds
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Bounds.html">PIXI.Bounds</a>
+          <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>
         </td>
         
         
@@ -237,7 +242,7 @@ Updated from outside, thus public modifier.</p></div>
           area
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         
         
@@ -277,7 +282,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addBoundsMask">
   <h3 class="member__title">addBoundsMask</h3>
   
-<pre class="signature__container"><code class="signature">addBoundsMask(bounds: <a href="PIXI/Bounds.html">PIXI.Bounds</a>, mask: <a href="PIXI/Bounds.html">PIXI.Bounds</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addBoundsMask(bounds: <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>, mask: <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Adds other Bounds, masked with Bounds.</p></div>
@@ -303,7 +308,7 @@ Updated from outside, thus public modifier.</p></div>
           bounds
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Bounds.html">PIXI.Bounds</a>
+          <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>
         </td>
         
         
@@ -313,7 +318,7 @@ Updated from outside, thus public modifier.</p></div>
           mask
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Bounds.html">PIXI.Bounds</a>
+          <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>
         </td>
         
         
@@ -353,7 +358,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addBoundsMatrix">
   <h3 class="member__title">addBoundsMatrix</h3>
   
-<pre class="signature__container"><code class="signature">addBoundsMatrix(bounds: <a href="PIXI/Bounds.html">PIXI.Bounds</a>, matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addBoundsMatrix(bounds: <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>, matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Adds other Bounds, multiplied by matrix. Bounds shouldn't be empty.</p></div>
@@ -379,7 +384,7 @@ Updated from outside, thus public modifier.</p></div>
           bounds
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Bounds.html">PIXI.Bounds</a>
+          <a href="/pixi-api/PIXI/Bounds.html">PIXI.Bounds</a>
         </td>
         
         
@@ -389,7 +394,7 @@ Updated from outside, thus public modifier.</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -429,7 +434,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addFrame">
   <h3 class="member__title">addFrame</h3>
   
-<pre class="signature__container"><code class="signature">addFrame(transform: <a href="PIXI/Transform.html">PIXI.Transform</a>, x0: number, y0: number, x1: number, y1: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addFrame(transform: <a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>, x0: number, y0: number, x1: number, y1: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Adds sprite frame, transformed.</p></div>
@@ -455,7 +460,7 @@ Updated from outside, thus public modifier.</p></div>
           transform
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Transform.html">PIXI.Transform</a>
+          <a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>
         </td>
         
         
@@ -535,7 +540,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addFrameMatrix">
   <h3 class="member__title">addFrameMatrix</h3>
   
-<pre class="signature__container"><code class="signature">addFrameMatrix(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>, x0: number, y0: number, x1: number, y1: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addFrameMatrix(matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>, x0: number, y0: number, x1: number, y1: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Adds sprite frame, multiplied by matrix</p></div>
@@ -561,7 +566,7 @@ Updated from outside, thus public modifier.</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -757,7 +762,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addPoint">
   <h3 class="member__title">addPoint</h3>
   
-<pre class="signature__container"><code class="signature">addPoint(point: <a href="PIXI/IPointData.html">PIXI.IPointData</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addPoint(point: <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>This function should be inlined when its possible.</p></div>
@@ -783,7 +788,7 @@ Updated from outside, thus public modifier.</p></div>
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
+          <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         
         
@@ -823,7 +828,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addPointMatrix">
   <h3 class="member__title">addPointMatrix</h3>
   
-<pre class="signature__container"><code class="signature">addPointMatrix(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>, point: IPointData) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addPointMatrix(matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>, point: IPointData) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Adds a point, after transformed. This should be inlined when its possible.</p></div>
@@ -849,7 +854,7 @@ Updated from outside, thus public modifier.</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -1051,7 +1056,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addVertices">
   <h3 class="member__title">addVertices</h3>
   
-<pre class="signature__container"><code class="signature">addVertices(transform: <a href="PIXI/Transform.html">PIXI.Transform</a>, vertices: Float32Array, beginOffset: number, endOffset: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addVertices(transform: <a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>, vertices: Float32Array, beginOffset: number, endOffset: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Add an array of mesh vertices</p></div>
@@ -1077,7 +1082,7 @@ Updated from outside, thus public modifier.</p></div>
           transform
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Transform.html">PIXI.Transform</a>
+          <a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>
         </td>
         
         
@@ -1147,7 +1152,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="addVerticesMatrix">
   <h3 class="member__title">addVerticesMatrix</h3>
   
-<pre class="signature__container"><code class="signature">addVerticesMatrix(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>, vertices: Float32Array, beginOffset: number, endOffset: number, padX: number, padY: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">addVerticesMatrix(matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>, vertices: Float32Array, beginOffset: number, endOffset: number, padX: number, padY: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Add an array of mesh vertices.</p></div>
@@ -1173,7 +1178,7 @@ Updated from outside, thus public modifier.</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -1335,7 +1340,7 @@ Updated from outside, thus public modifier.</p></div>
 <div class="member" id="getRectangle">
   <h3 class="member__title">getRectangle</h3>
   
-<pre class="signature__container"><code class="signature">getRectangle(rect: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getRectangle(rect: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -1362,7 +1367,7 @@ It is not guaranteed that it will return tempRect</p></div>
           rect
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -1391,7 +1396,7 @@ It is not guaranteed that it will return tempRect</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+        <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
       </td>
       <td class="member-return__description"><p>A rectangle of the bounds</p></td>
     </tr>
@@ -1540,15 +1545,15 @@ If paddingY is omitted, both paddingX and paddingY will be set to paddingX.</p><
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#maxX">maxX</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#maxX">maxX</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#maxY">maxY</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#maxY">maxY</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#minX">minX</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#minX">minX</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#minY">minY</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#minY">minY</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#updateID">updateID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#updateID">updateID</a></li>
     
   </ul>
 </div>
@@ -1560,39 +1565,39 @@ If paddingY is omitted, both paddingX and paddingY will be set to paddingX.</p><
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addBounds">addBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addBounds">addBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addBoundsArea">addBoundsArea</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addBoundsArea">addBoundsArea</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addBoundsMask">addBoundsMask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addBoundsMask">addBoundsMask</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addBoundsMatrix">addBoundsMatrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addBoundsMatrix">addBoundsMatrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addFrame">addFrame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addFrame">addFrame</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addFrameMatrix">addFrameMatrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addFrameMatrix">addFrameMatrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addFramePad">addFramePad</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addFramePad">addFramePad</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addPoint">addPoint</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addPoint">addPoint</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addPointMatrix">addPointMatrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addPointMatrix">addPointMatrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addQuad">addQuad</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addQuad">addQuad</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addVertexData">addVertexData</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addVertexData">addVertexData</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addVertices">addVertices</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addVertices">addVertices</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#addVerticesMatrix">addVerticesMatrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#addVerticesMatrix">addVerticesMatrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#clear">clear</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#clear">clear</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#getRectangle">getRectangle</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#getRectangle">getRectangle</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#isEmpty">isEmpty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#isEmpty">isEmpty</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Bounds.html#pad">pad</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Bounds.html#pad">pad</a></li>
     
   </ul>
 </div>

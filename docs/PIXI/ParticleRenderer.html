@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: ParticleRenderer</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/particles</div>
     <h1 class="document__title">PIXI.ParticleRenderer</h1>
     
-<pre class="signature__container"><code class="signature">class ParticleRenderer extends <a href="PIXI/ObjectRenderer.html">PIXI.ObjectRenderer</a></code></pre>
+<pre class="signature__container"><code class="signature">class ParticleRenderer extends <a href="/pixi-api/PIXI/ObjectRenderer.html">PIXI.ObjectRenderer</a></code></pre>
 
 
     <div class="document__brief"><p>Renderer for Particles that is designer for speed over feature set.</p></div>
@@ -42,7 +47,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.ParticleRenderer(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.ParticleRenderer(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -68,7 +73,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -97,7 +102,7 @@
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -113,7 +118,7 @@
 <div class="member" id="shader">
   <h3 class="member__title">shader</h3>
   
-<pre class="signature__container"><code class="signature">shader: <a href=PIXI/Shader.html>PIXI.Shader</a></code></pre>
+<pre class="signature__container"><code class="signature">shader: <a href=/pixi-api/PIXI/Shader.html>PIXI.Shader</a></code></pre>
 
 
   <div class="member__brief"><p>The default shader that is used if a sprite doesn't have a more specific one.</p></div>
@@ -129,7 +134,7 @@
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"><p>The WebGL state in which this renderer will work.</p></div>
@@ -226,7 +231,7 @@ batch by rendering objects now.</p></div>
 <div class="member" id="render">
   <h3 class="member__title">render</h3>
   
-<pre class="signature__container"><code class="signature">render(container: <a href="PIXI/ParticleContainer.html">PIXI.ParticleContainer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">render(container: <a href="/pixi-api/PIXI/ParticleContainer.html">PIXI.ParticleContainer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Renders the particle container object.</p></div>
@@ -252,7 +257,7 @@ batch by rendering objects now.</p></div>
           container
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/ParticleContainer.html">PIXI.ParticleContainer</a>
+          <a href="/pixi-api/PIXI/ParticleContainer.html">PIXI.ParticleContainer</a>
         </td>
         
         
@@ -368,7 +373,7 @@ become dormant.</p></div>
 <div class="member" id="uploadPosition">
   <h3 class="member__title">uploadPosition</h3>
   
-<pre class="signature__container"><code class="signature">uploadPosition(children: Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">uploadPosition(children: Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Uploads the position.</p></div>
@@ -394,7 +399,7 @@ become dormant.</p></div>
           children
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
         </td>
         
         
@@ -484,7 +489,7 @@ become dormant.</p></div>
 <div class="member" id="uploadRotation">
   <h3 class="member__title">uploadRotation</h3>
   
-<pre class="signature__container"><code class="signature">uploadRotation(children: Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">uploadRotation(children: Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Uploads the rotation.</p></div>
@@ -510,7 +515,7 @@ become dormant.</p></div>
           children
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
         </td>
         
         
@@ -600,7 +605,7 @@ become dormant.</p></div>
 <div class="member" id="uploadTint">
   <h3 class="member__title">uploadTint</h3>
   
-<pre class="signature__container"><code class="signature">uploadTint(children: Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">uploadTint(children: Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Uploads the tint.</p></div>
@@ -626,7 +631,7 @@ become dormant.</p></div>
           children
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
         </td>
         
         
@@ -716,7 +721,7 @@ become dormant.</p></div>
 <div class="member" id="uploadUvs">
   <h3 class="member__title">uploadUvs</h3>
   
-<pre class="signature__container"><code class="signature">uploadUvs(children: Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">uploadUvs(children: Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Uploads the Uvs</p></div>
@@ -742,7 +747,7 @@ become dormant.</p></div>
           children
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
         </td>
         
         
@@ -832,7 +837,7 @@ become dormant.</p></div>
 <div class="member" id="uploadVertices">
   <h3 class="member__title">uploadVertices</h3>
   
-<pre class="signature__container"><code class="signature">uploadVertices(children: Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">uploadVertices(children: Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>>, startIndex: number, amount: number, array: Array&lt;number>, stride: number, offset: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Uploads the vertices.</p></div>
@@ -858,7 +863,7 @@ become dormant.</p></div>
           children
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
         </td>
         
         
@@ -957,11 +962,11 @@ become dormant.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#shader">shader</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#shader">shader</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#state">state</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#state">state</a></li>
     
   </ul>
 </div>
@@ -973,25 +978,25 @@ become dormant.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#flush">flush</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#flush">flush</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#render">render</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#render">render</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#start">start</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#start">start</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#stop">stop</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#stop">stop</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#uploadPosition">uploadPosition</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#uploadPosition">uploadPosition</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#uploadRotation">uploadRotation</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#uploadRotation">uploadRotation</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#uploadTint">uploadTint</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#uploadTint">uploadTint</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#uploadUvs">uploadUvs</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#uploadUvs">uploadUvs</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/ParticleRenderer.html#uploadVertices">uploadVertices</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/ParticleRenderer.html#uploadVertices">uploadVertices</a></li>
     
   </ul>
 </div>

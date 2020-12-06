@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: BoundedBufferGeometry</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi-essentials/system-g</div>
     <h1 class="document__title">BoundedBufferGeometry</h1>
     
-<pre class="signature__container"><code class="signature">class BoundedBufferGeometry extends <a href="BoundedGeometry.html">BoundedGeometry</a></code></pre>
+<pre class="signature__container"><code class="signature">class BoundedBufferGeometry extends <a href="/pixi-api/BoundedGeometry.html">BoundedGeometry</a></code></pre>
 
 
     <div class="document__brief"></div>
@@ -85,7 +90,7 @@ method.</p></div>
 <div class="member" id="_bounds">
   <h3 class="member__title">_bounds</h3>
   
-<pre class="signature__container"><code class="signature">protected _bounds: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _bounds: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>The calculated bounds for this geometry.</p></div>
@@ -124,7 +129,7 @@ method.</p></div>
 <div class="member" id="addAttribute">
   <h3 class="member__title">addAttribute</h3>
   
-<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -167,7 +172,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
           buffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+          <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
         </td>
         <td class="member-parameter__attributes">
           
@@ -294,7 +299,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -309,7 +314,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
 <div class="member" id="addIndex">
   <h3 class="member__title">addIndex</h3>
   
-<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>) → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>) → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -336,7 +341,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
           buffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+          <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -365,7 +370,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -380,7 +385,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="clone">
   <h3 class="member__title">clone</h3>
   
-<pre class="signature__container"><code class="signature">clone() → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clone() → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns a clone of the geometry</p></div>
@@ -401,7 +406,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>a new clone of this geometry</p></td>
     </tr>
@@ -488,7 +493,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="getAttribute">
   <h3 class="member__title">getAttribute</h3>
   
-<pre class="signature__container"><code class="signature">getAttribute(id: String) → {<a href="PIXI/Attribute.html">PIXI.Attribute</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getAttribute(id: String) → {<a href="/pixi-api/PIXI/Attribute.html">PIXI.Attribute</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns the requested attribute</p></div>
@@ -539,7 +544,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Attribute.html">PIXI.Attribute</a>
+        <a href="/pixi-api/PIXI/Attribute.html">PIXI.Attribute</a>
       </td>
       <td class="member-return__description"><p>the attribute requested.</p></td>
     </tr>
@@ -554,7 +559,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="getBounds">
   <h3 class="member__title">getBounds</h3>
   
-<pre class="signature__container"><code class="signature">getBounds(rect: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getBounds(rect: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -580,7 +585,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
           rect
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -609,7 +614,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+        <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -624,7 +629,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="getBuffer">
   <h3 class="member__title">getBuffer</h3>
   
-<pre class="signature__container"><code class="signature">getBuffer(id: String) → {<a href="PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getBuffer(id: String) → {<a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns the requested buffer</p></div>
@@ -675,7 +680,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Buffer.html">PIXI.Buffer</a>
+        <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the buffer requested.</p></td>
     </tr>
@@ -690,7 +695,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="getIndex">
   <h3 class="member__title">getIndex</h3>
   
-<pre class="signature__container"><code class="signature">getIndex() → {<a href="PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getIndex() → {<a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns the index buffer</p></div>
@@ -711,7 +716,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Buffer.html">PIXI.Buffer</a>
+        <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the index buffer.</p></td>
     </tr>
@@ -726,7 +731,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="interleave">
   <h3 class="member__title">interleave</h3>
   
-<pre class="signature__container"><code class="signature">interleave() → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">interleave() → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -748,7 +753,7 @@ This can be useful if your model remains static as it offers a little performanc
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -799,7 +804,7 @@ This can be useful if your model remains static as it offers a little performanc
 <div class="member" id="updateBounds">
   <h3 class="member__title">updateBounds</h3>
   
-<pre class="signature__container"><code class="signature">updateBounds(x: <a href="PIXI/Point.html">PIXI.Point</a> | number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">updateBounds(x: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a> | number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Updates the bounds accordingly to include the given point.</p></div>
@@ -825,7 +830,7 @@ This can be useful if your model remains static as it offers a little performanc
           x
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a> | number
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a> | number
         </td>
         
         
@@ -874,9 +879,9 @@ This can be useful if your model remains static as it offers a little performanc
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#instanceCount">instanceCount</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#instanceCount">instanceCount</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#refCount">refCount</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#refCount">refCount</a></li>
     
   </ul>
 </div>
@@ -887,9 +892,9 @@ This can be useful if your model remains static as it offers a little performanc
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#_bounds">_bounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#_bounds">_bounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#glVertexArrayObjects">glVertexArrayObjects</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#glVertexArrayObjects">glVertexArrayObjects</a></li>
     
   </ul>
 </div>
@@ -900,29 +905,29 @@ This can be useful if your model remains static as it offers a little performanc
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#addAttribute">addAttribute</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#addAttribute">addAttribute</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#addIndex">addIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#addIndex">addIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#clone">clone</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#clone">clone</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#dispose">dispose</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#dispose">dispose</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#getAttribute">getAttribute</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#getAttribute">getAttribute</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#getBounds">getBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#getBounds">getBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#getBuffer">getBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#getBuffer">getBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#getIndex">getIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#getIndex">getIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#interleave">interleave</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#interleave">interleave</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#resetBounds">resetBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#resetBounds">resetBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="BoundedBufferGeometry.html#updateBounds">updateBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/BoundedBufferGeometry.html#updateBounds">updateBounds</a></li>
     
   </ul>
 </div>

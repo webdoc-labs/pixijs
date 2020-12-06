@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: BVHObject</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -83,7 +88,7 @@ leaf node in <code>BVHTree</code>.</p>
 <div class="member" id="getBounds">
   <h3 class="member__title">getBounds</h3>
   
-<pre class="signature__container"><code class="signature">getBounds(rect: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getBounds(rect: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
 
 
   <div class="member__brief"><p>The axis-aligned bounding box for this object</p></div>
@@ -109,7 +114,7 @@ leaf node in <code>BVHTree</code>.</p>
           rect
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -138,7 +143,7 @@ leaf node in <code>BVHTree</code>.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+        <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -153,7 +158,7 @@ leaf node in <code>BVHTree</code>.</p>
 <div class="member" id="getCentroid">
   <h3 class="member__title">getCentroid</h3>
   
-<pre class="signature__container"><code class="signature">getCentroid(point: <a href="PIXI/Point.html">PIXI.Point</a>) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getCentroid(point: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>) → {<a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"><p>The average of all vertices in this polygon</p></div>
@@ -179,7 +184,7 @@ leaf node in <code>BVHTree</code>.</p>
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -208,7 +213,7 @@ leaf node in <code>BVHTree</code>.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Point.html">PIXI.Point</a>
+        <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -234,11 +239,11 @@ leaf node in <code>BVHTree</code>.</p>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BVHObject.html#getBoundaryLength">getBoundaryLength</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BVHObject.html#getBoundaryLength">getBoundaryLength</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BVHObject.html#getBounds">getBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BVHObject.html#getBounds">getBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BVHObject.html#getCentroid">getCentroid</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BVHObject.html#getCentroid">getCentroid</a></li>
     
   </ul>
 </div>

@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: InteractionEvent</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -45,7 +50,7 @@
 <div class="member" id="currentTarget">
   <h3 class="member__title">currentTarget</h3>
   
-<pre class="signature__container"><code class="signature">currentTarget: <a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
+<pre class="signature__container"><code class="signature">currentTarget: <a href=/pixi-api/PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
 
 
   <div class="member__brief"><p>The object whose event listener’s callback is currently being invoked.</p></div>
@@ -61,7 +66,7 @@
 <div class="member" id="data">
   <h3 class="member__title">data</h3>
   
-<pre class="signature__container"><code class="signature">data: <a href=PIXI/InteractionData.html>PIXI.InteractionData</a></code></pre>
+<pre class="signature__container"><code class="signature">data: <a href=/pixi-api/PIXI/InteractionData.html>PIXI.InteractionData</a></code></pre>
 
 
   <div class="member__brief"><p>InteractionData related to this event</p></div>
@@ -94,12 +99,12 @@ will still be dispatched.</p></div>
 <div class="member" id="target">
   <h3 class="member__title">target</h3>
   
-<pre class="signature__container"><code class="signature">target: <a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
+<pre class="signature__container"><code class="signature">target: <a href=/pixi-api/PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
 
 
   <div class="member__brief"></div>
   <div class="member__description"><p>The object which caused this event to be dispatched.
-For listener callback see <a href=PIXI/InteractionEvent.html#currentTarget>PIXI.InteractionEvent.currentTarget</a>.</p></div>
+For listener callback see <a href=/pixi-api/PIXI/InteractionEvent.html#currentTarget>PIXI.InteractionEvent.currentTarget</a>.</p></div>
 
   
 
@@ -216,15 +221,15 @@ For listener callback see <a href=PIXI/InteractionEvent.html#currentTarget>PIXI.
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionEvent.html#currentTarget">currentTarget</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionEvent.html#currentTarget">currentTarget</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionEvent.html#data">data</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionEvent.html#data">data</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionEvent.html#stopped">stopped</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionEvent.html#stopped">stopped</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionEvent.html#target">target</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionEvent.html#target">target</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionEvent.html#type">type</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionEvent.html#type">type</a></li>
     
   </ul>
 </div>
@@ -236,9 +241,9 @@ For listener callback see <a href=PIXI/InteractionEvent.html#currentTarget>PIXI.
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionEvent.html#reset">reset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionEvent.html#reset">reset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionEvent.html#stopPropagation">stopPropagation</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionEvent.html#stopPropagation">stopPropagation</a></li>
     
   </ul>
 </div>

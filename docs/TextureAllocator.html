@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: TextureAllocator</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -194,8 +199,8 @@ atlases on demand, which improve batching efficiency.</p></div>
 a new slab is created and the texture is issued from it. However, if the requested
 dimensions are larger than slabs themselves, then <code>null</code> is always returned.</p>
 <p>To upload a texture source, you will have to create an atlas-managing Resource
-yourself on the base-texture. The <a href=AtlasAllocator.html>AtlasAllocator</a> does this for you, while the
-<a href=CanvasTextureAllocator.html>CanvasTextureAllocator</a> can be used to draw on a canvas-based atlas.</p></div>
+yourself on the base-texture. The <a href=/pixi-api/AtlasAllocator.html>AtlasAllocator</a> does this for you, while the
+<a href=/pixi-api/CanvasTextureAllocator.html>CanvasTextureAllocator</a> can be used to draw on a canvas-based atlas.</p></div>
 
   
     
@@ -282,7 +287,7 @@ yourself on the base-texture. The <a href=AtlasAllocator.html>AtlasAllocator</a>
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Creates a texture slab. The slab's base-texture is not backed by any resource. You
-will have to manage that yourself. See <a href=AtlasAllocator.html>AtlasAllocator</a> or <a href=CanvasTextureAllocator.html>CanvasTextureAllocator</a>
+will have to manage that yourself. See <a href=/pixi-api/AtlasAllocator.html>AtlasAllocator</a> or <a href=/pixi-api/CanvasTextureAllocator.html>CanvasTextureAllocator</a>
 for better resource semantics.</p></div>
 
   
@@ -315,7 +320,7 @@ for better resource semantics.</p></div>
 <div class="member" id="createTexture">
   <h3 class="member__title">createTexture</h3>
   
-<pre class="signature__container"><code class="signature">createTexture(baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>, frame: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {T}</code></pre>
+<pre class="signature__container"><code class="signature">createTexture(baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>, frame: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {T}</code></pre>
 
 
   <div class="member__brief"><p>Creates a texture on the given base-texture at <code>frame</code>.</p></div>
@@ -341,7 +346,7 @@ for better resource semantics.</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -351,7 +356,7 @@ for better resource semantics.</p></div>
           frame
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         
         
@@ -458,7 +463,7 @@ destroyed any resource uploading its data.</p></div>
 <div class="member" id="issueTexture">
   <h3 class="member__title">issueTexture</h3>
   
-<pre class="signature__container"><code class="signature">issueTexture(slab: TextureSlab, width: number, height: number, padding) → {<a href="PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">issueTexture(slab: TextureSlab, width: number, height: number, padding) → {<a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Issues a texture from the given texture slab, if possible.</p></div>
@@ -539,7 +544,7 @@ destroyed any resource uploading its data.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Texture.html">PIXI.Texture</a>
+        <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
       </td>
       <td class="member-return__description"><p>The issued texture, if successful; otherwise, <code>null</code>.</p></td>
     </tr>
@@ -563,11 +568,11 @@ destroyed any resource uploading its data.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="TextureAllocator.html#maxHeight">maxHeight</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/TextureAllocator.html#maxHeight">maxHeight</a></li>
     
-      <li class="page-members-explorer__item"><a href="TextureAllocator.html#slabHeight">slabHeight</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/TextureAllocator.html#slabHeight">slabHeight</a></li>
     
-      <li class="page-members-explorer__item"><a href="TextureAllocator.html#slabWidth">slabWidth</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/TextureAllocator.html#slabWidth">slabWidth</a></li>
     
   </ul>
 </div>
@@ -578,7 +583,7 @@ destroyed any resource uploading its data.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="TextureAllocator.html#textureSlabs">textureSlabs</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/TextureAllocator.html#textureSlabs">textureSlabs</a></li>
     
   </ul>
 </div>
@@ -589,15 +594,15 @@ destroyed any resource uploading its data.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="TextureAllocator.html#allocate">allocate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/TextureAllocator.html#allocate">allocate</a></li>
     
-      <li class="page-members-explorer__item"><a href="TextureAllocator.html#createSlab">createSlab</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/TextureAllocator.html#createSlab">createSlab</a></li>
     
-      <li class="page-members-explorer__item"><a href="TextureAllocator.html#createTexture">createTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/TextureAllocator.html#createTexture">createTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="TextureAllocator.html#free">free</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/TextureAllocator.html#free">free</a></li>
     
-      <li class="page-members-explorer__item"><a href="TextureAllocator.html#issueTexture">issueTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/TextureAllocator.html#issueTexture">issueTexture</a></li>
     
   </ul>
 </div>

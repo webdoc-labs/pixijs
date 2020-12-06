@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: Transform</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -45,7 +50,7 @@
 <div class="member" id="IDENTITY">
   <h3 class="member__title">IDENTITY</h3>
   
-<pre class="signature__container"><code class="signature">static IDENTITY: <a href=PIXI/Transform.html>PIXI.Transform</a></code></pre>
+<pre class="signature__container"><code class="signature">static IDENTITY: <a href=/pixi-api/PIXI/Transform.html>PIXI.Transform</a></code></pre>
 
 
   <div class="member__brief"><p>A default (identity) transform</p></div>
@@ -61,7 +66,7 @@
 <div class="member" id="localTransform">
   <h3 class="member__title">localTransform</h3>
   
-<pre class="signature__container"><code class="signature">localTransform: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">localTransform: <a href=/pixi-api/PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>The local transformation matrix.</p></div>
@@ -77,7 +82,7 @@
 <div class="member" id="pivot">
   <h3 class="member__title">pivot</h3>
   
-<pre class="signature__container"><code class="signature">pivot: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">pivot: <a href=/pixi-api/PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The pivot point of the displayObject that it rotates around.</p></div>
@@ -93,7 +98,7 @@
 <div class="member" id="position">
   <h3 class="member__title">position</h3>
   
-<pre class="signature__container"><code class="signature">position: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">position: <a href=/pixi-api/PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The coordinate of the object relative to the local coordinates of the parent.</p></div>
@@ -125,7 +130,7 @@
 <div class="member" id="scale">
   <h3 class="member__title">scale</h3>
   
-<pre class="signature__container"><code class="signature">scale: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">scale: <a href=/pixi-api/PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The scale factor of the object.</p></div>
@@ -141,7 +146,7 @@
 <div class="member" id="skew">
   <h3 class="member__title">skew</h3>
   
-<pre class="signature__container"><code class="signature">skew: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">skew: <a href=/pixi-api/PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The skew amount, on the x and y axis.</p></div>
@@ -157,7 +162,7 @@
 <div class="member" id="worldTransform">
   <h3 class="member__title">worldTransform</h3>
   
-<pre class="signature__container"><code class="signature">worldTransform: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">worldTransform: <a href=/pixi-api/PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>The world transformation matrix.</p></div>
@@ -337,7 +342,7 @@ the second column of the local transformation matrix without a scale.</p></div>
 <div class="member" id="setFromMatrix">
   <h3 class="member__title">setFromMatrix</h3>
   
-<pre class="signature__container"><code class="signature">setFromMatrix(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">setFromMatrix(matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Decomposes a matrix and sets the transforms properties based on it.</p></div>
@@ -363,7 +368,7 @@ the second column of the local transformation matrix without a scale.</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -439,7 +444,7 @@ the second column of the local transformation matrix without a scale.</p></div>
 <div class="member" id="updateTransform">
   <h3 class="member__title">updateTransform</h3>
   
-<pre class="signature__container"><code class="signature">updateTransform(parentTransform: <a href="PIXI/Transform.html">PIXI.Transform</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">updateTransform(parentTransform: <a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Updates the local and the world transformation matrices.</p></div>
@@ -465,7 +470,7 @@ the second column of the local transformation matrix without a scale.</p></div>
           parentTransform
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Transform.html">PIXI.Transform</a>
+          <a href="/pixi-api/PIXI/Transform.html">PIXI.Transform</a>
         </td>
         
         
@@ -592,21 +597,21 @@ the second column of the local transformation matrix without a scale.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#IDENTITY">IDENTITY</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#IDENTITY">IDENTITY</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#localTransform">localTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#localTransform">localTransform</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#pivot">pivot</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#pivot">pivot</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#position">position</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#position">position</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#rotation">rotation</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#rotation">rotation</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#scale">scale</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#scale">scale</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#skew">skew</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#skew">skew</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#worldTransform">worldTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#worldTransform">worldTransform</a></li>
     
   </ul>
 </div>
@@ -617,23 +622,23 @@ the second column of the local transformation matrix without a scale.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#_currentLocalID">_currentLocalID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#_currentLocalID">_currentLocalID</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#_cx">_cx</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#_cx">_cx</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#_cy">_cy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#_cy">_cy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#_localID">_localID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#_localID">_localID</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#_parentID">_parentID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#_parentID">_parentID</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#_rotation">_rotation</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#_rotation">_rotation</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#_sx">_sx</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#_sx">_sx</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#_sy">_sy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#_sy">_sy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#_worldID">_worldID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#_worldID">_worldID</a></li>
     
   </ul>
 </div>
@@ -644,11 +649,11 @@ the second column of the local transformation matrix without a scale.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#setFromMatrix">setFromMatrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#setFromMatrix">setFromMatrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#updateLocalTransform">updateLocalTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#updateLocalTransform">updateLocalTransform</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#updateTransform">updateTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#updateTransform">updateTransform</a></li>
     
   </ul>
 </div>
@@ -659,9 +664,9 @@ the second column of the local transformation matrix without a scale.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#onChange">onChange</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#onChange">onChange</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Transform.html#updateSkew">updateSkew</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Transform.html#updateSkew">updateSkew</a></li>
     
   </ul>
 </div>

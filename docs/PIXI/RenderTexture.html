@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: RenderTexture</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.RenderTexture</h1>
     
-<pre class="signature__container"><code class="signature">class RenderTexture extends <a href="PIXI/Texture.html">PIXI.Texture</a></code></pre>
+<pre class="signature__container"><code class="signature">class RenderTexture extends <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a></code></pre>
 
 
     <div class="document__brief"><p>A RenderTexture is a special texture that allows any PixiJS display object to be rendered to it.</p></div>
@@ -67,7 +72,7 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.RenderTexture(baseRenderTexture: <a href="PIXI/BaseRenderTexture.html">PIXI.BaseRenderTexture</a>, frame: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.RenderTexture(baseRenderTexture: <a href="/pixi-api/PIXI/BaseRenderTexture.html">PIXI.BaseRenderTexture</a>, frame: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -93,7 +98,7 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
           baseRenderTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseRenderTexture.html">PIXI.BaseRenderTexture</a>
+          <a href="/pixi-api/PIXI/BaseRenderTexture.html">PIXI.BaseRenderTexture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -107,7 +112,7 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
           frame
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -140,7 +145,7 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 <div class="member" id="_frame">
   <h3 class="member__title">_frame</h3>
   
-<pre class="signature__container"><code class="signature">_frame: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">_frame: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -157,7 +162,7 @@ irrespective of the actual frame size or placement (which can be influenced by t
 <div class="member" id="baseTexture">
   <h3 class="member__title">baseTexture</h3>
   
-<pre class="signature__container"><code class="signature">baseTexture: <a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">baseTexture: <a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"><p>The base texture that this texture uses.</p></div>
@@ -173,7 +178,7 @@ irrespective of the actual frame size or placement (which can be influenced by t
 <div class="member" id="defaultAnchor">
   <h3 class="member__title">defaultAnchor</h3>
   
-<pre class="signature__container"><code class="signature">defaultAnchor: <a href=PIXI/Point.html>PIXI.Point</a></code></pre>
+<pre class="signature__container"><code class="signature">defaultAnchor: <a href=/pixi-api/PIXI/Point.html>PIXI.Point</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -190,7 +195,7 @@ Changing the <code>defaultAnchor</code> at a later point of time will not update
 <div class="member" id="filterFrame">
   <h3 class="member__title">filterFrame</h3>
   
-<pre class="signature__container"><code class="signature">filterFrame: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">filterFrame: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -207,7 +212,7 @@ You can read it inside filters.</p></div>
 <div class="member" id="frame">
   <h3 class="member__title">frame</h3>
   
-<pre class="signature__container"><code class="signature">frame: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">frame: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -224,7 +229,7 @@ Please call <code>updateUvs()</code> after you change coordinates of <code>frame
 <div class="member" id="framebuffer">
   <h3 class="member__title">framebuffer</h3>
   
-<pre class="signature__container"><code class="signature">framebuffer: <a href=PIXI/Framebuffer.html>PIXI.Framebuffer</a></code></pre>
+<pre class="signature__container"><code class="signature">framebuffer: <a href=/pixi-api/PIXI/Framebuffer.html>PIXI.Framebuffer</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -278,7 +283,7 @@ If you want more control, subscribe on baseTexture itself.</p>
 <div class="member" id="orig">
   <h3 class="member__title">orig</h3>
   
-<pre class="signature__container"><code class="signature">orig: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">orig: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>This is the area of original texture, before it was put in atlas</p></div>
@@ -318,7 +323,7 @@ If you want more control, subscribe on baseTexture itself.</p>
 set to 2 to compensate for texture packer rotation
 set to 6 to compensate for spine packer rotation
 can be used to rotate or mirror sprites
-See <a href="PIXI/groupD8.html">PIXI.groupD8</a> for explanation</p></div>
+See <a href="/pixi-api/PIXI/groupD8.html">PIXI.groupD8</a> for explanation</p></div>
 
   
 
@@ -330,7 +335,7 @@ See <a href="PIXI/groupD8.html">PIXI.groupD8</a> for explanation</p></div>
 <div class="member" id="size">
   <h3 class="member__title">size</h3>
   
-<pre class="signature__container"><code class="signature">size: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">size: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -346,7 +351,7 @@ See <a href="PIXI/groupD8.html">PIXI.groupD8</a> for explanation</p></div>
 <div class="member" id="sourceFrame">
   <h3 class="member__title">sourceFrame</h3>
   
-<pre class="signature__container"><code class="signature">sourceFrame: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">sourceFrame: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -380,7 +385,7 @@ Texture is added directly to the TextureCache array.</p></div>
 <div class="member" id="trim">
   <h3 class="member__title">trim</h3>
   
-<pre class="signature__container"><code class="signature">trim: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">trim: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -397,7 +402,7 @@ Please call <code>updateUvs()</code> after you change coordinates of <code>trim<
 <div class="member" id="uvMatrix">
   <h3 class="member__title">uvMatrix</h3>
   
-<pre class="signature__container"><code class="signature">uvMatrix: <a href=PIXI/TextureMatrix.html>PIXI.TextureMatrix</a></code></pre>
+<pre class="signature__container"><code class="signature">uvMatrix: <a href=/pixi-api/PIXI/TextureMatrix.html>PIXI.TextureMatrix</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -470,7 +475,7 @@ Call updateUvs() to increment it.</p></div>
 <div class="member" id="_uvs">
   <h3 class="member__title">_uvs</h3>
   
-<pre class="signature__container"><code class="signature">protected _uvs: <a href=PIXI/TextureUvs.html>PIXI.TextureUvs</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _uvs: <a href=/pixi-api/PIXI/TextureUvs.html>PIXI.TextureUvs</a></code></pre>
 
 
   <div class="member__brief"><p>The WebGL UV data cache. Can be used as quad UV</p></div>
@@ -509,7 +514,7 @@ Call updateUvs() to increment it.</p></div>
 <div class="member" id="create">
   <h3 class="member__title">create</h3>
   
-<pre class="signature__container"><code class="signature">static create(options: object) → {<a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static create(options: object) → {<a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>A short hand way of creating a render texture.</p></div>
@@ -593,7 +598,7 @@ Call updateUvs() to increment it.</p></div>
         <td class="member-parameter__default">
           PIXI.settings.SCALE_MODE
         </td>
-        <td class="member-parameter__description"><p>See <a href=PIXI/SCALE_MODES.html>PIXI.SCALE_MODES</a> for possible values</p></td>
+        <td class="member-parameter__description"><p>See <a href=/pixi-api/PIXI/SCALE_MODES.html>PIXI.SCALE_MODES</a> for possible values</p></td>
       </tr><tr class="member-parameter">
         <td class="member-parameter__name">
           options.resolution
@@ -630,7 +635,7 @@ Call updateUvs() to increment it.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+        <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"><p>The new render texture</p></td>
     </tr>
@@ -645,7 +650,7 @@ Call updateUvs() to increment it.</p></div>
 <div class="member" id="castToBaseTexture">
   <h3 class="member__title">castToBaseTexture</h3>
   
-<pre class="signature__container"><code class="signature">castToBaseTexture() → {<a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">castToBaseTexture() → {<a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Utility function for BaseTexture|Texture cast</p></div>
@@ -666,7 +671,7 @@ Call updateUvs() to increment it.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+        <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -681,7 +686,7 @@ Call updateUvs() to increment it.</p></div>
 <div class="member" id="clone">
   <h3 class="member__title">clone</h3>
   
-<pre class="signature__container"><code class="signature">clone() → {<a href="PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clone() → {<a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Creates a new texture object that acts the same as this one.</p></div>
@@ -702,7 +707,7 @@ Call updateUvs() to increment it.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Texture.html">PIXI.Texture</a>
+        <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
       </td>
       <td class="member-return__description"><p>The new texture</p></td>
     </tr>
@@ -1040,7 +1045,7 @@ Call it after changing the frame</p></div>
 <div class="member" id="onBaseTextureUpdated">
   <h3 class="member__title">onBaseTextureUpdated</h3>
   
-<pre class="signature__container"><code class="signature">protected onBaseTextureUpdated(baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected onBaseTextureUpdated(baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Called when the base texture is updated</p></div>
@@ -1066,7 +1071,7 @@ Call it after changing the frame</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -1114,41 +1119,41 @@ Call it after changing the frame</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#_frame">_frame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#_frame">_frame</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#baseTexture">baseTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#baseTexture">baseTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#defaultAnchor">defaultAnchor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#defaultAnchor">defaultAnchor</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#filterFrame">filterFrame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#filterFrame">filterFrame</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#frame">frame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#frame">frame</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#framebuffer">framebuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#framebuffer">framebuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#noFrame">noFrame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#noFrame">noFrame</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#orig">orig</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#orig">orig</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#rotate">rotate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#rotate">rotate</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#size">size</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#size">size</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#sourceFrame">sourceFrame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#sourceFrame">sourceFrame</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#textureCacheIds">textureCacheIds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#textureCacheIds">textureCacheIds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#trim">trim</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#trim">trim</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#uvMatrix">uvMatrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#uvMatrix">uvMatrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#valid">valid</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#valid">valid</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#width">width</a></li>
     
   </ul>
 </div>
@@ -1159,11 +1164,11 @@ Call it after changing the frame</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#_updateID">_updateID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#_updateID">_updateID</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#_uvs">_uvs</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#_uvs">_uvs</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#filterPoolKey">filterPoolKey</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#filterPoolKey">filterPoolKey</a></li>
     
   </ul>
 </div>
@@ -1174,21 +1179,21 @@ Call it after changing the frame</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#create">create</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#create">create</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#castToBaseTexture">castToBaseTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#castToBaseTexture">castToBaseTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#clone">clone</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#clone">clone</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#resize">resize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#resize">resize</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#setResolution">setResolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#setResolution">setResolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#update">update</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#update">update</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#updateUvs">updateUvs</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#updateUvs">updateUvs</a></li>
     
   </ul>
 </div>
@@ -1199,7 +1204,7 @@ Call it after changing the frame</p></div>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexture.html#onBaseTextureUpdated">onBaseTextureUpdated</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexture.html#onBaseTextureUpdated">onBaseTextureUpdated</a></li>
     
   </ul>
 </div>

@@ -17,6 +17,7 @@
     "destination": "docs"
   },
   "template": {
+    "siteRoot": "pixi-api/",
     "readme": "./README.md",
     "outputSourceFiles": true
   }

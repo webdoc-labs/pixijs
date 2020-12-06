@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: FramebufferSystem</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.FramebufferSystem</h1>
     
-<pre class="signature__container"><code class="signature">class FramebufferSystem extends <a href="PIXI/System.html">PIXI.System</a></code></pre>
+<pre class="signature__container"><code class="signature">class FramebufferSystem extends <a href="/pixi-api/PIXI/System.html">PIXI.System</a></code></pre>
 
 
     <div class="document__brief"><p>System plugin to the renderer to manage framebuffers.</p></div>
@@ -42,7 +47,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.FramebufferSystem(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.FramebufferSystem(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -68,7 +73,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -97,7 +102,7 @@
 <div class="member" id="managedFramebuffers">
   <h3 class="member__title">managedFramebuffers</h3>
   
-<pre class="signature__container"><code class="signature">managedFramebuffers: Array&lt;<a href=PIXI/Framebuffer.html>PIXI.Framebuffer</a>></code></pre>
+<pre class="signature__container"><code class="signature">managedFramebuffers: Array&lt;<a href=/pixi-api/PIXI/Framebuffer.html>PIXI.Framebuffer</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -113,7 +118,7 @@
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -169,7 +174,7 @@
 <div class="member" id="bind">
   <h3 class="member__title">bind</h3>
   
-<pre class="signature__container"><code class="signature">bind(framebuffer: <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>, frame: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">bind(framebuffer: <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>, frame: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Bind a framebuffer</p></div>
@@ -195,7 +200,7 @@
           framebuffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>
+          <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -209,7 +214,7 @@
           frame
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -253,7 +258,7 @@
 <div class="member" id="blit">
   <h3 class="member__title">blit</h3>
   
-<pre class="signature__container"><code class="signature">blit(framebuffer: <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>, sourcePixels: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>, destPixels: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">blit(framebuffer: <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>, sourcePixels: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>, destPixels: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Only works with WebGL2</p></div>
@@ -281,7 +286,7 @@ after that target framebuffer is bound</p>
           framebuffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>
+          <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -295,7 +300,7 @@ after that target framebuffer is bound</p>
           sourcePixels
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -309,7 +314,7 @@ after that target framebuffer is bound</p>
           destPixels
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -353,7 +358,7 @@ after that target framebuffer is bound</p>
 <div class="member" id="clear">
   <h3 class="member__title">clear</h3>
   
-<pre class="signature__container"><code class="signature">clear(r: Number, g: Number, b: Number, a: Number, mask: <a href="PIXI/BUFFER_BITS.html">PIXI.BUFFER_BITS</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">clear(r: Number, g: Number, b: Number, a: Number, mask: <a href="/pixi-api/PIXI/BUFFER_BITS.html">PIXI.BUFFER_BITS</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Clear the color of the context</p></div>
@@ -443,7 +448,7 @@ after that target framebuffer is bound</p>
           mask
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BUFFER_BITS.html">PIXI.BUFFER_BITS</a>
+          <a href="/pixi-api/PIXI/BUFFER_BITS.html">PIXI.BUFFER_BITS</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -562,7 +567,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
 <div class="member" id="detectSamples">
   <h3 class="member__title">detectSamples</h3>
   
-<pre class="signature__container"><code class="signature">detectSamples(samples: <a href="PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a>) → {<a href="PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a>}</code></pre>
+<pre class="signature__container"><code class="signature">detectSamples(samples: <a href="/pixi-api/PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a>) → {<a href="/pixi-api/PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a>}</code></pre>
 
 
   <div class="member__brief"><p>Detects number of samples that is not more than a param but as close to it as possible</p></div>
@@ -588,7 +593,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
           samples
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a>
+          <a href="/pixi-api/PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a>
         </td>
         
         
@@ -613,7 +618,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a>
+        <a href="/pixi-api/PIXI/MSAA_QUALITY.html">PIXI.MSAA_QUALITY</a>
       </td>
       <td class="member-return__description"><ul>
 <li>recommended number of samples</li>
@@ -702,7 +707,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
 <div class="member" id="disposeFramebuffer">
   <h3 class="member__title">disposeFramebuffer</h3>
   
-<pre class="signature__container"><code class="signature">disposeFramebuffer(framebuffer: <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>, contextLost: boolean) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">disposeFramebuffer(framebuffer: <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>, contextLost: boolean) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -728,7 +733,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
           framebuffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>
+          <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -929,7 +934,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
 <div class="member" id="initFramebuffer">
   <h3 class="member__title">initFramebuffer</h3>
   
-<pre class="signature__container"><code class="signature">protected initFramebuffer(framebuffer: <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>) → {<a href="PIXI/GLFramebuffer.html">PIXI.GLFramebuffer</a>}</code></pre>
+<pre class="signature__container"><code class="signature">protected initFramebuffer(framebuffer: <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>) → {<a href="/pixi-api/PIXI/GLFramebuffer.html">PIXI.GLFramebuffer</a>}</code></pre>
 
 
   <div class="member__brief"><p>Initialize framebuffer for this context</p></div>
@@ -955,7 +960,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
           framebuffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>
+          <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>
         </td>
         
         
@@ -980,7 +985,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GLFramebuffer.html">PIXI.GLFramebuffer</a>
+        <a href="/pixi-api/PIXI/GLFramebuffer.html">PIXI.GLFramebuffer</a>
       </td>
       <td class="member-return__description"><p>created GLFramebuffer</p></td>
     </tr>
@@ -995,7 +1000,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
 <div class="member" id="resizeFramebuffer">
   <h3 class="member__title">resizeFramebuffer</h3>
   
-<pre class="signature__container"><code class="signature">protected resizeFramebuffer(framebuffer: <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected resizeFramebuffer(framebuffer: <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Resize the framebuffer</p></div>
@@ -1021,7 +1026,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
           framebuffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>
+          <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>
         </td>
         
         
@@ -1061,7 +1066,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
 <div class="member" id="updateFramebuffer">
   <h3 class="member__title">updateFramebuffer</h3>
   
-<pre class="signature__container"><code class="signature">protected updateFramebuffer(framebuffer: <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected updateFramebuffer(framebuffer: <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Update the framebuffer</p></div>
@@ -1087,7 +1092,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
           framebuffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Framebuffer.html">PIXI.Framebuffer</a>
+          <a href="/pixi-api/PIXI/Framebuffer.html">PIXI.Framebuffer</a>
         </td>
         
         
@@ -1135,13 +1140,13 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#managedFramebuffers">managedFramebuffers</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#managedFramebuffers">managedFramebuffers</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#size">size</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#size">size</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#unknownFramebuffer">unknownFramebuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#unknownFramebuffer">unknownFramebuffer</a></li>
     
   </ul>
 </div>
@@ -1153,25 +1158,25 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#bind">bind</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#bind">bind</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#blit">blit</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#blit">blit</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#clear">clear</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#clear">clear</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#contextChange">contextChange</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#contextChange">contextChange</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#detectSamples">detectSamples</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#detectSamples">detectSamples</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#disposeAll">disposeAll</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#disposeAll">disposeAll</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#disposeFramebuffer">disposeFramebuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#disposeFramebuffer">disposeFramebuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#reset">reset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#reset">reset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#setViewport">setViewport</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#setViewport">setViewport</a></li>
     
   </ul>
 </div>
@@ -1182,11 +1187,11 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#initFramebuffer">initFramebuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#initFramebuffer">initFramebuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#resizeFramebuffer">resizeFramebuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#resizeFramebuffer">resizeFramebuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/FramebufferSystem.html#updateFramebuffer">updateFramebuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/FramebufferSystem.html#updateFramebuffer">updateFramebuffer</a></li>
     
   </ul>
 </div>

@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: InstancedRenderer</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi-essentials/instanced-renderer</div>
     <h1 class="document__title">InstancedRenderer</h1>
     
-<pre class="signature__container"><code class="signature">class InstancedRenderer extends <a href="PIXI/ObjectRenderer.html">PIXI.ObjectRenderer</a></code></pre>
+<pre class="signature__container"><code class="signature">class InstancedRenderer extends <a href="/pixi-api/PIXI/ObjectRenderer.html">PIXI.ObjectRenderer</a></code></pre>
 
 
     <div class="document__brief"></div>
@@ -43,7 +48,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new InstancedRenderer(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>, options: <a href="PIXI/IInstancedRendererOptions.html">PIXI.IInstancedRendererOptions</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new InstancedRenderer(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>, options: <a href="/pixi-api/PIXI/IInstancedRendererOptions.html">PIXI.IInstancedRendererOptions</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -69,7 +74,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -79,7 +84,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
           options
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/IInstancedRendererOptions.html">PIXI.IInstancedRendererOptions</a>
+          <a href="/pixi-api/PIXI/IInstancedRendererOptions.html">PIXI.IInstancedRendererOptions</a>
         </td>
         
         
@@ -108,7 +113,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_instanceBuffer">
   <h3 class="member__title">_instanceBuffer</h3>
   
-<pre class="signature__container"><code class="signature">_instanceBuffer: <a href=PIXI/Buffer.html>PIXI.Buffer</a></code></pre>
+<pre class="signature__container"><code class="signature">_instanceBuffer: <a href=/pixi-api/PIXI/Buffer.html>PIXI.Buffer</a></code></pre>
 
 
   <div class="member__brief"><p>The instance buffer holds all instanced attributes in an interleaved fashion.</p></div>
@@ -124,7 +129,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_shader">
   <h3 class="member__title">_shader</h3>
   
-<pre class="signature__container"><code class="signature">_shader: <a href=PIXI/Shader.html>PIXI.Shader</a></code></pre>
+<pre class="signature__container"><code class="signature">_shader: <a href=/pixi-api/PIXI/Shader.html>PIXI.Shader</a></code></pre>
 
 
   <div class="member__brief"><p>The shader used to draw all instances.</p></div>
@@ -140,7 +145,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_state">
   <h3 class="member__title">_state</h3>
   
-<pre class="signature__container"><code class="signature">_state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">_state: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"><p>The WebGL state required for using the shader.</p></div>
@@ -156,7 +161,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -179,7 +184,7 @@ that have a common geometry and some &quot;instanced&quot; attributes.</p></div>
 <div class="member" id="_geometry">
   <h3 class="member__title">_geometry</h3>
   
-<pre class="signature__container"><code class="signature">protected _geometry: <a href=PIXI/Geometry.html>PIXI.Geometry</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _geometry: <a href=/pixi-api/PIXI/Geometry.html>PIXI.Geometry</a></code></pre>
 
 
   <div class="member__brief"><p>The reference geometry specifying the &quot;attribute style&quot;.</p></div>
@@ -261,7 +266,7 @@ names.</p></div>
 <div class="member" id="_objectBuffer">
   <h3 class="member__title">_objectBuffer</h3>
   
-<pre class="signature__container"><code class="signature">protected _objectBuffer: Array&lt;<a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected _objectBuffer: Array&lt;<a href=/pixi-api/PIXI/DisplayObject.html>PIXI.DisplayObject</a>></code></pre>
 
 
   <div class="member__brief"><p>Buffered display-objects</p></div>
@@ -427,7 +432,7 @@ should be called by subclasses.</p></div>
 <div class="member" id="render">
   <h3 class="member__title">render</h3>
   
-<pre class="signature__container"><code class="signature">render(displayObject: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">render(displayObject: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -453,7 +458,7 @@ should be called by subclasses.</p></div>
           displayObject
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -555,13 +560,13 @@ become dormant.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_instanceBuffer">_instanceBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_instanceBuffer">_instanceBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_shader">_shader</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_shader">_shader</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_state">_state</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_state">_state</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#renderer">renderer</a></li>
     
   </ul>
 </div>
@@ -572,21 +577,21 @@ become dormant.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_geometry">_geometry</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_geometry">_geometry</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_instanceAttribSizes">_instanceAttribSizes</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_instanceAttribSizes">_instanceAttribSizes</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_instanceAttribViews">_instanceAttribViews</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_instanceAttribViews">_instanceAttribViews</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_instanceBuilder">_instanceBuilder</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_instanceBuilder">_instanceBuilder</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_instanceSize">_instanceSize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_instanceSize">_instanceSize</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_objectBuffer">_objectBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_objectBuffer">_objectBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_objectCount">_objectCount</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_objectCount">_objectCount</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#instanceRendererID">instanceRendererID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#instanceRendererID">instanceRendererID</a></li>
     
   </ul>
 </div>
@@ -597,17 +602,17 @@ become dormant.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#_initInstanceBuffer">_initInstanceBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#_initInstanceBuffer">_initInstanceBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#flush">flush</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#flush">flush</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#render">render</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#render">render</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#start">start</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#start">start</a></li>
     
-      <li class="page-members-explorer__item"><a href="InstancedRenderer.html#stop">stop</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/InstancedRenderer.html#stop">stop</a></li>
     
   </ul>
 </div>

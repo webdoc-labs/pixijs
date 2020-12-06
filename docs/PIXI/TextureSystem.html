@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: TextureSystem</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.TextureSystem</h1>
     
-<pre class="signature__container"><code class="signature">class TextureSystem extends <a href="PIXI/System.html">PIXI.System</a></code></pre>
+<pre class="signature__container"><code class="signature">class TextureSystem extends <a href="/pixi-api/PIXI/System.html">PIXI.System</a></code></pre>
 
 
     <div class="document__brief"><p>System plugin to the renderer to manage textures.</p></div>
@@ -42,7 +47,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.TextureSystem(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.TextureSystem(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -68,7 +73,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -97,7 +102,7 @@
 <div class="member" id="boundTextures">
   <h3 class="member__title">boundTextures</h3>
   
-<pre class="signature__container"><code class="signature">boundTextures: Array&lt;<a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
+<pre class="signature__container"><code class="signature">boundTextures: Array&lt;<a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -129,7 +134,7 @@
 <div class="member" id="managedTextures">
   <h3 class="member__title">managedTextures</h3>
   
-<pre class="signature__container"><code class="signature">managedTextures: Array&lt;<a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
+<pre class="signature__container"><code class="signature">managedTextures: Array&lt;<a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -145,7 +150,7 @@
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -161,7 +166,7 @@
 <div class="member" id="unknownTexture">
   <h3 class="member__title">unknownTexture</h3>
   
-<pre class="signature__container"><code class="signature">unknownTexture: <a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">unknownTexture: <a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -185,7 +190,7 @@
 <div class="member" id="bind">
   <h3 class="member__title">bind</h3>
   
-<pre class="signature__container"><code class="signature">bind(texture_: <a href="PIXI/Texture.html">PIXI.Texture</a> | <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>, location: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">bind(texture_: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>, location: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Bind a texture to a specific location</p></div>
@@ -211,7 +216,7 @@
           texture_
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a> | <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -381,7 +386,7 @@
 <div class="member" id="unbind">
   <h3 class="member__title">unbind</h3>
   
-<pre class="signature__container"><code class="signature">unbind(texture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">unbind(texture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -407,7 +412,7 @@
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -460,15 +465,15 @@
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#boundTextures">boundTextures</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#boundTextures">boundTextures</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#currentLocation">currentLocation</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#currentLocation">currentLocation</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#managedTextures">managedTextures</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#managedTextures">managedTextures</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#unknownTexture">unknownTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#unknownTexture">unknownTexture</a></li>
     
   </ul>
 </div>
@@ -480,15 +485,15 @@
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#bind">bind</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#bind">bind</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#contextChange">contextChange</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#contextChange">contextChange</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#reset">reset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#reset">reset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TextureSystem.html#unbind">unbind</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TextureSystem.html#unbind">unbind</a></li>
     
   </ul>
 </div>

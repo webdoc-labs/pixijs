@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: GraphicsGeometry</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,14 +31,14 @@
     <div class="document__package">@pixi/graphics</div>
     <h1 class="document__title">PIXI.GraphicsGeometry</h1>
     
-<pre class="signature__container"><code class="signature">class GraphicsGeometry extends <a href="PIXI/BatchGeometry.html">PIXI.BatchGeometry</a></code></pre>
+<pre class="signature__container"><code class="signature">class GraphicsGeometry extends <a href="/pixi-api/PIXI/BatchGeometry.html">PIXI.BatchGeometry</a></code></pre>
 
 
     <div class="document__brief"></div>
     <div class="document__description"><p>The Graphics class contains methods used to draw primitive shapes such as lines, circles and
 rectangles to the display, and to color and fill them.</p>
 <p>GraphicsGeometry is designed to not be continually updating the geometry since it's expensive
-to re-tesselate using <strong>earcut</strong>. Consider using <a href=PIXI/Mesh.html>PIXI.Mesh</a> for this use-case, it's much faster.</p></div>
+to re-tesselate using <strong>earcut</strong>. Consider using <a href=/pixi-api/PIXI/Mesh.html>PIXI.Mesh</a> for this use-case, it's much faster.</p></div>
 
     
       
@@ -65,7 +70,7 @@ able to be batched by the renderer's batch system.</p></div>
 <div class="member" id="bounds">
   <h3 class="member__title">bounds</h3>
   
-<pre class="signature__container"><code class="signature">bounds: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">bounds: <a href=/pixi-api/PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Get the current bounds of the graphic geometry.</p></div>
@@ -153,7 +158,7 @@ Affects line tesselation.</p></div>
 <div class="member" id="_bounds">
   <h3 class="member__title">_bounds</h3>
   
-<pre class="signature__container"><code class="signature">protected _bounds: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _bounds: <a href=/pixi-api/PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Cached bounds.</p></div>
@@ -169,7 +174,7 @@ Affects line tesselation.</p></div>
 <div class="member" id="_buffer">
   <h3 class="member__title">_buffer</h3>
   
-<pre class="signature__container"><code class="signature">protected _buffer: <a href=PIXI/Buffer.html>PIXI.Buffer</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _buffer: <a href=/pixi-api/PIXI/Buffer.html>PIXI.Buffer</a></code></pre>
 
 
   <div class="member__brief"><p>Buffer used for position, color, texture IDs</p></div>
@@ -185,7 +190,7 @@ Affects line tesselation.</p></div>
 <div class="member" id="_indexBuffer">
   <h3 class="member__title">_indexBuffer</h3>
   
-<pre class="signature__container"><code class="signature">protected _indexBuffer: <a href=PIXI/Buffer.html>PIXI.Buffer</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _indexBuffer: <a href=/pixi-api/PIXI/Buffer.html>PIXI.Buffer</a></code></pre>
 
 
   <div class="member__brief"><p>Index buffer data</p></div>
@@ -217,7 +222,7 @@ Affects line tesselation.</p></div>
 <div class="member" id="batches">
   <h3 class="member__title">batches</h3>
   
-<pre class="signature__container"><code class="signature">protected batches: Array&lt;<a href=PIXI/graphicsUtils/BatchPart.html>PIXI.graphicsUtils.BatchPart</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected batches: Array&lt;<a href=/pixi-api/PIXI/graphicsUtils/BatchPart.html>PIXI.graphicsUtils.BatchPart</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -346,7 +351,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="graphicsData">
   <h3 class="member__title">graphicsData</h3>
   
-<pre class="signature__container"><code class="signature">protected graphicsData: Array&lt;<a href=PIXI/GraphicsData.html>PIXI.GraphicsData</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected graphicsData: Array&lt;<a href=/pixi-api/PIXI/GraphicsData.html>PIXI.GraphicsData</a>></code></pre>
 
 
   <div class="member__brief"><p>The collection of drawn shapes.</p></div>
@@ -449,7 +454,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="_compareStyles">
   <h3 class="member__title">_compareStyles</h3>
   
-<pre class="signature__container"><code class="signature">_compareStyles(styleA: <a href="PIXI/FillStyle.html">PIXI.FillStyle</a> | <a href="PIXI/LineStyle.html">PIXI.LineStyle</a>, styleB: <a href="PIXI/FillStyle.html">PIXI.FillStyle</a> | <a href="PIXI/LineStyle.html">PIXI.LineStyle</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">_compareStyles(styleA: <a href="/pixi-api/PIXI/FillStyle.html">PIXI.FillStyle</a> | <a href="/pixi-api/PIXI/LineStyle.html">PIXI.LineStyle</a>, styleB: <a href="/pixi-api/PIXI/FillStyle.html">PIXI.FillStyle</a> | <a href="/pixi-api/PIXI/LineStyle.html">PIXI.LineStyle</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Affinity check</p></div>
@@ -475,7 +480,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
           styleA
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/FillStyle.html">PIXI.FillStyle</a> | <a href="PIXI/LineStyle.html">PIXI.LineStyle</a>
+          <a href="/pixi-api/PIXI/FillStyle.html">PIXI.FillStyle</a> | <a href="/pixi-api/PIXI/LineStyle.html">PIXI.LineStyle</a>
         </td>
         
         
@@ -485,7 +490,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
           styleB
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/FillStyle.html">PIXI.FillStyle</a> | <a href="PIXI/LineStyle.html">PIXI.LineStyle</a>
+          <a href="/pixi-api/PIXI/FillStyle.html">PIXI.FillStyle</a> | <a href="/pixi-api/PIXI/LineStyle.html">PIXI.LineStyle</a>
         </td>
         
         
@@ -525,7 +530,7 @@ Can be converted to drawCalls or to batchable objects.</p></div>
 <div class="member" id="addAttribute">
   <h3 class="member__title">addAttribute</h3>
   
-<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -568,7 +573,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
           buffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+          <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
         </td>
         <td class="member-parameter__attributes">
           
@@ -695,7 +700,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -710,7 +715,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
 <div class="member" id="addIndex">
   <h3 class="member__title">addIndex</h3>
   
-<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>) → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>) → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -737,7 +742,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
           buffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+          <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -766,7 +771,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -781,7 +786,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="adjustUvs">
   <h3 class="member__title">adjustUvs</h3>
   
-<pre class="signature__container"><code class="signature">adjustUvs(uvs: Array&lt;number>, texture: <a href="PIXI/Texture.html">PIXI.Texture</a>, start: number, size: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">adjustUvs(uvs: Array&lt;number>, texture: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>, start: number, size: number) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -818,7 +823,7 @@ Does not work with rotated or trimmed textures</p></div>
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a>
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
         </td>
         
         
@@ -878,7 +883,7 @@ Does not work with rotated or trimmed textures</p></div>
 <div class="member" id="clear">
   <h3 class="member__title">clear</h3>
   
-<pre class="signature__container"><code class="signature">clear() → {<a href="PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clear() → {<a href="/pixi-api/PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>}</code></pre>
 
 
   <div class="member__brief"><p>Clears the graphics that were drawn to this Graphics object, and resets fill and line style settings.</p></div>
@@ -899,7 +904,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>
+        <a href="/pixi-api/PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>
       </td>
       <td class="member-return__description"><p>This GraphicsGeometry object. Good for chaining method calls</p></td>
     </tr>
@@ -914,7 +919,7 @@ Does not work with rotated or trimmed textures</p></div>
 <div class="member" id="clone">
   <h3 class="member__title">clone</h3>
   
-<pre class="signature__container"><code class="signature">clone() → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clone() → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns a clone of the geometry</p></div>
@@ -935,7 +940,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>a new clone of this geometry</p></td>
     </tr>
@@ -950,7 +955,7 @@ Does not work with rotated or trimmed textures</p></div>
 <div class="member" id="containsPoint">
   <h3 class="member__title">containsPoint</h3>
   
-<pre class="signature__container"><code class="signature">containsPoint(point: <a href="PIXI/IPointData.html">PIXI.IPointData</a>) → {Boolean}</code></pre>
+<pre class="signature__container"><code class="signature">containsPoint(point: <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>) → {Boolean}</code></pre>
 
 
   <div class="member__brief"><p>Check to see if a point is contained within this geometry.</p></div>
@@ -976,7 +981,7 @@ Does not work with rotated or trimmed textures</p></div>
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
+          <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         
         
@@ -1088,7 +1093,7 @@ Does not work with rotated or trimmed textures</p></div>
 <div class="member" id="drawHole">
   <h3 class="member__title">drawHole</h3>
   
-<pre class="signature__container"><code class="signature">drawHole(shape: <a href="PIXI/Circle.html">PIXI.Circle</a> | <a href="PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI/Polygon.html">PIXI.Polygon</a> | <a href="PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>, matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">drawHole(shape: <a href="/pixi-api/PIXI/Circle.html">PIXI.Circle</a> | <a href="/pixi-api/PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="/pixi-api/PIXI/Polygon.html">PIXI.Polygon</a> | <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="/pixi-api/PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>, matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="/pixi-api/PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>}</code></pre>
 
 
   <div class="member__brief"><p>Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.</p></div>
@@ -1114,7 +1119,7 @@ Does not work with rotated or trimmed textures</p></div>
           shape
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Circle.html">PIXI.Circle</a> | <a href="PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI/Polygon.html">PIXI.Polygon</a> | <a href="PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>
+          <a href="/pixi-api/PIXI/Circle.html">PIXI.Circle</a> | <a href="/pixi-api/PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="/pixi-api/PIXI/Polygon.html">PIXI.Polygon</a> | <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="/pixi-api/PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>
         </td>
         
         
@@ -1124,7 +1129,7 @@ Does not work with rotated or trimmed textures</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -1149,7 +1154,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>
+        <a href="/pixi-api/PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>
       </td>
       <td class="member-return__description"><p>Returns geometry for chaining.</p></td>
     </tr>
@@ -1164,7 +1169,7 @@ Does not work with rotated or trimmed textures</p></div>
 <div class="member" id="drawShape">
   <h3 class="member__title">drawShape</h3>
   
-<pre class="signature__container"><code class="signature">drawShape(shape: <a href="PIXI/Circle.html">PIXI.Circle</a> | <a href="PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI/Polygon.html">PIXI.Polygon</a> | <a href="PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>, fillStyle: <a href="PIXI/FillStyle.html">PIXI.FillStyle</a>, lineStyle: <a href="PIXI/LineStyle.html">PIXI.LineStyle</a>, matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">drawShape(shape: <a href="/pixi-api/PIXI/Circle.html">PIXI.Circle</a> | <a href="/pixi-api/PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="/pixi-api/PIXI/Polygon.html">PIXI.Polygon</a> | <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="/pixi-api/PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>, fillStyle: <a href="/pixi-api/PIXI/FillStyle.html">PIXI.FillStyle</a>, lineStyle: <a href="/pixi-api/PIXI/LineStyle.html">PIXI.LineStyle</a>, matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {<a href="/pixi-api/PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>}</code></pre>
 
 
   <div class="member__brief"><p>Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.</p></div>
@@ -1190,7 +1195,7 @@ Does not work with rotated or trimmed textures</p></div>
           shape
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Circle.html">PIXI.Circle</a> | <a href="PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI/Polygon.html">PIXI.Polygon</a> | <a href="PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>
+          <a href="/pixi-api/PIXI/Circle.html">PIXI.Circle</a> | <a href="/pixi-api/PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="/pixi-api/PIXI/Polygon.html">PIXI.Polygon</a> | <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="/pixi-api/PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>
         </td>
         
         
@@ -1200,7 +1205,7 @@ Does not work with rotated or trimmed textures</p></div>
           fillStyle
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/FillStyle.html">PIXI.FillStyle</a>
+          <a href="/pixi-api/PIXI/FillStyle.html">PIXI.FillStyle</a>
         </td>
         
         
@@ -1210,7 +1215,7 @@ Does not work with rotated or trimmed textures</p></div>
           lineStyle
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/LineStyle.html">PIXI.LineStyle</a>
+          <a href="/pixi-api/PIXI/LineStyle.html">PIXI.LineStyle</a>
         </td>
         
         
@@ -1220,7 +1225,7 @@ Does not work with rotated or trimmed textures</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -1245,7 +1250,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>
+        <a href="/pixi-api/PIXI/GraphicsGeometry.html">PIXI.GraphicsGeometry</a>
       </td>
       <td class="member-return__description"><p>Returns geometry for chaining.</p></td>
     </tr>
@@ -1260,7 +1265,7 @@ Does not work with rotated or trimmed textures</p></div>
 <div class="member" id="getAttribute">
   <h3 class="member__title">getAttribute</h3>
   
-<pre class="signature__container"><code class="signature">getAttribute(id: String) → {<a href="PIXI/Attribute.html">PIXI.Attribute</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getAttribute(id: String) → {<a href="/pixi-api/PIXI/Attribute.html">PIXI.Attribute</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns the requested attribute</p></div>
@@ -1311,7 +1316,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Attribute.html">PIXI.Attribute</a>
+        <a href="/pixi-api/PIXI/Attribute.html">PIXI.Attribute</a>
       </td>
       <td class="member-return__description"><p>the attribute requested.</p></td>
     </tr>
@@ -1326,7 +1331,7 @@ Does not work with rotated or trimmed textures</p></div>
 <div class="member" id="getBuffer">
   <h3 class="member__title">getBuffer</h3>
   
-<pre class="signature__container"><code class="signature">getBuffer(id: String) → {<a href="PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getBuffer(id: String) → {<a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns the requested buffer</p></div>
@@ -1377,7 +1382,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Buffer.html">PIXI.Buffer</a>
+        <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the buffer requested.</p></td>
     </tr>
@@ -1392,7 +1397,7 @@ Does not work with rotated or trimmed textures</p></div>
 <div class="member" id="getIndex">
   <h3 class="member__title">getIndex</h3>
   
-<pre class="signature__container"><code class="signature">getIndex() → {<a href="PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getIndex() → {<a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns the index buffer</p></div>
@@ -1413,7 +1418,7 @@ Does not work with rotated or trimmed textures</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Buffer.html">PIXI.Buffer</a>
+        <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the index buffer.</p></td>
     </tr>
@@ -1428,7 +1433,7 @@ Does not work with rotated or trimmed textures</p></div>
 <div class="member" id="interleave">
   <h3 class="member__title">interleave</h3>
   
-<pre class="signature__container"><code class="signature">interleave() → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">interleave() → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -1450,7 +1455,7 @@ This can be useful if your model remains static as it offers a little performanc
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -1762,7 +1767,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
 <div class="member" id="addUvs">
   <h3 class="member__title">addUvs</h3>
   
-<pre class="signature__container"><code class="signature">protected addUvs(verts: Array&lt;number>, uvs: Array&lt;number>, texture: <a href="PIXI/Texture.html">PIXI.Texture</a>, start: number, size: number, matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected addUvs(verts: Array&lt;number>, uvs: Array&lt;number>, texture: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>, start: number, size: number, matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Generates the UVs for a shape.</p></div>
@@ -1816,7 +1821,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a>
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -1858,7 +1863,7 @@ or used to convert to batch objects directly by the Graphics object.</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -2083,7 +2088,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 <div class="member" id="processFill">
   <h3 class="member__title">processFill</h3>
   
-<pre class="signature__container"><code class="signature">protected processFill(data: <a href="PIXI/GraphicsData.html">PIXI.GraphicsData</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected processFill(data: <a href="/pixi-api/PIXI/GraphicsData.html">PIXI.GraphicsData</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Process fill part of Graphics.</p></div>
@@ -2109,7 +2114,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
           data
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GraphicsData.html">PIXI.GraphicsData</a>
+          <a href="/pixi-api/PIXI/GraphicsData.html">PIXI.GraphicsData</a>
         </td>
         
         
@@ -2149,7 +2154,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 <div class="member" id="processHoles">
   <h3 class="member__title">processHoles</h3>
   
-<pre class="signature__container"><code class="signature">protected processHoles(holes: Array&lt;<a href="PIXI/GraphicsData.html">PIXI.GraphicsData</a>>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected processHoles(holes: Array&lt;<a href="/pixi-api/PIXI/GraphicsData.html">PIXI.GraphicsData</a>>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Process the holes data.</p></div>
@@ -2175,7 +2180,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
           holes
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/GraphicsData.html">PIXI.GraphicsData</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/GraphicsData.html">PIXI.GraphicsData</a>&gt;
         </td>
         
         
@@ -2215,7 +2220,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 <div class="member" id="processLine">
   <h3 class="member__title">processLine</h3>
   
-<pre class="signature__container"><code class="signature">protected processLine(data: <a href="PIXI/GraphicsData.html">PIXI.GraphicsData</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected processLine(data: <a href="/pixi-api/PIXI/GraphicsData.html">PIXI.GraphicsData</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Process line part of Graphics.</p></div>
@@ -2241,7 +2246,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
           data
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GraphicsData.html">PIXI.GraphicsData</a>
+          <a href="/pixi-api/PIXI/GraphicsData.html">PIXI.GraphicsData</a>
         </td>
         
         
@@ -2281,7 +2286,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
 <div class="member" id="transformPoints">
   <h3 class="member__title">transformPoints</h3>
   
-<pre class="signature__container"><code class="signature">protected transformPoints(points: Array&lt;number>, matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected transformPoints(points: Array&lt;number>, matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Transform points using matrix.</p></div>
@@ -2317,7 +2322,7 @@ Currently it needs to be small enough and not contain any native lines.</p></div
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -2401,17 +2406,17 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#BATCHABLE_SIZE">BATCHABLE_SIZE</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#BATCHABLE_SIZE">BATCHABLE_SIZE</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#bounds">bounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#bounds">bounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#boundsPadding">boundsPadding</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#boundsPadding">boundsPadding</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#closePointEps">closePointEps</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#closePointEps">closePointEps</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#instanceCount">instanceCount</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#instanceCount">instanceCount</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#refCount">refCount</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#refCount">refCount</a></li>
     
   </ul>
 </div>
@@ -2422,41 +2427,41 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#_bounds">_bounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#_bounds">_bounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#_buffer">_buffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#_buffer">_buffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#_indexBuffer">_indexBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#_indexBuffer">_indexBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#batchDirty">batchDirty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#batchDirty">batchDirty</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#batches">batches</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#batches">batches</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#boundsDirty">boundsDirty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#boundsDirty">boundsDirty</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#cacheDirty">cacheDirty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#cacheDirty">cacheDirty</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#clearDirty">clearDirty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#clearDirty">clearDirty</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#colors">colors</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#colors">colors</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#dirty">dirty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#dirty">dirty</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#drawCalls">drawCalls</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#drawCalls">drawCalls</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#glVertexArrayObjects">glVertexArrayObjects</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#glVertexArrayObjects">glVertexArrayObjects</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#graphicsData">graphicsData</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#graphicsData">graphicsData</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#indices">indices</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#indices">indices</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#points">points</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#points">points</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#shapeIndex">shapeIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#shapeIndex">shapeIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#textureIds">textureIds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#textureIds">textureIds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#uvs">uvs</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#uvs">uvs</a></li>
     
   </ul>
 </div>
@@ -2467,39 +2472,39 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#_compareStyles">_compareStyles</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#_compareStyles">_compareStyles</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#addAttribute">addAttribute</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#addAttribute">addAttribute</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#addIndex">addIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#addIndex">addIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#adjustUvs">adjustUvs</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#adjustUvs">adjustUvs</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#clear">clear</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#clear">clear</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#clone">clone</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#clone">clone</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#containsPoint">containsPoint</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#containsPoint">containsPoint</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#dispose">dispose</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#dispose">dispose</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#drawHole">drawHole</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#drawHole">drawHole</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#drawShape">drawShape</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#drawShape">drawShape</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#getAttribute">getAttribute</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#getAttribute">getAttribute</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#getBuffer">getBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#getBuffer">getBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#getIndex">getIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#getIndex">getIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#interleave">interleave</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#interleave">interleave</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#invalidate">invalidate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#invalidate">invalidate</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#updateBatches">updateBatches</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#updateBatches">updateBatches</a></li>
     
   </ul>
 </div>
@@ -2510,31 +2515,31 @@ Currently it needs to be small enough and not contain any native lines.</p></div
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#addColors">addColors</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#addColors">addColors</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#addTextureIds">addTextureIds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#addTextureIds">addTextureIds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#addUvs">addUvs</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#addUvs">addUvs</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#buildDrawCalls">buildDrawCalls</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#buildDrawCalls">buildDrawCalls</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#calculateBounds">calculateBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#calculateBounds">calculateBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#isBatchable">isBatchable</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#isBatchable">isBatchable</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#packAttributes">packAttributes</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#packAttributes">packAttributes</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#packBatches">packBatches</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#packBatches">packBatches</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#processFill">processFill</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#processFill">processFill</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#processHoles">processHoles</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#processHoles">processHoles</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#processLine">processLine</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#processLine">processLine</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#transformPoints">transformPoints</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#transformPoints">transformPoints</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsGeometry.html#validateBatching">validateBatching</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsGeometry.html#validateBatching">validateBatching</a></li>
     
   </ul>
 </div>

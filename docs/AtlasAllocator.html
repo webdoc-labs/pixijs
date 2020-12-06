@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: AtlasAllocator</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,11 +31,11 @@
     <div class="document__package">@pixi-essentials/texture-allocator</div>
     <h1 class="document__title">AtlasAllocator</h1>
     
-<pre class="signature__container"><code class="signature">class AtlasAllocator extends <a href="TextureAllocator.html">TextureAllocator</a></code></pre>
+<pre class="signature__container"><code class="signature">class AtlasAllocator extends <a href="/pixi-api/TextureAllocator.html">TextureAllocator</a></code></pre>
 
 
     <div class="document__brief"></div>
-    <div class="document__description"><p>This texture allocator auto-manages the base-texture with an <a href=AtlasResource.html>AtlasResource</a>. You can also
+    <div class="document__description"><p>This texture allocator auto-manages the base-texture with an <a href=/pixi-api/AtlasResource.html>AtlasResource</a>. You can also
 pass a texture source to <code>allocate</code>, mimicing Texture.from functionality.</p></div>
 
     
@@ -124,7 +129,7 @@ pass a texture source to <code>allocate</code>, mimicing Texture.from functional
 <div class="member" id="allocate">
   <h3 class="member__title">allocate</h3>
   
-<pre class="signature__container"><code class="signature">allocate(width: number, height: number, padding: number | AtlasResourceSource, source: AtlasResourceSource) → {<a href="PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">allocate(width: number, height: number, padding: number | AtlasResourceSource, source: AtlasResourceSource) → {<a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Allocates a texture backed by the given atlas source, with the given padding.</p></div>
@@ -221,7 +226,7 @@ pass a texture source to <code>allocate</code>, mimicing Texture.from functional
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Texture.html">PIXI.Texture</a>
+        <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -236,7 +241,7 @@ pass a texture source to <code>allocate</code>, mimicing Texture.from functional
 <div class="member" id="allocate">
   <h3 class="member__title">allocate</h3>
   
-<pre class="signature__container"><code class="signature">allocate(width: number, height: number, source: AtlasResourceSource) → {<a href="PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">allocate(width: number, height: number, source: AtlasResourceSource) → {<a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Allocates a texture backed by the given source, with default padding.</p></div>
@@ -319,7 +324,7 @@ pass a texture source to <code>allocate</code>, mimicing Texture.from functional
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Texture.html">PIXI.Texture</a>
+        <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -337,7 +342,7 @@ pass a texture source to <code>allocate</code>, mimicing Texture.from functional
 <pre class="signature__container"><code class="signature">createSlab() → {TextureSlab}</code></pre>
 
 
-  <div class="member__brief"><p>Creates a texture slab backed by an <a href=AtlasResource.html>AtlasResource</a>.</p></div>
+  <div class="member__brief"><p>Creates a texture slab backed by an <a href=/pixi-api/AtlasResource.html>AtlasResource</a>.</p></div>
   <div class="member__description"></div>
 
   
@@ -370,7 +375,7 @@ pass a texture source to <code>allocate</code>, mimicing Texture.from functional
 <div class="member" id="createTexture">
   <h3 class="member__title">createTexture</h3>
   
-<pre class="signature__container"><code class="signature">createTexture(baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>, frame: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {T}</code></pre>
+<pre class="signature__container"><code class="signature">createTexture(baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>, frame: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {T}</code></pre>
 
 
   <div class="member__brief"><p>Creates a texture on the given base-texture at <code>frame</code>.</p></div>
@@ -396,7 +401,7 @@ pass a texture source to <code>allocate</code>, mimicing Texture.from functional
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -406,7 +411,7 @@ pass a texture source to <code>allocate</code>, mimicing Texture.from functional
           frame
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         
         
@@ -513,7 +518,7 @@ destroyed any resource uploading its data.</p></div>
 <div class="member" id="issueTexture">
   <h3 class="member__title">issueTexture</h3>
   
-<pre class="signature__container"><code class="signature">issueTexture(slab: TextureSlab, width: number, height: number, padding) → {<a href="PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">issueTexture(slab: TextureSlab, width: number, height: number, padding) → {<a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Issues a texture from the given texture slab, if possible.</p></div>
@@ -594,7 +599,7 @@ destroyed any resource uploading its data.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Texture.html">PIXI.Texture</a>
+        <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
       </td>
       <td class="member-return__description"><p>The issued texture, if successful; otherwise, <code>null</code>.</p></td>
     </tr>
@@ -618,11 +623,11 @@ destroyed any resource uploading its data.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="AtlasAllocator.html#maxHeight">maxHeight</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AtlasAllocator.html#maxHeight">maxHeight</a></li>
     
-      <li class="page-members-explorer__item"><a href="AtlasAllocator.html#slabHeight">slabHeight</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AtlasAllocator.html#slabHeight">slabHeight</a></li>
     
-      <li class="page-members-explorer__item"><a href="AtlasAllocator.html#slabWidth">slabWidth</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AtlasAllocator.html#slabWidth">slabWidth</a></li>
     
   </ul>
 </div>
@@ -633,7 +638,7 @@ destroyed any resource uploading its data.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="AtlasAllocator.html#textureSlabs">textureSlabs</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AtlasAllocator.html#textureSlabs">textureSlabs</a></li>
     
   </ul>
 </div>
@@ -644,17 +649,17 @@ destroyed any resource uploading its data.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="AtlasAllocator.html#allocate">allocate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AtlasAllocator.html#allocate">allocate</a></li>
     
-      <li class="page-members-explorer__item"><a href=AtlasAllocator.html#allocate>allocate</a></li>
+      <li class="page-members-explorer__item"><a href=/pixi-api/AtlasAllocator.html#allocate>allocate</a></li>
     
-      <li class="page-members-explorer__item"><a href="AtlasAllocator.html#createSlab">createSlab</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AtlasAllocator.html#createSlab">createSlab</a></li>
     
-      <li class="page-members-explorer__item"><a href="AtlasAllocator.html#createTexture">createTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AtlasAllocator.html#createTexture">createTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="AtlasAllocator.html#free">free</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AtlasAllocator.html#free">free</a></li>
     
-      <li class="page-members-explorer__item"><a href="AtlasAllocator.html#issueTexture">issueTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/AtlasAllocator.html#issueTexture">issueTexture</a></li>
     
   </ul>
 </div>

@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: TilingSpriteRenderer</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/sprite-tiling</div>
     <h1 class="document__title">PIXI.TilingSpriteRenderer</h1>
     
-<pre class="signature__container"><code class="signature">class TilingSpriteRenderer extends <a href="PIXI/ObjectRenderer.html">PIXI.ObjectRenderer</a></code></pre>
+<pre class="signature__container"><code class="signature">class TilingSpriteRenderer extends <a href="/pixi-api/PIXI/ObjectRenderer.html">PIXI.ObjectRenderer</a></code></pre>
 
 
     <div class="document__brief"><p>WebGL renderer plugin for tiling sprites</p></div>
@@ -42,7 +47,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.TilingSpriteRenderer(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.TilingSpriteRenderer(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"><p>constructor for renderer</p></div>
@@ -68,7 +73,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -97,7 +102,7 @@
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -113,7 +118,7 @@
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"><p>The WebGL state in which this renderer will work.</p></div>
@@ -211,7 +216,7 @@ batch by rendering objects now.</p></div>
 <div class="member" id="render">
   <h3 class="member__title">render</h3>
   
-<pre class="signature__container"><code class="signature">render(ts: <a href="PIXI/TilingSprite.html">PIXI.TilingSprite</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">render(ts: <a href="/pixi-api/PIXI/TilingSprite.html">PIXI.TilingSprite</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -237,7 +242,7 @@ batch by rendering objects now.</p></div>
           ts
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/TilingSprite.html">PIXI.TilingSprite</a>
+          <a href="/pixi-api/PIXI/TilingSprite.html">PIXI.TilingSprite</a>
         </td>
         
         
@@ -362,9 +367,9 @@ become dormant.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/TilingSpriteRenderer.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TilingSpriteRenderer.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TilingSpriteRenderer.html#state">state</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TilingSpriteRenderer.html#state">state</a></li>
     
   </ul>
 </div>
@@ -376,15 +381,15 @@ become dormant.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/TilingSpriteRenderer.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TilingSpriteRenderer.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TilingSpriteRenderer.html#flush">flush</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TilingSpriteRenderer.html#flush">flush</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TilingSpriteRenderer.html#render">render</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TilingSpriteRenderer.html#render">render</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TilingSpriteRenderer.html#start">start</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TilingSpriteRenderer.html#start">start</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/TilingSpriteRenderer.html#stop">stop</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/TilingSpriteRenderer.html#stop">stop</a></li>
     
   </ul>
 </div>

@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: StateSystem</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.StateSystem</h1>
     
-<pre class="signature__container"><code class="signature">class StateSystem extends <a href="PIXI/System.html">PIXI.System</a></code></pre>
+<pre class="signature__container"><code class="signature">class StateSystem extends <a href="/pixi-api/PIXI/System.html">PIXI.System</a></code></pre>
 
 
     <div class="document__brief"><p>System plugin to the renderer to manage WebGL state machines.</p></div>
@@ -42,7 +47,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.StateSystem(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.StateSystem(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -68,7 +73,7 @@
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -129,7 +134,7 @@
 <div class="member" id="defaultState">
   <h3 class="member__title">defaultState</h3>
   
-<pre class="signature__container"><code class="signature">defaultState: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">defaultState: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -193,7 +198,7 @@
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -255,7 +260,7 @@
 <div class="member" id="setState">
   <h3 class="member__title">setState</h3>
   
-<pre class="signature__container"><code class="signature">static setState(this: <a href="PIXI/StateSystem.html">PIXI.StateSystem</a>, s: <a href="PIXI/State.html">PIXI.State</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">static setState(this: <a href="/pixi-api/PIXI/StateSystem.html">PIXI.StateSystem</a>, s: <a href="/pixi-api/PIXI/State.html">PIXI.State</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -281,7 +286,7 @@
           this
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/StateSystem.html">PIXI.StateSystem</a>
+          <a href="/pixi-api/PIXI/StateSystem.html">PIXI.StateSystem</a>
         </td>
         
         
@@ -291,7 +296,7 @@
           s
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/State.html">PIXI.State</a>
+          <a href="/pixi-api/PIXI/State.html">PIXI.State</a>
         </td>
         
         
@@ -1161,21 +1166,21 @@ The idea is that we only check what we have too.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#blendMode">blendMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#blendMode">blendMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#checks">checks</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#checks">checks</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#defaultState">defaultState</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#defaultState">defaultState</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#gl">gl</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#gl">gl</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#map">map</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#map">map</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#polygonOffset">polygonOffset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#polygonOffset">polygonOffset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#stateId">stateId</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#stateId">stateId</a></li>
     
   </ul>
 </div>
@@ -1186,7 +1191,7 @@ The idea is that we only check what we have too.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#_blendEq">_blendEq</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#_blendEq">_blendEq</a></li>
     
   </ul>
 </div>
@@ -1197,33 +1202,33 @@ The idea is that we only check what we have too.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#setState">setState</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#setState">setState</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#forceState">forceState</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#forceState">forceState</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#reset">reset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#reset">reset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#set">set</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#set">set</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#setBlend">setBlend</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#setBlend">setBlend</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#setBlendMode">setBlendMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#setBlendMode">setBlendMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#setCullFace">setCullFace</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#setCullFace">setCullFace</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#setDepthMask">setDepthMask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#setDepthMask">setDepthMask</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#setDepthTest">setDepthTest</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#setDepthTest">setDepthTest</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#setFrontFace">setFrontFace</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#setFrontFace">setFrontFace</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#setOffset">setOffset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#setOffset">setOffset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#setPolygonOffset">setPolygonOffset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#setPolygonOffset">setPolygonOffset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/StateSystem.html#updateCheck">updateCheck</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/StateSystem.html#updateCheck">updateCheck</a></li>
     
   </ul>
 </div>

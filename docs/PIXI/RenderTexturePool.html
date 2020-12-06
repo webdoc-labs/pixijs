@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: RenderTexturePool</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -85,7 +90,7 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
           textureOptions.scaleMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
+          <a href="/pixi-api/PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -93,7 +98,7 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
           
         </td>
         
-        <td class="member-parameter__description"><p>See <a href=PIXI/SCALE_MODES.html>PIXI.SCALE_MODES</a> for possible values.</p></td>
+        <td class="member-parameter__description"><p>See <a href=/pixi-api/PIXI/SCALE_MODES.html>PIXI.SCALE_MODES</a> for possible values.</p></td>
       </tr>
     </tbody>
   </table>
@@ -306,7 +311,7 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
 <div class="member" id="getFilterTexture">
   <h3 class="member__title">getFilterTexture</h3>
   
-<pre class="signature__container"><code class="signature">getFilterTexture(input: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, resolution: number) → {<a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getFilterTexture(input: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, resolution: number) → {<a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Gets extra texture of the same size as input renderTexture</p></div>
@@ -332,7 +337,7 @@ Stores collection of temporary pow2 or screen-sized renderTextures</p>
           input
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -376,7 +381,7 @@ It overrides, it does not multiply</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+        <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -391,7 +396,7 @@ It overrides, it does not multiply</p></td>
 <div class="member" id="returnFilterTexture">
   <h3 class="member__title">returnFilterTexture</h3>
   
-<pre class="signature__container"><code class="signature">returnFilterTexture(renderTexture: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">returnFilterTexture(renderTexture: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -417,7 +422,7 @@ It overrides, it does not multiply</p></td>
           renderTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         
         
@@ -457,7 +462,7 @@ It overrides, it does not multiply</p></td>
 <div class="member" id="returnTexture">
   <h3 class="member__title">returnTexture</h3>
   
-<pre class="signature__container"><code class="signature">returnTexture(renderTexture: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">returnTexture(renderTexture: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -483,7 +488,7 @@ It overrides, it does not multiply</p></td>
           renderTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         
         
@@ -523,7 +528,7 @@ It overrides, it does not multiply</p></td>
 <div class="member" id="setScreenSize">
   <h3 class="member__title">setScreenSize</h3>
   
-<pre class="signature__container"><code class="signature">setScreenSize(size: <a href="PIXI/ISize.html">PIXI.ISize</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">setScreenSize(size: <a href="/pixi-api/PIXI/ISize.html">PIXI.ISize</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -551,7 +556,7 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
           size
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/ISize.html">PIXI.ISize</a>
+          <a href="/pixi-api/PIXI/ISize.html">PIXI.ISize</a>
         </td>
         
         
@@ -598,7 +603,7 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
 <div class="member" id="getOptimalTexture">
   <h3 class="member__title">getOptimalTexture</h3>
   
-<pre class="signature__container"><code class="signature">protected getOptimalTexture(minWidth: number, minHeight: number, resolution: number) → {<a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">protected getOptimalTexture(minWidth: number, minHeight: number, resolution: number) → {<a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Gets a Power-of-Two render texture or fullScreen texture</p></div>
@@ -687,7 +692,7 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+        <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"><p>The new render texture.</p></td>
     </tr>
@@ -710,9 +715,9 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexturePool.html#SCREEN_KEY">SCREEN_KEY</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexturePool.html#SCREEN_KEY">SCREEN_KEY</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexturePool.html#enableFullScreen">enableFullScreen</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexturePool.html#enableFullScreen">enableFullScreen</a></li>
     
   </ul>
 </div>
@@ -724,17 +729,17 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexturePool.html#clear">clear</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexturePool.html#clear">clear</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexturePool.html#createTexture">createTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexturePool.html#createTexture">createTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexturePool.html#getFilterTexture">getFilterTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexturePool.html#getFilterTexture">getFilterTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexturePool.html#returnFilterTexture">returnFilterTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexturePool.html#returnFilterTexture">returnFilterTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexturePool.html#returnTexture">returnTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexturePool.html#returnTexture">returnTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexturePool.html#setScreenSize">setScreenSize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexturePool.html#setScreenSize">setScreenSize</a></li>
     
   </ul>
 </div>
@@ -745,7 +750,7 @@ sets new screen size, sets <code>enableFullScreen</code> to true</p>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTexturePool.html#getOptimalTexture">getOptimalTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTexturePool.html#getOptimalTexture">getOptimalTexture</a></li>
     
   </ul>
 </div>

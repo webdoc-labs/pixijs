@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: RenderTextureSystem</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.RenderTextureSystem</h1>
     
-<pre class="signature__container"><code class="signature">class RenderTextureSystem extends <a href="PIXI/System.html">PIXI.System</a></code></pre>
+<pre class="signature__container"><code class="signature">class RenderTextureSystem extends <a href="/pixi-api/PIXI/System.html">PIXI.System</a></code></pre>
 
 
     <div class="document__brief"><p>System plugin to the renderer to manage render textures.</p></div>
@@ -71,7 +76,7 @@ coordinate spaces used:</p>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.RenderTextureSystem(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.RenderTextureSystem(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -97,7 +102,7 @@ coordinate spaces used:</p>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -142,7 +147,7 @@ coordinate spaces used:</p>
 <div class="member" id="current">
   <h3 class="member__title">current</h3>
   
-<pre class="signature__container"><code class="signature">current: <a href=PIXI/RenderTexture.html>PIXI.RenderTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">current: <a href=/pixi-api/PIXI/RenderTexture.html>PIXI.RenderTexture</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -158,7 +163,7 @@ coordinate spaces used:</p>
 <div class="member" id="defaultMaskStack">
   <h3 class="member__title">defaultMaskStack</h3>
   
-<pre class="signature__container"><code class="signature">defaultMaskStack: Array&lt;<a href=PIXI/Graphics.html>PIXI.Graphics</a>></code></pre>
+<pre class="signature__container"><code class="signature">defaultMaskStack: Array&lt;<a href=/pixi-api/PIXI/Graphics.html>PIXI.Graphics</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -174,7 +179,7 @@ coordinate spaces used:</p>
 <div class="member" id="destinationFrame">
   <h3 class="member__title">destinationFrame</h3>
   
-<pre class="signature__container"><code class="signature">destinationFrame: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">destinationFrame: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>The destination frame for the render-target's projection mapping.</p></div>
@@ -190,7 +195,7 @@ coordinate spaces used:</p>
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -206,11 +211,11 @@ coordinate spaces used:</p>
 <div class="member" id="sourceFrame">
   <h3 class="member__title">sourceFrame</h3>
   
-<pre class="signature__container"><code class="signature">sourceFrame: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">sourceFrame: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>The source frame for the render-target's projection mapping.</p></div>
-  <div class="member__description"><p>See <a href="PIXI/ProjectionSystem.html#sourceFrame">PIXI.ProjectionSystem#sourceFrame</a> for more details.</p></div>
+  <div class="member__description"><p>See <a href="/pixi-api/PIXI/ProjectionSystem.html#sourceFrame">PIXI.ProjectionSystem#sourceFrame</a> for more details.</p></div>
 
   
 
@@ -222,7 +227,7 @@ coordinate spaces used:</p>
 <div class="member" id="viewportFrame">
   <h3 class="member__title">viewportFrame</h3>
   
-<pre class="signature__container"><code class="signature">viewportFrame: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">viewportFrame: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -248,7 +253,7 @@ the bottom-left).</p></div>
 <div class="member" id="bind">
   <h3 class="member__title">bind</h3>
   
-<pre class="signature__container"><code class="signature">bind(renderTexture: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, sourceFrame: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>, destinationFrame: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">bind(renderTexture: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, sourceFrame: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>, destinationFrame: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Bind the current render texture</p></div>
@@ -274,7 +279,7 @@ the bottom-left).</p></div>
           renderTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -288,7 +293,7 @@ the bottom-left).</p></div>
           sourceFrame
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -302,7 +307,7 @@ the bottom-left).</p></div>
           destinationFrame
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -346,7 +351,7 @@ the bottom-left).</p></div>
 <div class="member" id="clear">
   <h3 class="member__title">clear</h3>
   
-<pre class="signature__container"><code class="signature">clear(clearColor: Array&lt;number>, mask: <a href="PIXI/BUFFER_BITS.html">PIXI.BUFFER_BITS</a>) → {<a href="PIXI/Renderer.html">PIXI.Renderer</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clear(clearColor: Array&lt;number>, mask: <a href="/pixi-api/PIXI/BUFFER_BITS.html">PIXI.BUFFER_BITS</a>) → {<a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>}</code></pre>
 
 
   <div class="member__brief"><p>Erases the render texture and fills the drawing area with a colour</p></div>
@@ -388,7 +393,7 @@ the bottom-left).</p></div>
           mask
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BUFFER_BITS.html">PIXI.BUFFER_BITS</a>
+          <a href="/pixi-api/PIXI/BUFFER_BITS.html">PIXI.BUFFER_BITS</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -420,7 +425,7 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+        <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
       </td>
       <td class="member-return__description"><p>Returns itself.</p></td>
     </tr>
@@ -516,19 +521,19 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#clearColor">clearColor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#clearColor">clearColor</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#current">current</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#current">current</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#defaultMaskStack">defaultMaskStack</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#defaultMaskStack">defaultMaskStack</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#destinationFrame">destinationFrame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#destinationFrame">destinationFrame</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#renderer">renderer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#sourceFrame">sourceFrame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#sourceFrame">sourceFrame</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#viewportFrame">viewportFrame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#viewportFrame">viewportFrame</a></li>
     
   </ul>
 </div>
@@ -540,13 +545,13 @@ that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.</p>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#bind">bind</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#bind">bind</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#clear">clear</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#clear">clear</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RenderTextureSystem.html#reset">reset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RenderTextureSystem.html#reset">reset</a></li>
     
   </ul>
 </div>

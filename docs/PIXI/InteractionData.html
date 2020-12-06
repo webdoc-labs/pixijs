@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: InteractionData</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -77,7 +82,7 @@
 <div class="member" id="global">
   <h3 class="member__title">global</h3>
   
-<pre class="signature__container"><code class="signature">global: <a href=PIXI/Point.html>PIXI.Point</a></code></pre>
+<pre class="signature__container"><code class="signature">global: <a href=/pixi-api/PIXI/Point.html>PIXI.Point</a></code></pre>
 
 
   <div class="member__brief"><p>This point stores the global coords of where the touch/mouse event happened</p></div>
@@ -239,7 +244,7 @@ will be represented by this value.</p></div>
 <div class="member" id="target">
   <h3 class="member__title">target</h3>
   
-<pre class="signature__container"><code class="signature">target: <a href=PIXI/Sprite.html>PIXI.Sprite</a></code></pre>
+<pre class="signature__container"><code class="signature">target: <a href=/pixi-api/PIXI/Sprite.html>PIXI.Sprite</a></code></pre>
 
 
   <div class="member__brief"><p>The target Sprite that was interacted with</p></div>
@@ -394,7 +399,7 @@ radiusX of TouchEvents will be represented by this value.</p></div>
 <div class="member" id="getLocalPosition">
   <h3 class="member__title">getLocalPosition</h3>
   
-<pre class="signature__container"><code class="signature">getLocalPosition(displayObject: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, point: <a href="PIXI/Point.html">PIXI.Point</a>, globalPos: <a href="PIXI/Point.html">PIXI.Point</a>) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getLocalPosition(displayObject: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, point: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>, globalPos: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>) → {<a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"><p>This will return the local coordinates of the specified displayObject for this InteractionData</p></div>
@@ -420,7 +425,7 @@ radiusX of TouchEvents will be represented by this value.</p></div>
           displayObject
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -435,7 +440,7 @@ coords off</p></td>
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -450,7 +455,7 @@ will create a new point)</p></td>
           globalPos
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -480,7 +485,7 @@ will create a new point)</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Point.html">PIXI.Point</a>
+        <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"><p>A point containing the coordinates of the InteractionData position relative
 to the DisplayObject</p></td>
@@ -541,39 +546,39 @@ to the DisplayObject</p></td>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#button">button</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#button">button</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#buttons">buttons</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#buttons">buttons</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#global">global</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#global">global</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#identifier">identifier</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#identifier">identifier</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#isPrimary">isPrimary</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#isPrimary">isPrimary</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#originalEvent">originalEvent</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#originalEvent">originalEvent</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#pointerId">pointerId</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#pointerId">pointerId</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#pointerType">pointerType</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#pointerType">pointerType</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#pressure">pressure</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#pressure">pressure</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#rotationAngle">rotationAngle</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#rotationAngle">rotationAngle</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#tangentialPressure">tangentialPressure</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#tangentialPressure">tangentialPressure</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#target">target</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#target">target</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#tiltX">tiltX</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#tiltX">tiltX</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#tiltY">tiltY</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#tiltY">tiltY</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#twist">twist</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#twist">twist</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#width">width</a></li>
     
   </ul>
 </div>
@@ -585,11 +590,11 @@ to the DisplayObject</p></td>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#copyEvent">copyEvent</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#copyEvent">copyEvent</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#getLocalPosition">getLocalPosition</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#getLocalPosition">getLocalPosition</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/InteractionData.html#reset">reset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/InteractionData.html#reset">reset</a></li>
     
   </ul>
 </div>

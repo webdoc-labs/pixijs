@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: MaskSystem</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.MaskSystem</h1>
     
-<pre class="signature__container"><code class="signature">class MaskSystem extends <a href="PIXI/System.html">PIXI.System</a></code></pre>
+<pre class="signature__container"><code class="signature">class MaskSystem extends <a href="/pixi-api/PIXI/System.html">PIXI.System</a></code></pre>
 
 
     <div class="document__brief"><p>System plugin to the renderer to manage masks.</p></div>
@@ -45,7 +50,7 @@ type of masking in a custom shader - and hence, bypassing the masking system ful
 object with just a rectangle drawn.</p>
 <h2>Mask Stacks</h2>
 <p>In the scene graph, masks can be applied recursively, i.e. a mask can be applied during a masking operation. The mask
-stack stores the currently applied masks in order. Each <a href=PIXI/BaseRenderTexture.html>PIXI.BaseRenderTexture</a> holds its own mask stack, i.e.
+stack stores the currently applied masks in order. Each <a href=/pixi-api/PIXI/BaseRenderTexture.html>PIXI.BaseRenderTexture</a> holds its own mask stack, i.e.
 when you switch render-textures, the old masks only applied when you switch back to rendering to the old render-target.</p></div>
 
     
@@ -58,7 +63,7 @@ when you switch render-textures, the old masks only applied when you switch back
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.MaskSystem(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.MaskSystem(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -84,7 +89,7 @@ when you switch render-textures, the old masks only applied when you switch back
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -129,7 +134,7 @@ when you switch render-textures, the old masks only applied when you switch back
 <div class="member" id="alphaMaskPool">
   <h3 class="member__title">alphaMaskPool</h3>
   
-<pre class="signature__container"><code class="signature">alphaMaskPool: Array&lt;<a href=PIXI/SpriteMaskFilter.html>PIXI.SpriteMaskFilter</a>></code></pre>
+<pre class="signature__container"><code class="signature">alphaMaskPool: Array&lt;<a href=/pixi-api/PIXI/SpriteMaskFilter.html>PIXI.SpriteMaskFilter</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -161,7 +166,7 @@ when you switch render-textures, the old masks only applied when you switch back
 <div class="member" id="maskDataPool">
   <h3 class="member__title">maskDataPool</h3>
   
-<pre class="signature__container"><code class="signature">maskDataPool: Array&lt;<a href=PIXI/MaskData.html>PIXI.MaskData</a>></code></pre>
+<pre class="signature__container"><code class="signature">maskDataPool: Array&lt;<a href=/pixi-api/PIXI/MaskData.html>PIXI.MaskData</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -177,7 +182,7 @@ when you switch render-textures, the old masks only applied when you switch back
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
   
-<pre class="signature__container"><code class="signature">renderer: <a href=PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
+<pre class="signature__container"><code class="signature">renderer: <a href=/pixi-api/PIXI/Renderer.html>PIXI.Renderer</a></code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
@@ -237,7 +242,7 @@ when you switch render-textures, the old masks only applied when you switch back
 <div class="member" id="detect">
   <h3 class="member__title">detect</h3>
   
-<pre class="signature__container"><code class="signature">detect(maskData: <a href="PIXI/MaskData.html">PIXI.MaskData</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">detect(maskData: <a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -263,7 +268,7 @@ when you switch render-textures, the old masks only applied when you switch back
           maskData
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/MaskData.html">PIXI.MaskData</a>
+          <a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a>
         </td>
         
         
@@ -303,7 +308,7 @@ when you switch render-textures, the old masks only applied when you switch back
 <div class="member" id="pop">
   <h3 class="member__title">pop</h3>
   
-<pre class="signature__container"><code class="signature">pop(target: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">pop(target: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Removes the last mask from the mask stack and doesn't return it.</p></div>
@@ -329,7 +334,7 @@ when you switch render-textures, the old masks only applied when you switch back
           target
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -405,7 +410,7 @@ when you switch render-textures, the old masks only applied when you switch back
 <div class="member" id="push">
   <h3 class="member__title">push</h3>
   
-<pre class="signature__container"><code class="signature">push(target: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, maskData: <a href="PIXI/MaskData.html">PIXI.MaskData</a> | <a href="PIXI/Sprite.html">PIXI.Sprite</a> | <a href="PIXI/Graphics.html">PIXI.Graphics</a> | <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">push(target: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, maskData: <a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a> | <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a> | <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a> | <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Enables the mask and appends it to the current mask stack.</p></div>
@@ -431,7 +436,7 @@ when you switch render-textures, the old masks only applied when you switch back
           target
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -441,7 +446,7 @@ when you switch render-textures, the old masks only applied when you switch back
           maskData
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/MaskData.html">PIXI.MaskData</a> | <a href="PIXI/Sprite.html">PIXI.Sprite</a> | <a href="PIXI/Graphics.html">PIXI.Graphics</a> | <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a> | <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a> | <a href="/pixi-api/PIXI/Graphics.html">PIXI.Graphics</a> | <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -481,7 +486,7 @@ when you switch render-textures, the old masks only applied when you switch back
 <div class="member" id="pushSpriteMask">
   <h3 class="member__title">pushSpriteMask</h3>
   
-<pre class="signature__container"><code class="signature">pushSpriteMask(maskData: <a href="PIXI/MaskData.html">PIXI.MaskData</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">pushSpriteMask(maskData: <a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Applies the Mask and adds it to the current filter stack.</p></div>
@@ -507,7 +512,7 @@ when you switch render-textures, the old masks only applied when you switch back
           maskData
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/MaskData.html">PIXI.MaskData</a>
+          <a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a>
         </td>
         
         
@@ -547,7 +552,7 @@ when you switch render-textures, the old masks only applied when you switch back
 <div class="member" id="setMaskStack">
   <h3 class="member__title">setMaskStack</h3>
   
-<pre class="signature__container"><code class="signature">setMaskStack(maskStack: Array&lt;<a href="PIXI/MaskData.html">PIXI.MaskData</a>>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">setMaskStack(maskStack: Array&lt;<a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a>>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Changes the mask stack that is used by this System.</p></div>
@@ -573,7 +578,7 @@ when you switch render-textures, the old masks only applied when you switch back
           maskStack
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/MaskData.html">PIXI.MaskData</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/MaskData.html">PIXI.MaskData</a>&gt;
         </td>
         
         
@@ -622,15 +627,15 @@ when you switch render-textures, the old masks only applied when you switch back
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#alphaMaskIndex">alphaMaskIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#alphaMaskIndex">alphaMaskIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#alphaMaskPool">alphaMaskPool</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#alphaMaskPool">alphaMaskPool</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#enableScissor">enableScissor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#enableScissor">enableScissor</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#maskDataPool">maskDataPool</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#maskDataPool">maskDataPool</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#renderer">renderer</a></li>
     
   </ul>
 </div>
@@ -642,19 +647,19 @@ when you switch render-textures, the old masks only applied when you switch back
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#detect">detect</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#detect">detect</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#pop">pop</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#pop">pop</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#popSpriteMask">popSpriteMask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#popSpriteMask">popSpriteMask</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#push">push</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#push">push</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#pushSpriteMask">pushSpriteMask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#pushSpriteMask">pushSpriteMask</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/MaskSystem.html#setMaskStack">setMaskStack</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/MaskSystem.html#setMaskStack">setMaskStack</a></li>
     
   </ul>
 </div>

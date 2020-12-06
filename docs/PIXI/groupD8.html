@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: GroupD8</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -376,7 +381,7 @@ This is the small part of gameofbombs.com portal system. It works.</p></div>
 <div class="member" id="add">
   <h3 class="member__title">add</h3>
   
-<pre class="signature__container"><code class="signature">static add(rotationSecond: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>, rotationFirst: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static add(rotationSecond: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>, rotationFirst: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
 
 
   <div class="member__brief"><p>Composes the two D8 operations.</p></div>
@@ -508,7 +513,7 @@ This is the small part of gameofbombs.com portal system. It works.</p></div>
           rotationSecond
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -519,7 +524,7 @@ is the row in the above cayley table.</p></td>
           rotationFirst
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -545,7 +550,7 @@ is the column in the above cayley table.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+        <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
       </td>
       <td class="member-return__description"><p>Composed operation</p></td>
     </tr>
@@ -560,7 +565,7 @@ is the column in the above cayley table.</p></td>
 <div class="member" id="byDirection">
   <h3 class="member__title">byDirection</h3>
   
-<pre class="signature__container"><code class="signature">static byDirection(dx: number, dy: number) → {<a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static byDirection(dx: number, dy: number) → {<a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -622,7 +627,7 @@ eight directions provided by <code>groupD8</code>.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+        <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
       </td>
       <td class="member-return__description"><p>Approximation of the vector into
 one of the eight symmetries.</p></td>
@@ -638,7 +643,7 @@ one of the eight symmetries.</p></td>
 <div class="member" id="inv">
   <h3 class="member__title">inv</h3>
   
-<pre class="signature__container"><code class="signature">static inv(rotation: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static inv(rotation: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -664,7 +669,7 @@ one of the eight symmetries.</p></td>
           rotation
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -691,7 +696,7 @@ reflections don't.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+        <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
       </td>
       <td class="member-return__description"><p>The opposite symmetry of <code>rotation</code></p></td>
     </tr>
@@ -706,7 +711,7 @@ reflections don't.</p></td>
 <div class="member" id="isVertical">
   <h3 class="member__title">isVertical</h3>
   
-<pre class="signature__container"><code class="signature">static isVertical(rotation: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">static isVertical(rotation: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -733,7 +738,7 @@ or north. It doesn't work for reflections.</p></div>
           rotation
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -773,7 +778,7 @@ or north. It doesn't work for reflections.</p></div>
 <div class="member" id="matrixAppendRotationInv">
   <h3 class="member__title">matrixAppendRotationInv</h3>
   
-<pre class="signature__container"><code class="signature">static matrixAppendRotationInv(matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>, rotation: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>, tx: number, ty: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">static matrixAppendRotationInv(matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>, rotation: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>, tx: number, ty: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Helps sprite to compensate texture packer rotation.</p></div>
@@ -799,7 +804,7 @@ or north. It doesn't work for reflections.</p></div>
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         
         
@@ -809,7 +814,7 @@ or north. It doesn't work for reflections.</p></div>
           rotation
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -936,7 +941,7 @@ operation.</p></div>
 <div class="member" id="sub">
   <h3 class="member__title">sub</h3>
   
-<pre class="signature__container"><code class="signature">static sub(rotationSecond: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>, rotationFirst: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static sub(rotationSecond: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>, rotationFirst: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
 
 
   <div class="member__brief"><p>Reverse of <code>add</code>.</p></div>
@@ -962,7 +967,7 @@ operation.</p></div>
           rotationSecond
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -972,7 +977,7 @@ operation.</p></div>
           rotationFirst
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -997,7 +1002,7 @@ operation.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+        <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
       </td>
       <td class="member-return__description"><p>Result</p></td>
     </tr>
@@ -1012,7 +1017,7 @@ operation.</p></div>
 <div class="member" id="uX">
   <h3 class="member__title">uX</h3>
   
-<pre class="signature__container"><code class="signature">static uX(ind: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static uX(ind: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -1038,7 +1043,7 @@ operation.</p></div>
           ind
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -1063,7 +1068,7 @@ operation.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+        <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
       </td>
       <td class="member-return__description"><p>The X-component of the U-axis
 after rotating the axes.</p></td>
@@ -1079,7 +1084,7 @@ after rotating the axes.</p></td>
 <div class="member" id="uY">
   <h3 class="member__title">uY</h3>
   
-<pre class="signature__container"><code class="signature">static uY(ind: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static uY(ind: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -1105,7 +1110,7 @@ after rotating the axes.</p></td>
           ind
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -1130,7 +1135,7 @@ after rotating the axes.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+        <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
       </td>
       <td class="member-return__description"><p>The Y-component of the U-axis
 after rotating the axes.</p></td>
@@ -1146,7 +1151,7 @@ after rotating the axes.</p></td>
 <div class="member" id="vX">
   <h3 class="member__title">vX</h3>
   
-<pre class="signature__container"><code class="signature">static vX(ind: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static vX(ind: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -1172,7 +1177,7 @@ after rotating the axes.</p></td>
           ind
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -1197,7 +1202,7 @@ after rotating the axes.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+        <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
       </td>
       <td class="member-return__description"><p>The X-component of the V-axis
 after rotating the axes.</p></td>
@@ -1213,7 +1218,7 @@ after rotating the axes.</p></td>
 <div class="member" id="vY">
   <h3 class="member__title">vY</h3>
   
-<pre class="signature__container"><code class="signature">static vY(ind: <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static vY(ind: <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>) → {<a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -1239,7 +1244,7 @@ after rotating the axes.</p></td>
           ind
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+          <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
         </td>
         
         
@@ -1264,7 +1269,7 @@ after rotating the axes.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
+        <a href="/pixi-api/PIXI/GD8Symmetry.html">PIXI.GD8Symmetry</a>
       </td>
       <td class="member-return__description"><p>The Y-component of the V-axis
 after rotating the axes.</p></td>
@@ -1289,29 +1294,29 @@ after rotating the axes.</p></td>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#E">E</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#E">E</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#MAIN_DIAGONAL">MAIN_DIAGONAL</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#MAIN_DIAGONAL">MAIN_DIAGONAL</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#MIRROR_HORIZONTAL">MIRROR_HORIZONTAL</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#MIRROR_HORIZONTAL">MIRROR_HORIZONTAL</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#MIRROR_VERTICAL">MIRROR_VERTICAL</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#MIRROR_VERTICAL">MIRROR_VERTICAL</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#N">N</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#N">N</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#NE">NE</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#NE">NE</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#NW">NW</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#NW">NW</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#REVERSE_DIAGONAL">REVERSE_DIAGONAL</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#REVERSE_DIAGONAL">REVERSE_DIAGONAL</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#S">S</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#S">S</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#SE">SE</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#SE">SE</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#SW">SW</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#SW">SW</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#W">W</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#W">W</a></li>
     
   </ul>
 </div>
@@ -1323,27 +1328,27 @@ after rotating the axes.</p></td>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#add">add</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#add">add</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#byDirection">byDirection</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#byDirection">byDirection</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#inv">inv</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#inv">inv</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#isVertical">isVertical</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#isVertical">isVertical</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#matrixAppendRotationInv">matrixAppendRotationInv</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#matrixAppendRotationInv">matrixAppendRotationInv</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#rotate180">rotate180</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#rotate180">rotate180</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#sub">sub</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#sub">sub</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#uX">uX</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#uX">uX</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#uY">uY</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#uY">uY</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#vX">vX</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#vX">vX</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/groupD8.html#vY">vY</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/groupD8.html#vY">vY</a></li>
     
   </ul>
 </div>

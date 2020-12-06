@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: BatchShaderFactory</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -208,7 +213,7 @@ generation.</p></div>
 <div class="member" id="_generateShader">
   <h3 class="member__title">_generateShader</h3>
   
-<pre class="signature__container"><code class="signature">_generateShader(stringState: string, renderer: <a href="PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>) → {<a href="PIXI/Shader.html">PIXI.Shader</a>}</code></pre>
+<pre class="signature__container"><code class="signature">_generateShader(stringState: string, renderer: <a href="/pixi-api/PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>) → {<a href="/pixi-api/PIXI/Shader.html">PIXI.Shader</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -244,7 +249,7 @@ generation.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>
+          <a href="/pixi-api/PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>
         </td>
         
         
@@ -269,7 +274,7 @@ generation.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Shader.html">PIXI.Shader</a>
+        <a href="/pixi-api/PIXI/Shader.html">PIXI.Shader</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -284,7 +289,7 @@ generation.</p></div>
 <div class="member" id="derive">
   <h3 class="member__title">derive</h3>
   
-<pre class="signature__container"><code class="signature">derive() → {(brend: <a href="PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>) => PIXI.Shader}</code></pre>
+<pre class="signature__container"><code class="signature">derive() → {(brend: <a href="/pixi-api/PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>) => PIXI.Shader}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -306,7 +311,7 @@ renderer.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        (brend: <a href="PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>) =&gt; PIXI.Shader
+        (brend: <a href="/pixi-api/PIXI/brend/BatchRenderer.html">PIXI.brend.BatchRenderer</a>) =&gt; PIXI.Shader
       </td>
       <td class="member-return__description"><p>shader function that can be given to the batch renderer</p></td>
     </tr>
@@ -330,7 +335,7 @@ renderer.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/BatchShaderFactory.html#disableVertexShaderTemplate">disableVertexShaderTemplate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/BatchShaderFactory.html#disableVertexShaderTemplate">disableVertexShaderTemplate</a></li>
     
   </ul>
 </div>
@@ -342,9 +347,9 @@ renderer.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/BatchShaderFactory.html#_generateShader">_generateShader</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/BatchShaderFactory.html#_generateShader">_generateShader</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/BatchShaderFactory.html#derive">derive</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/BatchShaderFactory.html#derive">derive</a></li>
     
   </ul>
 </div>

@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: ColorMatrixFilter</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/filter-color-matrix</div>
     <h1 class="document__title">PIXI.filters.ColorMatrixFilter</h1>
     
-<pre class="signature__container"><code class="signature">class ColorMatrixFilter extends <a href="PIXI/Filter.html">PIXI.Filter</a></code></pre>
+<pre class="signature__container"><code class="signature">class ColorMatrixFilter extends <a href="/pixi-api/PIXI/Filter.html">PIXI.Filter</a></code></pre>
 
 
     <div class="document__brief"></div>
@@ -168,7 +173,7 @@ filter is applied to.</p></div>
 <div class="member" id="program">
   <h3 class="member__title">program</h3>
   
-<pre class="signature__container"><code class="signature">program: <a href=PIXI/Program.html>PIXI.Program</a></code></pre>
+<pre class="signature__container"><code class="signature">program: <a href=/pixi-api/PIXI/Program.html>PIXI.Program</a></code></pre>
 
 
   <div class="member__brief"><p>Program that the shader uses</p></div>
@@ -201,7 +206,7 @@ increase the performance of the filter.</p></div>
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -318,7 +323,7 @@ just set the current matrix with @param matrix</p></td>
 <div class="member" id="apply">
   <h3 class="member__title">apply</h3>
   
-<pre class="signature__container"><code class="signature">apply(filterManager: <a href="PIXI/FilterSystem.html">PIXI.FilterSystem</a>, input: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, output: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clearMode: <a href="PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>, currentState: object) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">apply(filterManager: <a href="/pixi-api/PIXI/FilterSystem.html">PIXI.FilterSystem</a>, input: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, output: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clearMode: <a href="/pixi-api/PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>, currentState: object) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Applies the filter</p></div>
@@ -344,7 +349,7 @@ just set the current matrix with @param matrix</p></td>
           filterManager
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/FilterSystem.html">PIXI.FilterSystem</a>
+          <a href="/pixi-api/PIXI/FilterSystem.html">PIXI.FilterSystem</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -358,7 +363,7 @@ just set the current matrix with @param matrix</p></td>
           input
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -372,7 +377,7 @@ just set the current matrix with @param matrix</p></td>
           output
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -386,7 +391,7 @@ just set the current matrix with @param matrix</p></td>
           clearMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
+          <a href="/pixi-api/PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -1890,27 +1895,27 @@ just set the current matrix with @param matrix</p></td>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#alpha">alpha</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#alpha">alpha</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#autoFit">autoFit</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#autoFit">autoFit</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#blendMode">blendMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#blendMode">blendMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#enabled">enabled</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#enabled">enabled</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#legacy">legacy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#legacy">legacy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#matrix">matrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#matrix">matrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#padding">padding</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#padding">padding</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#program">program</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#program">program</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#state">state</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#state">state</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#uniforms">uniforms</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#uniforms">uniforms</a></li>
     
   </ul>
 </div>
@@ -1922,51 +1927,51 @@ just set the current matrix with @param matrix</p></td>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#_loadMatrix">_loadMatrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#_loadMatrix">_loadMatrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#apply">apply</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#apply">apply</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#blackAndWhite">blackAndWhite</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#blackAndWhite">blackAndWhite</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#brightness">brightness</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#brightness">brightness</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#browni">browni</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#browni">browni</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#colorTone">colorTone</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#colorTone">colorTone</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#contrast">contrast</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#contrast">contrast</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#desaturate">desaturate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#desaturate">desaturate</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#greyscale">greyscale</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#greyscale">greyscale</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#hue">hue</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#hue">hue</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#kodachrome">kodachrome</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#kodachrome">kodachrome</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#lsd">lsd</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#lsd">lsd</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#negative">negative</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#negative">negative</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#night">night</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#night">night</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#polaroid">polaroid</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#polaroid">polaroid</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#predator">predator</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#predator">predator</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#reset">reset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#reset">reset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#saturate">saturate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#saturate">saturate</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#sepia">sepia</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#sepia">sepia</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#technicolor">technicolor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#technicolor">technicolor</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#toBGR">toBGR</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#toBGR">toBGR</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/filters/ColorMatrixFilter.html#vintage">vintage</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/filters/ColorMatrixFilter.html#vintage">vintage</a></li>
     
   </ul>
 </div>

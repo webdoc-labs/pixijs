@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: SpriteMaskFilter</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.SpriteMaskFilter</h1>
     
-<pre class="signature__container"><code class="signature">class SpriteMaskFilter extends <a href="PIXI/Filter.html">PIXI.Filter</a></code></pre>
+<pre class="signature__container"><code class="signature">class SpriteMaskFilter extends <a href="/pixi-api/PIXI/Filter.html">PIXI.Filter</a></code></pre>
 
 
     <div class="document__brief"><p>This handles a Sprite acting as a mask, as opposed to a Graphic.</p></div>
@@ -42,7 +47,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.SpriteMaskFilter(sprite: <a href="PIXI/Sprite.html">PIXI.Sprite</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.SpriteMaskFilter(sprite: <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -68,7 +73,7 @@
           sprite
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Sprite.html">PIXI.Sprite</a>
+          <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a>
         </td>
         
         
@@ -162,7 +167,7 @@ Switch it off if it does not work for specific shader.</p></div>
 <div class="member" id="maskMatrix">
   <h3 class="member__title">maskMatrix</h3>
   
-<pre class="signature__container"><code class="signature">maskMatrix: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">maskMatrix: <a href=/pixi-api/PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -178,7 +183,7 @@ Switch it off if it does not work for specific shader.</p></div>
 <div class="member" id="maskSprite">
   <h3 class="member__title">maskSprite</h3>
   
-<pre class="signature__container"><code class="signature">maskSprite: <a href=PIXI/Sprite.html>PIXI.Sprite</a></code></pre>
+<pre class="signature__container"><code class="signature">maskSprite: <a href=/pixi-api/PIXI/Sprite.html>PIXI.Sprite</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -212,7 +217,7 @@ filter is applied to.</p></div>
 <div class="member" id="program">
   <h3 class="member__title">program</h3>
   
-<pre class="signature__container"><code class="signature">program: <a href=PIXI/Program.html>PIXI.Program</a></code></pre>
+<pre class="signature__container"><code class="signature">program: <a href=/pixi-api/PIXI/Program.html>PIXI.Program</a></code></pre>
 
 
   <div class="member__brief"><p>Program that the shader uses</p></div>
@@ -245,7 +250,7 @@ increase the performance of the filter.</p></div>
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -285,7 +290,7 @@ increase the performance of the filter.</p></div>
 <div class="member" id="apply">
   <h3 class="member__title">apply</h3>
   
-<pre class="signature__container"><code class="signature">apply(filterManager: <a href="PIXI/FilterSystem.html">PIXI.FilterSystem</a>, input: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, output: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clearMode: <a href="PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">apply(filterManager: <a href="/pixi-api/PIXI/FilterSystem.html">PIXI.FilterSystem</a>, input: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, output: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clearMode: <a href="/pixi-api/PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Applies the filter</p></div>
@@ -311,7 +316,7 @@ increase the performance of the filter.</p></div>
           filterManager
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/FilterSystem.html">PIXI.FilterSystem</a>
+          <a href="/pixi-api/PIXI/FilterSystem.html">PIXI.FilterSystem</a>
         </td>
         
         
@@ -321,7 +326,7 @@ increase the performance of the filter.</p></div>
           input
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         
         
@@ -331,7 +336,7 @@ increase the performance of the filter.</p></div>
           output
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         
         
@@ -341,7 +346,7 @@ increase the performance of the filter.</p></div>
           clearMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
+          <a href="/pixi-api/PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
         </td>
         
         
@@ -426,27 +431,27 @@ increase the performance of the filter.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#autoFit">autoFit</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#autoFit">autoFit</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#blendMode">blendMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#blendMode">blendMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#enabled">enabled</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#enabled">enabled</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#legacy">legacy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#legacy">legacy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#maskMatrix">maskMatrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#maskMatrix">maskMatrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#maskSprite">maskSprite</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#maskSprite">maskSprite</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#padding">padding</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#padding">padding</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#program">program</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#program">program</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#state">state</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#state">state</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#uniforms">uniforms</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#uniforms">uniforms</a></li>
     
   </ul>
 </div>
@@ -458,9 +463,9 @@ increase the performance of the filter.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#apply">apply</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#apply">apply</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/SpriteMaskFilter.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/SpriteMaskFilter.html#destroy">destroy</a></li>
     
   </ul>
 </div>

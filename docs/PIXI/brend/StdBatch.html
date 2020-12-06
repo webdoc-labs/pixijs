@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: StdBatch</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -62,7 +67,7 @@
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"><p>State required to render this batch.</p></div>
@@ -78,7 +83,7 @@
 <div class="member" id="textureBuffer">
   <h3 class="member__title">textureBuffer</h3>
   
-<pre class="signature__container"><code class="signature">textureBuffer: Array&lt;<a href=PIXI/Texture.html>PIXI.Texture</a>></code></pre>
+<pre class="signature__container"><code class="signature">textureBuffer: Array&lt;<a href=/pixi-api/PIXI/Texture.html>PIXI.Texture</a>></code></pre>
 
 
   <div class="member__brief"><p>Textures that are used by the display-object's in this batch.</p></div>
@@ -154,7 +159,7 @@
 <div class="member" id="upload">
   <h3 class="member__title">upload</h3>
   
-<pre class="signature__container"><code class="signature">upload(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">upload(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -181,7 +186,7 @@ this, you must call <code>super.upload</code>.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -230,13 +235,13 @@ this, you must call <code>super.upload</code>.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/StdBatch.html#geometryOffset">geometryOffset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/StdBatch.html#geometryOffset">geometryOffset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/StdBatch.html#state">state</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/StdBatch.html#state">state</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/StdBatch.html#textureBuffer">textureBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/StdBatch.html#textureBuffer">textureBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/StdBatch.html#uidMap">uidMap</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/StdBatch.html#uidMap">uidMap</a></li>
     
   </ul>
 </div>
@@ -248,9 +253,9 @@ this, you must call <code>super.upload</code>.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/StdBatch.html#reset">reset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/StdBatch.html#reset">reset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/StdBatch.html#upload">upload</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/StdBatch.html#upload">upload</a></li>
     
   </ul>
 </div>

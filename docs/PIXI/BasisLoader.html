@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: BasisLoader</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -27,7 +32,7 @@
     <h1 class="document__title">PIXI.BasisLoader</h1>
     
 <pre class="signature__container"><code class="signature">class BasisLoader
-implements <a href="PIXI/ILoaderPlugin.html">PIXI.ILoaderPlugin</a></code></pre>
+implements <a href="/pixi-api/PIXI/ILoaderPlugin.html">PIXI.ILoaderPlugin</a></code></pre>
 
 
     <div class="document__brief"><p>Loader plugin for handling BASIS supercompressed texture files.</p></div>
@@ -158,7 +163,7 @@ will hook transcoding to BasisResource#onTranscoderInitialized.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BasisLoader.html#use">use</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BasisLoader.html#use">use</a></li>
     
   </ul>
 </div>

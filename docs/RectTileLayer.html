@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: RectTileLayer</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">pixi-tilemap</div>
     <h1 class="document__title">RectTileLayer</h1>
     
-<pre class="signature__container"><code class="signature">class RectTileLayer extends <a href="PIXI/Container.html">PIXI.Container</a></code></pre>
+<pre class="signature__container"><code class="signature">class RectTileLayer extends <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a></code></pre>
 
 
     <div class="document__brief"></div>
@@ -77,7 +82,7 @@
 <div class="member" id="_bounds">
   <h3 class="member__title">_bounds</h3>
   
-<pre class="signature__container"><code class="signature">_bounds: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">_bounds: <a href=/pixi-api/PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>The bounds object, this is used to calculate and store the bounds of the displayObject.</p></div>
@@ -93,7 +98,7 @@
 <div class="member" id="_localBounds">
   <h3 class="member__title">_localBounds</h3>
   
-<pre class="signature__container"><code class="signature">_localBounds: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">_localBounds: <a href=/pixi-api/PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Local bounds object, swapped with <code>_bounds</code> when using <code>getLocalBounds()</code>.</p></div>
@@ -311,7 +316,7 @@ as it will take a snapshot of what is currently there. If the textures have not 
 <div class="member" id="children">
   <h3 class="member__title">children</h3>
   
-<pre class="signature__container"><code class="signature">children: Array&lt;<a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a>></code></pre>
+<pre class="signature__container"><code class="signature">children: Array&lt;<a href=/pixi-api/PIXI/DisplayObject.html>PIXI.DisplayObject</a>></code></pre>
 
 
   <div class="member__brief"><p>The array of children of this container.</p></div>
@@ -344,7 +349,7 @@ is hovered over the displayObject.</p></div>
 <div class="member" id="filterArea">
   <h3 class="member__title">filterArea</h3>
   
-<pre class="signature__container"><code class="signature">filterArea: ?<a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">filterArea: ?<a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -362,7 +367,7 @@ rather than figuring out the dimensions of the displayObject each frame you can 
 <div class="member" id="filters">
   <h3 class="member__title">filters</h3>
   
-<pre class="signature__container"><code class="signature">filters: Array&lt;<a href=PIXI/Filter.html>PIXI.Filter</a>></code></pre>
+<pre class="signature__container"><code class="signature">filters: Array&lt;<a href=/pixi-api/PIXI/Filter.html>PIXI.Filter</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -398,7 +403,7 @@ To remove filters simply set this property to <code>'null'</code>.</li>
 <div class="member" id="hitArea">
   <h3 class="member__title">hitArea</h3>
   
-<pre class="signature__container"><code class="signature">hitArea: <a href=PIXI/IHitArea.html>PIXI.IHitArea</a></code></pre>
+<pre class="signature__container"><code class="signature">hitArea: <a href=/pixi-api/PIXI/IHitArea.html>PIXI.IHitArea</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -481,7 +486,7 @@ Setting this to false allows PixiJS to bypass a recursive <code>hitTest</code> f
 <div class="member" id="localTransform">
   <h3 class="member__title">localTransform</h3>
   
-<pre class="signature__container"><code class="signature">localTransform: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">localTransform: <a href=/pixi-api/PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>Current transform of the object based on local factors: position, scale, other stuff.</p></div>
@@ -497,13 +502,13 @@ Setting this to false allows PixiJS to bypass a recursive <code>hitTest</code> f
 <div class="member" id="mask">
   <h3 class="member__title">mask</h3>
   
-<pre class="signature__container"><code class="signature">mask: <a href=PIXI/Container.html>PIXI.Container</a> | <a href=PIXI/MaskData.html>PIXI.MaskData</a> | unknown</code></pre>
+<pre class="signature__container"><code class="signature">mask: <a href=/pixi-api/PIXI/Container.html>PIXI.Container</a> | <a href=/pixi-api/PIXI/MaskData.html>PIXI.MaskData</a> | unknown</code></pre>
 
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Sets a mask for the displayObject. A mask is an object that limits the visibility of an
 object to the shape of the mask applied to it. In PixiJS a regular mask must be a
-<a href=PIXI/Graphics.html>PIXI.Graphics</a> or a <a href=PIXI/Sprite.html>PIXI.Sprite</a> object. This allows for much faster masking in canvas as it
+<a href=/pixi-api/PIXI/Graphics.html>PIXI.Graphics</a> or a <a href=/pixi-api/PIXI/Sprite.html>PIXI.Sprite</a> object. This allows for much faster masking in canvas as it
 utilities shape clipping. To remove a mask, set this property to <code>null</code>.</p>
 <p>For sprite mask both alpha and red channel are used. Black mask is the same as transparent mask.</p></div>
 
@@ -533,7 +538,7 @@ utilities shape clipping. To remove a mask, set this property to <code>null</cod
 <div class="member" id="parent">
   <h3 class="member__title">parent</h3>
   
-<pre class="signature__container"><code class="signature">parent: <a href=PIXI/Container.html>PIXI.Container</a></code></pre>
+<pre class="signature__container"><code class="signature">parent: <a href=/pixi-api/PIXI/Container.html>PIXI.Container</a></code></pre>
 
 
   <div class="member__brief"><p>The display object container that contains this display object.</p></div>
@@ -549,7 +554,7 @@ utilities shape clipping. To remove a mask, set this property to <code>null</cod
 <div class="member" id="pivot">
   <h3 class="member__title">pivot</h3>
   
-<pre class="signature__container"><code class="signature">pivot: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">pivot: <a href=/pixi-api/PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -567,7 +572,7 @@ is the projection of <code>pivot</code> in the parent's local space.</p>
 <div class="member" id="position">
   <h3 class="member__title">position</h3>
   
-<pre class="signature__container"><code class="signature">position: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">position: <a href=/pixi-api/PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The coordinate of the object relative to the local coordinates of the parent.</p></div>
@@ -618,7 +623,7 @@ methods will still be called.</p>
 <div class="member" id="scale">
   <h3 class="member__title">scale</h3>
   
-<pre class="signature__container"><code class="signature">scale: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">scale: <a href=/pixi-api/PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The scale factors of this object along the local coordinate axes.</p></div>
@@ -634,7 +639,7 @@ methods will still be called.</p>
 <div class="member" id="skew">
   <h3 class="member__title">skew</h3>
   
-<pre class="signature__container"><code class="signature">skew: <a href=PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
+<pre class="signature__container"><code class="signature">skew: <a href=/pixi-api/PIXI/ObservablePoint.html>PIXI.ObservablePoint</a></code></pre>
 
 
   <div class="member__brief"><p>The skew factor for the object in radians.</p></div>
@@ -650,7 +655,7 @@ methods will still be called.</p>
 <div class="member" id="smartMask">
   <h3 class="member__title">smartMask</h3>
   
-<pre class="signature__container"><code class="signature">smartMask: <a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
+<pre class="signature__container"><code class="signature">smartMask: <a href=/pixi-api/PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -705,7 +710,7 @@ as the zIndex sorting may cause the child to automatically sorted to another pos
 <div class="member" id="transform">
   <h3 class="member__title">transform</h3>
   
-<pre class="signature__container"><code class="signature">transform: <a href=PIXI/Transform.html>PIXI.Transform</a></code></pre>
+<pre class="signature__container"><code class="signature">transform: <a href=/pixi-api/PIXI/Transform.html>PIXI.Transform</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -772,7 +777,7 @@ the updateTransform function will not be called.</p>
 <div class="member" id="worldTransform">
   <h3 class="member__title">worldTransform</h3>
   
-<pre class="signature__container"><code class="signature">worldTransform: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">worldTransform: <a href=/pixi-api/PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"><p>Current transform of the object based on world (parent) factors.</p></div>
@@ -879,7 +884,7 @@ and thus rendered on top of other display objects within the same container.</p>
 <div class="member" id="_boundsRect">
   <h3 class="member__title">_boundsRect</h3>
   
-<pre class="signature__container"><code class="signature">protected _boundsRect: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _boundsRect: <a href=/pixi-api/PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Cache of this display-object's bounds-rectangle.</p></div>
@@ -911,7 +916,7 @@ and thus rendered on top of other display objects within the same container.</p>
 <div class="member" id="_enabledFilters">
   <h3 class="member__title">_enabledFilters</h3>
   
-<pre class="signature__container"><code class="signature">protected _enabledFilters: Array&lt;<a href=PIXI/Filter.html>PIXI.Filter</a>></code></pre>
+<pre class="signature__container"><code class="signature">protected _enabledFilters: Array&lt;<a href=/pixi-api/PIXI/Filter.html>PIXI.Filter</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -944,7 +949,7 @@ Used by containers to help sort objects with the same zIndex, by using previous 
 <div class="member" id="_localBoundsRect">
   <h3 class="member__title">_localBoundsRect</h3>
   
-<pre class="signature__container"><code class="signature">protected _localBoundsRect: <a href=PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _localBoundsRect: <a href=/pixi-api/PIXI/Bounds.html>PIXI.Bounds</a></code></pre>
 
 
   <div class="member__brief"><p>Cache of this display-object's local-bounds rectangle.</p></div>
@@ -960,7 +965,7 @@ Used by containers to help sort objects with the same zIndex, by using previous 
 <div class="member" id="_mask">
   <h3 class="member__title">_mask</h3>
   
-<pre class="signature__container"><code class="signature">protected _mask: <a href=PIXI/Container.html>PIXI.Container</a> | <a href=PIXI/MaskData.html>PIXI.MaskData</a> | unknown</code></pre>
+<pre class="signature__container"><code class="signature">protected _mask: <a href=/pixi-api/PIXI/Container.html>PIXI.Container</a> | <a href=/pixi-api/PIXI/MaskData.html>PIXI.MaskData</a> | unknown</code></pre>
 
 
   <div class="member__brief"><p>The original, cached mask of the object.</p></div>
@@ -976,7 +981,7 @@ Used by containers to help sort objects with the same zIndex, by using previous 
 <div class="member" id="_tempDisplayObjectParent">
   <h3 class="member__title">_tempDisplayObjectParent</h3>
   
-<pre class="signature__container"><code class="signature">protected _tempDisplayObjectParent: <a href=PIXI/Container.html>PIXI.Container</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _tempDisplayObjectParent: <a href=/pixi-api/PIXI/Container.html>PIXI.Container</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -1089,7 +1094,7 @@ internal function for toLocal()</p></div>
 <div class="member" id="addChild">
   <h3 class="member__title">addChild</h3>
   
-<pre class="signature__container"><code class="signature">addChild(children: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addChild(children: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Adds one or more children to the container.</p></div>
@@ -1115,7 +1120,7 @@ internal function for toLocal()</p></div>
           children
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -1140,7 +1145,7 @@ internal function for toLocal()</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The first child that was added.</p></td>
     </tr>
@@ -1155,7 +1160,7 @@ internal function for toLocal()</p></div>
 <div class="member" id="addChildAt">
   <h3 class="member__title">addChildAt</h3>
   
-<pre class="signature__container"><code class="signature">addChildAt(child: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, index: number) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addChildAt(child: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, index: number) → {<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Adds a child to the container at a specified index. If the index is out of bounds an error will be thrown</p></div>
@@ -1181,7 +1186,7 @@ internal function for toLocal()</p></div>
           child
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -1216,7 +1221,7 @@ internal function for toLocal()</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The child that was added.</p></td>
     </tr>
@@ -1231,7 +1236,7 @@ internal function for toLocal()</p></div>
 <div class="member" id="addFrame">
   <h3 class="member__title">addFrame</h3>
   
-<pre class="signature__container"><code class="signature">addFrame(texture_: <a href="PIXI/Texture.html">PIXI.Texture</a> | String | number, x: number, y: number, animX: number, animY: number) → {}</code></pre>
+<pre class="signature__container"><code class="signature">addFrame(texture_: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | String | number, x: number, y: number, animX: number, animY: number) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -1257,7 +1262,7 @@ internal function for toLocal()</p></div>
           texture_
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a> | String | number
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | String | number
         </td>
         
         
@@ -1421,7 +1426,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="disableTempParent">
   <h3 class="member__title">disableTempParent</h3>
   
-<pre class="signature__container"><code class="signature">disableTempParent(cacheParent: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">disableTempParent(cacheParent: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Pair method for <code>enableTempParent</code></p></div>
@@ -1447,7 +1452,7 @@ Will crash if there's no parent element.</p></div>
           cacheParent
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -1504,7 +1509,7 @@ Will crash if there's no parent element.</p></div>
 <div class="member" id="enableTempParent">
   <h3 class="member__title">enableTempParent</h3>
   
-<pre class="signature__container"><code class="signature">enableTempParent() → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">enableTempParent() → {<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Used in Renderer, cacheAsBitmap and other places where you call an <code>updateTransform</code> on root</p></div>
@@ -1528,7 +1533,7 @@ elem.disable<span class="hljs-constructor">TempParent(<span class="hljs-params">
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>current parent</p></td>
     </tr>
@@ -1543,10 +1548,10 @@ elem.disable<span class="hljs-constructor">TempParent(<span class="hljs-params">
 <div class="member" id="getBounds">
   <h3 class="member__title">getBounds</h3>
   
-<pre class="signature__container"><code class="signature">getBounds(skipUpdate: boolean, rect: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getBounds(skipUpdate: boolean, rect: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
 
 
-  <div class="member__brief"><p>Calculates and returns the (world) bounds of the display object as a <a href=PIXI/Rectangle.html>Rectangle</a>.</p></div>
+  <div class="member__brief"><p>Calculates and returns the (world) bounds of the display object as a <a href=/pixi-api/PIXI/Rectangle.html>Rectangle</a>.</p></div>
   <div class="member__description"><p>This method is expensive on containers with a large subtree (like the stage). This is because the bounds
 of a container depend on its children's bounds, which recursively causes all bounds in the subtree to
 be recalculated. The upside, however, is that calling <code>getBounds</code> once on a container will indeed update
@@ -1563,7 +1568,7 @@ calculation if needed.</p>
 <pre><code class="hljs language-js"><span class="hljs-keyword">const</span> lastCalculatedBounds = displayObject._bounds.getRectangle(optionalRect);
 </code></pre>
 <p>Do know that usage of <code>getLocalBounds</code> can corrupt the <code>_bounds</code> of children (the whole subtree, actually). This
-is a known issue that has not been solved. See <a href=PIXI/DisplayObject.html#getLocalBounds>getLocalBounds</a> for more
+is a known issue that has not been solved. See <a href=/pixi-api/PIXI/DisplayObject.html#getLocalBounds>getLocalBounds</a> for more
 details.</p>
 <p><code>getBounds</code> should be called with <code>skipUpdate</code> equal to <code>true</code> in a render() call. This is because the transforms
 are guaranteed to be update-to-date. In fact, recalculating inside a render() call may cause corruption in certain
@@ -1605,7 +1610,7 @@ nice performance boost.</p></td>
           rect
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -1634,7 +1639,7 @@ nice performance boost.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+        <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
       </td>
       <td class="member-return__description"><p>The minimum axis-aligned rectangle in world space that fits around this object.</p></td>
     </tr>
@@ -1649,7 +1654,7 @@ nice performance boost.</p></td>
 <div class="member" id="getChildAt">
   <h3 class="member__title">getChildAt</h3>
   
-<pre class="signature__container"><code class="signature">getChildAt(index: number) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getChildAt(index: number) → {<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Returns the child at the specified index</p></div>
@@ -1700,7 +1705,7 @@ nice performance boost.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The child at the given index, if any.</p></td>
     </tr>
@@ -1715,7 +1720,7 @@ nice performance boost.</p></td>
 <div class="member" id="getChildByName">
   <h3 class="member__title">getChildByName</h3>
   
-<pre class="signature__container"><code class="signature">getChildByName(name: string, deep: boolean) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getChildByName(name: string, deep: boolean) → {<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Returns the display object in the container.</p></div>
@@ -1788,7 +1793,7 @@ nice performance boost.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The child with the specified name.</p></td>
     </tr>
@@ -1803,7 +1808,7 @@ nice performance boost.</p></td>
 <div class="member" id="getChildIndex">
   <h3 class="member__title">getChildIndex</h3>
   
-<pre class="signature__container"><code class="signature">getChildIndex(child: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {number}</code></pre>
+<pre class="signature__container"><code class="signature">getChildIndex(child: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {number}</code></pre>
 
 
   <div class="member__brief"><p>Returns the index position of a child DisplayObject instance</p></div>
@@ -1829,7 +1834,7 @@ nice performance boost.</p></td>
           child
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -1869,7 +1874,7 @@ nice performance boost.</p></td>
 <div class="member" id="getGlobalPosition">
   <h3 class="member__title">getGlobalPosition</h3>
   
-<pre class="signature__container"><code class="signature">getGlobalPosition(point: <a href="PIXI/Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getGlobalPosition(point: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"><p>Returns the global position of the displayObject. Does not depend on object scale, rotation and pivot.</p></div>
@@ -1895,7 +1900,7 @@ nice performance boost.</p></td>
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -1944,7 +1949,7 @@ nice performance boost.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Point.html">PIXI.Point</a>
+        <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"><p>The updated point.</p></td>
     </tr>
@@ -1959,7 +1964,7 @@ nice performance boost.</p></td>
 <div class="member" id="getLocalBounds">
   <h3 class="member__title">getLocalBounds</h3>
   
-<pre class="signature__container"><code class="signature">getLocalBounds(rect: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>, skipChildrenUpdate: boolean) → {<a href="PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getLocalBounds(rect: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>, skipChildrenUpdate: boolean) → {<a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>}</code></pre>
 
 
   <div class="member__brief"><p>Retrieves the local bounds of the displayObject as a rectangle object.</p></div>
@@ -1986,7 +1991,7 @@ call, it is advised to call <code>getBounds()</code> immediately after to recalc
           rect
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -2034,7 +2039,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+        <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
       </td>
       <td class="member-return__description"><p>The rectangular bounding area.</p></td>
     </tr>
@@ -2049,7 +2054,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="initialize">
   <h3 class="member__title">initialize</h3>
   
-<pre class="signature__container"><code class="signature">initialize(zIndex: number, textures: <a href="PIXI/Texture.html">PIXI.Texture</a> | Array) → {}</code></pre>
+<pre class="signature__container"><code class="signature">initialize(zIndex: number, textures: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | Array) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -2085,7 +2090,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           textures
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a> | Array
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | Array
         </td>
         
         
@@ -2151,7 +2156,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="removeChild">
   <h3 class="member__title">removeChild</h3>
   
-<pre class="signature__container"><code class="signature">removeChild(children: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">removeChild(children: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Removes one or more children from the container.</p></div>
@@ -2177,7 +2182,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           children
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -2202,7 +2207,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The first child that was removed.</p></td>
     </tr>
@@ -2217,7 +2222,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="removeChildAt">
   <h3 class="member__title">removeChildAt</h3>
   
-<pre class="signature__container"><code class="signature">removeChildAt(index: number) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">removeChildAt(index: number) → {<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Removes a child from the specified index position.</p></div>
@@ -2268,7 +2273,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The child that was removed.</p></td>
     </tr>
@@ -2283,7 +2288,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="removeChildren">
   <h3 class="member__title">removeChildren</h3>
   
-<pre class="signature__container"><code class="signature">removeChildren(beginIndex: number, endIndex: number) → {Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>>}</code></pre>
+<pre class="signature__container"><code class="signature">removeChildren(beginIndex: number, endIndex: number) → {Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>>}</code></pre>
 
 
   <div class="member__brief"><p>Removes all children from this container that are within the begin and end indexes.</p></div>
@@ -2356,7 +2361,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        Array&lt;<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
+        Array&lt;<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>&gt;
       </td>
       <td class="member-return__description"><p>List of removed children</p></td>
     </tr>
@@ -2371,7 +2376,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="render">
   <h3 class="member__title">render</h3>
   
-<pre class="signature__container"><code class="signature">render(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">render(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -2397,7 +2402,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -2417,7 +2422,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="renderCanvas">
   <h3 class="member__title">renderCanvas</h3>
   
-<pre class="signature__container"><code class="signature">renderCanvas(renderer: <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">renderCanvas(renderer: <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -2443,7 +2448,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>
+          <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>
         </td>
         
         
@@ -2529,7 +2534,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="renderWebGL">
   <h3 class="member__title">renderWebGL</h3>
   
-<pre class="signature__container"><code class="signature">renderWebGL(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">renderWebGL(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -2555,7 +2560,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -2595,7 +2600,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="setChildIndex">
   <h3 class="member__title">setChildIndex</h3>
   
-<pre class="signature__container"><code class="signature">setChildIndex(child: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, index: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">setChildIndex(child: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, index: number) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Changes the position of an existing child in the display object container</p></div>
@@ -2621,7 +2626,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           child
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -2671,7 +2676,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="setParent">
   <h3 class="member__title">setParent</h3>
   
-<pre class="signature__container"><code class="signature">setParent(container: <a href="PIXI/Container.html">PIXI.Container</a>) → {<a href="PIXI/Container.html">PIXI.Container</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setParent(container: <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a>) → {<a href="/pixi-api/PIXI/Container.html">PIXI.Container</a>}</code></pre>
 
 
   <div class="member__brief"><p>Set the parent Container of this DisplayObject.</p></div>
@@ -2697,7 +2702,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           container
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Container.html">PIXI.Container</a>
+          <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a>
         </td>
         
         
@@ -2722,7 +2727,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Container.html">PIXI.Container</a>
+        <a href="/pixi-api/PIXI/Container.html">PIXI.Container</a>
       </td>
       <td class="member-return__description"><p>The Container that this DisplayObject was added to.</p></td>
     </tr>
@@ -2737,7 +2742,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="setTransform">
   <h3 class="member__title">setTransform</h3>
   
-<pre class="signature__container"><code class="signature">setTransform(x: number, y: number, scaleX: number, scaleY: number, rotation: number, skewX: number, skewY: number, pivotX: number, pivotY: number) → {<a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setTransform(x: number, y: number, scaleX: number, scaleY: number, rotation: number, skewX: number, skewY: number, pivotX: number, pivotY: number) → {<a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>}</code></pre>
 
 
   <div class="member__brief"><p>Convenience function to set the position, scale, skew and pivot at once.</p></div>
@@ -2922,7 +2927,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+        <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
       </td>
       <td class="member-return__description"><p>The DisplayObject instance</p></td>
     </tr>
@@ -2973,7 +2978,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="swapChildren">
   <h3 class="member__title">swapChildren</h3>
   
-<pre class="signature__container"><code class="signature">swapChildren(child: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, child2: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">swapChildren(child: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, child2: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Swaps the position of 2 Display Objects within this container.</p></div>
@@ -2999,7 +3004,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           child
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -3009,7 +3014,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           child2
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -3151,7 +3156,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="toGlobal">
   <h3 class="member__title">toGlobal</h3>
   
-<pre class="signature__container"><code class="signature">toGlobal(position: <a href="PIXI/IPointData.html">PIXI.IPointData</a>, point: <a href="PIXI/Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">toGlobal(position: <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>, point: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"><p>Calculates the global position of the display object.</p></div>
@@ -3177,7 +3182,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           position
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
+          <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -3193,7 +3198,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -3241,7 +3246,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Point.html">PIXI.Point</a>
+        <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"><p>A point object representing the position of this object.</p></td>
     </tr>
@@ -3256,7 +3261,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="toLocal">
   <h3 class="member__title">toLocal</h3>
   
-<pre class="signature__container"><code class="signature">toLocal(position: <a href="PIXI/IPointData.html">PIXI.IPointData</a>, from: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, point: <a href="PIXI/Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="PIXI/Point.html">PIXI.Point</a>}</code></pre>
+<pre class="signature__container"><code class="signature">toLocal(position: <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>, from: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, point: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>, skipUpdate: boolean) → {<a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>}</code></pre>
 
 
   <div class="member__brief"><p>Calculates the local position of the display object relative to another point.</p></div>
@@ -3282,7 +3287,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           position
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/IPointData.html">PIXI.IPointData</a>
+          <a href="/pixi-api/PIXI/IPointData.html">PIXI.IPointData</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -3298,7 +3303,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           from
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -3314,7 +3319,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           point
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -3362,7 +3367,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Point.html">PIXI.Point</a>
+        <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
       </td>
       <td class="member-return__description"><p>A point object representing the position of this object</p></td>
     </tr>
@@ -3420,7 +3425,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="_render">
   <h3 class="member__title">_render</h3>
   
-<pre class="signature__container"><code class="signature">protected _render(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected _render(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>To be overridden by the subclasses.</p></div>
@@ -3446,7 +3451,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -3486,7 +3491,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="_renderCanvas">
   <h3 class="member__title">_renderCanvas</h3>
   
-<pre class="signature__container"><code class="signature">protected _renderCanvas(renderer: <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected _renderCanvas(renderer: <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -3512,7 +3517,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>
+          <a href="/pixi-api/PIXI/CanvasRenderer.html">PIXI.CanvasRenderer</a>
         </td>
         
         
@@ -3618,7 +3623,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
 <div class="member" id="renderAdvanced">
   <h3 class="member__title">renderAdvanced</h3>
   
-<pre class="signature__container"><code class="signature">protected renderAdvanced(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">protected renderAdvanced(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Render the object using the WebGL renderer and advanced features.</p></div>
@@ -3644,7 +3649,7 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -3692,97 +3697,97 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_accessibleActive">_accessibleActive</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_accessibleActive">_accessibleActive</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_accessibleDiv">_accessibleDiv</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_accessibleDiv">_accessibleDiv</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_bounds">_bounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_bounds">_bounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_localBounds">_localBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_localBounds">_localBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#accessible">accessible</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#accessible">accessible</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#accessibleChildren">accessibleChildren</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#accessibleChildren">accessibleChildren</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#accessibleHint">accessibleHint</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#accessibleHint">accessibleHint</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#accessiblePointerEvents">accessiblePointerEvents</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#accessiblePointerEvents">accessiblePointerEvents</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#accessibleTitle">accessibleTitle</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#accessibleTitle">accessibleTitle</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#accessibleType">accessibleType</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#accessibleType">accessibleType</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#alpha">alpha</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#alpha">alpha</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#angle">angle</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#angle">angle</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#buttonMode">buttonMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#buttonMode">buttonMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#cacheAsBitmap">cacheAsBitmap</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#cacheAsBitmap">cacheAsBitmap</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#children">children</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#children">children</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#cursor">cursor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#cursor">cursor</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#filterArea">filterArea</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#filterArea">filterArea</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#filters">filters</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#filters">filters</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#hitArea">hitArea</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#hitArea">hitArea</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#interactive">interactive</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#interactive">interactive</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#interactiveChildren">interactiveChildren</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#interactiveChildren">interactiveChildren</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#isMask">isMask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#isMask">isMask</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#isSprite">isSprite</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#isSprite">isSprite</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#localTransform">localTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#localTransform">localTransform</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#mask">mask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#mask">mask</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#name">name</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#name">name</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#parent">parent</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#parent">parent</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#pivot">pivot</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#pivot">pivot</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#position">position</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#position">position</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#renderable">renderable</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#renderable">renderable</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#rotation">rotation</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#rotation">rotation</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#scale">scale</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#scale">scale</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#skew">skew</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#skew">skew</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#smartMask">smartMask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#smartMask">smartMask</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#sortableChildren">sortableChildren</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#sortableChildren">sortableChildren</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#sortDirty">sortDirty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#sortDirty">sortDirty</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#transform">transform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#transform">transform</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#visible">visible</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#visible">visible</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#width">width</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#worldAlpha">worldAlpha</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#worldAlpha">worldAlpha</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#worldTransform">worldTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#worldTransform">worldTransform</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#worldVisible">worldVisible</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#worldVisible">worldVisible</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#x">x</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#x">x</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#y">y</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#y">y</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#zIndex">zIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#zIndex">zIndex</a></li>
     
   </ul>
 </div>
@@ -3793,23 +3798,23 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_boundsID">_boundsID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_boundsID">_boundsID</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_boundsRect">_boundsRect</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_boundsRect">_boundsRect</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_destroyed">_destroyed</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_destroyed">_destroyed</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_enabledFilters">_enabledFilters</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_enabledFilters">_enabledFilters</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_lastSortedIndex">_lastSortedIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_lastSortedIndex">_lastSortedIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_localBoundsRect">_localBoundsRect</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_localBoundsRect">_localBoundsRect</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_mask">_mask</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_mask">_mask</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_tempDisplayObjectParent">_tempDisplayObjectParent</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_tempDisplayObjectParent">_tempDisplayObjectParent</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_zIndex">_zIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_zIndex">_zIndex</a></li>
     
   </ul>
 </div>
@@ -3820,77 +3825,77 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_calculateBounds">_calculateBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_calculateBounds">_calculateBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_recursivePostUpdateTransform">_recursivePostUpdateTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_recursivePostUpdateTransform">_recursivePostUpdateTransform</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#addChild">addChild</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#addChild">addChild</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#addChildAt">addChildAt</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#addChildAt">addChildAt</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#addFrame">addFrame</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#addFrame">addFrame</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#calculateBounds">calculateBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#calculateBounds">calculateBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#containerUpdateTransform">containerUpdateTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#containerUpdateTransform">containerUpdateTransform</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#disableTempParent">disableTempParent</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#disableTempParent">disableTempParent</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#displayObjectUpdateTransform">displayObjectUpdateTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#displayObjectUpdateTransform">displayObjectUpdateTransform</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#enableTempParent">enableTempParent</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#enableTempParent">enableTempParent</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#getBounds">getBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#getBounds">getBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#getChildAt">getChildAt</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#getChildAt">getChildAt</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#getChildByName">getChildByName</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#getChildByName">getChildByName</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#getChildIndex">getChildIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#getChildIndex">getChildIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#getGlobalPosition">getGlobalPosition</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#getGlobalPosition">getGlobalPosition</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#getLocalBounds">getLocalBounds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#getLocalBounds">getLocalBounds</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#initialize">initialize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#initialize">initialize</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#isModified">isModified</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#isModified">isModified</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#removeChild">removeChild</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#removeChild">removeChild</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#removeChildAt">removeChildAt</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#removeChildAt">removeChildAt</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#removeChildren">removeChildren</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#removeChildren">removeChildren</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#render">render</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#render">render</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#renderCanvas">renderCanvas</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#renderCanvas">renderCanvas</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#renderCanvasCore">renderCanvasCore</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#renderCanvasCore">renderCanvasCore</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#renderWebGL">renderWebGL</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#renderWebGL">renderWebGL</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#setChildIndex">setChildIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#setChildIndex">setChildIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#setParent">setParent</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#setParent">setParent</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#setTransform">setTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#setTransform">setTransform</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#sortChildren">sortChildren</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#sortChildren">sortChildren</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#swapChildren">swapChildren</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#swapChildren">swapChildren</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#tileAnimY">tileAnimY</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#tileAnimY">tileAnimY</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#tileRotate">tileRotate</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#tileRotate">tileRotate</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#toGlobal">toGlobal</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#toGlobal">toGlobal</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#toLocal">toLocal</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#toLocal">toLocal</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#updateTransform">updateTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#updateTransform">updateTransform</a></li>
     
   </ul>
 </div>
@@ -3901,13 +3906,13 @@ it was default behaviour of pixi 4.0-5.2 and caused many problems to users.</p><
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_render">_render</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_render">_render</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#_renderCanvas">_renderCanvas</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#_renderCanvas">_renderCanvas</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#onChildrenChange">onChildrenChange</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#onChildrenChange">onChildrenChange</a></li>
     
-      <li class="page-members-explorer__item"><a href="RectTileLayer.html#renderAdvanced">renderAdvanced</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/RectTileLayer.html#renderAdvanced">renderAdvanced</a></li>
     
   </ul>
 </div>

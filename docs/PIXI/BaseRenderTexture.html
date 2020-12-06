@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: BaseRenderTexture</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.BaseRenderTexture</h1>
     
-<pre class="signature__container"><code class="signature">class BaseRenderTexture extends <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">class BaseRenderTexture extends <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a></code></pre>
 
 
     <div class="document__brief"><p>A BaseRenderTexture is a special texture that allows any PixiJS display object to be rendered to it.</p></div>
@@ -141,7 +146,7 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
           options.scaleMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
+          <a href="/pixi-api/PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -151,7 +156,7 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
         <td class="member-parameter__default">
           
         </td>
-        <td class="member-parameter__description"><p>See <a href=PIXI/SCALE_MODES.html>PIXI.SCALE_MODES</a> for possible values.</p></td>
+        <td class="member-parameter__description"><p>See <a href=/pixi-api/PIXI/SCALE_MODES.html>PIXI.SCALE_MODES</a> for possible values.</p></td>
       </tr><tr class="member-parameter">
         <td class="member-parameter__name">
           options.resolution
@@ -240,10 +245,10 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 <div class="member" id="alphaMode">
   <h3 class="member__title">alphaMode</h3>
   
-<pre class="signature__container"><code class="signature">alphaMode: <a href="PIXI/ALPHA_MODES.html">PIXI.ALPHA_MODES</a></code></pre>
+<pre class="signature__container"><code class="signature">alphaMode: <a href="/pixi-api/PIXI/ALPHA_MODES.html">PIXI.ALPHA_MODES</a></code></pre>
 
 
-  <div class="member__brief"><p>How to treat premultiplied alpha, see <a href=PIXI/ALPHA_MODES.html>PIXI.ALPHA_MODES</a>.</p></div>
+  <div class="member__brief"><p>How to treat premultiplied alpha, see <a href=/pixi-api/PIXI/ALPHA_MODES.html>PIXI.ALPHA_MODES</a>.</p></div>
   <div class="member__description"></div>
 
   
@@ -337,7 +342,7 @@ Please call <code>update()</code> to increment it.</p></div>
 <div class="member" id="format">
   <h3 class="member__title">format</h3>
   
-<pre class="signature__container"><code class="signature">format: <a href="PIXI/FORMATS.html">PIXI.FORMATS</a></code></pre>
+<pre class="signature__container"><code class="signature">format: <a href="/pixi-api/PIXI/FORMATS.html">PIXI.FORMATS</a></code></pre>
 
 
   <div class="member__brief"><p>The pixel format of the texture</p></div>
@@ -418,7 +423,7 @@ as you can</p></div>
 <div class="member" id="maskStack">
   <h3 class="member__title">maskStack</h3>
   
-<pre class="signature__container"><code class="signature">maskStack: Array&lt;<a href=PIXI/MaskData.html>PIXI.MaskData</a>></code></pre>
+<pre class="signature__container"><code class="signature">maskStack: Array&lt;<a href=/pixi-api/PIXI/MaskData.html>PIXI.MaskData</a>></code></pre>
 
 
   <div class="member__brief"><p>The data structure for the stencil masks.</p></div>
@@ -434,7 +439,7 @@ as you can</p></div>
 <div class="member" id="mipmap">
   <h3 class="member__title">mipmap</h3>
   
-<pre class="signature__container"><code class="signature">mipmap: <a href=PIXI/MIPMAP_MODES.html>PIXI.MIPMAP_MODES</a></code></pre>
+<pre class="signature__container"><code class="signature">mipmap: <a href=/pixi-api/PIXI/MIPMAP_MODES.html>PIXI.MIPMAP_MODES</a></code></pre>
 
 
   <div class="member__brief"><p>Mipmap mode of the texture, affects downscaled images</p></div>
@@ -450,7 +455,7 @@ as you can</p></div>
 <div class="member" id="parentTextureArray">
   <h3 class="member__title">parentTextureArray</h3>
   
-<pre class="signature__container"><code class="signature">parentTextureArray: <a href=PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
+<pre class="signature__container"><code class="signature">parentTextureArray: <a href=/pixi-api/PIXI/BaseTexture.html>PIXI.BaseTexture</a></code></pre>
 
 
   <div class="member__brief"><p>Whether its a part of another texture, handled by ArrayResource or CubeResource</p></div>
@@ -530,7 +535,7 @@ as you can</p></div>
 <div class="member" id="resource">
   <h3 class="member__title">resource</h3>
   
-<pre class="signature__container"><code class="signature">resource: <a href=PIXI/Resource.html>PIXI.Resource</a></code></pre>
+<pre class="signature__container"><code class="signature">resource: <a href=/pixi-api/PIXI/Resource.html>PIXI.Resource</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -548,7 +553,7 @@ resources.</p></div>
 <div class="member" id="scaleMode">
   <h3 class="member__title">scaleMode</h3>
   
-<pre class="signature__container"><code class="signature">scaleMode: <a href=PIXI/SCALE_MODES.html>PIXI.SCALE_MODES</a></code></pre>
+<pre class="signature__container"><code class="signature">scaleMode: <a href=/pixi-api/PIXI/SCALE_MODES.html>PIXI.SCALE_MODES</a></code></pre>
 
 
   <div class="member__brief"><p>The scale mode to apply when scaling this texture</p></div>
@@ -580,7 +585,7 @@ resources.</p></div>
 <div class="member" id="target">
   <h3 class="member__title">target</h3>
   
-<pre class="signature__container"><code class="signature">target: <a href="PIXI/TARGETS.html">PIXI.TARGETS</a></code></pre>
+<pre class="signature__container"><code class="signature">target: <a href="/pixi-api/PIXI/TARGETS.html">PIXI.TARGETS</a></code></pre>
 
 
   <div class="member__brief"><p>The target type</p></div>
@@ -613,7 +618,7 @@ can have more than one ID, short name and longer full URL</p></div>
 <div class="member" id="type">
   <h3 class="member__title">type</h3>
   
-<pre class="signature__container"><code class="signature">type: <a href=PIXI/TYPES.html>PIXI.TYPES</a></code></pre>
+<pre class="signature__container"><code class="signature">type: <a href=/pixi-api/PIXI/TYPES.html>PIXI.TYPES</a></code></pre>
 
 
   <div class="member__brief"><p>The type of resource data</p></div>
@@ -684,7 +689,7 @@ can have more than one ID, short name and longer full URL</p></div>
 <div class="member" id="_canvasRenderTarget">
   <h3 class="member__title">_canvasRenderTarget</h3>
   
-<pre class="signature__container"><code class="signature">protected _canvasRenderTarget: <a href=PIXI/utils/CanvasRenderTarget.html>PIXI.utils.CanvasRenderTarget</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _canvasRenderTarget: <a href=/pixi-api/PIXI/utils/CanvasRenderTarget.html>PIXI.utils.CanvasRenderTarget</a></code></pre>
 
 
   <div class="member__brief"><p>A reference to the canvas render target (we only need one as this can be shared across renderers)</p></div>
@@ -755,7 +760,7 @@ can have more than one ID, short name and longer full URL</p></div>
 <div class="member" id="castToBaseTexture">
   <h3 class="member__title">castToBaseTexture</h3>
   
-<pre class="signature__container"><code class="signature">castToBaseTexture() → {<a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">castToBaseTexture() → {<a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Utility function for BaseTexture|Texture cast</p></div>
@@ -776,7 +781,7 @@ can have more than one ID, short name and longer full URL</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+        <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -865,7 +870,7 @@ memory again.</p></div>
 <div class="member" id="getDrawableSource">
   <h3 class="member__title">getDrawableSource</h3>
   
-<pre class="signature__container"><code class="signature">getDrawableSource() → {<a href="PIXI/ICanvasImageSource.html">PIXI.ICanvasImageSource</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getDrawableSource() → {<a href="/pixi-api/PIXI/ICanvasImageSource.html">PIXI.ICanvasImageSource</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -887,7 +892,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/ICanvasImageSource.html">PIXI.ICanvasImageSource</a>
+        <a href="/pixi-api/PIXI/ICanvasImageSource.html">PIXI.ICanvasImageSource</a>
       </td>
       <td class="member-return__description"><p>Source to render with CanvasRenderer</p></td>
     </tr>
@@ -1044,7 +1049,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 <div class="member" id="setRealSize">
   <h3 class="member__title">setRealSize</h3>
   
-<pre class="signature__container"><code class="signature">setRealSize(realWidth: number, realHeight: number, resolution: number) → {<a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setRealSize(realWidth: number, realHeight: number, resolution: number) → {<a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Sets real size of baseTexture, preserves current resolution.</p></div>
@@ -1127,7 +1132,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+        <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1142,7 +1147,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 <div class="member" id="setResolution">
   <h3 class="member__title">setResolution</h3>
   
-<pre class="signature__container"><code class="signature">setResolution(resolution: number) → {<a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setResolution(resolution: number) → {<a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Changes resolution</p></div>
@@ -1193,7 +1198,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+        <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1208,7 +1213,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 <div class="member" id="setResource">
   <h3 class="member__title">setResource</h3>
   
-<pre class="signature__container"><code class="signature">setResource(resource: <a href="PIXI/Resource.html">PIXI.Resource</a>) → {<a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setResource(resource: <a href="/pixi-api/PIXI/Resource.html">PIXI.Resource</a>) → {<a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Sets the resource if it wasn't set. Throws error if resource already present</p></div>
@@ -1234,7 +1239,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
           resource
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Resource.html">PIXI.Resource</a>
+          <a href="/pixi-api/PIXI/Resource.html">PIXI.Resource</a>
         </td>
         
         
@@ -1259,7 +1264,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+        <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1274,7 +1279,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 <div class="member" id="setSize">
   <h3 class="member__title">setSize</h3>
   
-<pre class="signature__container"><code class="signature">setSize(width: number, height: number, resolution: number) → {<a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setSize(width: number, height: number, resolution: number) → {<a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Changes w/h/resolution. Texture becomes valid if width and height are greater than zero.</p></div>
@@ -1357,7 +1362,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+        <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1372,7 +1377,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
 <div class="member" id="setStyle">
   <h3 class="member__title">setStyle</h3>
   
-<pre class="signature__container"><code class="signature">setStyle(scaleMode: <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>, mipmap: <a href="PIXI/MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a>) → {<a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">setStyle(scaleMode: <a href="/pixi-api/PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>, mipmap: <a href="/pixi-api/PIXI/MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a>) → {<a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>}</code></pre>
 
 
   <div class="member__brief"><p>Changes style options of BaseTexture</p></div>
@@ -1398,7 +1403,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
           scaleMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
+          <a href="/pixi-api/PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -1412,7 +1417,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
           mipmap
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a>
+          <a href="/pixi-api/PIXI/MIPMAP_MODES.html">PIXI.MIPMAP_MODES</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -1441,7 +1446,7 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+        <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
       </td>
       <td class="member-return__description"><p>this</p></td>
     </tr>
@@ -1501,65 +1506,65 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#_batchEnabled">_batchEnabled</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#_batchEnabled">_batchEnabled</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#_batchLocation">_batchLocation</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#_batchLocation">_batchLocation</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#_id">_id</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#_id">_id</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#alphaMode">alphaMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#alphaMode">alphaMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#anisotropicLevel">anisotropicLevel</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#anisotropicLevel">anisotropicLevel</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#cacheId">cacheId</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#cacheId">cacheId</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#destroyed">destroyed</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#destroyed">destroyed</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#dirtyId">dirtyId</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#dirtyId">dirtyId</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#filterStack">filterStack</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#filterStack">filterStack</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#format">format</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#format">format</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#hasLoaded">hasLoaded</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#hasLoaded">hasLoaded</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#imageUrl">imageUrl</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#imageUrl">imageUrl</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#isPowerOfTwo">isPowerOfTwo</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#isPowerOfTwo">isPowerOfTwo</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#maskStack">maskStack</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#maskStack">maskStack</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#mipmap">mipmap</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#mipmap">mipmap</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#parentTextureArray">parentTextureArray</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#parentTextureArray">parentTextureArray</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#premultiplyAlpha">premultiplyAlpha</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#premultiplyAlpha">premultiplyAlpha</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#realHeight">realHeight</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#realHeight">realHeight</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#realWidth">realWidth</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#realWidth">realWidth</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#resource">resource</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#resource">resource</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#scaleMode">scaleMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#scaleMode">scaleMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#source">source</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#source">source</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#target">target</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#target">target</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#textureCacheIds">textureCacheIds</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#textureCacheIds">textureCacheIds</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#type">type</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#type">type</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#valid">valid</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#valid">valid</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#width">width</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#wrapMode">wrapMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#wrapMode">wrapMode</a></li>
     
   </ul>
 </div>
@@ -1570,13 +1575,13 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#_canvasRenderTarget">_canvasRenderTarget</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#_canvasRenderTarget">_canvasRenderTarget</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#dirtyStyleId">dirtyStyleId</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#dirtyStyleId">dirtyStyleId</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#touched">touched</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#touched">touched</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#uid">uid</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#uid">uid</a></li>
     
   </ul>
 </div>
@@ -1587,29 +1592,29 @@ for rendering with CanvasRenderer. Provided by <strong>@pixi/canvas-renderer</st
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#castToBaseTexture">castToBaseTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#castToBaseTexture">castToBaseTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#dispose">dispose</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#dispose">dispose</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#getDrawableSource">getDrawableSource</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#getDrawableSource">getDrawableSource</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#loadSource">loadSource</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#loadSource">loadSource</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#resize">resize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#resize">resize</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#setRealSize">setRealSize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#setRealSize">setRealSize</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#setResolution">setResolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#setResolution">setResolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#setResource">setResource</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#setResource">setResource</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#setSize">setSize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#setSize">setSize</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#setStyle">setStyle</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#setStyle">setStyle</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BaseRenderTexture.html#update">update</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BaseRenderTexture.html#update">update</a></li>
     
   </ul>
 </div>

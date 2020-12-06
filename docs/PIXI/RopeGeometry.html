@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: RopeGeometry</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/mesh-extras</div>
     <h1 class="document__title">PIXI.RopeGeometry</h1>
     
-<pre class="signature__container"><code class="signature">class RopeGeometry extends <a href="PIXI/MeshGeometry.html">PIXI.MeshGeometry</a></code></pre>
+<pre class="signature__container"><code class="signature">class RopeGeometry extends <a href="/pixi-api/PIXI/MeshGeometry.html">PIXI.MeshGeometry</a></code></pre>
 
 
     <div class="document__brief"><p>RopeGeometry allows you to draw a geometry across several points and then manipulate these points.</p></div>
@@ -46,7 +51,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.RopeGeometry(width: number, points: Array&lt;<a href="PIXI/Point.html">PIXI.Point</a>>, textureScale: number) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.RopeGeometry(width: number, points: Array&lt;<a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>>, textureScale: number) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -88,7 +93,7 @@
           points
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/Point.html">PIXI.Point</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>&gt;
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -98,7 +103,7 @@
         <td class="member-parameter__default">
           
         </td>
-        <td class="member-parameter__description"><p>An array of <a href=PIXI/Point.html>PIXI.Point</a> objects to construct this rope.</p></td>
+        <td class="member-parameter__description"><p>An array of <a href=/pixi-api/PIXI/Point.html>PIXI.Point</a> objects to construct this rope.</p></td>
       </tr><tr class="member-parameter">
         <td class="member-parameter__name">
           textureScale
@@ -117,7 +122,7 @@
         <td class="member-parameter__description"><p>By default the rope texture will be stretched to match
 rope length. If textureScale is positive this value will be treated as a scaling
 factor and the texture will preserve its aspect ratio instead. To create a tiling rope
-set baseTexture.wrapMode to <a href="PIXI/WRAP_MODES.html#REPEAT">PIXI.WRAP_MODES.REPEAT</a> and use a power of two texture,
+set baseTexture.wrapMode to <a href="/pixi-api/PIXI/WRAP_MODES.html#REPEAT">PIXI.WRAP_MODES.REPEAT</a> and use a power of two texture,
 then set textureScale=1 to keep the original texture pixel size.
 In order to reduce alpha channel artifacts provide a larger texture and downsample -
 i.e. set textureScale=0.5 to scale it down twice.</p></td>
@@ -177,7 +182,7 @@ i.e. set textureScale=0.5 to scale it down twice.</p></td>
 <div class="member" id="points">
   <h3 class="member__title">points</h3>
   
-<pre class="signature__container"><code class="signature">points: Array&lt;<a href=PIXI/Point.html>PIXI.Point</a>></code></pre>
+<pre class="signature__container"><code class="signature">points: Array&lt;<a href=/pixi-api/PIXI/Point.html>PIXI.Point</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -271,7 +276,7 @@ i.e. set textureScale=0.5 to scale it down twice.</p></td>
 <div class="member" id="addAttribute">
   <h3 class="member__title">addAttribute</h3>
   
-<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addAttribute(id: String, buffer: <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>, size: Number, normalized: Boolean, type: Number, stride: Number, start: Number, instance: boolean) → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -314,7 +319,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
           buffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+          <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
         </td>
         <td class="member-parameter__attributes">
           
@@ -441,7 +446,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -456,7 +461,7 @@ Note: <code>stride</code> and <code>start</code> should be <code>undefined</code
 <div class="member" id="addIndex">
   <h3 class="member__title">addIndex</h3>
   
-<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>) → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">addIndex(buffer: <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array>) → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -483,7 +488,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
           buffer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
+          <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a> | number&lt;Array&gt;
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -512,7 +517,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -527,7 +532,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="clone">
   <h3 class="member__title">clone</h3>
   
-<pre class="signature__container"><code class="signature">clone() → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clone() → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns a clone of the geometry</p></div>
@@ -548,7 +553,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>a new clone of this geometry</p></td>
     </tr>
@@ -635,7 +640,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="getAttribute">
   <h3 class="member__title">getAttribute</h3>
   
-<pre class="signature__container"><code class="signature">getAttribute(id: String) → {<a href="PIXI/Attribute.html">PIXI.Attribute</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getAttribute(id: String) → {<a href="/pixi-api/PIXI/Attribute.html">PIXI.Attribute</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns the requested attribute</p></div>
@@ -686,7 +691,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Attribute.html">PIXI.Attribute</a>
+        <a href="/pixi-api/PIXI/Attribute.html">PIXI.Attribute</a>
       </td>
       <td class="member-return__description"><p>the attribute requested.</p></td>
     </tr>
@@ -701,7 +706,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="getBuffer">
   <h3 class="member__title">getBuffer</h3>
   
-<pre class="signature__container"><code class="signature">getBuffer(id: String) → {<a href="PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getBuffer(id: String) → {<a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns the requested buffer</p></div>
@@ -752,7 +757,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Buffer.html">PIXI.Buffer</a>
+        <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the buffer requested.</p></td>
     </tr>
@@ -767,7 +772,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="getIndex">
   <h3 class="member__title">getIndex</h3>
   
-<pre class="signature__container"><code class="signature">getIndex() → {<a href="PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
+<pre class="signature__container"><code class="signature">getIndex() → {<a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>}</code></pre>
 
 
   <div class="member__brief"><p>returns the index buffer</p></div>
@@ -788,7 +793,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Buffer.html">PIXI.Buffer</a>
+        <a href="/pixi-api/PIXI/Buffer.html">PIXI.Buffer</a>
       </td>
       <td class="member-return__description"><p>the index buffer.</p></td>
     </tr>
@@ -803,7 +808,7 @@ The index buffer contains integers, three for each triangle in the geometry, whi
 <div class="member" id="interleave">
   <h3 class="member__title">interleave</h3>
   
-<pre class="signature__container"><code class="signature">interleave() → {<a href="PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
+<pre class="signature__container"><code class="signature">interleave() → {<a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -825,7 +830,7 @@ This can be useful if your model remains static as it offers a little performanc
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/Geometry.html">PIXI.Geometry</a>
+        <a href="/pixi-api/PIXI/Geometry.html">PIXI.Geometry</a>
       </td>
       <td class="member-return__description"><p>returns self, useful for chaining.</p></td>
     </tr>
@@ -885,17 +890,17 @@ This can be useful if your model remains static as it offers a little performanc
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#_width">_width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#_width">_width</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#instanceCount">instanceCount</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#instanceCount">instanceCount</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#points">points</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#points">points</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#refCount">refCount</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#refCount">refCount</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#textureScale">textureScale</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#textureScale">textureScale</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#width">width</a></li>
     
   </ul>
 </div>
@@ -906,7 +911,7 @@ This can be useful if your model remains static as it offers a little performanc
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#glVertexArrayObjects">glVertexArrayObjects</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#glVertexArrayObjects">glVertexArrayObjects</a></li>
     
   </ul>
 </div>
@@ -917,25 +922,25 @@ This can be useful if your model remains static as it offers a little performanc
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#addAttribute">addAttribute</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#addAttribute">addAttribute</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#addIndex">addIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#addIndex">addIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#clone">clone</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#clone">clone</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#dispose">dispose</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#dispose">dispose</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#getAttribute">getAttribute</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#getAttribute">getAttribute</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#getBuffer">getBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#getBuffer">getBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#getIndex">getIndex</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#getIndex">getIndex</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#interleave">interleave</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#interleave">interleave</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/RopeGeometry.html#updateVertices">updateVertices</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/RopeGeometry.html#updateVertices">updateVertices</a></li>
     
   </ul>
 </div>

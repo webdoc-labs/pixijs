@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: AggregateUniformsBatchFactory</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">pixi-batch-renderer</div>
     <h1 class="document__title">PIXI.brend.AggregateUniformsBatchFactory</h1>
     
-<pre class="signature__container"><code class="signature">class AggregateUniformsBatchFactory extends <a href="PIXI/brend/StdBatchFactory.html">PIXI.brend.StdBatchFactory</a></code></pre>
+<pre class="signature__container"><code class="signature">class AggregateUniformsBatchFactory extends <a href="/pixi-api/PIXI/brend/StdBatchFactory.html">PIXI.brend.StdBatchFactory</a></code></pre>
 
 
     <div class="document__brief"></div>
@@ -181,7 +186,7 @@
 <div class="member" id="_renderer">
   <h3 class="member__title">_renderer</h3>
   
-<pre class="signature__container"><code class="signature">protected _renderer: <a href=PIXI/brend/BatchRenderer.html>PIXI.brend.BatchRenderer</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _renderer: <a href=/pixi-api/PIXI/brend/BatchRenderer.html>PIXI.brend.BatchRenderer</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -650,7 +655,7 @@ so that a new batch can be started again.</p></div>
 <div class="member" id="put">
   <h3 class="member__title">put</h3>
   
-<pre class="signature__container"><code class="signature">put(targetObject: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, state: <a href="PIXI/State.html">PIXI.State</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">put(targetObject: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, state: <a href="/pixi-api/PIXI/State.html">PIXI.State</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Puts the display-object into the current batch, if possible.</p></div>
@@ -676,7 +681,7 @@ so that a new batch can be started again.</p></div>
           targetObject
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -686,7 +691,7 @@ so that a new batch can be started again.</p></div>
           state
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/State.html">PIXI.State</a>
+          <a href="/pixi-api/PIXI/State.html">PIXI.State</a>
         </td>
         
         
@@ -910,7 +915,7 @@ so that a new batch can be started again.</p></div>
 <div class="member" id="_put">
   <h3 class="member__title">_put</h3>
   
-<pre class="signature__container"><code class="signature">protected _put(displayObject: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">protected _put(displayObject: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Stores uniforms in the current batch, if possible.</p></div>
@@ -947,7 +952,7 @@ false:</p>
           displayObject
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         
         
@@ -997,17 +1002,17 @@ false:</p>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_batchBuffer">_batchBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_batchBuffer">_batchBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_textureBuffer">_textureBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_textureBuffer">_textureBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_textureCount">_textureCount</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_textureCount">_textureCount</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_textureLimit">_textureLimit</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_textureLimit">_textureLimit</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_textureProperty">_textureProperty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_textureProperty">_textureProperty</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#MAX_UNIFORMS">MAX_UNIFORMS</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#MAX_UNIFORMS">MAX_UNIFORMS</a></li>
     
   </ul>
 </div>
@@ -1018,11 +1023,11 @@ false:</p>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_batchCount">_batchCount</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_batchCount">_batchCount</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_batchPool">_batchPool</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_batchPool">_batchPool</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_renderer">_renderer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_renderer">_renderer</a></li>
     
   </ul>
 </div>
@@ -1033,29 +1038,29 @@ false:</p>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_createUniformBuffer">_createUniformBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_createUniformBuffer">_createUniformBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_matchUniforms">_matchUniforms</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_matchUniforms">_matchUniforms</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_newBatch">_newBatch</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_newBatch">_newBatch</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_nextBatch">_nextBatch</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_nextBatch">_nextBatch</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_putAllTextures">_putAllTextures</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_putAllTextures">_putAllTextures</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_resetUniformBuffer">_resetUniformBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_resetUniformBuffer">_resetUniformBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#access">access</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#access">access</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#build">build</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#build">build</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#put">put</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#put">put</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#ready">ready</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#ready">ready</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#reset">reset</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#reset">reset</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#size">size</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#size">size</a></li>
     
   </ul>
 </div>
@@ -1066,9 +1071,9 @@ false:</p>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_buildBatch">_buildBatch</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_buildBatch">_buildBatch</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/brend/AggregateUniformsBatchFactory.html#_put">_put</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/brend/AggregateUniformsBatchFactory.html#_put">_put</a></li>
     
   </ul>
 </div>

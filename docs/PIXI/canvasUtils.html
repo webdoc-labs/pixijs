@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: canvasUtils</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -116,7 +121,7 @@ so be aware of the performance implications.</p></div>
 <div class="member" id="getTintedCanvas">
   <h3 class="member__title">getTintedCanvas</h3>
   
-<pre class="signature__container"><code class="signature">static getTintedCanvas(sprite: <a href="PIXI/Sprite.html">PIXI.Sprite</a>, color: number) → {HTMLCanvasElement}</code></pre>
+<pre class="signature__container"><code class="signature">static getTintedCanvas(sprite: <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a>, color: number) → {HTMLCanvasElement}</code></pre>
 
 
   <div class="member__brief"><p>Basically this method just needs a sprite and a color and tints the sprite with the given color.</p></div>
@@ -142,7 +147,7 @@ so be aware of the performance implications.</p></div>
           sprite
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Sprite.html">PIXI.Sprite</a>
+          <a href="/pixi-api/PIXI/Sprite.html">PIXI.Sprite</a>
         </td>
         
         
@@ -192,7 +197,7 @@ so be aware of the performance implications.</p></div>
 <div class="member" id="getTintedPattern">
   <h3 class="member__title">getTintedPattern</h3>
   
-<pre class="signature__container"><code class="signature">static getTintedPattern(texture: <a href="PIXI/Texture.html">PIXI.Texture</a>, color: number) → {HTMLCanvasElement}</code></pre>
+<pre class="signature__container"><code class="signature">static getTintedPattern(texture: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>, color: number) → {HTMLCanvasElement}</code></pre>
 
 
   <div class="member__brief"><p>Basically this method just needs a sprite and a color and tints the sprite with the given color.</p></div>
@@ -218,7 +223,7 @@ so be aware of the performance implications.</p></div>
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a>
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
         </td>
         
         
@@ -334,7 +339,7 @@ so be aware of the performance implications.</p></div>
 <div class="member" id="tintWithMultiply">
   <h3 class="member__title">tintWithMultiply</h3>
   
-<pre class="signature__container"><code class="signature">static tintWithMultiply(texture: <a href="PIXI/Texture.html">PIXI.Texture</a>, color: number, canvas: HTMLCanvasElement) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">static tintWithMultiply(texture: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>, color: number, canvas: HTMLCanvasElement) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Tint a texture using the 'multiply' operation.</p></div>
@@ -360,7 +365,7 @@ so be aware of the performance implications.</p></div>
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a>
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
         </td>
         
         
@@ -420,7 +425,7 @@ so be aware of the performance implications.</p></div>
 <div class="member" id="tintWithOverlay">
   <h3 class="member__title">tintWithOverlay</h3>
   
-<pre class="signature__container"><code class="signature">static tintWithOverlay(texture: <a href="PIXI/Texture.html">PIXI.Texture</a>, color: number, canvas: HTMLCanvasElement) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">static tintWithOverlay(texture: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>, color: number, canvas: HTMLCanvasElement) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Tint a texture using the 'overlay' operation.</p></div>
@@ -446,7 +451,7 @@ so be aware of the performance implications.</p></div>
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a>
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
         </td>
         
         
@@ -506,7 +511,7 @@ so be aware of the performance implications.</p></div>
 <div class="member" id="tintWithPerPixel">
   <h3 class="member__title">tintWithPerPixel</h3>
   
-<pre class="signature__container"><code class="signature">static tintWithPerPixel(texture: <a href="PIXI/Texture.html">PIXI.Texture</a>, color: number, canvas: HTMLCanvasElement) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">static tintWithPerPixel(texture: <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>, color: number, canvas: HTMLCanvasElement) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Tint a texture pixel per pixel.</p></div>
@@ -532,7 +537,7 @@ so be aware of the performance implications.</p></div>
           texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Texture.html">PIXI.Texture</a>
+          <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>
         </td>
         
         
@@ -601,13 +606,13 @@ so be aware of the performance implications.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#cacheStepsPerColorChannel">cacheStepsPerColorChannel</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#cacheStepsPerColorChannel">cacheStepsPerColorChannel</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#canUseMultiply">canUseMultiply</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#canUseMultiply">canUseMultiply</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#convertTintToImage">convertTintToImage</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#convertTintToImage">convertTintToImage</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#tintMethod">tintMethod</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#tintMethod">tintMethod</a></li>
     
   </ul>
 </div>
@@ -619,17 +624,17 @@ so be aware of the performance implications.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#getTintedCanvas">getTintedCanvas</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#getTintedCanvas">getTintedCanvas</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#getTintedPattern">getTintedPattern</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#getTintedPattern">getTintedPattern</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#roundColor">roundColor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#roundColor">roundColor</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#tintWithMultiply">tintWithMultiply</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#tintWithMultiply">tintWithMultiply</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#tintWithOverlay">tintWithOverlay</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#tintWithOverlay">tintWithOverlay</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/canvasUtils.html#tintWithPerPixel">tintWithPerPixel</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/canvasUtils.html#tintWithPerPixel">tintWithPerPixel</a></li>
     
   </ul>
 </div>

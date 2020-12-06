@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: GraphicsData</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -42,7 +47,7 @@
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.GraphicsData(shape: <a href="PIXI/Circle.html">PIXI.Circle</a> | <a href="PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI/Polygon.html">PIXI.Polygon</a> | <a href="PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>, fillStyle: <a href="PIXI/FillStyle.html">PIXI.FillStyle</a>, lineStyle: <a href="PIXI/LineStyle.html">PIXI.LineStyle</a>, matrix: <a href="PIXI/Matrix.html">PIXI.Matrix</a>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.GraphicsData(shape: <a href="/pixi-api/PIXI/Circle.html">PIXI.Circle</a> | <a href="/pixi-api/PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="/pixi-api/PIXI/Polygon.html">PIXI.Polygon</a> | <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="/pixi-api/PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>, fillStyle: <a href="/pixi-api/PIXI/FillStyle.html">PIXI.FillStyle</a>, lineStyle: <a href="/pixi-api/PIXI/LineStyle.html">PIXI.LineStyle</a>, matrix: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -68,7 +73,7 @@
           shape
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Circle.html">PIXI.Circle</a> | <a href="PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="PIXI/Polygon.html">PIXI.Polygon</a> | <a href="PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>
+          <a href="/pixi-api/PIXI/Circle.html">PIXI.Circle</a> | <a href="/pixi-api/PIXI/Ellipse.html">PIXI.Ellipse</a> | <a href="/pixi-api/PIXI/Polygon.html">PIXI.Polygon</a> | <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a> | <a href="/pixi-api/PIXI/RoundedRectangle.html">PIXI.RoundedRectangle</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -82,7 +87,7 @@
           fillStyle
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/FillStyle.html">PIXI.FillStyle</a>
+          <a href="/pixi-api/PIXI/FillStyle.html">PIXI.FillStyle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -96,7 +101,7 @@
           lineStyle
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/LineStyle.html">PIXI.LineStyle</a>
+          <a href="/pixi-api/PIXI/LineStyle.html">PIXI.LineStyle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -110,7 +115,7 @@
           matrix
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -143,7 +148,7 @@
 <div class="member" id="fillStyle">
   <h3 class="member__title">fillStyle</h3>
   
-<pre class="signature__container"><code class="signature">fillStyle: <a href=PIXI/FillStyle.html>PIXI.FillStyle</a></code></pre>
+<pre class="signature__container"><code class="signature">fillStyle: <a href=/pixi-api/PIXI/FillStyle.html>PIXI.FillStyle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -159,7 +164,7 @@
 <div class="member" id="holes">
   <h3 class="member__title">holes</h3>
   
-<pre class="signature__container"><code class="signature">holes: Array&lt;<a href=PIXI/GraphicsData.html>PIXI.GraphicsData</a>></code></pre>
+<pre class="signature__container"><code class="signature">holes: Array&lt;<a href=/pixi-api/PIXI/GraphicsData.html>PIXI.GraphicsData</a>></code></pre>
 
 
   <div class="member__brief"></div>
@@ -175,7 +180,7 @@
 <div class="member" id="lineStyle">
   <h3 class="member__title">lineStyle</h3>
   
-<pre class="signature__container"><code class="signature">lineStyle: <a href=PIXI/LineStyle.html>PIXI.LineStyle</a></code></pre>
+<pre class="signature__container"><code class="signature">lineStyle: <a href=/pixi-api/PIXI/LineStyle.html>PIXI.LineStyle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -191,7 +196,7 @@
 <div class="member" id="matrix">
   <h3 class="member__title">matrix</h3>
   
-<pre class="signature__container"><code class="signature">matrix: <a href=PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
+<pre class="signature__container"><code class="signature">matrix: <a href=/pixi-api/PIXI/Matrix.html>PIXI.Matrix</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -223,7 +228,7 @@
 <div class="member" id="shape">
   <h3 class="member__title">shape</h3>
   
-<pre class="signature__container"><code class="signature">shape: <a href=PIXI/Circle.html>PIXI.Circle</a> | <a href=PIXI/Ellipse.html>PIXI.Ellipse</a> | <a href=PIXI/Polygon.html>PIXI.Polygon</a> | <a href=PIXI/Rectangle.html>PIXI.Rectangle</a> | <a href=PIXI/RoundedRectangle.html>PIXI.RoundedRectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">shape: <a href=/pixi-api/PIXI/Circle.html>PIXI.Circle</a> | <a href=/pixi-api/PIXI/Ellipse.html>PIXI.Ellipse</a> | <a href=/pixi-api/PIXI/Polygon.html>PIXI.Polygon</a> | <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a> | <a href=/pixi-api/PIXI/RoundedRectangle.html>PIXI.RoundedRectangle</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -263,7 +268,7 @@
 <div class="member" id="clone">
   <h3 class="member__title">clone</h3>
   
-<pre class="signature__container"><code class="signature">clone() → {<a href="PIXI/GraphicsData.html">PIXI.GraphicsData</a>}</code></pre>
+<pre class="signature__container"><code class="signature">clone() → {<a href="/pixi-api/PIXI/GraphicsData.html">PIXI.GraphicsData</a>}</code></pre>
 
 
   <div class="member__brief"><p>Creates a new GraphicsData object with the same values as this one.</p></div>
@@ -284,7 +289,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/GraphicsData.html">PIXI.GraphicsData</a>
+        <a href="/pixi-api/PIXI/GraphicsData.html">PIXI.GraphicsData</a>
       </td>
       <td class="member-return__description"><p>Cloned GraphicsData object</p></td>
     </tr>
@@ -344,19 +349,19 @@
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsData.html#fillStyle">fillStyle</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsData.html#fillStyle">fillStyle</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsData.html#holes">holes</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsData.html#holes">holes</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsData.html#lineStyle">lineStyle</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsData.html#lineStyle">lineStyle</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsData.html#matrix">matrix</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsData.html#matrix">matrix</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsData.html#points">points</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsData.html#points">points</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsData.html#shape">shape</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsData.html#shape">shape</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsData.html#type">type</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsData.html#type">type</a></li>
     
   </ul>
 </div>
@@ -368,9 +373,9 @@
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsData.html#clone">clone</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsData.html#clone">clone</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/GraphicsData.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/GraphicsData.html#destroy">destroy</a></li>
     
   </ul>
 </div>

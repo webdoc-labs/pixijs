@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: Conic</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -159,7 +164,7 @@ points when creating a graphic.</p>
 <div class="member" id="createCircle">
   <h3 class="member__title">createCircle</h3>
   
-<pre class="signature__container"><code class="signature">static createCircle(radius: number) → {<a href="Conic.html">Conic</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static createCircle(radius: number) → {<a href="/pixi-api/Conic.html">Conic</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -215,7 +220,7 @@ points when creating a graphic.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="Conic.html">Conic</a>
+        <a href="/pixi-api/Conic.html">Conic</a>
       </td>
       <td class="member-return__description"><p>the conic shape</p></td>
     </tr>
@@ -230,7 +235,7 @@ points when creating a graphic.</p>
 <div class="member" id="createEllipse">
   <h3 class="member__title">createEllipse</h3>
   
-<pre class="signature__container"><code class="signature">static createEllipse(a: number, b: number) → {<a href="Conic.html">Conic</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static createEllipse(a: number, b: number) → {<a href="/pixi-api/Conic.html">Conic</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -296,7 +301,7 @@ bounding box (0,0,2_a_,2_b_).</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="Conic.html">Conic</a>
+        <a href="/pixi-api/Conic.html">Conic</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -311,7 +316,7 @@ bounding box (0,0,2_a_,2_b_).</p>
 <div class="member" id="createHyperbola">
   <h3 class="member__title">createHyperbola</h3>
   
-<pre class="signature__container"><code class="signature">static createHyperbola(a: number, b: number) → {<a href="Conic.html">Conic</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static createHyperbola(a: number, b: number) → {<a href="/pixi-api/Conic.html">Conic</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -377,7 +382,7 @@ they do not have a bounding box.</p>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="Conic.html">Conic</a>
+        <a href="/pixi-api/Conic.html">Conic</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -392,7 +397,7 @@ they do not have a bounding box.</p>
 <div class="member" id="createParabola">
   <h3 class="member__title">createParabola</h3>
   
-<pre class="signature__container"><code class="signature">static createParabola(a: number) → {<a href="Conic.html">Conic</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static createParabola(a: number) → {<a href="/pixi-api/Conic.html">Conic</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -448,7 +453,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="Conic.html">Conic</a>
+        <a href="/pixi-api/Conic.html">Conic</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -463,7 +468,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
 <div class="member" id="setControlPoints">
   <h3 class="member__title">setControlPoints</h3>
   
-<pre class="signature__container"><code class="signature">setControlPoints(c0: <a href="PIXI/Point.html">PIXI.Point</a>, c1: <a href="PIXI/Point.html">PIXI.Point</a>, c2: <a href="PIXI/Point.html">PIXI.Point</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">setControlPoints(c0: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>, c1: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>, c2: <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -489,7 +494,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
           c0
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         
         
@@ -499,7 +504,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
           c1
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         
         
@@ -509,7 +514,7 @@ x<sup>2 - 4_ay_ = 0</p></div>
           c2
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Point.html">PIXI.Point</a>
+          <a href="/pixi-api/PIXI/Point.html">PIXI.Point</a>
         </td>
         
         
@@ -852,15 +857,15 @@ x<sup>2 - 4_ay_ = 0</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="Conic.html#_dirtyID">_dirtyID</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#_dirtyID">_dirtyID</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#controlPoints">controlPoints</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#controlPoints">controlPoints</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#k">k</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#k">k</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#l">l</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#l">l</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#m">m</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#m">m</a></li>
     
   </ul>
 </div>
@@ -872,23 +877,23 @@ x<sup>2 - 4_ay_ = 0</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="Conic.html#createCircle">createCircle</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#createCircle">createCircle</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#createEllipse">createEllipse</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#createEllipse">createEllipse</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#createHyperbola">createHyperbola</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#createHyperbola">createHyperbola</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#createParabola">createParabola</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#createParabola">createParabola</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#setControlPoints">setControlPoints</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#setControlPoints">setControlPoints</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#setk">setk</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#setk">setk</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#setl">setl</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#setl">setl</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#setm">setm</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#setm">setm</a></li>
     
-      <li class="page-members-explorer__item"><a href="Conic.html#update">update</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/Conic.html#update">update</a></li>
     
   </ul>
 </div>

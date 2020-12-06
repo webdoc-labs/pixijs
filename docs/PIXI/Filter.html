@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: Filter</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,14 +31,14 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.Filter</h1>
     
-<pre class="signature__container"><code class="signature">class Filter extends <a href="PIXI/Shader.html">PIXI.Shader</a></code></pre>
+<pre class="signature__container"><code class="signature">class Filter extends <a href="/pixi-api/PIXI/Shader.html">PIXI.Shader</a></code></pre>
 
 
     <div class="document__brief"></div>
     <div class="document__description"><p>A filter is a special shader that applies post-processing effects to an input texture and writes into an output
 render-target.</p>
 <p><a href="http://pixijs.io/examples/#/filters/blur-filter.js">Example</a> of the
-<a href=PIXI/filters/BlurFilter.html>BlurFilter</a>.</p>
+<a href=/pixi-api/PIXI/filters/BlurFilter.html>BlurFilter</a>.</p>
 <h3>Usage</h3>
 <p>Filters can be applied to any DisplayObject or Container.
 PixiJS' <code>FilterSystem</code> renders the container into temporary Framebuffer,
@@ -104,7 +109,7 @@ Use it to sample the input.</p>
 
 <span class="hljs-keyword">const</span> myFilter = new PIXI.Filter(null, fragment);
 </code></pre>
-<p>This filter is just one uniform less than <a href=PIXI/filters/AlphaFilter.html>AlphaFilter</a>.</p>
+<p>This filter is just one uniform less than <a href=/pixi-api/PIXI/filters/AlphaFilter.html>AlphaFilter</a>.</p>
 <p><strong>outputFrame</strong></p>
 <p>The <code>outputFrame</code> holds the rectangle where filter is applied in screen (CSS) coordinates.
 It's the same as <code>renderer.screen</code> for a fullscreen filter.
@@ -136,7 +141,7 @@ Divide by <code>inputSize.xy</code> to get input normalized coordinate.</p>
 <p><strong>inputPixel</strong></p>
 <p><code>inputPixel.xy</code> is the size of framebuffer in real pixels, same as <code>inputSize.xy * resolution</code>
 <code>inputPixel.zw</code> is inverted <code>inputPixel.xy</code>.</p>
-<p>It's handy for filters that use neighbour pixels, like <a href=PIXI/filters/FXAAFilter.html>FXAAFilter</a>.</p>
+<p>It's handy for filters that use neighbour pixels, like <a href=/pixi-api/PIXI/filters/FXAAFilter.html>FXAAFilter</a>.</p>
 <p><strong>inputClamp</strong></p>
 <p>If you try to get info from outside of used part of Framebuffer - you'll get undefined behaviour.
 For displacements, coordinates has to be clamped.</p>
@@ -365,7 +370,7 @@ filter is applied to.</p></div>
 <div class="member" id="program">
   <h3 class="member__title">program</h3>
   
-<pre class="signature__container"><code class="signature">program: <a href=PIXI/Program.html>PIXI.Program</a></code></pre>
+<pre class="signature__container"><code class="signature">program: <a href=/pixi-api/PIXI/Program.html>PIXI.Program</a></code></pre>
 
 
   <div class="member__brief"><p>Program that the shader uses</p></div>
@@ -398,7 +403,7 @@ increase the performance of the filter.</p></div>
 <div class="member" id="state">
   <h3 class="member__title">state</h3>
   
-<pre class="signature__container"><code class="signature">state: <a href=PIXI/State.html>PIXI.State</a></code></pre>
+<pre class="signature__container"><code class="signature">state: <a href=/pixi-api/PIXI/State.html>PIXI.State</a></code></pre>
 
 
   <div class="member__brief"></div>
@@ -460,7 +465,7 @@ increase the performance of the filter.</p></div>
 <div class="member" id="apply">
   <h3 class="member__title">apply</h3>
   
-<pre class="signature__container"><code class="signature">apply(filterManager: <a href="PIXI/FilterSystem.html">PIXI.FilterSystem</a>, input: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, output: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clearMode: <a href="PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>, currentState: object) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">apply(filterManager: <a href="/pixi-api/PIXI/FilterSystem.html">PIXI.FilterSystem</a>, input: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, output: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clearMode: <a href="/pixi-api/PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>, currentState: object) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Applies the filter</p></div>
@@ -486,7 +491,7 @@ increase the performance of the filter.</p></div>
           filterManager
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/FilterSystem.html">PIXI.FilterSystem</a>
+          <a href="/pixi-api/PIXI/FilterSystem.html">PIXI.FilterSystem</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -500,7 +505,7 @@ increase the performance of the filter.</p></div>
           input
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -514,7 +519,7 @@ increase the performance of the filter.</p></div>
           output
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -528,7 +533,7 @@ increase the performance of the filter.</p></div>
           clearMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
+          <a href="/pixi-api/PIXI/CLEAR_MODES.html">PIXI.CLEAR_MODES</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -633,27 +638,27 @@ target, filters, sourceFrame, destinationFrame, renderTarget, resolution</p></td
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#defaultFragmentSrc">defaultFragmentSrc</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#defaultFragmentSrc">defaultFragmentSrc</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#defaultVertexSrc">defaultVertexSrc</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#defaultVertexSrc">defaultVertexSrc</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#autoFit">autoFit</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#autoFit">autoFit</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#blendMode">blendMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#blendMode">blendMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#enabled">enabled</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#enabled">enabled</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#legacy">legacy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#legacy">legacy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#padding">padding</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#padding">padding</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#program">program</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#program">program</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#state">state</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#state">state</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#uniforms">uniforms</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#uniforms">uniforms</a></li>
     
   </ul>
 </div>
@@ -664,7 +669,7 @@ target, filters, sourceFrame, destinationFrame, renderTarget, resolution</p></td
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#SOURCE_KEY_MAP">SOURCE_KEY_MAP</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#SOURCE_KEY_MAP">SOURCE_KEY_MAP</a></li>
     
   </ul>
 </div>
@@ -675,9 +680,9 @@ target, filters, sourceFrame, destinationFrame, renderTarget, resolution</p></td
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#apply">apply</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#apply">apply</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/Filter.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/Filter.html#destroy">destroy</a></li>
     
   </ul>
 </div>

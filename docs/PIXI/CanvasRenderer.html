@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: CanvasRenderer</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/canvas-renderer</div>
     <h1 class="document__title">PIXI.CanvasRenderer</h1>
     
-<pre class="signature__container"><code class="signature">class CanvasRenderer extends <a href="PIXI/AbstractRenderer.html">PIXI.AbstractRenderer</a></code></pre>
+<pre class="signature__container"><code class="signature">class CanvasRenderer extends <a href="/pixi-api/PIXI/AbstractRenderer.html">PIXI.AbstractRenderer</a></code></pre>
 
 
     <div class="document__brief"><p>The CanvasRenderer draws the scene and all its content onto a 2d canvas.</p></div>
@@ -369,7 +374,7 @@ your game has a canvas filling background image you often don't need this set.</
 <div class="member" id="maskManager">
   <h3 class="member__title">maskManager</h3>
   
-<pre class="signature__container"><code class="signature">maskManager: <a href=PIXI/CanvasMaskManager.html>PIXI.CanvasMaskManager</a></code></pre>
+<pre class="signature__container"><code class="signature">maskManager: <a href=/pixi-api/PIXI/CanvasMaskManager.html>PIXI.CanvasMaskManager</a></code></pre>
 
 
   <div class="member__brief"><p>Instance of a CanvasMaskManager, handles masking when using the canvas renderer.</p></div>
@@ -466,7 +471,7 @@ the stencil buffer is retained after rendering.</p></div>
 <div class="member" id="screen">
   <h3 class="member__title">screen</h3>
   
-<pre class="signature__container"><code class="signature">screen: <a href=PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
+<pre class="signature__container"><code class="signature">screen: <a href=/pixi-api/PIXI/Rectangle.html>PIXI.Rectangle</a></code></pre>
 
 
   <div class="member__brief"><p>Measurements of the screen. (0, 0, screenWidth, screenHeight).</p></div>
@@ -635,7 +640,7 @@ builds and excluding plugins.</p></div>
 <div class="member" id="_lastObjectRendered">
   <h3 class="member__title">_lastObjectRendered</h3>
   
-<pre class="signature__container"><code class="signature">protected _lastObjectRendered: <a href=PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
+<pre class="signature__container"><code class="signature">protected _lastObjectRendered: <a href=/pixi-api/PIXI/DisplayObject.html>PIXI.DisplayObject</a></code></pre>
 
 
   <div class="member__brief"><p>The last root object that the renderer tried to render.</p></div>
@@ -892,7 +897,7 @@ builds and excluding plugins.</p></div>
 <div class="member" id="generateTexture">
   <h3 class="member__title">generateTexture</h3>
   
-<pre class="signature__container"><code class="signature">generateTexture(displayObject: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, scaleMode: <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>, resolution: number, region: <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
+<pre class="signature__container"><code class="signature">generateTexture(displayObject: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, scaleMode: <a href="/pixi-api/PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>, resolution: number, region: <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>) → {<a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -919,7 +924,7 @@ This can be quite useful if your displayObject is complicated and needs to be re
           displayObject
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -933,7 +938,7 @@ This can be quite useful if your displayObject is complicated and needs to be re
           scaleMode
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
+          <a href="/pixi-api/PIXI/SCALE_MODES.html">PIXI.SCALE_MODES</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -961,7 +966,7 @@ This can be quite useful if your displayObject is complicated and needs to be re
           region
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Rectangle.html">PIXI.Rectangle</a>
+          <a href="/pixi-api/PIXI/Rectangle.html">PIXI.Rectangle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -991,7 +996,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+        <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
       </td>
       <td class="member-return__description"><p>A texture of the graphics object.</p></td>
     </tr>
@@ -1042,7 +1047,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
 <div class="member" id="render">
   <h3 class="member__title">render</h3>
   
-<pre class="signature__container"><code class="signature">render(displayObject: <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>, renderTexture: <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clear: boolean, transform: <a href="PIXI/Matrix.html">PIXI.Matrix</a>, skipUpdateTransform: boolean) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">render(displayObject: <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>, renderTexture: <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>, clear: boolean, transform: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>, skipUpdateTransform: boolean) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Renders the object to this canvas view</p></div>
@@ -1068,7 +1073,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
           displayObject
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/DisplayObject.html">PIXI.DisplayObject</a>
+          <a href="/pixi-api/PIXI/DisplayObject.html">PIXI.DisplayObject</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -1084,7 +1089,7 @@ if no region is specified, defaults to the local bounds of the displayObject.</p
           renderTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/RenderTexture.html">PIXI.RenderTexture</a>
+          <a href="/pixi-api/PIXI/RenderTexture.html">PIXI.RenderTexture</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -1117,7 +1122,7 @@ If unset, it will render to the root context.</p></td>
           transform
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -1291,7 +1296,7 @@ If unset, it will render to the root context.</p></td>
         <td class="member-parameter__default">
           
         </td>
-        <td class="member-parameter__description"><p>See <a href="PIXI/BLEND_MODES.html">PIXI.BLEND_MODES</a> for valid values.</p></td>
+        <td class="member-parameter__description"><p>See <a href="/pixi-api/PIXI/BLEND_MODES.html">PIXI.BLEND_MODES</a> for valid values.</p></td>
       </tr><tr class="member-parameter">
         <td class="member-parameter__name">
           readyForOuterBlend
@@ -1344,7 +1349,7 @@ Pass <code>true</code> only if you are ready to use them.</p></td>
 <div class="member" id="setContextTransform">
   <h3 class="member__title">setContextTransform</h3>
   
-<pre class="signature__container"><code class="signature">setContextTransform(transform: <a href="PIXI/Matrix.html">PIXI.Matrix</a>, roundPixels: boolean, localResolution: number) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">setContextTransform(transform: <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>, roundPixels: boolean, localResolution: number) → {void}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -1372,7 +1377,7 @@ takes care about resolution</p></div>
           transform
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Matrix.html">PIXI.Matrix</a>
+          <a href="/pixi-api/PIXI/Matrix.html">PIXI.Matrix</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -1525,43 +1530,43 @@ takes care about resolution</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#autoDensity">autoDensity</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#autoDensity">autoDensity</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#backgroundColor">backgroundColor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#backgroundColor">backgroundColor</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#blendModes">blendModes</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#blendModes">blendModes</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#clearBeforeRender">clearBeforeRender</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#clearBeforeRender">clearBeforeRender</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#context">context</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#context">context</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#maskManager">maskManager</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#maskManager">maskManager</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#options">options</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#options">options</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#preserveDrawingBuffer">preserveDrawingBuffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#preserveDrawingBuffer">preserveDrawingBuffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#refresh">refresh</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#refresh">refresh</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#resolution">resolution</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#resolution">resolution</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#rootContext">rootContext</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#rootContext">rootContext</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#screen">screen</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#screen">screen</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#smoothProperty">smoothProperty</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#smoothProperty">smoothProperty</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#transparent">transparent</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#transparent">transparent</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#type">type</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#type">type</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#view">view</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#view">view</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#width">width</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#plugins">plugins</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#plugins">plugins</a></li>
     
   </ul>
 </div>
@@ -1572,13 +1577,13 @@ takes care about resolution</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#_backgroundColor">_backgroundColor</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#_backgroundColor">_backgroundColor</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#_backgroundColorRgba">_backgroundColorRgba</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#_backgroundColorRgba">_backgroundColorRgba</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#_backgroundColorString">_backgroundColorString</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#_backgroundColorString">_backgroundColorString</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#_lastObjectRendered">_lastObjectRendered</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#_lastObjectRendered">_lastObjectRendered</a></li>
     
   </ul>
 </div>
@@ -1589,25 +1594,25 @@ takes care about resolution</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#extract">extract</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#extract">extract</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#registerPlugin">registerPlugin</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#registerPlugin">registerPlugin</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#clear">clear</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#clear">clear</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#generateTexture">generateTexture</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#generateTexture">generateTexture</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#invalidateBlendMode">invalidateBlendMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#invalidateBlendMode">invalidateBlendMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#render">render</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#render">render</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#resize">resize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#resize">resize</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#setBlendMode">setBlendMode</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#setBlendMode">setBlendMode</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#setContextTransform">setContextTransform</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#setContextTransform">setContextTransform</a></li>
     
   </ul>
 </div>
@@ -1618,7 +1623,7 @@ takes care about resolution</p></div>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasRenderer.html#initPlugins">initPlugins</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasRenderer.html#initPlugins">initPlugins</a></li>
     
   </ul>
 </div>

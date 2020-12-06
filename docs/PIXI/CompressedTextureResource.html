@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: CompressedTextureResource</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/compressed-textures</div>
     <h1 class="document__title">PIXI.CompressedTextureResource</h1>
     
-<pre class="signature__container"><code class="signature">class CompressedTextureResource extends <a href="PIXI/resources/BlobResource.html">PIXI.resources.BlobResource</a></code></pre>
+<pre class="signature__container"><code class="signature">class CompressedTextureResource extends <a href="/pixi-api/PIXI/resources/BlobResource.html">PIXI.resources.BlobResource</a></code></pre>
 
 
     <div class="document__brief"><p>Resource for compressed texture formats, as follows: S3TC/DXTn (&amp; their sRGB formats), ATC, ASTC, ETC 1/2, PVRTC.</p></div>
@@ -34,15 +39,15 @@
 graphics memory, increasing memory locality and speeding up texture fetches. These formats can also be used to store
 more detail in the same amount of memory.</p>
 <p>For most developers, container file formats are a better abstraction instead of directly handling raw texture
-data. PixiJS provides native support for the following texture file formats (via <a href=PIXI/Loader.html>PIXI.Loader</a>):</p>
+data. PixiJS provides native support for the following texture file formats (via <a href=/pixi-api/PIXI/Loader.html>PIXI.Loader</a>):</p>
 <ul>
-<li><strong>.dds</strong> - the DirectDraw Surface file format stores DXTn (DXT-1,3,5) data. See <a href=PIXI/DDSLoader.html>PIXI.DDSLoader</a></li>
+<li><strong>.dds</strong> - the DirectDraw Surface file format stores DXTn (DXT-1,3,5) data. See <a href=/pixi-api/PIXI/DDSLoader.html>PIXI.DDSLoader</a></li>
 <li><strong>.ktx</strong> - the Khronos Texture Container file format supports storing all the supported WebGL compression formats.
-See <a href=PIXI/KTXLoader.html>PIXI.KTXLoader</a>.</li>
+See <a href=/pixi-api/PIXI/KTXLoader.html>PIXI.KTXLoader</a>.</li>
 <li><strong>.basis</strong> - the BASIS supercompressed file format stores texture data in an internal format that is transcoded
 to the compression format supported on the device at <em>runtime</em>. It also supports transcoding into a uncompressed
 format as a fallback; you must install the <code>@pixi/basis-loader</code>, <code>@pixi/basis-transcoder</code> packages separately to
-use these files. See <a href=PIXI/BasisLoader.html>PIXI.BasisLoader</a>.</li>
+use these files. See <a href=/pixi-api/PIXI/BasisLoader.html>PIXI.BasisLoader</a>.</li>
 </ul>
 <p>The loaders for the aforementioned formats use <code>CompressedTextureResource</code> internally. It is strongly suggested that
 they be used instead.</p>
@@ -137,7 +142,7 @@ PIXI.Texture.addToCache(texture, <span class="hljs-string">&quot;bunny.dxt5&quot
           options.format
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/INTERNAL_FORMATS.html">PIXI.INTERNAL_FORMATS</a>
+          <a href="/pixi-api/PIXI/INTERNAL_FORMATS.html">PIXI.INTERNAL_FORMATS</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -345,7 +350,7 @@ to pass <code>null</code> for <code>source</code>, for cases where each level is
 <div class="member" id="upload">
   <h3 class="member__title">upload</h3>
   
-<pre class="signature__container"><code class="signature">upload(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>, _texture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>, _glTexture: <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">upload(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>, _texture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>, _glTexture: <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -371,7 +376,7 @@ to pass <code>null</code> for <code>source</code>, for cases where each level is
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -381,7 +386,7 @@ to pass <code>null</code> for <code>source</code>, for cases where each level is
           _texture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -391,7 +396,7 @@ to pass <code>null</code> for <code>source</code>, for cases where each level is
           _glTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>
+          <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>
         </td>
         
         
@@ -482,13 +487,13 @@ to pass <code>null</code> for <code>source</code>, for cases where each level is
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CompressedTextureResource.html#buffer">buffer</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CompressedTextureResource.html#buffer">buffer</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CompressedTextureResource.html#format">format</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CompressedTextureResource.html#format">format</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CompressedTextureResource.html#levels">levels</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CompressedTextureResource.html#levels">levels</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CompressedTextureResource.html#origin">origin</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CompressedTextureResource.html#origin">origin</a></li>
     
   </ul>
 </div>
@@ -500,9 +505,9 @@ to pass <code>null</code> for <code>source</code>, for cases where each level is
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CompressedTextureResource.html#load">load</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CompressedTextureResource.html#load">load</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CompressedTextureResource.html#upload">upload</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CompressedTextureResource.html#upload">upload</a></li>
     
   </ul>
 </div>
@@ -513,7 +518,7 @@ to pass <code>null</code> for <code>source</code>, for cases where each level is
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CompressedTextureResource.html#onBlobLoaded">onBlobLoaded</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CompressedTextureResource.html#onBlobLoaded">onBlobLoaded</a></li>
     
   </ul>
 </div>

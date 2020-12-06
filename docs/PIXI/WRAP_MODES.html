@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: WRAP_MODES</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -30,7 +35,7 @@
 
 
     <div class="document__brief"><p>The wrap modes that are supported by pixi.</p></div>
-    <div class="document__description"><p>The <a href=PIXI/settings.html#WRAP_MODE>PIXI.settings.WRAP_MODE</a> wrap mode affects the default wrapping mode of future operations.
+    <div class="document__description"><p>The <a href=/pixi-api/PIXI/settings.html#WRAP_MODE>PIXI.settings.WRAP_MODE</a> wrap mode affects the default wrapping mode of future operations.
 It can be re-assigned to either CLAMP or REPEAT, depending upon suitability.
 If the texture is non power of two then clamp will be used regardless as WebGL can
 only use REPEAT if the texture is po2.</p>
@@ -106,11 +111,11 @@ only use REPEAT if the texture is po2.</p>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/WRAP_MODES.html#CLAMP">CLAMP</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/WRAP_MODES.html#CLAMP">CLAMP</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/WRAP_MODES.html#MIRRORED_REPEAT">MIRRORED_REPEAT</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/WRAP_MODES.html#MIRRORED_REPEAT">MIRRORED_REPEAT</a></li>
     
-      <li class="page-members-explorer__item"><a href=PIXI/WRAP_MODES.html#REPEAT>REPEAT</a></li>
+      <li class="page-members-explorer__item"><a href=/pixi-api/PIXI/WRAP_MODES.html#REPEAT>REPEAT</a></li>
     
   </ul>
 </div>

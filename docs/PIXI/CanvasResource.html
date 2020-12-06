@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: CanvasResource</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -26,7 +31,7 @@
     <div class="document__package">@pixi/core</div>
     <h1 class="document__title">PIXI.CanvasResource</h1>
     
-<pre class="signature__container"><code class="signature">class CanvasResource extends <a href="PIXI/BaseImageResource.html">PIXI.BaseImageResource</a></code></pre>
+<pre class="signature__container"><code class="signature">class CanvasResource extends <a href="/pixi-api/PIXI/BaseImageResource.html">PIXI.BaseImageResource</a></code></pre>
 
 
     <div class="document__brief"></div>
@@ -242,7 +247,7 @@ externally.</p></div>
 <div class="member" id="test">
   <h3 class="member__title">test</h3>
   
-<pre class="signature__container"><code class="signature">static test(source: HTMLCanvasElement | <a href="OffscreenCanvas.html">OffscreenCanvas</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">static test(source: HTMLCanvasElement | <a href="/pixi-api/OffscreenCanvas.html">OffscreenCanvas</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Used to auto-detect the type of resource.</p></div>
@@ -268,7 +273,7 @@ externally.</p></div>
           source
         </td>
         <td class="member-parameter__type">
-          HTMLCanvasElement | <a href="OffscreenCanvas.html">OffscreenCanvas</a>
+          HTMLCanvasElement | <a href="/pixi-api/OffscreenCanvas.html">OffscreenCanvas</a>
         </td>
         
         
@@ -308,7 +313,7 @@ externally.</p></div>
 <div class="member" id="bind">
   <h3 class="member__title">bind</h3>
   
-<pre class="signature__container"><code class="signature">bind(baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">bind(baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Bind to a parent BaseTexture</p></div>
@@ -334,7 +339,7 @@ externally.</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -524,7 +529,7 @@ internally.</p></div>
 <div class="member" id="style">
   <h3 class="member__title">style</h3>
   
-<pre class="signature__container"><code class="signature">style(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>, baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>, glTexture: <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">style(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>, baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>, glTexture: <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Set the style, optional to override</p></div>
@@ -550,7 +555,7 @@ internally.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         
         
@@ -560,7 +565,7 @@ internally.</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -570,7 +575,7 @@ internally.</p></div>
           glTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>
+          <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>
         </td>
         
         
@@ -610,7 +615,7 @@ internally.</p></div>
 <div class="member" id="unbind">
   <h3 class="member__title">unbind</h3>
   
-<pre class="signature__container"><code class="signature">unbind(baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {void}</code></pre>
+<pre class="signature__container"><code class="signature">unbind(baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>) → {void}</code></pre>
 
 
   <div class="member__brief"><p>Unbind to a parent BaseTexture</p></div>
@@ -636,7 +641,7 @@ internally.</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         
         
@@ -713,7 +718,7 @@ Triggers one update in any case.</p></div>
 <div class="member" id="upload">
   <h3 class="member__title">upload</h3>
   
-<pre class="signature__container"><code class="signature">upload(renderer: <a href="PIXI/Renderer.html">PIXI.Renderer</a>, baseTexture: <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>, glTexture: <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>, source: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | SVGElement) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">upload(renderer: <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>, baseTexture: <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>, glTexture: <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>, source: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | SVGElement) → {boolean}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -739,7 +744,7 @@ Triggers one update in any case.</p></div>
           renderer
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/Renderer.html">PIXI.Renderer</a>
+          <a href="/pixi-api/PIXI/Renderer.html">PIXI.Renderer</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -753,7 +758,7 @@ Triggers one update in any case.</p></div>
           baseTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BaseTexture.html">PIXI.BaseTexture</a>
+          <a href="/pixi-api/PIXI/BaseTexture.html">PIXI.BaseTexture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -767,7 +772,7 @@ Triggers one update in any case.</p></div>
           glTexture
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/GLTexture.html">PIXI.GLTexture</a>
+          <a href="/pixi-api/PIXI/GLTexture.html">PIXI.GLTexture</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -877,15 +882,15 @@ or do any other prepare step.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#destroyed">destroyed</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#destroyed">destroyed</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#height">height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#height">height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#source">source</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#source">source</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#valid">valid</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#valid">valid</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#width">width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#width">width</a></li>
     
   </ul>
 </div>
@@ -896,11 +901,11 @@ or do any other prepare step.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#_height">_height</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#_height">_height</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#_width">_width</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#_width">_width</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#internal">internal</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#internal">internal</a></li>
     
   </ul>
 </div>
@@ -911,23 +916,23 @@ or do any other prepare step.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#test">test</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#test">test</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#bind">bind</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#bind">bind</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#destroy">destroy</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#dispose">dispose</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#dispose">dispose</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#resize">resize</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#resize">resize</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#style">style</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#style">style</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#unbind">unbind</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#unbind">unbind</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#update">update</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#update">update</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#upload">upload</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#upload">upload</a></li>
     
   </ul>
 </div>
@@ -938,7 +943,7 @@ or do any other prepare step.</p></div>
   <h3 class="page-members-explorer-category__title">Protected Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/CanvasResource.html#load">load</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/CanvasResource.html#load">load</a></li>
     
   </ul>
 </div>

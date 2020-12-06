@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: BitmapFont</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/pixi-api/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "pixi-api",
+      };
+    </script>
+    <script src="/pixi-api/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -43,7 +48,7 @@ method for adding a font to be used.</p></div>
 <div class="member" id="constructor">
   <h3 class="member__title"></h3>
   
-<pre class="signature__container"><code class="signature">new PIXI.BitmapFont(data: <a href="PIXI/BitmapFontData.html">PIXI.BitmapFontData</a>, textures: Array&lt;<a href="PIXI/Texture.html">PIXI.Texture</a>> | Object&lt;string, <a href="PIXI/Texture.html">PIXI.Texture</a>>) → {}</code></pre>
+<pre class="signature__container"><code class="signature">new PIXI.BitmapFont(data: <a href="/pixi-api/PIXI/BitmapFontData.html">PIXI.BitmapFontData</a>, textures: Array&lt;<a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>> | Object&lt;string, <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>>) → {}</code></pre>
 
 
   <div class="member__brief"></div>
@@ -69,7 +74,7 @@ method for adding a font to be used.</p></div>
           data
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/BitmapFontData.html">PIXI.BitmapFontData</a>
+          <a href="/pixi-api/PIXI/BitmapFontData.html">PIXI.BitmapFontData</a>
         </td>
         
         
@@ -79,7 +84,7 @@ method for adding a font to be used.</p></div>
           textures
         </td>
         <td class="member-parameter__type">
-          Array&lt;<a href="PIXI/Texture.html">PIXI.Texture</a>&gt; | Object&lt;string, <a href="PIXI/Texture.html">PIXI.Texture</a>&gt;
+          Array&lt;<a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>&gt; | Object&lt;string, <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>&gt;
         </td>
         
         
@@ -156,7 +161,7 @@ method for adding a font to be used.</p></div>
 <div class="member" id="available">
   <h3 class="member__title">available</h3>
   
-<pre class="signature__container"><code class="signature">static available: Object&lt;string, <a href=PIXI/BitmapFont.html>PIXI.BitmapFont</a>></code></pre>
+<pre class="signature__container"><code class="signature">static available: Object&lt;string, <a href=/pixi-api/PIXI/BitmapFont.html>PIXI.BitmapFont</a>></code></pre>
 
 
   <div class="member__brief"><p>Collection of available/installed fonts.</p></div>
@@ -172,7 +177,7 @@ method for adding a font to be used.</p></div>
 <div class="member" id="defaultOptions">
   <h3 class="member__title">defaultOptions</h3>
   
-<pre class="signature__container"><code class="signature">static defaultOptions: <a href="PIXI/IBitmapFontOptions.html">PIXI.IBitmapFontOptions</a></code></pre>
+<pre class="signature__container"><code class="signature">static defaultOptions: <a href="/pixi-api/PIXI/IBitmapFontOptions.html">PIXI.IBitmapFontOptions</a></code></pre>
 
 
   <div class="member__brief"><p>Collection of default options when using <code>BitmapFont.from</code>.</p></div>
@@ -276,30 +281,30 @@ method for adding a font to be used.</p></div>
 <div class="member" id="from">
   <h3 class="member__title">from</h3>
   
-<pre class="signature__container"><code class="signature">static from(name: string, style: object | <a href="PIXI/TextStyle.html">PIXI.TextStyle</a>, options: <a href="PIXI/IBitmapFontOptions.html">PIXI.IBitmapFontOptions</a>) → {<a href="PIXI/BitmapFont.html">PIXI.BitmapFont</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static from(name: string, style: object | <a href="/pixi-api/PIXI/TextStyle.html">PIXI.TextStyle</a>, options: <a href="/pixi-api/PIXI/IBitmapFontOptions.html">PIXI.IBitmapFontOptions</a>) → {<a href="/pixi-api/PIXI/BitmapFont.html">PIXI.BitmapFont</a>}</code></pre>
 
 
   <div class="member__brief"></div>
   <div class="member__description"><p>Generates a bitmap-font for the given style and character set. This does not support
 kernings yet. With <code>style</code> properties, only the following non-layout properties are used:</p>
 <ul>
-<li><a href="PIXI/TextStyle.html#dropShadow">dropShadow</a></li>
-<li><a href="PIXI/TextStyle.html#dropShadowDistance">dropShadowDistance</a></li>
-<li><a href="PIXI/TextStyle.html#dropShadowColor">dropShadowColor</a></li>
-<li><a href="PIXI/TextStyle.html#dropShadowBlur">dropShadowBlur</a></li>
-<li><a href="PIXI/TextStyle.html#dropShadowAngle">dropShadowAngle</a></li>
-<li><a href="PIXI/TextStyle.html#fill">fill</a></li>
-<li><a href="PIXI/TextStyle.html#fillGradientStops">fillGradientStops</a></li>
-<li><a href="PIXI/TextStyle.html#fillGradientType">fillGradientType</a></li>
-<li><a href="PIXI/TextStyle.html#fontFamily">fontFamily</a></li>
-<li><a href="PIXI/TextStyle.html#fontSize">fontSize</a></li>
-<li><a href="PIXI/TextStyle.html#fontVariant">fontVariant</a></li>
-<li><a href="PIXI/TextStyle.html#fontWeight">fontWeight</a></li>
-<li><a href="PIXI/TextStyle.html#lineJoin">lineJoin</a></li>
-<li><a href="PIXI/TextStyle.html#miterLimit">miterLimit</a></li>
-<li><a href="PIXI/TextStyle.html#stroke">stroke</a></li>
-<li><a href="PIXI/TextStyle.html#strokeThickness">strokeThickness</a></li>
-<li><a href="PIXI/TextStyle.html#textBaseline">textBaseline</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#dropShadow">dropShadow</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#dropShadowDistance">dropShadowDistance</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#dropShadowColor">dropShadowColor</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#dropShadowBlur">dropShadowBlur</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#dropShadowAngle">dropShadowAngle</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#fill">fill</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#fillGradientStops">fillGradientStops</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#fillGradientType">fillGradientType</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#fontFamily">fontFamily</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#fontSize">fontSize</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#fontVariant">fontVariant</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#fontWeight">fontWeight</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#lineJoin">lineJoin</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#miterLimit">miterLimit</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#stroke">stroke</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#strokeThickness">strokeThickness</a></li>
+<li><a href="/pixi-api/PIXI/TextStyle.html#textBaseline">textBaseline</a></li>
 </ul></div>
 
   
@@ -338,7 +343,7 @@ kernings yet. With <code>style</code> properties, only the following non-layout 
           style
         </td>
         <td class="member-parameter__type">
-          object | <a href="PIXI/TextStyle.html">PIXI.TextStyle</a>
+          object | <a href="/pixi-api/PIXI/TextStyle.html">PIXI.TextStyle</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -354,7 +359,7 @@ kernings yet. With <code>style</code> properties, only the following non-layout 
           options
         </td>
         <td class="member-parameter__type">
-          <a href="PIXI/IBitmapFontOptions.html">PIXI.IBitmapFontOptions</a>
+          <a href="/pixi-api/PIXI/IBitmapFontOptions.html">PIXI.IBitmapFontOptions</a>
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
@@ -467,7 +472,7 @@ Don't forget to include spaces ' ' in your character set!</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/BitmapFont.html">PIXI.BitmapFont</a>
+        <a href="/pixi-api/PIXI/BitmapFont.html">PIXI.BitmapFont</a>
       </td>
       <td class="member-return__description"><p>Font generated by style options.</p></td>
     </tr>
@@ -482,7 +487,7 @@ Don't forget to include spaces ' ' in your character set!</p></td>
 <div class="member" id="install">
   <h3 class="member__title">install</h3>
   
-<pre class="signature__container"><code class="signature">static install(data: XMLDocument | string | <a href="PIXI/BitmapFontData.html">PIXI.BitmapFontData</a>, textures: Object&lt;string, <a href="PIXI/Texture.html">PIXI.Texture</a>> | <a href="PIXI/Texture.html">PIXI.Texture</a> | Array&lt;<a href="PIXI/Texture.html">PIXI.Texture</a>>) → {<a href="PIXI/BitmapFont.html">PIXI.BitmapFont</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static install(data: XMLDocument | string | <a href="/pixi-api/PIXI/BitmapFontData.html">PIXI.BitmapFontData</a>, textures: Object&lt;string, <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>> | <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | Array&lt;<a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>>) → {<a href="/pixi-api/PIXI/BitmapFont.html">PIXI.BitmapFont</a>}</code></pre>
 
 
   <div class="member__brief"><p>Register a new bitmap font.</p></div>
@@ -508,7 +513,7 @@ Don't forget to include spaces ' ' in your character set!</p></td>
           data
         </td>
         <td class="member-parameter__type">
-          XMLDocument | string | <a href="PIXI/BitmapFontData.html">PIXI.BitmapFontData</a>
+          XMLDocument | string | <a href="/pixi-api/PIXI/BitmapFontData.html">PIXI.BitmapFontData</a>
         </td>
         
         
@@ -519,7 +524,7 @@ characters map that could be provided as xml or raw string.</p></td>
           textures
         </td>
         <td class="member-parameter__type">
-          Object&lt;string, <a href="PIXI/Texture.html">PIXI.Texture</a>&gt; | <a href="PIXI/Texture.html">PIXI.Texture</a> | Array&lt;<a href="PIXI/Texture.html">PIXI.Texture</a>&gt;
+          Object&lt;string, <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>&gt; | <a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a> | Array&lt;<a href="/pixi-api/PIXI/Texture.html">PIXI.Texture</a>&gt;
         </td>
         
         
@@ -544,7 +549,7 @@ characters map that could be provided as xml or raw string.</p></td>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PIXI/BitmapFont.html">PIXI.BitmapFont</a>
+        <a href="/pixi-api/PIXI/BitmapFont.html">PIXI.BitmapFont</a>
       </td>
       <td class="member-return__description"><p>Result font object with font, size, lineHeight
 and char fields.</p></td>
@@ -671,25 +676,25 @@ and char fields.</p></td>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#ALPHA">ALPHA</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#ALPHA">ALPHA</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#ALPHANUMERIC">ALPHANUMERIC</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#ALPHANUMERIC">ALPHANUMERIC</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#ASCII">ASCII</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#ASCII">ASCII</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#available">available</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#available">available</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#defaultOptions">defaultOptions</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#defaultOptions">defaultOptions</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#NUMERIC">NUMERIC</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#NUMERIC">NUMERIC</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#chars">chars</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#chars">chars</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#font">font</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#font">font</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#lineHeight">lineHeight</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#lineHeight">lineHeight</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#size">size</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#size">size</a></li>
     
   </ul>
 </div>
@@ -701,13 +706,13 @@ and char fields.</p></td>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#from">from</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#from">from</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#install">install</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#install">install</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#uninstall">uninstall</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#uninstall">uninstall</a></li>
     
-      <li class="page-members-explorer__item"><a href="PIXI/BitmapFont.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="/pixi-api/PIXI/BitmapFont.html#destroy">destroy</a></li>
     
   </ul>
 </div>
