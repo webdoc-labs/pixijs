@@ -19,6 +19,7 @@
     "destination": "docs"
   },
   "template": {
+    "siteDomain": "http://pixijs.webdoclabs.com/",
     "readme": "./README.md",
     "outputSourceFiles": true
   }
