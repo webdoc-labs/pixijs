@@ -2,12 +2,8 @@
   "index_name": "pixijs",
   "sitemap_urls": ["http://pixijs.webdoclabs.com/sitemap.xml"],
   "selectors": {
-    "lvl0": ".page-content .document__title",
-    "lvl1": ".page-content .document__description, .page-content .document__brief",
-    "lvl2": ".page-content .member__title, .page-content .member__brief",
-    "lvl3": ".page-content .member__description",
-    "lvl4": ".page-content .document__package, .page-content .document .signature",
-    "lvl5": ".page-content .document__package, .page-content .signature",
-    "text": ".page-content"
+    "lvl0": ".document__title",
+    "lvl1": ".document__breadcrumb",
+    "text": ".document__brief, .document__description, .member__title, .member__brief, .member__description"
   }
 }

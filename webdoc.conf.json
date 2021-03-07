@@ -9,7 +9,14 @@
     "excludePattern": [
       "node_modules",
       "pixi-ui",
-      "pixi-filters"
+      "pixi-filters",
+      "data-half-edge-mesh",
+      "bvh",
+      "filter-fft",
+      "system-g",
+      "ooo-renderer",
+      "diagnostic-geometry",
+      "pixi-essentials/packages/types"
     ]
   },
   "plugins": [
