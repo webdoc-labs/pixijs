@@ -3,7 +3,7 @@
 	url = https://github.com/pixijs/pixi.js
 [submodule "projects/pixi-tilemap"]
 	path = projects/pixi-tilemap
-	url = https://github.com/pixijs/pixi-tilemap
+	url = https://github.com/pixijs/tilemap
 [submodule "projects/pixi-batch-renderer"]
 	path = projects/pixi-batch-renderer
 	url = https://github.com/pixijs/pixi-batch-renderer
