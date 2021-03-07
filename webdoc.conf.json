@@ -16,7 +16,10 @@
       "system-g",
       "ooo-renderer",
       "diagnostic-geometry",
-      "pixi-essentials/packages/types"
+      "pixi-essentials/packages/types",
+      "tilemap/index.d.ts",
+      "tilemap/demo",
+      "tilemap/test"
     ]
   },
   "plugins": [
