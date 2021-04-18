@@ -16,8 +16,8 @@
 [submodule "projects/pixi-ui"]
 	path = projects/pixi-ui
 	url = https://github.com/pixijs/pixi-ui
-[submodule "projects/pixi-spatial-hash"]
-	path = projects/pixi-spatial-hash
+[submodule "projects/spatial-hash"]
+	path = projects/spatial-hash
 	url = https://github.com/SukantPal/pixi-spatial-hash
 [submodule "projects/guides"]
 	path = projects/guides
