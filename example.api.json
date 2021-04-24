@@ -3115,6 +3115,14 @@
 							"description": "<p>The mask stack</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "glConst",
 							"type": "PropertyDoc",
 							"access": "private",
@@ -7149,6 +7157,14 @@
 							"description": ""
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "boundArray",
 							"type": "MethodDoc",
 							"scope": "instance",
@@ -7168,6 +7184,13 @@
 							"scope": "instance",
 							"brief": "",
 							"description": "<p>Handy function for batch renderers: copies bound textures in first maxTextures locations to array\nsets actual _batchLocation for them</p>"
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
+							"description": ""
 						},
 						{
 							"name": "flush",
@@ -9213,6 +9236,21 @@
 							"description": ""
 						},
 						{
+							"name": "index",
+							"type": "PropertyDoc",
+							"scope": "instance",
+							"brief": "<p>Flags whether this is an index buffer.</p>",
+							"description": "<p>Index buffers are of type <code>ELEMENT_ARRAY_BUFFER</code>. Note that setting this property to false will make\nthe buffer of type <code>ARRAY_BUFFER</code>.</p>\n<p>For backwards compatibility.</p>"
+						},
+						{
+							"name": "type",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>The type of buffer this is, one of:</p>\n<ul>\n<li>ELEMENT_ARRAY_BUFFER - used as an index buffer</li>\n<li>ARRAY_BUFFER - used as an attribute buffer</li>\n<li>UNIFORM_BUFFER - used as a uniform buffer (if available)</li>\n</ul>"
+						},
+						{
 							"name": "_glBuffers",
 							"type": "PropertyDoc",
 							"access": "private",
@@ -9423,6 +9461,93 @@
 							"scope": "instance",
 							"brief": "",
 							"description": "<p>This can be overridden to start preloading a resource\nor do any other prepare step.</p>"
+						}
+					]
+				},
+				{
+					"name": "BufferSystem",
+					"type": "ClassDoc",
+					"brief": "<p>System plugin to the renderer to manage buffers.</p>",
+					"description": "<p>WebGL uses Buffers as a way to store objects to the GPU.\nThis system makes working with them a lot easier.</p>\n<p>Buffers are used in three main places in WebGL</p>\n<ul>\n<li>geometry information</li>\n<li>Uniform information (via uniform buffer objects - a WebGL 2 only feature)</li>\n<li>Transform feedback information. (WebGL 2 only feature)</li>\n</ul>\n<p>This system will handle the binding of buffers to the GPU as well as uploading\nthem. With this system, you never need to work directly with GPU buffers, but instead work with\nthe PIXI.Buffer class.</p>",
+					"members": [
+						{
+							"name": "boundBufferBases",
+							"type": "PropertyDoc",
+							"scope": "instance",
+							"brief": "<p>Cache keeping track of the base bound buffer bases</p>",
+							"description": ""
+						},
+						{
+							"name": "managedBuffers",
+							"type": "PropertyDoc",
+							"scope": "instance",
+							"brief": "<p>Cache for all buffers by id, used in case renderer gets destroyed or for profiling</p>",
+							"description": ""
+						},
+						{
+							"name": "bind",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>This binds specified buffer. On first run, it will create the webGL buffers for the context too</p>",
+							"description": ""
+						},
+						{
+							"name": "bindBufferBase",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Binds an uniform buffer to at the given index.</p>",
+							"description": "<p>A cache is used so a buffer will not be bound again if already bound.</p>"
+						},
+						{
+							"name": "bindBufferRange",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>Binds a buffer whilst also binding its range.\nThis will make the buffer start from the offset supplied rather than 0 when it is read.</p>"
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "dispose",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>Disposes buffer</p>"
+						},
+						{
+							"name": "disposeAll",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>dispose all WebGL resources of all managed buffers</p>"
+						},
+						{
+							"name": "update",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Will ensure sure the the data in the buffer is uploaded to the GPU.</p>",
+							"description": ""
+						},
+						{
+							"name": "contextChange",
+							"type": "MethodDoc",
+							"access": "protected",
+							"scope": "instance",
+							"brief": "<p>Sets up the renderer context and necessary buffers.</p>",
+							"description": ""
+						},
+						{
+							"name": "createGLBuffer",
+							"type": "MethodDoc",
+							"access": "protected",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>creates and attaches a GLBuffer object tied to the current context.</p>"
 						}
 					]
 				},
@@ -10260,6 +10385,20 @@
 					"brief": "<p>Loader plugin for handling compressed textures for all platforms.</p>",
 					"description": "",
 					"members": [
+						{
+							"name": "textureExtensions",
+							"type": "PropertyDoc",
+							"scope": "static",
+							"brief": "<p>Map of available texture extensions.</p>",
+							"description": ""
+						},
+						{
+							"name": "textureFormats",
+							"type": "PropertyDoc",
+							"scope": "static",
+							"brief": "<p>Map of available texture formats.</p>",
+							"description": ""
+						},
 						{
 							"name": "use",
 							"type": "MethodDoc",
@@ -11700,6 +11839,14 @@
 							"description": "<p><code>true</code> if the context is lost</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "webGLVersion",
 							"type": "PropertyDoc",
 							"scope": "instance",
@@ -11736,6 +11883,13 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "<p>Helper class to create a WebGL Context</p>",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -13607,6 +13761,14 @@
 							"description": "<p>The event is allocated using {@link PIXI.EventBoundary#allocateEvent this.allocateEvent}.</p>"
 						},
 						{
+							"name": "findMountedTarget",
+							"type": "MethodDoc",
+							"access": "protected",
+							"scope": "instance",
+							"brief": "<p>Finds the most specific event-target in the given propagation path that is still mounted in the scene graph.</p>",
+							"description": "<p>This is used to find the correct <code>pointerup</code> and <code>pointerout</code> target in the case that the original <code>pointerdown</code>\nor <code>pointerover</code> target was unmounted from the scene graph.</p>"
+						},
+						{
 							"name": "freeEvent",
 							"type": "MethodDoc",
 							"access": "protected",
@@ -15220,6 +15382,13 @@
 							"description": ""
 						},
 						{
+							"name": "getPredictedEvents",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
+						},
+						{
 							"name": "initEvent",
 							"type": "MethodDoc",
 							"scope": "instance",
@@ -16058,6 +16227,14 @@
 							"description": "<p>Quad UVs</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "statePool",
 							"type": "PropertyDoc",
 							"scope": "instance",
@@ -16286,6 +16463,14 @@
 							"description": "<p>A list of managed framebuffers</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "size",
 							"type": "PropertyDoc",
 							"scope": "instance",
@@ -16326,6 +16511,13 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -16541,18 +16733,19 @@
 							"description": "<p><code>true</code> if we has <code>*_vertex_array_object</code> extension</p>"
 						},
 						{
-							"name": "managedBuffers",
-							"type": "PropertyDoc",
-							"scope": "instance",
-							"brief": "",
-							"description": "<p>Cache for all buffers by id, used in case renderer gets destroyed or for profiling</p>"
-						},
-						{
 							"name": "managedGeometries",
 							"type": "PropertyDoc",
 							"scope": "instance",
 							"brief": "",
 							"description": "<p>Cache for all geometries by id, used in case renderer gets destroyed or for profiling</p>"
+						},
+						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
 						},
 						{
 							"name": "bind",
@@ -16569,18 +16762,18 @@
 							"description": ""
 						},
 						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
+							"description": ""
+						},
+						{
 							"name": "disposeAll",
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
-							"description": "<p>dispose all WebGL resources of all managed geometries and buffers</p>"
-						},
-						{
-							"name": "disposeBuffer",
-							"type": "MethodDoc",
-							"scope": "instance",
-							"brief": "",
-							"description": "<p>Disposes buffer</p>"
+							"description": "<p>dispose all WebGL resources of all managed geometries</p>"
 						},
 						{
 							"name": "disposeGeometry",
@@ -16682,6 +16875,13 @@
 							"description": "<p>The WebGL framebuffer</p>"
 						},
 						{
+							"name": "mipLevel",
+							"type": "PropertyDoc",
+							"scope": "instance",
+							"brief": "<p>store the current mipmap of the textures the framebuffer will write too.</p>",
+							"description": ""
+						},
+						{
 							"name": "msaaBuffer",
 							"type": "PropertyDoc",
 							"scope": "instance",
@@ -16742,6 +16942,14 @@
 							"description": ""
 						},
 						{
+							"name": "uniformBufferBindings",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>A hash that stores where UBOs are bound to on the program.</p>",
+							"description": ""
+						},
+						{
 							"name": "uniformData",
 							"type": "PropertyDoc",
 							"scope": "instance",
@@ -16749,11 +16957,27 @@
 							"description": "<p>holds the uniform data which contains uniform locations\nand current uniform values used for caching and preventing unneeded GPU commands</p>"
 						},
 						{
+							"name": "uniformDirtyGroups",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>a place where dirty ticks are stored for groups\nIf a tick here does not match with the Higher level Programs tick, it means\nwe should re upload the data.</p>"
+						},
+						{
 							"name": "uniformGroups",
 							"type": "PropertyDoc",
 							"scope": "instance",
 							"brief": "",
 							"description": "<p>uniformGroups holds the various upload functions for the shader. Each uniform group\nand program have a unique upload function generated.</p>"
+						},
+						{
+							"name": "uniformSync",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>A hash for lazily-generated uniform uploading functions.</p>",
+							"description": ""
 						},
 						{
 							"name": "constructor",
@@ -16982,6 +17206,13 @@
 							"type": "PropertyDoc",
 							"scope": "instance",
 							"brief": "<p>The array of children of this container.</p>",
+							"description": ""
+						},
+						{
+							"name": "currentPath",
+							"type": "PropertyDoc",
+							"scope": "instance",
+							"brief": "<p>Current path</p>",
 							"description": ""
 						},
 						{
@@ -17383,14 +17614,6 @@
 							"description": ""
 						},
 						{
-							"name": "currentPath",
-							"type": "PropertyDoc",
-							"access": "protected",
-							"scope": "instance",
-							"brief": "<p>Current path</p>",
-							"description": ""
-						},
-						{
 							"name": "vertexData",
 							"type": "PropertyDoc",
 							"access": "protected",
@@ -17568,7 +17791,7 @@
 							"name": "drawChamferRect",
 							"type": "MethodDoc",
 							"scope": "instance",
-							"brief": "<p>Draw Rectangle with chamfer corners.</p>",
+							"brief": "<p>Draw Rectangle with chamfer corners. These are angled corners.</p>",
 							"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 						},
 						{
@@ -17591,8 +17814,8 @@
 							"name": "drawFilletRect",
 							"type": "MethodDoc",
 							"scope": "instance",
-							"brief": "<p>Draw Rectangle with fillet corners.</p>",
-							"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+							"brief": "",
+							"description": "<p>Draw Rectangle with fillet corners. This is much like rounded rectangle\nhowever it support negative numbers as well for the corner radius.</p>\n<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 						},
 						{
 							"name": "drawPolygon",
@@ -17615,6 +17838,13 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "<p>Draw a regular polygon where all sides are the same length.</p>",
+							"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+						},
+						{
+							"name": "drawRoundedPolygon",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Draw a regular polygon with rounded corners.</p>",
 							"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 						},
 						{
@@ -20685,10 +20915,25 @@
 							"description": "<p>Pool of mask data</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "constructor",
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -25587,55 +25832,57 @@
 					"name": "Point",
 					"type": "ClassDoc",
 					"brief": "",
-					"description": "<p>The Point object represents a location in a two-dimensional coordinate system, where x represents\nthe horizontal axis and y represents the vertical axis.</p>",
+					"description": "<p>The Point object represents a location in a two-dimensional coordinate system, where <code>x</code> represents\nthe position on the horizontal axis and <code>y</code> represents the position on the vertical axis</p>",
 					"members": [
 						{
 							"name": "x",
 							"type": "PropertyDoc",
+							"access": "public",
 							"scope": "instance",
-							"brief": "",
+							"brief": "<p>Position of the point on the x axis</p>",
 							"description": ""
 						},
 						{
 							"name": "y",
 							"type": "PropertyDoc",
+							"access": "public",
 							"scope": "instance",
-							"brief": "",
+							"brief": "<p>Position of the point on the y axis</p>",
 							"description": ""
 						},
 						{
 							"name": "clone",
 							"type": "MethodDoc",
 							"scope": "instance",
-							"brief": "<p>Creates a clone of this point</p>",
-							"description": ""
+							"brief": "",
+							"description": "<p>Creates a clone of this point</p>"
 						},
 						{
 							"name": "constructor",
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
-							"description": ""
+							"description": "<p>Creates a new <code>Point</code></p>"
 						},
 						{
 							"name": "copyFrom",
 							"type": "MethodDoc",
 							"scope": "instance",
-							"brief": "<p>Copies x and y from the given point</p>",
+							"brief": "<p>Copies <code>x</code> and <code>y</code> from the given point into this point</p>",
 							"description": ""
 						},
 						{
 							"name": "copyTo",
 							"type": "MethodDoc",
 							"scope": "instance",
-							"brief": "<p>Copies x and y into the given point</p>",
+							"brief": "<p>Copies this point's x and y into the given point (<code>p</code>).</p>",
 							"description": ""
 						},
 						{
 							"name": "equals",
 							"type": "MethodDoc",
 							"scope": "instance",
-							"brief": "<p>Returns true if the given point is equal to this point</p>",
+							"brief": "<p>Accepts another point (<code>p</code>) and returns <code>true</code> if the given point is equal to this point</p>",
 							"description": ""
 						},
 						{
@@ -25643,7 +25890,7 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
-							"description": "<p>Sets the point to a new x and y position.\nIf y is omitted, both x and y will be set to x.</p>"
+							"description": "<p>Sets the point to a new <code>x</code> and <code>y</code> position.\nIf <code>y</code> is omitted, both <code>x</code> and <code>y</code> will be set to <code>x</code>.</p>"
 						}
 					]
 				},
@@ -25918,6 +26165,14 @@
 							"description": "<p>This matrix can be used to transform points from world space to normalized device coordinates, and is calculated\nfrom the sourceFrame → destinationFrame mapping provided.</p>\n<p>The renderer's <code>globalUniforms</code> keeps a reference to this, and so it is available for all shaders to use as a\nuniform.</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "sourceFrame",
 							"type": "PropertyDoc",
 							"scope": "instance",
@@ -25943,6 +26198,13 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -26414,6 +26676,13 @@
 							"scope": "instance",
 							"brief": "",
 							"description": "<p>Batch system instance</p>"
+						},
+						{
+							"name": "buffer",
+							"type": "PropertyDoc",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>Geometry system instance</p>"
 						},
 						{
 							"name": "clearBeforeRender",
@@ -27152,6 +27421,14 @@
 							"description": "<p>See {@link PIXI.Projection#destinationFrame} for more details.</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "sourceFrame",
 							"type": "PropertyDoc",
 							"scope": "instance",
@@ -27184,6 +27461,13 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -27689,10 +27973,25 @@
 					"description": "<p>Scissor masking discards pixels outside of a rectangle called the scissor box. The scissor box is in the framebuffer\nviewport's space; however, the mask's rectangle is projected from world-space to viewport space automatically\nby this system.</p>",
 					"members": [
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "constructor",
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -27776,6 +28075,14 @@
 							"description": ""
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "cache",
 							"type": "PropertyDoc",
 							"access": "private",
@@ -27805,7 +28112,7 @@
 							"description": ""
 						},
 						{
-							"name": "getglProgram",
+							"name": "getGlProgram",
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
@@ -27826,11 +28133,26 @@
 							"description": ""
 						},
 						{
+							"name": "syncUniformBufferGroup",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Syncs uniform buffers</p>",
+							"description": ""
+						},
+						{
 							"name": "syncUniformGroup",
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
 							"description": "<p>syncs uniforms on the group</p>"
+						},
+						{
+							"name": "createSyncBufferGroup",
+							"type": "MethodDoc",
+							"access": "protected",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>Will create a function that uploads a uniform buffer using the STD140 standard.\nThe upload function will then be cached for future calls\nIf a group is manually managed, then a simple upload function is generated</p>"
 						},
 						{
 							"name": "generateShader",
@@ -27854,7 +28176,7 @@
 							"access": "private",
 							"scope": "instance",
 							"brief": "",
-							"description": "<p>Overrideable by the @pixi/unsafe-eval package to use static\nsyncUnforms instead.</p>"
+							"description": "<p>Overrideable by the @pixi/unsafe-eval package to use static\nsyncUniforms instead.</p>"
 						},
 						{
 							"name": "systemCheck",
@@ -33804,6 +34126,14 @@
 							"description": "<p>Polygon offset</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "stateId",
 							"type": "PropertyDoc",
 							"scope": "instance",
@@ -33839,6 +34169,13 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -33934,10 +34271,25 @@
 					"description": "",
 					"members": [
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "constructor",
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -34224,11 +34576,49 @@
 					]
 				},
 				{
+					"name": "System",
+					"type": "ClassDoc",
+					"brief": "",
+					"description": "<p>Use the ISystem interface instead.</p>",
+					"members": [
+						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
+							"description": ""
+						}
+					]
+				},
+				{
 					"name": "Text",
 					"type": "ClassDoc",
 					"brief": "<p>A Text Object will create a line or multiple lines of text.</p>",
 					"description": "<p>The text is created using the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API\">Canvas API</a>.</p>\n<p>The primary advantage of this class over BitmapText is that you have great control over the style of the text,\nwhich you can change at runtime.</p>\n<p>The primary disadvantages is that each piece of text has it's own texture, which can use more memory.\nWhen text changes, this texture has to be re-generated and re-uploaded to the GPU, taking up time.</p>\n<p>To split a line you can use '\\n' in your text string, or, on the <code>style</code> object,\nchange its <code>wordWrap</code> property to true and and give the <code>wordWrapWidth</code> property a value.</p>\n<p>A Text can be created directly from a string and a style object,\nwhich can be generated <a href=\"https://pixijs.io/pixi-text-style\">here</a>.</p>\n<pre><code class=\"hljs language-js\"><span class=\"hljs-keyword\">let</span> text = <span class=\"hljs-keyword\">new</span> PIXI.Text(<span class=\"hljs-string\">&#x27;This is a PixiJS text&#x27;</span>,{<span class=\"hljs-attr\">fontFamily</span> : <span class=\"hljs-string\">&#x27;Arial&#x27;</span>, <span class=\"hljs-attr\">fontSize</span>: <span class=\"hljs-number\">24</span>, <span class=\"hljs-attr\">fill</span> : <span class=\"hljs-number\">0xff1010</span>, <span class=\"hljs-attr\">align</span> : <span class=\"hljs-string\">&#x27;center&#x27;</span>});\n</code></pre>",
 					"members": [
+						{
+							"name": "nextLineHeightBehavior",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "static",
+							"brief": "",
+							"description": "<p>New behavior for <code>lineHeight</code> that's meant to mimic HTML text. A value of <code>true</code> will\nmake sure the first baseline is offset by the <code>lineHeight</code> value if it is greater than <code>fontSize</code>.\nA value of <code>false</code> will use the legacy behavior and not change the baseline of the first line.\nIn the next major release, we'll enable this by default.</p>"
+						},
 						{
 							"name": "_accessibleActive",
 							"type": "PropertyDoc",
@@ -36476,10 +36866,25 @@
 							"description": "<p>Current garbage collection mode</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "constructor",
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -36652,6 +37057,14 @@
 							"description": "<p>List of managed textures</p>"
 						},
 						{
+							"name": "renderer",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Reference to the main renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "unknownTexture",
 							"type": "PropertyDoc",
 							"scope": "instance",
@@ -36693,6 +37106,13 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "<p>Sets up the renderer context and necessary buffers.</p>",
+							"description": ""
+						},
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"scope": "instance",
+							"brief": "<p>Destroy and don't use after this.</p>",
 							"description": ""
 						},
 						{
@@ -38719,7 +39139,7 @@
 					"name": "UniformGroup",
 					"type": "ClassDoc",
 					"brief": "<p>Uniform group holds uniform map and some ID's for work</p>",
-					"description": "",
+					"description": "<p><code>UniformGroup</code> has two modes:</p>\n<p>1: Normal mode\nNormal mode will upload the uniforms with individual function calls as required</p>\n<p>2: Uniform buffer mode\nThis mode will treat the uniforms as a uniform buffer. You can pass in either a buffer that you manually handle, or\nor a generic object that PixiJS will automatically map to a buffer for you.\nFor maximum benefits, make Ubo UniformGroups static, and only update them each frame.</p>\n<p>Rules of UBOs:</p>\n<ul>\n<li>UBOs only work with WebGL2, so make sure you have a fallback!</li>\n<li>Only floats are supported (including vec[2,3,4], mat[2,3,4])</li>\n<li>Samplers cannot be used in ubo's (a GPU limitation)</li>\n<li>You must ensure that the object you pass in exactly matches in the shader ubo structure.\nOtherwise, weirdness will ensue!</li>\n<li>The name of the ubo object added to the group must match exactly the name of the ubo in the shader.</li>\n</ul>\n<pre><code class=\"hljs\"><span class=\"hljs-comment\">// ubo in shader:</span>\nuniform myCoolData { <span class=\"hljs-comment\">// declaring a ubo..</span>\nmat4 uCoolMatrix;\n<span class=\"hljs-built_in\">float</span> uFloatyMcFloatFace\n\n\n<span class=\"hljs-comment\">// a new uniform buffer object..</span>\n<span class=\"hljs-keyword\">const</span> myCoolData = <span class=\"hljs-keyword\">new</span> UniformBufferGroup({\n  uCoolMatrix: <span class=\"hljs-keyword\">new</span> Matrix(),\n  uFloatyMcFloatFace: <span class=\"hljs-number\">23</span>,\n}}\n\n<span class=\"hljs-comment\">// build a shader...</span>\n<span class=\"hljs-keyword\">const</span> shader = Shader.<span class=\"hljs-keyword\">from</span>(srcVert, srcFrag, {\n  myCoolData <span class=\"hljs-comment\">// name matches the ubo name in the shader. will be processed accordingly.</span>\n})\n\n</code></pre>",
 					"members": [
 						{
 							"name": "group",
@@ -38734,6 +39154,13 @@
 							"scope": "instance",
 							"brief": "",
 							"description": "<p>Uniforms wont be changed after creation</p>"
+						},
+						{
+							"name": "ubo",
+							"type": "PropertyDoc",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>Flags whether this group is treated like a uniform buffer object.</p>"
 						},
 						{
 							"name": "uniforms",
@@ -38757,6 +39184,13 @@
 							"scope": "instance",
 							"brief": "",
 							"description": "<p>unique id</p>"
+						},
+						{
+							"name": "uboFrom",
+							"type": "MethodDoc",
+							"scope": "static",
+							"brief": "<p>A short hand function for creating a static UBO UniformGroup.</p>",
+							"description": ""
 						},
 						{
 							"name": "add",
@@ -40029,6 +40463,39 @@
 							"scope": "static",
 							"brief": "",
 							"description": "<p>Indicates the stencil buffer.</p>"
+						}
+					]
+				},
+				{
+					"name": "BUFFER_TYPE",
+					"type": "EnumDoc",
+					"scope": "static",
+					"brief": "<p>Constants for various buffer types in Pixi</p>",
+					"description": "",
+					"members": [
+						{
+							"name": "ARRAY_BUFFER",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "static",
+							"brief": "",
+							"description": "<p>buffer type for using attribute data</p>"
+						},
+						{
+							"name": "ELEMENT_ARRAY_BUFFER",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "static",
+							"brief": "",
+							"description": "<p>buffer type for using as an index buffer</p>"
+						},
+						{
+							"name": "UNIFORM_BUFFER",
+							"type": "PropertyDoc",
+							"access": "public",
+							"scope": "static",
+							"brief": "",
+							"description": "<p>the buffer type is for uniform buffer objects</p>"
 						}
 					]
 				},
@@ -41653,7 +42120,7 @@
 					"name": "TrackingData",
 					"type": "TypedefDoc",
 					"brief": "<p>The tracking data for each pointer held in the state of an {@link PIXI.EventBoundary}.</p>",
-					"description": "<pre><code class=\"hljs language-ts\">pressTargetsByButton: {\n     [id: <span class=\"hljs-built_in\">number</span>]: FederatedEventTarget;\n};\nclicksByButton: {\n    [id: <span class=\"hljs-built_in\">number</span>]: {\n        <span class=\"hljs-attr\">clickCount</span>: <span class=\"hljs-built_in\">number</span>;\n        target: FederatedEventTarget;\n        timeStamp: <span class=\"hljs-built_in\">number</span>;\n    }\n};\noverTarget: FederatedEventTarget;\n</code></pre>",
+					"description": "<pre><code class=\"hljs language-ts\">pressTargetsByButton: {\n     [id: <span class=\"hljs-built_in\">number</span>]: FederatedEventTarget[];\n};\nclicksByButton: {\n    [id: <span class=\"hljs-built_in\">number</span>]: {\n        <span class=\"hljs-attr\">clickCount</span>: <span class=\"hljs-built_in\">number</span>;\n        target: FederatedEventTarget;\n        timeStamp: <span class=\"hljs-built_in\">number</span>;\n    }\n};\noverTargets: FederatedEventTarget[];\n</code></pre>",
 					"members": [
 						{
 							"name": "clicksByButton",
@@ -41664,12 +42131,12 @@
 							"description": "<p>Holds clicking data for each button of the pointer.</p>"
 						},
 						{
-							"name": "overTarget",
+							"name": "overTargets",
 							"type": "PropertyDoc",
 							"access": "public",
 							"scope": "static",
 							"brief": "",
-							"description": "<p>The DisplayObject over which the pointer is hovering.</p>"
+							"description": "<p>The DisplayObject propagation path over which the pointer is hovering.</p>"
 						},
 						{
 							"name": "pressTargetsByButton",
@@ -41677,7 +42144,7 @@
 							"access": "public",
 							"scope": "static",
 							"brief": "",
-							"description": "<p>The pressed display objects\nby each button of the pointer.</p>"
+							"description": "<p>The pressed display objects'\npropagation paths by each button of the pointer.</p>"
 						}
 					]
 				},
@@ -42157,6 +42624,20 @@
 					"type": "InterfaceDoc",
 					"brief": "<p>Shape of supported resource plugins</p>",
 					"description": ""
+				},
+				{
+					"name": "ISystem",
+					"type": "InterfaceDoc",
+					"brief": "",
+					"description": "<p>Interface for systems used by the {@link PIXI.Renderer}.</p>",
+					"members": [
+						{
+							"name": "destroy",
+							"type": "MethodDoc",
+							"brief": "<p>Generic destroy methods to be overridden by the subclass</p>",
+							"description": ""
+						}
+					]
 				},
 				{
 					"name": "mapCanvasBlendModesToPixi",
@@ -46152,6 +46633,21 @@
 					"scope": "instance",
 					"brief": "<p>The data in the buffer, as a typed array</p>",
 					"description": ""
+				},
+				{
+					"name": "index",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Flags whether this is an index buffer.</p>",
+					"description": "<p>Index buffers are of type <code>ELEMENT_ARRAY_BUFFER</code>. Note that setting this property to false will make\nthe buffer of type <code>ARRAY_BUFFER</code>.</p>\n<p>For backwards compatibility.</p>"
+				},
+				{
+					"name": "type",
+					"type": "PropertyDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>The type of buffer this is, one of:</p>\n<ul>\n<li>ELEMENT_ARRAY_BUFFER - used as an index buffer</li>\n<li>ARRAY_BUFFER - used as an attribute buffer</li>\n<li>UNIFORM_BUFFER - used as a uniform buffer (if available)</li>\n</ul>"
 				},
 				{
 					"name": "_glBuffers",
@@ -51416,6 +51912,13 @@
 					"description": ""
 				},
 				{
+					"name": "currentPath",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Current path</p>",
+					"description": ""
+				},
+				{
 					"name": "cursor",
 					"type": "PropertyDoc",
 					"scope": "instance",
@@ -51814,14 +52317,6 @@
 					"description": ""
 				},
 				{
-					"name": "currentPath",
-					"type": "PropertyDoc",
-					"access": "protected",
-					"scope": "instance",
-					"brief": "<p>Current path</p>",
-					"description": ""
-				},
-				{
 					"name": "vertexData",
 					"type": "PropertyDoc",
 					"access": "protected",
@@ -51992,7 +52487,7 @@
 					"name": "drawChamferRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with chamfer corners.</p>",
+					"brief": "<p>Draw Rectangle with chamfer corners. These are angled corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -52015,8 +52510,8 @@
 					"name": "drawFilletRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with fillet corners.</p>",
-					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+					"brief": "",
+					"description": "<p>Draw Rectangle with fillet corners. This is much like rounded rectangle\nhowever it support negative numbers as well for the corner radius.</p>\n<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
 					"name": "drawPolygon",
@@ -52039,6 +52534,13 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Draw a regular polygon where all sides are the same length.</p>",
+					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+				},
+				{
+					"name": "drawRoundedPolygon",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>Draw a regular polygon with rounded corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -53073,6 +53575,13 @@
 					"description": ""
 				},
 				{
+					"name": "currentPath",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Current path</p>",
+					"description": ""
+				},
+				{
 					"name": "cursor",
 					"type": "PropertyDoc",
 					"scope": "instance",
@@ -53471,14 +53980,6 @@
 					"description": ""
 				},
 				{
-					"name": "currentPath",
-					"type": "PropertyDoc",
-					"access": "protected",
-					"scope": "instance",
-					"brief": "<p>Current path</p>",
-					"description": ""
-				},
-				{
 					"name": "vertexData",
 					"type": "PropertyDoc",
 					"access": "protected",
@@ -53649,7 +54150,7 @@
 					"name": "drawChamferRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with chamfer corners.</p>",
+					"brief": "<p>Draw Rectangle with chamfer corners. These are angled corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -53672,8 +54173,8 @@
 					"name": "drawFilletRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with fillet corners.</p>",
-					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+					"brief": "",
+					"description": "<p>Draw Rectangle with fillet corners. This is much like rounded rectangle\nhowever it support negative numbers as well for the corner radius.</p>\n<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
 					"name": "drawPolygon",
@@ -53696,6 +54197,13 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Draw a regular polygon where all sides are the same length.</p>",
+					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+				},
+				{
+					"name": "drawRoundedPolygon",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>Draw a regular polygon with rounded corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -54730,6 +55238,13 @@
 					"description": ""
 				},
 				{
+					"name": "currentPath",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Current path</p>",
+					"description": ""
+				},
+				{
 					"name": "cursor",
 					"type": "PropertyDoc",
 					"scope": "instance",
@@ -55152,14 +55667,6 @@
 					"description": ""
 				},
 				{
-					"name": "currentPath",
-					"type": "PropertyDoc",
-					"access": "protected",
-					"scope": "instance",
-					"brief": "<p>Current path</p>",
-					"description": ""
-				},
-				{
 					"name": "vertexData",
 					"type": "PropertyDoc",
 					"access": "protected",
@@ -55346,7 +55853,7 @@
 					"name": "drawChamferRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with chamfer corners.</p>",
+					"brief": "<p>Draw Rectangle with chamfer corners. These are angled corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -55369,8 +55876,8 @@
 					"name": "drawFilletRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with fillet corners.</p>",
-					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+					"brief": "",
+					"description": "<p>Draw Rectangle with fillet corners. This is much like rounded rectangle\nhowever it support negative numbers as well for the corner radius.</p>\n<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
 					"name": "drawPolygon",
@@ -55393,6 +55900,13 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Draw a regular polygon where all sides are the same length.</p>",
+					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+				},
+				{
+					"name": "drawRoundedPolygon",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>Draw a regular polygon with rounded corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -56434,6 +56948,13 @@
 					"description": ""
 				},
 				{
+					"name": "currentPath",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Current path</p>",
+					"description": ""
+				},
+				{
 					"name": "cursor",
 					"type": "PropertyDoc",
 					"scope": "instance",
@@ -56856,14 +57377,6 @@
 					"description": ""
 				},
 				{
-					"name": "currentPath",
-					"type": "PropertyDoc",
-					"access": "protected",
-					"scope": "instance",
-					"brief": "<p>Current path</p>",
-					"description": ""
-				},
-				{
 					"name": "vertexData",
 					"type": "PropertyDoc",
 					"access": "protected",
@@ -57034,7 +57547,7 @@
 					"name": "drawChamferRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with chamfer corners.</p>",
+					"brief": "<p>Draw Rectangle with chamfer corners. These are angled corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -57057,8 +57570,8 @@
 					"name": "drawFilletRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with fillet corners.</p>",
-					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+					"brief": "",
+					"description": "<p>Draw Rectangle with fillet corners. This is much like rounded rectangle\nhowever it support negative numbers as well for the corner radius.</p>\n<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
 					"name": "drawPolygon",
@@ -57081,6 +57594,13 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Draw a regular polygon where all sides are the same length.</p>",
+					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+				},
+				{
+					"name": "drawRoundedPolygon",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>Draw a regular polygon with rounded corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -58138,6 +58658,13 @@
 					"description": ""
 				},
 				{
+					"name": "currentPath",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Current path</p>",
+					"description": ""
+				},
+				{
 					"name": "cursor",
 					"type": "PropertyDoc",
 					"scope": "instance",
@@ -58536,14 +59063,6 @@
 					"description": ""
 				},
 				{
-					"name": "currentPath",
-					"type": "PropertyDoc",
-					"access": "protected",
-					"scope": "instance",
-					"brief": "<p>Current path</p>",
-					"description": ""
-				},
-				{
 					"name": "vertexData",
 					"type": "PropertyDoc",
 					"access": "protected",
@@ -58714,7 +59233,7 @@
 					"name": "drawChamferRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with chamfer corners.</p>",
+					"brief": "<p>Draw Rectangle with chamfer corners. These are angled corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -58737,8 +59256,8 @@
 					"name": "drawFilletRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with fillet corners.</p>",
-					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+					"brief": "",
+					"description": "<p>Draw Rectangle with fillet corners. This is much like rounded rectangle\nhowever it support negative numbers as well for the corner radius.</p>\n<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
 					"name": "drawPolygon",
@@ -58761,6 +59280,13 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Draw a regular polygon where all sides are the same length.</p>",
+					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+				},
+				{
+					"name": "drawRoundedPolygon",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>Draw a regular polygon with rounded corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -59802,6 +60328,13 @@
 					"description": ""
 				},
 				{
+					"name": "currentPath",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Current path</p>",
+					"description": ""
+				},
+				{
 					"name": "cursor",
 					"type": "PropertyDoc",
 					"scope": "instance",
@@ -60200,14 +60733,6 @@
 					"description": ""
 				},
 				{
-					"name": "currentPath",
-					"type": "PropertyDoc",
-					"access": "protected",
-					"scope": "instance",
-					"brief": "<p>Current path</p>",
-					"description": ""
-				},
-				{
 					"name": "vertexData",
 					"type": "PropertyDoc",
 					"access": "protected",
@@ -60377,7 +60902,7 @@
 					"name": "drawChamferRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with chamfer corners.</p>",
+					"brief": "<p>Draw Rectangle with chamfer corners. These are angled corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -60400,8 +60925,8 @@
 					"name": "drawFilletRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with fillet corners.</p>",
-					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+					"brief": "",
+					"description": "<p>Draw Rectangle with fillet corners. This is much like rounded rectangle\nhowever it support negative numbers as well for the corner radius.</p>\n<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
 					"name": "drawPolygon",
@@ -60424,6 +60949,13 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Draw a regular polygon where all sides are the same length.</p>",
+					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+				},
+				{
+					"name": "drawRoundedPolygon",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>Draw a regular polygon with rounded corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -75390,6 +75922,13 @@
 					"description": ""
 				},
 				{
+					"name": "currentPath",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Current path</p>",
+					"description": ""
+				},
+				{
 					"name": "cursor",
 					"type": "PropertyDoc",
 					"scope": "instance",
@@ -75802,14 +76341,6 @@
 					"description": ""
 				},
 				{
-					"name": "currentPath",
-					"type": "PropertyDoc",
-					"access": "protected",
-					"scope": "instance",
-					"brief": "<p>Current path</p>",
-					"description": ""
-				},
-				{
 					"name": "vertexData",
 					"type": "PropertyDoc",
 					"access": "protected",
@@ -75987,7 +76518,7 @@
 					"name": "drawChamferRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with chamfer corners.</p>",
+					"brief": "<p>Draw Rectangle with chamfer corners. These are angled corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -76010,8 +76541,8 @@
 					"name": "drawFilletRect",
 					"type": "MethodDoc",
 					"scope": "instance",
-					"brief": "<p>Draw Rectangle with fillet corners.</p>",
-					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+					"brief": "",
+					"description": "<p>Draw Rectangle with fillet corners. This is much like rounded rectangle\nhowever it support negative numbers as well for the corner radius.</p>\n<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
 					"name": "drawPolygon",
@@ -76034,6 +76565,13 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Draw a regular polygon where all sides are the same length.</p>",
+					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
+				},
+				{
+					"name": "drawRoundedPolygon",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>Draw a regular polygon with rounded corners.</p>",
 					"description": "<p><em>Note: Only available with <strong>@pixi/graphics-extras</strong>.</em></p>"
 				},
 				{
@@ -77891,6 +78429,12 @@
 			"description": ""
 		},
 		{
+			"name": "getUBOData",
+			"type": "FunctionDoc",
+			"brief": "",
+			"description": ""
+		},
+		{
 			"name": "IArrayBuffer",
 			"type": "InterfaceDoc",
 			"brief": "<p>Marks places in PixiJS where you can pass Float32Array, UInt32Array, any typed arrays, and ArrayBuffer</p>",
@@ -77984,20 +78528,6 @@
 			"type": "InterfaceDoc",
 			"brief": "<p>Represents the JSON data for a spritesheet atlas.</p>",
 			"description": ""
-		},
-		{
-			"name": "ISystem",
-			"type": "InterfaceDoc",
-			"brief": "<p>Interface for systems used by the {@link PIXI.Renderer}.</p>",
-			"description": "",
-			"members": [
-				{
-					"name": "destroy",
-					"type": "MethodDoc",
-					"brief": "<p>Generic destroy methods to be overridden by the subclass</p>",
-					"description": ""
-				}
-			]
 		},
 		{
 			"name": "ITranscodeMessage",
@@ -78296,6 +78826,12 @@
 					"description": "<p>Puts the text {@code content} into the local space of the engine at {@code position}. {@code matrix} can\nbe used to transform the glyphs, although it is as optional feature for implementations.</p>"
 				}
 			]
+		},
+		{
+			"name": "uboUpdate",
+			"type": "FunctionDoc",
+			"brief": "",
+			"description": ""
 		},
 		{
 			"name": "writeToIndex",

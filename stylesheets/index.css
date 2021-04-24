@@ -5,6 +5,7 @@
 }
 
 .header {
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 35%);
   height: 60px;
   min-height: 60px;
 }
@@ -29,8 +30,13 @@
   color: #666 !important;
 }
 
-.explorer-tree__parent > div > div:last-child > a {
-    color: #333 !important;
+.explorer-tree__selected > div > div:last-child > a {
+  color: var(--color-primary-text) !important;
+}
+
+.explorer-tree__parent > div > div:last-child {
+    color: black !important;
+    font-weight: 400 !important;
 }
 
 .page {
