@@ -6,7 +6,7 @@
 			"name": "PIXI",
 			"type": "NSDoc",
 			"brief": "",
-			"description": "",
+			"description": "<p>The <code>PIXI</code> global object is only provided if using the browser-only versions\nof <a href=\"https://www.npmjs.com/pixi.js\">pixi.js</a> or\n<a href=\"https://www.npmjs.com/pixi.js-legacy\">pixi.js-legacy</a>.\nThis is done typically via the <code>&lt;script&gt;</code> HTML element.\nBundler like Webpack, Parcel and Rollup do not expose this global object.</p>",
 			"members": [
 				{
 					"name": "canvasUtils",
@@ -92,8 +92,318 @@
 					"type": "NSDoc",
 					"scope": "static",
 					"brief": "",
-					"description": "<p>This namespace contains WebGL-only display filters that can be applied\nto DisplayObjects using the {@link PIXI.DisplayObject#filters filters} property.</p>\n<p>Since PixiJS only had a handful of built-in filters, additional filters\ncan be downloaded {@link https://github.com/pixijs/pixi-filters here} from the\nPixiJS Filters repository.</p>\n<p>All filters must extend {@link PIXI.Filter}.</p>",
+					"description": "<p>The <code>PIXI.filters</code> global object is created by <a href=\"https://www.npmjs.com/pixi.js\">pixi.js</a>\nor <a href=\"https://www.npmjs.com/pixi.js-legacy\">pixi.js-legacy</a> and is only available\nwith browser-based build of pixi-filters. If using a bundler like Webpack,\nRollup or Parcel, you can either import\n<a href=\"https://www.npmjs.com/pixi-filters\">pixi-filters</a> or the individual package\n(as defined on each filter's class page).</p>",
 					"members": [
+						{
+							"name": "AdjustmentFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The ability to adjust gamma, contrast, saturation, brightness, alpha or color-channel shift.\nThis is a faster and much simpler to use than\n{@link http://pixijs.download/release/docs/PIXI.filters.ColorMatrixFilter.html ColorMatrixFilter}\nbecause it does not use a matrix.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/adjustment.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "alpha",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The amount of alpha channel</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "blue",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The amount of blue channel</p>",
+									"description": ""
+								},
+								{
+									"name": "brightness",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The amount of brightness</p>",
+									"description": ""
+								},
+								{
+									"name": "contrast",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The amount of contrast</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "gamma",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The amount of luminance</p>",
+									"description": ""
+								},
+								{
+									"name": "green",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The amount of green channel</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "red",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The amount of red channel</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "saturation",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The amount of saturation</p>",
+									"description": ""
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "AdvancedBloomFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The AdvancedBloomFilter applies a Bloom Effect to an object. Unlike the normal BloomFilter\nthis had some advanced controls for adjusting the look of the bloom. Note: this filter\nis slower than normal BloomFilter.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/advanced-bloom.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default construction options.</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "bloomScale",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>To adjust the strength of the bloom. Higher values is more intense brightness.</p>",
+									"description": ""
+								},
+								{
+									"name": "blur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the strength of the Blur properties simultaneously</p>",
+									"description": ""
+								},
+								{
+									"name": "brightness",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The brightness, lower value is more subtle brightness, higher value is blown-out.</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "kernels",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the kernels of the Blur Filter</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "pixelSize",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the pixelSize of the Kawase Blur filter</p>",
+									"description": ""
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "quality",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the quality of the Blur Filter</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "threshold",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Defines how bright a color needs to be to affect bloom.</p>",
+									"description": ""
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "<p>Override existing apply method in PIXI.Filter</p>",
+									"description": ""
+								}
+							]
+						},
 						{
 							"name": "AlphaFilter",
 							"type": "ClassDoc",
@@ -119,6 +429,363 @@
 									"type": "PropertyDoc",
 									"scope": "instance",
 									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "AsciiFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>An ASCII filter.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/ascii.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "size",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The pixel size used by the filter.</p>",
+									"description": ""
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "BevelFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>Bevel Filter.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/bevel.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "lightAlpha",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Alpha of the light.</p>"
+								},
+								{
+									"name": "lightColor",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Color of the light.</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "rotation",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The angle of the light in degrees.</p>"
+								},
+								{
+									"name": "shadowAlpha",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Alpha of the shadow.</p>"
+								},
+								{
+									"name": "shadowColor",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Color of the shadow.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "thickness",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The tickness of the bevel.</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "_updateTransform",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Update the transform matrix of offset angle.</p>"
+								}
+							]
+						},
+						{
+							"name": "BloomFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The BloomFilter applies a Gaussian blur to an object.\nThe strength of the blur can be set for x- and y-axis separately.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/bloom.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "blur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the strength of both the blurX and blurY properties simultaneously</p>",
+									"description": ""
+								},
+								{
+									"name": "blurX",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the strength of the blurX property</p>",
+									"description": ""
+								},
+								{
+									"name": "blurY",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the strength of the blurY property</p>",
 									"description": ""
 								},
 								{
@@ -431,6 +1098,258 @@
 							]
 						},
 						{
+							"name": "BulgePinchFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>Bulges or pinches the image in a circle.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/bulge-pinch.gif\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default constructor options.</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "center",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The x and y coordinates of the center of the circle of effect.</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "radius",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The radius of the circle of effect.</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "strength",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The strength of the effect. -1 to 1 (-1 is strong pinch, 0 is no effect, 1 is strong bulge)</p>",
+									"description": ""
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "ColorMapFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The ColorMapFilter applies a color-map effect to an object.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/color-map.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "colorMap",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>the colorMap texture</p>"
+								},
+								{
+									"name": "colorSize",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>the size of one color slice</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "mix",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The mix from 0 to 1, where 0 is the original image and 1 is the color mapped image.</p>",
+									"description": ""
+								},
+								{
+									"name": "nearest",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Whether use NEAREST for colorMap texture.</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Destroys this filter</p>",
+									"description": ""
+								},
+								{
+									"name": "updateColorMap",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If the colorMap is based on canvas , and the content of canvas has changed,\nthen call <code>updateColorMap</code> for update texture.</p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Override existing apply method in PIXI.Filter</p>"
+								}
+							]
+						},
+						{
 							"name": "ColorMatrixFilter",
 							"type": "ClassDoc",
 							"brief": "",
@@ -715,6 +1634,608 @@
 							]
 						},
 						{
+							"name": "ColorOverlayFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>Replace all colors within a source graphic with a single color.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/color-overlay.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "alpha",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The alpha value of the color</p>"
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "color",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resulting color, as a 3 component RGB e.g. [1.0, 0.5, 1.0]</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "ColorReplaceFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>ColorReplaceFilter, originally by mishaa, updated by timetocode\nhttp://www.html5gamedevs.com/topic/10640-outline-a-sprite-change-certain-colors/?p=69966<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/color-replace.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "epsilon",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Tolerance/sensitivity of the floating-point comparison between colors (lower = more exact, higher = more inclusive)</p>"
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "newColor",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resulting color, as a 3 component RGB e.g. [1.0, 0.5, 1.0]</p>"
+								},
+								{
+									"name": "originalColor",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The color that will be changed, as a 3 component RGB e.g. [1.0, 1.0, 1.0]</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "ConvolutionFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The ConvolutionFilter class applies a matrix convolution filter effect.\nA convolution combines pixels in the input image with neighboring pixels to produce a new image.\nA wide variety of image effects can be achieved through convolutions, including blurring, edge\ndetection, sharpening, embossing, and beveling. The matrix should be specified as a 9 point Array.\nSee https://docs.gimp.org/2.10/en/gimp-filter-convolution-matrix.html for more info.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/convolution.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "height",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Height of the object you are transforming</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "matrix",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>An array of values used for matrix transformation. Specified as a 9 point Array.</p>",
+									"description": ""
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "width",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Width of the object you are transforming</p>",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "CrossHatchFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>A Cross Hatch effect filter.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/cross-hatch.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "CRTFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The CRTFilter applies a CRT effect to an object.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/crt.gif\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default constructor options</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "curvature",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Bent of interlaced lines, higher value means more bend</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "lineContrast",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Contrast of interlaced lines</p>",
+									"description": ""
+								},
+								{
+									"name": "lineWidth",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Width of interlaced lines</p>",
+									"description": ""
+								},
+								{
+									"name": "noise",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Opacity/intensity of the noise effect between <code>0</code> and <code>1</code></p>",
+									"description": ""
+								},
+								{
+									"name": "noiseSize",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The size of the noise particles</p>",
+									"description": ""
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "seed",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>A seed value to apply to the random noise generation</p>",
+									"description": ""
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "time",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>For animating interlaced lines</p>",
+									"description": ""
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "verticalLine",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p><code>true</code> for vertical lines, <code>false</code> for horizontal lines</p>",
+									"description": ""
+								},
+								{
+									"name": "vignetting",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The radius of the vignette effect, smaller\nvalues produces a smaller vignette</p>"
+								},
+								{
+									"name": "vignettingAlpha",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Amount of opacity of vignette</p>",
+									"description": ""
+								},
+								{
+									"name": "vignettingBlur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Blur intensity of the vignette</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Override existing apply method in PIXI.Filter</p>"
+								}
+							]
+						},
+						{
 							"name": "DisplacementFilter",
 							"type": "ClassDoc",
 							"brief": "",
@@ -823,6 +2344,402 @@
 							]
 						},
 						{
+							"name": "DotFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>This filter applies a dotscreen effect making display objects appear to be made out of\nblack and white halftone dots like an old printer.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/dot.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "angle",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The radius of the effect.</p>"
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "scale",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The scale of the effect.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "DropShadowFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>Drop shadow filter.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/drop-shadow.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default constructor options.</p>",
+									"description": ""
+								},
+								{
+									"name": "alpha",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The alpha of the shadow</p>"
+								},
+								{
+									"name": "angle",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>Angle of the shadow in degrees.</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "blur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The blur of the shadow</p>"
+								},
+								{
+									"name": "color",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The color of the shadow.</p>"
+								},
+								{
+									"name": "distance",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Distance offset of the shadow</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "kernels",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the kernels of the Blur Filter</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "pixelSize",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the pixelSize of the Kawase Blur filter</p>",
+									"description": ""
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "quality",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the quality of the Blur Filter</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The resolution of the filter.</p>",
+									"description": ""
+								},
+								{
+									"name": "rotation",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The angle of the shadow in degrees</p>"
+								},
+								{
+									"name": "shadowOnly",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>Hide the contents, only show the shadow.</p>",
+									"description": ""
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "_updatePadding",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Recalculate the proper padding amount.</p>"
+								},
+								{
+									"name": "_updateShift",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Update the transform matrix of offset angle.</p>"
+								}
+							]
+						},
+						{
+							"name": "EmbossFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>An RGB Split Filter.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/emboss.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "strength",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Strength of emboss.</p>",
+									"description": ""
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
 							"name": "FXAAFilter",
 							"type": "ClassDoc",
 							"brief": "",
@@ -905,6 +2822,973 @@
 									"scope": "instance",
 									"brief": "",
 									"description": ""
+								}
+							]
+						},
+						{
+							"name": "GlitchFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The GlitchFilter applies a glitch effect to an object.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/glitch.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "CLAMP",
+									"type": "PropertyDoc",
+									"scope": "static",
+									"brief": "<p>Fill mode as clamp</p>",
+									"description": ""
+								},
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default constructor options.</p>",
+									"description": ""
+								},
+								{
+									"name": "LOOP",
+									"type": "PropertyDoc",
+									"scope": "static",
+									"brief": "<p>Fill mode as loop</p>",
+									"description": ""
+								},
+								{
+									"name": "MIRROR",
+									"type": "PropertyDoc",
+									"scope": "static",
+									"brief": "<p>Fill mode as mirror</p>",
+									"description": ""
+								},
+								{
+									"name": "ORIGINAL",
+									"type": "PropertyDoc",
+									"scope": "static",
+									"brief": "<p>Fill mode as original</p>",
+									"description": ""
+								},
+								{
+									"name": "TRANSPARENT",
+									"type": "PropertyDoc",
+									"scope": "static",
+									"brief": "<p>Fill mode as transparent</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "average",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p><code>true</code> will divide the bands roughly based on equal amounts\nwhere as setting to <code>false</code> will vary the band sizes dramatically (more random looking).</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "blue",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Blue offset.</p>",
+									"description": ""
+								},
+								{
+									"name": "direction",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The angle in degree of the offset of slices.</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "fillMode",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The fill mode of the space after the offset.</p>",
+									"description": ""
+								},
+								{
+									"name": "green",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Green channel offset.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "minSize",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>Minimum size of slices as a portion of the <code>sampleSize</code></p>",
+									"description": ""
+								},
+								{
+									"name": "offset",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The maximum offset value for each of the slices.</p>",
+									"description": ""
+								},
+								{
+									"name": "offsets",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Manually set custom slices offset of displacement bitmap, this is\na collection of values from -1 to 1. To change the max offset value\nset <code>offset</code>.</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "red",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Red channel offset.</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "sampleSize",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>Height of the displacement map canvas.</p>",
+									"description": ""
+								},
+								{
+									"name": "seed",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>A seed value for randomizing color offset. Animating\nthis value to <code>Math.random()</code> produces a twitching effect.</p>"
+								},
+								{
+									"name": "sizes",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Manually custom slices size (height) of displacement bitmap</p>",
+									"description": ""
+								},
+								{
+									"name": "slices",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The count of slices.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "texture",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The displacement map is used to generate the bands.\nIf using your own texture, <code>slices</code> will be ignored.</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "_canvas",
+									"type": "PropertyDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "<p>Internally generated canvas.</p>",
+									"description": ""
+								},
+								{
+									"name": "_slices",
+									"type": "PropertyDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "<p>Internal number of slices</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Removes all references</p>",
+									"description": ""
+								},
+								{
+									"name": "redraw",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Redraw displacement bitmap texture, advanced usage.</p>",
+									"description": ""
+								},
+								{
+									"name": "refresh",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Regenerating random size, offsets for slices.</p>",
+									"description": ""
+								},
+								{
+									"name": "shuffle",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Shuffle the sizes of the slices, advanced usage.</p>",
+									"description": ""
+								},
+								{
+									"name": "_randomizeOffsets",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "<p>Randomize the values for offset from -1 to 1</p>",
+									"description": ""
+								},
+								{
+									"name": "_randomizeSizes",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "<p>Randomize the slices size (heights).</p>",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Override existing apply method in PIXI.Filter</p>"
+								}
+							]
+						},
+						{
+							"name": "GlowFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>GlowFilter, originally by mishaa\n[codepen]{@link http://codepen.io/mishaa/pen/raKzrm}.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/glow.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"scope": "static",
+									"brief": "<p>Default values for options.</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "color",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The color of the glow.</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "innerStrength",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The strength of the glow inward from the edge of the sprite.</p>"
+								},
+								{
+									"name": "knockout",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Only draw the glow, not the texture itself</p>"
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "outerStrength",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The strength of the glow outward from the edge of the sprite.</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "GodrayFilter",
+							"type": "ClassDoc",
+							"brief": "<p>GordayFilter, {@link https://codepen.io/alaingalvan originally} by Alain Galvan</p>",
+							"description": "<p><img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/godray.gif\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default for constructior options.</p>",
+									"description": ""
+								},
+								{
+									"name": "alpha",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The alpha (opacity) of the rays.  0 is fully transparent, 1 is fully opaque</p>"
+								},
+								{
+									"name": "angle",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The angle/light-source of the rays in degrees. For instance, a value of 0 is vertical rays,\nvalues of 90 or -90 produce horizontal rays.</p>"
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "center",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The position of the emitting point for light rays\nonly used if <code>parallel</code> is set to <code>false</code>.</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "gain",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>General intensity of the effect. A value closer to 1 will produce a more intense effect,\nwhere a value closer to 0 will produce a subtler effect.</p>"
+								},
+								{
+									"name": "lacunarity",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The density of the fractal noise. A higher amount produces more rays and a smaller amound\nproduces fewer waves.</p>"
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "parallel",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p><code>true</code> if light rays are parallel (uses angle),\n<code>false</code> to use the focal <code>center</code> point</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "time",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>The current time.</p>",
+									"description": ""
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Applies the filter.</p>"
+								}
+							]
+						},
+						{
+							"name": "KawaseBlurFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>A much faster blur than Gaussian blur, but more complicated to use.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/kawase-blur.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "blur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The amount of blur, value greater than <code>0</code>.</p>",
+									"description": ""
+								},
+								{
+									"name": "clamp",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Get the if the filter is clampped.</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "kernels",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The kernel size of the blur filter, for advanced usage.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "pixelSize",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the pixel size of the filter. Large size is blurrier. For advanced usage.</p>",
+									"description": ""
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "quality",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The quality of the filter, integer greater than <code>1</code>.</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "_generateKernels",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Auto generate kernels by blur &amp; quality</p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Overrides apply</p>"
+								}
+							]
+						},
+						{
+							"name": "MotionBlurFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The MotionBlurFilter applies a Motion blur to an object.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/motion-blur.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "kernelSize",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The kernelSize of the blur, higher values are slower but look better.\nUse odd value greater than 5.</p>"
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "offset",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The offset of the blur filter.</p>",
+									"description": ""
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "velocity",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the velocity of the motion for blur effect.</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Override existing apply method in PIXI.Filter</p>"
+								},
+								{
+									"name": "setVelocity",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "<p>Set velocity with more broad types</p>",
+									"description": ""
+								},
+								{
+									"name": "velocityChanged",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Handle velocity changed</p>"
+								}
+							]
+						},
+						{
+							"name": "MultiColorReplaceFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>Filter for replacing a color with another color. Similar to ColorReplaceFilter, but support multiple\ncolors.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/multi-color-replace.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "epsilon",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Tolerance of the floating-point comparison between colors (lower = more exact, higher = more inclusive)</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "maxColors",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The maximum number of color replacements supported by this filter. Can be changed\n<em>only</em> during construction.</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "replacements",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The source and target colors for replacement. See constructor for information on the format.</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "refresh",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Should be called after changing any of the contents of the replacements.\nThis is a convenience method for resetting the <code>replacements</code>.</p>"
 								}
 							]
 						},
@@ -1014,8 +3898,1596 @@
 									"description": ""
 								}
 							]
+						},
+						{
+							"name": "OldFilmFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The OldFilmFilter applies a Old film effect to an object.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/old-film.gif\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default constructor options</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "noise",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Opacity/intensity of the noise effect between <code>0</code> and <code>1</code></p>",
+									"description": ""
+								},
+								{
+									"name": "noiseSize",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The size of the noise particles</p>",
+									"description": ""
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "scratch",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>How often scratches appear</p>",
+									"description": ""
+								},
+								{
+									"name": "scratchDensity",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The density of the number of scratches</p>",
+									"description": ""
+								},
+								{
+									"name": "scratchWidth",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The width of the scratches</p>",
+									"description": ""
+								},
+								{
+									"name": "seed",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>A see value to apply to the random noise generation</p>",
+									"description": ""
+								},
+								{
+									"name": "sepia",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The amount of saturation of sepia effect,\na value of <code>1</code> is more saturation and closer to <code>0</code> is less,\nand a value of <code>0</code> produces no sepia effect</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "vignetting",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The radius of the vignette effect, smaller\nvalues produces a smaller vignette</p>"
+								},
+								{
+									"name": "vignettingAlpha",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Amount of opacity of vignette</p>",
+									"description": ""
+								},
+								{
+									"name": "vignettingBlur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Blur intensity of the vignette</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Override existing apply method in PIXI.Filter</p>"
+								}
+							]
+						},
+						{
+							"name": "OutlineFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>OutlineFilter, originally by mishaa\nhttp://www.html5gamedevs.com/topic/10640-outline-a-sprite-change-certain-colors/?p=69966\nhttp://codepen.io/mishaa/pen/emGNRB<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/outline.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "MAX_SAMPLES",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>The maximum number of samples for rendering outline.</p>",
+									"description": ""
+								},
+								{
+									"name": "MIN_SAMPLES",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>The minimum number of samples for rendering outline.</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "color",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The color of the glow.</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "thickness",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The thickness of the outline.</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "getAngleStep",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "static",
+									"brief": "",
+									"description": "<p>Get the angleStep by quality</p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "PixelateFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>This filter applies a pixelate effect making display objects appear 'blocky'.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/pixelate.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "size",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>This a point that describes the size of the blocks.\nx is the width of the block and y is the height.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "RadialBlurFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The RadialBlurFilter applies a Motion blur to an object.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/radial-blur.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "angle",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the angle in degrees of the motion for blur effect.</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "center",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Center of the effect.</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "kernelSize",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The kernelSize for the blur filter. Must be odd number &gt;= 3.</p>"
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "radius",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Outer radius of the effect. The default value of <code>-1</code> is infinite.</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Override existing apply method in PIXI.Filter</p>"
+								}
+							]
+						},
+						{
+							"name": "ReflectionFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>Applies a reflection effect to simulate the reflection on water with waves.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/reflection.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default constructor options</p>",
+									"description": ""
+								},
+								{
+									"name": "alpha",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Starting and ending alpha values</p>"
+								},
+								{
+									"name": "amplitude",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Starting and ending amplitude of waves</p>"
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "boundary",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Vertical position of the reflection point, default is 50% (middle)\nsmaller numbers produce a larger reflection, larger numbers produce a smaller reflection.</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "mirror",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p><code>true</code> to reflect the image, <code>false</code> for waves-only</p>",
+									"description": ""
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "time",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>Time for animating position of waves</p>",
+									"description": ""
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "waveLength",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Starting and ending length of waves</p>"
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Override existing apply method in PIXI.Filter</p>"
+								}
+							]
+						},
+						{
+							"name": "RGBSplitFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>An RGB Split Filter.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/rgb.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "blue",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Blue offset.</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "green",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Green channel offset.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "red",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Red channel offset.</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "ShockwaveFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The ShockwaveFilter class lets you apply a shockwave effect.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/shockwave.gif\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default constructor options.</p>",
+									"description": ""
+								},
+								{
+									"name": "amplitude",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The amplitude of the shockwave.</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "brightness",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The brightness of the shockwave.</p>",
+									"description": ""
+								},
+								{
+									"name": "center",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Sets the center of the shockwave in normalized screen coords. That is\n(0,0) is the top-left and (1,1) is the bottom right.</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "radius",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The maximum radius of shockwave.\n<code>&lt; 0.0</code> means it's infinity.</p>"
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "speed",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The speed about the shockwave ripples out.\nThe unit is <code>pixel/second</code></p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "time",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Sets the elapsed time of the shockwave.\nIt could control the current size of shockwave.</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "wavelength",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The wavelength of the shockwave.</p>",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "SimpleLightmapFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>SimpleLightmap, originally by Oza94\nhttp://www.html5gamedevs.com/topic/20027-pixijs-simple-lightmapping/\nhttp://codepen.io/Oza94/pen/EPoRxj</p>\n<p>You have to specify filterArea, or suffer consequences.\nYou may have to use it with <code>filter.dontFit = true</code>,\nuntil we rewrite this using same approach as for DisplacementFilter.</p>\n<p><img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/simple-lightmap.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "alpha",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>When setting <code>color</code> as hex, this can be used to set alpha independently.</p>"
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "color",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>An RGBA array of the ambient color or a hex color without alpha</p>"
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "texture",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>a texture where your lightmap is rendered</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"access": "private",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Applies the filter.</p>"
+								}
+							]
+						},
+						{
+							"name": "TiltShiftFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>A TiltShift Filter. Manages the pass of both a TiltShiftXFilter and TiltShiftYFilter.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/tilt-shift.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "blur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The strength of the blur.</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "end",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The Y value to end the effect at.</p>",
+									"description": ""
+								},
+								{
+									"name": "gradientBlur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The strength of the gradient blur.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "start",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The Y value to start the effect at.</p>",
+									"description": ""
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "TwistFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>This filter applies a twist effect making display objects appear twisted in the given direction.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/twist.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default constructor options.</p>",
+									"description": ""
+								},
+								{
+									"name": "angle",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The angle of the twist.</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "offset",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>This point describes the the offset of the twist.</p>",
+									"description": ""
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "radius",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The radius of the twist.</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "ZoomBlurFilter",
+							"type": "ClassDoc",
+							"brief": "",
+							"description": "<p>The ZoomFilter applies a Zoom blur to an object.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/zoom-blur.png\" alt=\"filter\"></p>",
+							"members": [
+								{
+									"name": "defaults",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "static",
+									"brief": "<p>Default constructor options.</p>",
+									"description": ""
+								},
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "center",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Center of the effect.</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "innerRadius",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Radius of the inner region not effected by blur.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "radius",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Outer radius of the effect. The default value is <code>-1</code>.\n<code>&lt; 0.0</code> means it's infinity.</p>"
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "strength",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Intensity of the zoom effect.</p>",
+									"description": ""
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "TiltShiftAxisFilter",
+							"type": "ClassDoc",
+							"access": "private",
+							"brief": "<p>A TiltShiftAxisFilter.</p>",
+							"description": "",
+							"members": [
+								{
+									"name": "autoFit",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+								},
+								{
+									"name": "blendMode",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Sets the blendmode of the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "blur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The strength of the blur.</p>",
+									"description": ""
+								},
+								{
+									"name": "enabled",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+									"description": ""
+								},
+								{
+									"name": "end",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The X value to end the effect at.</p>",
+									"description": ""
+								},
+								{
+									"name": "gradientBlur",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The strength of the gradient blur.</p>",
+									"description": ""
+								},
+								{
+									"name": "legacy",
+									"type": "PropertyDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+								},
+								{
+									"name": "padding",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+								},
+								{
+									"name": "program",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>Program that the shader uses</p>",
+									"description": ""
+								},
+								{
+									"name": "resolution",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+								},
+								{
+									"name": "start",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "<p>The X value to start the effect at.</p>",
+									"description": ""
+								},
+								{
+									"name": "state",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>The WebGL state the filter requires to render</p>"
+								},
+								{
+									"name": "uniforms",
+									"type": "PropertyDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+								},
+								{
+									"name": "apply",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "<p>Applies the filter</p>",
+									"description": ""
+								},
+								{
+									"name": "destroy",
+									"type": "MethodDoc",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
+									"name": "updateDelta",
+									"type": "MethodDoc",
+									"access": "protected",
+									"scope": "instance",
+									"brief": "",
+									"description": "<p>Updates the filter delta values.\nThis is overridden in the X and Y filters, does nothing for this class.</p>"
+								}
+							]
+						},
+						{
+							"name": "TiltShiftXFilter",
+							"type": "ClassDoc",
+							"access": "private",
+							"brief": "<p>A TiltShiftXFilter.</p>",
+							"description": "",
+							"members": [
+								{
+									"name": "updateDelta",
+									"type": "MethodDoc",
+									"access": "protected",
+									"scope": "instance",
+									"brief": "<p>Updates the filter delta values.</p>",
+									"description": ""
+								}
+							]
+						},
+						{
+							"name": "TiltShiftYFilter",
+							"type": "ClassDoc",
+							"access": "private",
+							"brief": "<p>A TiltShiftYFilter.</p>",
+							"description": "",
+							"members": [
+								{
+									"name": "updateDelta",
+									"type": "MethodDoc",
+									"access": "protected",
+									"scope": "instance",
+									"brief": "<p>Updates the filter delta values.</p>",
+									"description": ""
+								}
+							]
 						}
 					]
+				},
+				{
+					"name": "filters",
+					"type": "NSDoc",
+					"scope": "static",
+					"brief": "",
+					"description": "<p>This namespace contains WebGL-only display filters that can be applied\nto DisplayObjects using the {@link PIXI.DisplayObject#filters filters} property.</p>\n<p>Since PixiJS only had a handful of built-in filters, additional filters\ncan be downloaded {@link https://github.com/pixijs/pixi-filters here} from the\nPixiJS Filters repository.</p>\n<p>All filters must extend {@link PIXI.Filter}.</p>"
 				},
 				{
 					"name": "groupD8",
@@ -42662,6 +47134,12 @@
 			"description": ""
 		},
 		{
+			"name": "PIXI",
+			"type": "NSDoc",
+			"brief": "",
+			"description": ""
+		},
+		{
 			"name": "AggregateUniformsBatchFactory",
 			"type": "ClassDoc",
 			"brief": "",
@@ -77530,6 +82008,107 @@
 			"members": [
 				{
 					"name": "constructor",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "ExtractBrightnessFilter",
+			"type": "ClassDoc",
+			"access": "private",
+			"brief": "",
+			"description": "<p>Internal filter for AdvancedBloomFilter to get brightness.</p>",
+			"members": [
+				{
+					"name": "autoFit",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>If enabled, PixiJS will fit the filter area into boundaries for better performance.\nSwitch it off if it does not work for specific shader.</p>"
+				},
+				{
+					"name": "blendMode",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Sets the blendmode of the filter</p>",
+					"description": ""
+				},
+				{
+					"name": "enabled",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>If enabled is true the filter is applied, if false it will not.</p>",
+					"description": ""
+				},
+				{
+					"name": "legacy",
+					"type": "PropertyDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Legacy filters use position and uvs from attributes (set by filter system)</p>"
+				},
+				{
+					"name": "padding",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>The padding of the filter. Some filters require extra space to breath such as a blur.\nIncreasing this will add extra width and height to the bounds of the object that the\nfilter is applied to.</p>"
+				},
+				{
+					"name": "program",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Program that the shader uses</p>",
+					"description": ""
+				},
+				{
+					"name": "resolution",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>The resolution of the filter. Setting this to be lower will lower the quality but\nincrease the performance of the filter.</p>"
+				},
+				{
+					"name": "state",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>The WebGL state the filter requires to render</p>"
+				},
+				{
+					"name": "threshold",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Defines how bright a color needs to be extracted.</p>",
+					"description": ""
+				},
+				{
+					"name": "uniforms",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Shader uniform values, shortcut for <code>uniformGroup.uniforms</code></p>"
+				},
+				{
+					"name": "apply",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>Applies the filter</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				},
+				{
+					"name": "destroy",
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "",
