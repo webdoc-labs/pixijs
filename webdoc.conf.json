@@ -41,6 +41,9 @@
         "indexName": "pixijs"
       }
     },
+    "stylesheets": [
+      "./stylesheets/index.css"
+    ],
     "meta": {
       "og:title": "PixiJS API Documentation",
       "og:description": "Documentation for all of the PixiJS ecosystem, in one place",
