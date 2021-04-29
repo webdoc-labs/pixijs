@@ -4,12 +4,6 @@
   --color-primary-text: #e91e63;
 }
 
-.header {
-  box-shadow: 0 0 5px 0 rgb(0 0 0 / 35%);
-  height: 60px;
-  min-height: 60px;
-}
-
 .explorer {
   background-color: transparent;
 }
@@ -36,27 +30,26 @@
 
 .explorer-tree__parent > div > div:last-child {
     color: black !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
 }
 
 .page {
   background: #ecedf1 url(https://www.pixijs.com/img/faq-tile.png) 0 0 repeat;
 }
 
-.page-content h1 {
-  font-size: 3em;
-  line-height: 1.4em;
-}
-
-.page-content h2 {
-  font-family: 'Roboto Mono';
+.tutorials .page-content {
+  padding-left: 22px;
 }
 
 .document > p, .document > ul, .document > ol {
   font-size: 1em;
 }
 
-.tutorials .document > :not(h1) {
+.tutorials .document {
+  font-size: 1em;
+}
+
+.tutorials .document > :not(h1, h2, h3) {
   background-color: white;
   padding: 14px;
 }
@@ -73,22 +66,18 @@
   width: 100%;
 }
 
-.tutorials .document > :is(h1, h2, h3, h4, h5, h6) {
-  margin-top: 24px;
-}
-
 .tutorials .document > :not(h1) {
   margin-bottom: 0;
 }
 
 .tutorials .document > ul, .document > ol {
-  padding: 0;
   padding-left: 4em;
 }
 
-.tutorials .document > :not(h1) + :not(h1) {
+.tutorials .document > :not(h1, h2, h3, h1:first-child+p, h1:first-child+h2+p) + :not(h1, h2, h3) {
   /* Remove margin because we added padding */
   margin-top: 0;
+  padding-top: 0;
 }
 
 .api-docs .document {

@@ -1555,7 +1555,17 @@
 							"name": "EventEmitter",
 							"type": "ClassDoc",
 							"brief": "<p>A high performance event emitter</p>",
-							"description": ""
+							"description": "",
+							"members": [
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>A high performance event emitter</p>",
+									"description": ""
+								}
+							]
 						},
 						{
 							"name": "BaseTextureCache",
@@ -2686,6 +2696,14 @@
 									"scope": "static",
 									"brief": "",
 									"description": "<p>Generates a fully customized <code>BatchRenderer</code> that aggregates primitives and textures. This is useful\nfor non-uniform based display-objects.</p>"
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>Factory class for creating a batch-renderer.</p>",
+									"description": ""
 								}
 							]
 						},
@@ -5514,6 +5532,14 @@
 							"scope": "static",
 							"brief": "",
 							"description": "<p>Called on application constructor</p>"
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
 						}
 					]
 				},
@@ -6077,6 +6103,14 @@
 							"description": ""
 						},
 						{
+							"name": "delayedTick",
+							"type": "MethodDoc",
+							"access": "private",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>'bound' call for prepareItems().</p>"
+						},
+						{
 							"name": "prepareItems",
 							"type": "MethodDoc",
 							"access": "private",
@@ -6091,14 +6125,6 @@
 							"scope": "instance",
 							"brief": "<p>Handle tick update</p>",
 							"description": ""
-						},
-						{
-							"name": "delayedTick",
-							"type": "FunctionDoc",
-							"access": "private",
-							"scope": "instance",
-							"brief": "",
-							"description": "<p>'bound' call for prepareItems().</p>"
 						}
 					]
 				},
@@ -6852,13 +6878,6 @@
 									"description": ""
 								},
 								{
-									"name": "constructor",
-									"type": "MethodDoc",
-									"scope": "instance",
-									"brief": "",
-									"description": ""
-								},
-								{
 									"name": "initAsync",
 									"type": "MethodDoc",
 									"scope": "instance",
@@ -6936,6 +6955,14 @@
 							"access": "private",
 							"scope": "static",
 							"brief": "<p>Runs transcoding on the main thread.</p>",
+							"description": ""
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Loader plugin for handling BASIS supercompressed texture files.</p>",
 							"description": ""
 						}
 					]
@@ -7097,6 +7124,14 @@
 							"scope": "static",
 							"brief": "",
 							"description": "<p>Create a new BatchRenderer plugin for Renderer. this convenience can provide an easy way\nto extend BatchRenderer with all the necessary pieces.</p>"
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
 						}
 					]
 				},
@@ -7503,6 +7538,14 @@
 							"scope": "static",
 							"brief": "",
 							"description": "<p>Get folder path from a resource</p>"
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
 						}
 					]
 				},
@@ -9800,6 +9843,14 @@
 							"description": ""
 						},
 						{
+							"name": "delayedTick",
+							"type": "MethodDoc",
+							"access": "private",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>'bound' call for prepareItems().</p>"
+						},
+						{
 							"name": "prepareItems",
 							"type": "MethodDoc",
 							"access": "private",
@@ -10405,6 +10456,14 @@
 							"scope": "static",
 							"brief": "<p>Called after a compressed-textures manifest is loaded.</p>",
 							"description": "<p>This will then load the correct compression format for the device. Your manifest should adhere\nto the following schema:</p>\n<pre><code class=\"hljs language-js\"><span class=\"hljs-keyword\">import</span> { INTERNAL_FORMATS } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&#x27;@pixi/constants&#x27;</span>;\n\n<span class=\"hljs-comment\">// The following should be present in a *.compressed-texture.json file!</span>\n<span class=\"hljs-keyword\">const</span> manifest = <span class=\"hljs-built_in\">JSON</span>.stringify({\n  <span class=\"hljs-attr\">COMPRESSED_RGBA_S3TC_DXT5_EXT</span>: <span class=\"hljs-string\">&quot;asset.s3tc.ktx&quot;</span>,\n  <span class=\"hljs-attr\">COMPRESSED_RGBA8_ETC2_EAC</span>: <span class=\"hljs-string\">&quot;asset.etc.ktx&quot;</span>,\n  <span class=\"hljs-attr\">RGBA_PVRTC_4BPPV1_IMG</span>: <span class=\"hljs-string\">&quot;asset.pvrtc.ktx&quot;</span>,\n  <span class=\"hljs-attr\">textureID</span>: <span class=\"hljs-string\">&quot;asset.png&quot;</span>,\n  <span class=\"hljs-attr\">fallback</span>: <span class=\"hljs-string\">&quot;asset.png&quot;</span>\n});\n</code></pre>"
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Loader plugin for handling compressed textures for all platforms.</p>",
+							"description": ""
 						}
 					]
 				},
@@ -12201,6 +12260,14 @@
 							"scope": "static",
 							"brief": "",
 							"description": "<p>Parses the DDS file header, generates base-textures, and puts them into the texture\ncache.</p>"
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
 						}
 					]
 				},
@@ -12298,6 +12365,14 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "<p>Bind to a parent BaseTexture</p>",
+							"description": ""
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
 							"description": ""
 						},
 						{
@@ -14836,6 +14911,14 @@
 							"description": ""
 						},
 						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>A {@link PIXI.FederatedEvent} for mouse events.</p>",
+							"description": ""
+						},
+						{
 							"name": "getModifierState",
 							"type": "MethodDoc",
 							"scope": "instance",
@@ -15375,6 +15458,14 @@
 							"description": ""
 						},
 						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>A {@link PIXI.FederatedEvent} for pointer events.</p>",
+							"description": ""
+						},
+						{
 							"name": "getModifierState",
 							"type": "MethodDoc",
 							"scope": "instance",
@@ -15887,6 +15978,14 @@
 							"type": "MethodDoc",
 							"scope": "instance",
 							"brief": "<p>The propagation path for this event. Alias for {@link EventBoundary.propagationPath}.</p>",
+							"description": ""
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>A {@link PIXI.FederatedEvent} for wheel events.</p>",
 							"description": ""
 						},
 						{
@@ -20502,6 +20601,14 @@
 							"scope": "static",
 							"brief": "<p>Checks whether the arrayBuffer contains a valid *.ktx file.</p>",
 							"description": ""
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Loader plugin for handling KTX texture container files.</p>",
+							"description": ""
 						}
 					]
 				},
@@ -20605,6 +20712,14 @@
 							"access": "public",
 							"scope": "instance",
 							"brief": "<p>Clones the object</p>",
+							"description": ""
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
 							"description": ""
 						},
 						{
@@ -20783,7 +20898,17 @@
 					"name": "LoaderResource",
 					"type": "ClassDoc",
 					"brief": "",
-					"description": "<p>Reference to <strong>{@link https://github.com/englercj/resource-loader}</strong>'s Resource class.</p>"
+					"description": "<p>Reference to <strong>{@link https://github.com/englercj/resource-loader}</strong>'s Resource class.</p>",
+					"members": [
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
+						}
+					]
 				},
 				{
 					"name": "MaskData",
@@ -26056,6 +26181,14 @@
 							"description": ""
 						},
 						{
+							"name": "delayedTick",
+							"type": "MethodDoc",
+							"access": "private",
+							"scope": "instance",
+							"brief": "",
+							"description": "<p>'bound' call for prepareItems().</p>"
+						},
+						{
 							"name": "prepareItems",
 							"type": "MethodDoc",
 							"access": "private",
@@ -26980,6 +27113,14 @@
 							"description": ""
 						},
 						{
+							"name": "create",
+							"type": "MethodDoc",
+							"access": "private",
+							"scope": "static",
+							"brief": "",
+							"description": "<p>Create renderer if WebGL is available. Overrideable\nby the <strong>@pixi/canvas-renderer</strong> package to allow fallback.\nthrows error if WebGL is not available.</p>"
+						},
+						{
 							"name": "addSystem",
 							"type": "MethodDoc",
 							"scope": "instance",
@@ -27074,14 +27215,6 @@
 							"type": "EventDoc",
 							"brief": "<p>Fired after view has been resized.</p>",
 							"description": ""
-						},
-						{
-							"name": "create",
-							"type": "FunctionDoc",
-							"access": "private",
-							"scope": "static",
-							"brief": "",
-							"description": "<p>Create renderer if WebGL is available. Overrideable\nby the <strong>@pixi/canvas-renderer</strong> package to allow fallback.\nthrows error if WebGL is not available.</p>"
 						}
 					]
 				},
@@ -34003,6 +34136,14 @@
 							"scope": "static",
 							"brief": "",
 							"description": "<p>Called after a resource is loaded.</p>"
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
 						}
 					]
 				},
@@ -36932,6 +37073,14 @@
 							"scope": "static",
 							"brief": "",
 							"description": "<p>Called after a resource is loaded.</p>"
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "",
+							"description": ""
 						}
 					]
 				},
@@ -37467,6 +37616,14 @@
 									"description": ""
 								}
 							]
+						},
+						{
+							"name": "constructor",
+							"type": "MethodDoc",
+							"access": "public",
+							"scope": "instance",
+							"brief": "<p>Middleware for for Application Ticker.</p>",
+							"description": ""
 						}
 					]
 				},
@@ -38363,6 +38520,14 @@
 							"description": ""
 						},
 						{
+							"name": "_renderCanvas",
+							"type": "MethodDoc",
+							"access": "protected",
+							"scope": "instance",
+							"brief": "<p>Renders the object using the Canvas renderer</p>",
+							"description": ""
+						},
+						{
 							"name": "onChildrenChange",
 							"type": "MethodDoc",
 							"access": "protected",
@@ -38840,14 +39005,6 @@
 							"type": "EventDoc",
 							"brief": "<p>Capture phase equivalent of {@code wheel}.</p>",
 							"description": "<p>These events are propagating from the {@link PIXI.EventSystem EventSystem} in @pixi/events.</p>"
-						},
-						{
-							"name": "_renderCanvas",
-							"type": "FunctionDoc",
-							"access": "protected",
-							"scope": "instance",
-							"brief": "<p>Renders the object using the Canvas renderer</p>",
-							"description": ""
 						}
 					]
 				},
@@ -42662,16 +42819,52 @@
 			"description": ""
 		},
 		{
+			"name": "AggregateUniformsBatch",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
 			"name": "AggregateUniformsBatchFactory",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": ""
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "Area",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": "<p>An area represents an oriented rectangular region. It is implemented as a 31-bit field. The open/close edges are\nspecified along its parent's orientation axis, i.e. if the parent is horizontal, the left and right edges are defined,\nelse if the parent is vertical, the top and bottom edges are defined. Similarly, the open/close edges of its\nchildren will be along its own orientation axis.</p>\n<p>The orientation axes flip-flop along the hierarchy, i.e. an area's parent's orientation is always opposite to\nthe area's own orientation. This is because if the orientation were to be same, the area's children could be\n&quot;pulled up&quot; to the parent making itself redundant.</p>\n<p>All four edges of an area can be retrieved from it and its parent.</p>\n <table>\n  <thead>\n    <tr>\n      <th>Field</th>\n      <th>Bits</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>OPEN_OFFSET</td>\n      <td>0-14</td>\n      <td>\n        The offset along the parent's axis at which the area begins. If orientation is horizontal,\n        this is the left edge. If orientation is vertical, this is the top edge.\n      </td>\n    </tr>\n    <tr>\n      <td>CLOSE_OFFSET</td>\n      <td>15-29</td>\n      <td>\n        The offset along the parent's axis at which the area ends. If orientation is horizontal,\n        this is the right edge. If orientation is vertical, this is the bottom edge.\n      </td>\n    </tr>\n    <tr>\n      <td>ORIENTATION</td>\n      <td>30</td>\n      <td>\n        The orientation of the area, which indicates the axis along it is split. The open and close\n        offsets of its children are along this axis. See {@link TextureAreaOrientation}.\n      </td>\n    </tr>\n  </tbody>\n </table>"
+			"description": "<p>An area represents an oriented rectangular region. It is implemented as a 31-bit field. The open/close edges are\nspecified along its parent's orientation axis, i.e. if the parent is horizontal, the left and right edges are defined,\nelse if the parent is vertical, the top and bottom edges are defined. Similarly, the open/close edges of its\nchildren will be along its own orientation axis.</p>\n<p>The orientation axes flip-flop along the hierarchy, i.e. an area's parent's orientation is always opposite to\nthe area's own orientation. This is because if the orientation were to be same, the area's children could be\n&quot;pulled up&quot; to the parent making itself redundant.</p>\n<p>All four edges of an area can be retrieved from it and its parent.</p>\n <table>\n  <thead>\n    <tr>\n      <th>Field</th>\n      <th>Bits</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>OPEN_OFFSET</td>\n      <td>0-14</td>\n      <td>\n        The offset along the parent's axis at which the area begins. If orientation is horizontal,\n        this is the left edge. If orientation is vertical, this is the top edge.\n      </td>\n    </tr>\n    <tr>\n      <td>CLOSE_OFFSET</td>\n      <td>15-29</td>\n      <td>\n        The offset along the parent's axis at which the area ends. If orientation is horizontal,\n        this is the right edge. If orientation is vertical, this is the bottom edge.\n      </td>\n    </tr>\n    <tr>\n      <td>ORIENTATION</td>\n      <td>30</td>\n      <td>\n        The orientation of the area, which indicates the axis along it is split. The open and close\n        offsets of its children are along this axis. See {@link TextureAreaOrientation}.\n      </td>\n    </tr>\n  </tbody>\n </table>",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "Area",
@@ -42697,6 +42890,14 @@
 					"name": "setCloseOffset",
 					"type": "MethodDoc",
 					"scope": "static",
+					"brief": "",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
 					"brief": "",
 					"description": ""
 				}
@@ -42742,6 +42943,14 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Allocates a texture backed by the given source, with default padding.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
 					"description": ""
 				},
 				{
@@ -42817,6 +43026,14 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Allocates a texture backed by the given source, with default padding.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
 					"description": ""
 				},
 				{
@@ -43196,6 +43413,22 @@
 			]
 		},
 		{
+			"name": "AttributeRedirect",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
 			"name": "AxisAlignedBounds",
 			"type": "ClassDoc",
 			"brief": "",
@@ -43341,31 +43574,145 @@
 			"name": "BasisFile",
 			"type": "ClassDoc",
 			"brief": "<p>Binding to C++ {@code BasisFile} wrapper class.</p>",
-			"description": ""
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Binding to C++ {@code BasisFile} wrapper class.</p>",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "Batch",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": ""
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "BatchDrawer",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "BatchGenerator",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": ""
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "BatchGeometry",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "BatchGeometryFactory",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": ""
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "BatchRenderer",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "BatchRendererPluginFactory",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": ""
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "BatchShaderFactory",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "BufferInvalidation",
@@ -43502,7 +43849,17 @@
 			"name": "BufferPool",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": ""
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "BufferPool",
@@ -43567,6 +43924,14 @@
 					"scope": "instance",
 					"brief": "<p>Allocates a texture from this allocator.</p>",
 					"description": "<p>If its existing slab pool has enough space, the texture is issued from one. Otherwise,\na new slab is created and the texture is issued from it. However, if the requested\ndimensions are larger than slabs themselves, then <code>null</code> is always returned.</p>\n<p>To upload a texture source, you will have to create an atlas-managing {@link Resource}\nyourself on the base-texture. The {@link AtlasAllocator} does this for you, while the\n{@link CanvasTextureAllocator} can be used to draw on a canvas-based atlas.</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
 				},
 				{
 					"name": "free",
@@ -43635,6 +44000,14 @@
 					"scope": "instance",
 					"brief": "<p>Allocates a texture from this allocator.</p>",
 					"description": "<p>If its existing slab pool has enough space, the texture is issued from one. Otherwise,\na new slab is created and the texture is issued from it. However, if the requested\ndimensions are larger than slabs themselves, then <code>null</code> is always returned.</p>\n<p>To upload a texture source, you will have to create an atlas-managing {@link Resource}\nyourself on the base-texture. The {@link AtlasAllocator} does this for you, while the\n{@link CanvasTextureAllocator} can be used to draw on a canvas-based atlas.</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
 				},
 				{
 					"name": "free",
@@ -46604,6 +46977,14 @@
 					"description": ""
 				},
 				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				},
+				{
 					"name": "destroy",
 					"type": "MethodDoc",
 					"access": "public",
@@ -46618,6 +46999,73 @@
 					"scope": "instance",
 					"brief": "",
 					"description": ""
+				}
+			]
+		},
+		{
+			"name": "DiffBuffer",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "data",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>The data in the buffer, as a typed array</p>",
+					"description": ""
+				},
+				{
+					"name": "index",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Flags whether this is an index buffer.</p>",
+					"description": "<p>Index buffers are of type <code>ELEMENT_ARRAY_BUFFER</code>. Note that setting this property to false will make\nthe buffer of type <code>ARRAY_BUFFER</code>.</p>\n<p>For backwards compatibility.</p>"
+				},
+				{
+					"name": "type",
+					"type": "PropertyDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>The type of buffer this is, one of:</p>\n<ul>\n<li>ELEMENT_ARRAY_BUFFER - used as an index buffer</li>\n<li>ARRAY_BUFFER - used as an attribute buffer</li>\n<li>UNIFORM_BUFFER - used as a uniform buffer (if available)</li>\n</ul>"
+				},
+				{
+					"name": "_glBuffers",
+					"type": "PropertyDoc",
+					"access": "private",
+					"scope": "instance",
+					"brief": "<p>A map of renderer IDs to webgl buffer</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				},
+				{
+					"name": "destroy",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>Destroys the buffer</p>",
+					"description": ""
+				},
+				{
+					"name": "dispose",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>disposes WebGL resources that are connected to this geometry</p>",
+					"description": ""
+				},
+				{
+					"name": "update",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>flags this buffer as requiring an upload to the GPU</p>"
 				}
 			]
 		},
@@ -46684,22 +47132,39 @@
 			"name": "DiffDrawer",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": ""
-		},
-		{
-			"name": "DiffGeometry",
-			"type": "ClassDoc",
-			"brief": "<p>The geometry used by {@link DiffGeometryFactory}</p>",
 			"description": "",
 			"members": [
 				{
 					"name": "constructor",
 					"type": "MethodDoc",
+					"access": "public",
 					"scope": "instance",
 					"brief": "",
 					"description": ""
 				}
 			]
+		},
+		{
+			"name": "DiffDrawer",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "DiffGeometry",
+			"type": "ClassDoc",
+			"brief": "<p>The geometry used by {@link DiffGeometryFactory}</p>",
+			"description": ""
 		},
 		{
 			"name": "DiffGeometryFactory",
@@ -46879,6 +47344,14 @@
 					"scope": "static",
 					"brief": "",
 					"description": "<p>Renders a radial-gradient into <code>renderTexture</code> that starts at the circle centered at (x0, y0) of radius r0 and\nends at the circle centered at (x1, y1) of radius r1.</p>\n<p>This method can be called inside a render cycle, and will preserve the renderer state. However, the current implementation\ncauses a batch renderer flush.</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Factory class for generating color-gradient textures.</p>",
+					"description": ""
 				}
 			]
 		},
@@ -46901,6 +47374,14 @@
 					"scope": "static",
 					"brief": "",
 					"description": "<p>Renders a radial-gradient into <code>renderTexture</code> that starts at the circle centered at (x0, y0) of radius r0 and\nends at the circle centered at (x1, y1) of radius r1.</p>\n<p>This method can be called inside a render cycle, and will preserve the renderer state. However, the current implementation\ncauses a batch renderer flush.</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Factory class for generating color-gradient textures.</p>",
+					"description": ""
 				}
 			]
 		},
@@ -46915,6 +47396,14 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Allocates an area of the given <code>width</code> and <code>height</code>.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
 					"description": ""
 				},
 				{
@@ -47108,6 +47597,22 @@
 				{
 					"name": "constructor",
 					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "IBatchGeometryFactory",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "",
 					"description": ""
@@ -47118,7 +47623,17 @@
 			"name": "IGLUniformData",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": ""
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "InheritedPaintProvider",
@@ -47398,6 +47913,14 @@
 					"access": "public",
 					"scope": "static",
 					"brief": "<p>Returns a plugin wrapping an instanced renderer that can be registered.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
 					"description": ""
 				}
 			]
@@ -48005,6 +48528,14 @@
 					"access": "public",
 					"scope": "instance",
 					"brief": "<p>calculates worldTransform * vertices, store it in vertexData</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
 					"description": ""
 				},
 				{
@@ -49333,6 +49864,14 @@
 					"description": ""
 				},
 				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				},
+				{
 					"name": "containerUpdateTransform",
 					"type": "MethodDoc",
 					"scope": "instance",
@@ -50247,6 +50786,14 @@
 					"scope": "static",
 					"brief": "",
 					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
 				}
 			]
 		},
@@ -50283,6 +50830,14 @@
 									"scope": "instance",
 									"brief": "",
 									"description": "<p>Obtains an array of instances from this pool. This is faster than allocating multiple objects\nseparately from this pool.</p>"
+								},
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
 								},
 								{
 									"name": "create",
@@ -50365,6 +50920,14 @@
 									"description": "<p>Obtains an array of instances from this pool. This is faster than allocating multiple objects\nseparately from this pool.</p>"
 								},
 								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "",
+									"description": ""
+								},
+								{
 									"name": "create",
 									"type": "MethodDoc",
 									"scope": "instance",
@@ -50416,6 +50979,14 @@
 							]
 						}
 					]
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
 				}
 			]
 		},
@@ -51090,7 +51661,17 @@
 			"name": "Redirect",
 			"type": "ClassDoc",
 			"brief": "",
-			"description": ""
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
 		},
 		{
 			"name": "RenderTextureAllocator",
@@ -51126,6 +51707,14 @@
 					"scope": "instance",
 					"brief": "<p>Allocates a texture from this allocator.</p>",
 					"description": "<p>If its existing slab pool has enough space, the texture is issued from one. Otherwise,\na new slab is created and the texture is issued from it. However, if the requested\ndimensions are larger than slabs themselves, then <code>null</code> is always returned.</p>\n<p>To upload a texture source, you will have to create an atlas-managing {@link Resource}\nyourself on the base-texture. The {@link AtlasAllocator} does this for you, while the\n{@link CanvasTextureAllocator} can be used to draw on a canvas-based atlas.</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>This allocator issues render-textures, and is otherwise just like {@link TextureAllocator}.</p>",
+					"description": ""
 				},
 				{
 					"name": "free",
@@ -51194,6 +51783,14 @@
 					"scope": "instance",
 					"brief": "<p>Allocates a texture from this allocator.</p>",
 					"description": "<p>If its existing slab pool has enough space, the texture is issued from one. Otherwise,\na new slab is created and the texture is issued from it. However, if the requested\ndimensions are larger than slabs themselves, then <code>null</code> is always returned.</p>\n<p>To upload a texture source, you will have to create an atlas-managing {@link Resource}\nyourself on the base-texture. The {@link AtlasAllocator} does this for you, while the\n{@link CanvasTextureAllocator} can be used to draw on a canvas-based atlas.</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>This allocator issues render-textures, and is otherwise just like {@link TextureAllocator}.</p>",
+					"description": ""
 				},
 				{
 					"name": "free",
@@ -51246,6 +51843,14 @@
 					"name": "generateShader",
 					"type": "MethodDoc",
 					"scope": "static",
+					"brief": "",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
 					"brief": "",
 					"description": ""
 				}
@@ -51572,6 +52177,441 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>returns a clone of the geometry</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				},
+				{
+					"name": "containsPoint",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Check to see if a point is contained within this geometry.</p>",
+					"description": ""
+				},
+				{
+					"name": "destroy",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Destroys the GraphicsGeometry object.</p>",
+					"description": ""
+				},
+				{
+					"name": "dispose",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>disposes WebGL resources that are connected to this geometry</p>",
+					"description": ""
+				},
+				{
+					"name": "drawHole",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.</p>",
+					"description": ""
+				},
+				{
+					"name": "drawShape",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.</p>",
+					"description": ""
+				},
+				{
+					"name": "getAttribute",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>returns the requested attribute</p>",
+					"description": ""
+				},
+				{
+					"name": "getBuffer",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>returns the requested buffer</p>",
+					"description": ""
+				},
+				{
+					"name": "getIndex",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>returns the index buffer</p>",
+					"description": ""
+				},
+				{
+					"name": "interleave",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>this function modifies the structure so that all current attributes become interleaved into a single buffer\nThis can be useful if your model remains static as it offers a little performance boost</p>"
+				},
+				{
+					"name": "updateBatches",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Generates intermediate batch data. Either gets converted to drawCalls\nor used to convert to batch objects directly by the Graphics object.</p>"
+				},
+				{
+					"name": "_compareStyles",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Affinity check</p>",
+					"description": ""
+				},
+				{
+					"name": "addColors",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Add colors.</p>",
+					"description": ""
+				},
+				{
+					"name": "addTextureIds",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Add texture id that the shader/fragment wants to use.</p>",
+					"description": ""
+				},
+				{
+					"name": "addUvs",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Generates the UVs for a shape.</p>",
+					"description": ""
+				},
+				{
+					"name": "adjustUvs",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Modify uvs array according to position of texture region\nDoes not work with rotated or trimmed textures</p>"
+				},
+				{
+					"name": "buildDrawCalls",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Converts intermediate batches data to drawCalls.</p>",
+					"description": ""
+				},
+				{
+					"name": "calculateBounds",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Update the local bounds of the object. Expensive to use performance-wise.</p>",
+					"description": ""
+				},
+				{
+					"name": "invalidate",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Call if you changed graphicsData manually.\nEmpties all batch buffers.</p>"
+				},
+				{
+					"name": "isBatchable",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Checks to see if this graphics geometry can be batched.\nCurrently it needs to be small enough and not contain any native lines.</p>"
+				},
+				{
+					"name": "packAttributes",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Packs attributes to single buffer.</p>",
+					"description": ""
+				},
+				{
+					"name": "packBatches",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Offset the indices so that it works with the batcher.</p>",
+					"description": ""
+				},
+				{
+					"name": "processFill",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Process fill part of Graphics.</p>",
+					"description": ""
+				},
+				{
+					"name": "processHoles",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Process the holes data.</p>",
+					"description": ""
+				},
+				{
+					"name": "processLine",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Process line part of Graphics.</p>",
+					"description": ""
+				},
+				{
+					"name": "transformPoints",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Transform points using matrix.</p>",
+					"description": ""
+				},
+				{
+					"name": "validateBatching",
+					"type": "MethodDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Test geometry for batching process.</p>",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "SVGGraphicsGeometry",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "bounds",
+					"type": "PropertyDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Get the current bounds of the graphic geometry.</p>",
+					"description": ""
+				},
+				{
+					"name": "boundsPadding",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "<p>Padding to add to the bounds.</p>",
+					"description": ""
+				},
+				{
+					"name": "closePointEps",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Minimal distance between points that are considered different.\nAffects line tesselation.</p>"
+				},
+				{
+					"name": "instanceCount",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Number of instances in this geometry, pass it to <code>GeometrySystem.draw()</code></p>"
+				},
+				{
+					"name": "refCount",
+					"type": "PropertyDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Count of existing (not destroyed) meshes that reference this geometry</p>"
+				},
+				{
+					"name": "_bounds",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Cached bounds.</p>",
+					"description": ""
+				},
+				{
+					"name": "_buffer",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Buffer used for position, color, texture IDs</p>",
+					"description": ""
+				},
+				{
+					"name": "_indexBuffer",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Index buffer data</p>",
+					"description": ""
+				},
+				{
+					"name": "batchDirty",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Batches need to regenerated if the geometry is updated.</p>",
+					"description": ""
+				},
+				{
+					"name": "batches",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Intermediate abstract format sent to batch system.\nCan be converted to drawCalls or to batchable objects.</p>"
+				},
+				{
+					"name": "boundsDirty",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>The bounds dirty flag.</p>",
+					"description": ""
+				},
+				{
+					"name": "cacheDirty",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Used to check if the cache is dirty.</p>",
+					"description": ""
+				},
+				{
+					"name": "clearDirty",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Used to detect if we cleared the graphicsData.</p>",
+					"description": ""
+				},
+				{
+					"name": "colors",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>The collection of colors</p>",
+					"description": ""
+				},
+				{
+					"name": "dirty",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Used to detect if the graphics object has changed.</p>",
+					"description": ""
+				},
+				{
+					"name": "drawCalls",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>List of current draw calls drived from the batches.</p>",
+					"description": ""
+				},
+				{
+					"name": "glVertexArrayObjects",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>A map of renderer IDs to webgl VAOs</p>",
+					"description": ""
+				},
+				{
+					"name": "graphicsData",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>The collection of drawn shapes.</p>",
+					"description": ""
+				},
+				{
+					"name": "indices",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>The indices of the vertices</p>",
+					"description": ""
+				},
+				{
+					"name": "points",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>An array of points to draw, 2 numbers per point</p>",
+					"description": ""
+				},
+				{
+					"name": "shapeIndex",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Index of the last batched shape in the stack of calls.</p>",
+					"description": ""
+				},
+				{
+					"name": "textureIds",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>Reference to the texture IDs.</p>",
+					"description": ""
+				},
+				{
+					"name": "uvs",
+					"type": "PropertyDoc",
+					"access": "protected",
+					"scope": "instance",
+					"brief": "<p>The UVs collection</p>",
+					"description": ""
+				},
+				{
+					"name": "addAttribute",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Adds an attribute to the geometry\nNote: <code>stride</code> and <code>start</code> should be <code>undefined</code> if you dont know them, not 0!</p>"
+				},
+				{
+					"name": "addIndex",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "",
+					"description": "<p>Adds an index buffer to the geometry\nThe index buffer contains integers, three for each triangle in the geometry, which reference the various attribute buffers (position, colour, UV coordinates, other UV coordinates, normal, …). There is only ONE index buffer.</p>"
+				},
+				{
+					"name": "clear",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Clears the graphics that were drawn to this Graphics object, and resets fill and line style settings.</p>",
+					"description": ""
+				},
+				{
+					"name": "clone",
+					"type": "MethodDoc",
+					"scope": "instance",
+					"brief": "<p>returns a clone of the geometry</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
 					"description": ""
 				},
 				{
@@ -52437,6 +53477,14 @@
 					"access": "public",
 					"scope": "instance",
 					"brief": "<p>Closes the current path.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>This node can be used to directly embed the following elements:</p>",
 					"description": ""
 				},
 				{
@@ -55806,6 +56854,14 @@
 					"description": ""
 				},
 				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Draws SVG &lt;image /&gt; elements.</p>",
+					"description": ""
+				},
+				{
 					"name": "containerUpdateTransform",
 					"type": "MethodDoc",
 					"scope": "instance",
@@ -57497,6 +58553,14 @@
 					"access": "public",
 					"scope": "instance",
 					"brief": "<p>Closes the current path.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Draws SVG &lt;image /&gt; elements.</p>",
 					"description": ""
 				},
 				{
@@ -59183,6 +60247,14 @@
 					"access": "public",
 					"scope": "instance",
 					"brief": "<p>Closes the current path.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Draws SVG &lt;path /&gt; elements.</p>",
 					"description": ""
 				},
 				{
@@ -60852,6 +61924,14 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Draws SVG &lt;path /&gt; elements.</p>",
 					"description": ""
 				},
 				{
@@ -64793,6 +65873,14 @@
 					"description": ""
 				},
 				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				},
+				{
 					"name": "containerUpdateTransform",
 					"type": "MethodDoc",
 					"scope": "instance",
@@ -67326,6 +68414,14 @@
 					"description": "<p>This implementation will automatically fit the children's bounds into the calculation. Each child's bounds\nis limited to its mask's bounds or filterArea, if any is applied.</p>"
 				},
 				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Draws SVG &lt;text /&gt; elements.</p>",
+					"description": ""
+				},
+				{
 					"name": "containerUpdateTransform",
 					"type": "MethodDoc",
 					"scope": "instance",
@@ -69655,6 +70751,14 @@
 					"description": "<p>This implementation will automatically fit the children's bounds into the calculation. Each child's bounds\nis limited to its mask's bounds or filterArea, if any is applied.</p>"
 				},
 				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Container for rendering SVG &lt;use /&gt; elements.</p>",
+					"description": ""
+				},
+				{
 					"name": "containerUpdateTransform",
 					"type": "MethodDoc",
 					"scope": "instance",
@@ -70808,6 +71912,14 @@
 					"description": "<p>This implementation will automatically fit the children's bounds into the calculation. Each child's bounds\nis limited to its mask's bounds or filterArea, if any is applied.</p>"
 				},
 				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>Container for rendering SVG &lt;use /&gt; elements.</p>",
+					"description": ""
+				},
+				{
 					"name": "containerUpdateTransform",
 					"type": "MethodDoc",
 					"scope": "instance",
@@ -71895,6 +73007,14 @@
 					"type": "MethodDoc",
 					"scope": "instance",
 					"brief": "<p>Recalculates the bounds of the display object.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
 					"description": ""
 				},
 				{
@@ -77480,6 +78600,22 @@
 			]
 		},
 		{
+			"name": "UniformRedirect",
+			"type": "ClassDoc",
+			"brief": "",
+			"description": "",
+			"members": [
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
+				}
+			]
+		},
+		{
 			"name": "ArcUtils",
 			"type": "ClassDoc",
 			"access": "private",
@@ -77501,6 +78637,14 @@
 					"scope": "static",
 					"brief": "<p>The arcTo() method creates an arc/curve between two tangents on the canvas.</p>",
 					"description": "<p>&quot;borrowed&quot; from https://code.google.com/p/fxcanvas/ - thanks google!</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
 				}
 			]
 		},
@@ -77518,6 +78662,14 @@
 					"scope": "static",
 					"brief": "",
 					"description": "<p>Calculate length of bezier curve.\nAnalytical solution is impossible, since it involves an integral that does not integrate in general.\nTherefore numerical solution is used.</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
 				}
 			]
 		},
@@ -77656,6 +78808,14 @@
 					"scope": "static",
 					"brief": "",
 					"description": "<p>Calculate points of an offset polygon</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
 				}
 			]
 		},
@@ -77681,6 +78841,14 @@
 					"scope": "static",
 					"brief": "",
 					"description": "<p>Calculate the points for a quadratic bezier curve and then draws it.\nBased on: https://stackoverflow.com/questions/785097/how-do-i-implement-a-bezier-curve-in-c</p>"
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
 				}
 			]
 		},
@@ -77715,6 +78883,14 @@
 							"description": ""
 						}
 					]
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "",
+					"description": ""
 				}
 			]
 		},
@@ -77739,6 +78915,14 @@
 					"access": "private",
 					"scope": "static",
 					"brief": "<p>Check if resource refers to txt font data.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>BitmapFont format that's Text-based.</p>",
 					"description": ""
 				}
 			]
@@ -77765,6 +78949,14 @@
 					"scope": "static",
 					"brief": "<p>Check if resource refers to xml font data.</p>",
 					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>BitmapFont format that's XML-based.</p>",
+					"description": ""
 				}
 			]
 		},
@@ -77789,6 +78981,14 @@
 					"access": "private",
 					"scope": "static",
 					"brief": "<p>Check if resource refers to text xml font data.</p>",
+					"description": ""
+				},
+				{
+					"name": "constructor",
+					"type": "MethodDoc",
+					"access": "public",
+					"scope": "instance",
+					"brief": "<p>BitmapFont format that's XML-based.</p>",
 					"description": ""
 				}
 			]

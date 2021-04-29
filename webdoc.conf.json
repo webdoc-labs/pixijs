@@ -42,7 +42,9 @@
       }
     },
     "stylesheets": [
-      "./stylesheets/index.css"
+      "./stylesheets/index.css",
+      "./stylesheets/header.css",
+      "./stylesheets/md.css"
     ],
     "meta": {
       "og:title": "PixiJS API Documentation",
