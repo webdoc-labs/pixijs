@@ -8,8 +8,6 @@
     ],
     "excludePattern": [
       "node_modules",
-      "pixi-ui",
-      "pixi-filters",
       "data-half-edge-mesh",
       "bvh",
       "filter-fft",
