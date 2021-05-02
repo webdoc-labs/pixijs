@@ -24,11 +24,12 @@
     "plugins/markdown"
   ],
   "opts": {
-    "destination": "docs"
+    "destination": "docs",
+    "export": "./docs/pixijs.api.json"
   },
   "template": {
     "applicationName": "PixiJS",
-    "siteDomain": "http://pixijs.webdoclabs.com/",
+    "siteDomain": "https://api.pixijs.io",
     "readme": "./README.md",
     "outputSourceFiles": true,
     "integrations": {
