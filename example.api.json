@@ -1640,13 +1640,6 @@
 							"description": "<p>Replace all colors within a source graphic with a single color.<br>\n<img src=\"../tools/screenshots/dist/original.png\" alt=\"original\"><img src=\"../tools/screenshots/dist/color-overlay.png\" alt=\"filter\"></p>",
 							"members": [
 								{
-									"name": "alpha",
-									"type": "PropertyDoc",
-									"scope": "instance",
-									"brief": "",
-									"description": "<p>The alpha value of the color</p>"
-								},
-								{
 									"name": "autoFit",
 									"type": "PropertyDoc",
 									"scope": "instance",
@@ -5454,6 +5447,14 @@
 							"description": "",
 							"members": [
 								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>A TiltShiftXFilter.</p>",
+									"description": ""
+								},
+								{
 									"name": "updateDelta",
 									"type": "MethodDoc",
 									"access": "protected",
@@ -5470,6 +5471,14 @@
 							"brief": "<p>A TiltShiftYFilter.</p>",
 							"description": "",
 							"members": [
+								{
+									"name": "constructor",
+									"type": "MethodDoc",
+									"access": "public",
+									"scope": "instance",
+									"brief": "<p>A TiltShiftYFilter.</p>",
+									"description": ""
+								},
 								{
 									"name": "updateDelta",
 									"type": "MethodDoc",
@@ -47291,7 +47300,12 @@
 			"description": ""
 		},
 		{
-<<<<<<< HEAD
+			"name": "PIXI",
+			"type": "NSDoc",
+			"brief": "",
+			"description": ""
+		},
+		{
 			"name": "AggregateUniformsBatch",
 			"type": "ClassDoc",
 			"brief": "",
@@ -47306,12 +47320,6 @@
 					"description": ""
 				}
 			]
-=======
-			"name": "PIXI",
-			"type": "NSDoc",
-			"brief": "",
-			"description": ""
->>>>>>> 5d08f8a44c9d1a91b5f966797616f7f0f7fa2442
 		},
 		{
 			"name": "AggregateUniformsBatchFactory",
