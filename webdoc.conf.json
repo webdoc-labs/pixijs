@@ -38,6 +38,10 @@
         "apiKey": "36884c184efbfebb0616a5605c5d6306",
         "appId": "VLNI9I2J4E",
         "indexName": "pixijs"
+      },
+      "analytics": {
+        "provider": "plausible",
+        "nakedDomain": "api.pixijs.io"
       }
     },
     "stylesheets": [
