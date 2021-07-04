@@ -1,7 +1,14 @@
 {
   "source": {
     "include": [
-      "projects"
+      "projects/pixi.js",
+      "projects/pixi-essentials",
+      "projects/pixi-filters",
+      "projects/pixi-batch-renderer",
+      "projects/pixi-tilemap",
+      "projects/spatial-hash",
+      "projects/pixijs/pictures/src",
+      "projects/pixijs/layers/src"
     ],
     "includePattern": [
       "\\.ts"
@@ -17,7 +24,8 @@
       "pixi-essentials/packages/types",
       "tilemap/index.d.ts",
       "tilemap/demo",
-      "tilemap/test"
+      "tilemap/test",
+      "layers/index.d.ts"
     ]
   },
   "plugins": [
