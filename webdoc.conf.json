@@ -26,6 +26,7 @@
       "tilemap/demo",
       "tilemap/test",
       "layers/index.d.ts"
+      "pixijs/[^.]+.d.ts$"
     ]
   },
   "plugins": [
