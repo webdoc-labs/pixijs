@@ -17,7 +17,8 @@
       "pixi-essentials/packages/types",
       "tilemap/index.d.ts",
       "tilemap/demo",
-      "tilemap/test"
+      "tilemap/test",
+      "pixijs/[^.]+.d.ts$"
     ]
   },
   "plugins": [
