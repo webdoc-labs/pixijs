@@ -7,7 +7,7 @@
       "projects/pixi-batch-renderer",
       "projects/pixi-tilemap",
       "projects/spatial-hash",
-      "projects/pixijs/pictures/src",
+      "projects/pixijs/picture/src",
       "projects/pixijs/layers/src"
     ],
     "includePattern": [
