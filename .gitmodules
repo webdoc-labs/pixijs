@@ -21,7 +21,7 @@
 	url = https://github.com/pixijs/guides
 [submodule "projects/pixijs/picture"]
 	path = projects/pixijs/picture
-	url = https://github.com/pixijs/pixi-picture
+	url = https://github.com/pixijs/picture
 [submodule "projects/pixijs/layers"]
 	path = projects/pixijs/layers
-	url = https://github.com/pixijs/pixi-layers
+	url = https://github.com/pixijs/layers
