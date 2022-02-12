@@ -1460,16 +1460,16 @@
     <loc>https://api.pixijs.io/pixi.js-monorepo/global.d.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/global.d.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mixin-get-global-position/global.d.ts.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/accessibility/src/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/basis/src/TranscoderWorkerWrapper.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/constants/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/test/ImageBitmapResource.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/pixi.js-monorepo/scripts/fixPeerVersions.ts.html</loc>
@@ -1499,25 +1499,22 @@
     <loc>https://api.pixijs.io/pixi.js-monorepo/scripts/injectGlobalMixins.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/global.d.ts.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/sprite-tiling/global.d.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/accessibility/test/accessibleTarget.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/AbstractRenderer.ts.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/canvas-display/global.d.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/ArrayResource.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/AbstractRenderer.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/pixi.js-monorepo/test/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/interaction/global.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/test/ArrayResource.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/loaders/global.d.ts.html</loc>
@@ -1526,16 +1523,22 @@
     <loc>https://api.pixijs.io/@pixi/spritesheet/global.d.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-graphics/global.d.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/app/src/Application.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/app/src/Application.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-graphics/global.d.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/src/IRenderableObject.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/core/test/BaseTexture.tests.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/core/test/ProjectionSystem.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi.js-monorepo/test/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/pixi.js-monorepo/test/packages.ts.html</loc>
@@ -1547,25 +1550,28 @@
     <loc>https://api.pixijs.io/@pixi/text-bitmap/global.d.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/app/src/ResizePlugin.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-mesh/global.d.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-mesh/global.d.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/app/src/ResizePlugin.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/src/IRenderingContext.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math-extras/global.d.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/test/BatchRenderer.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/test/VideoResource.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/ticker/global.d.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/app/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math-extras/global.d.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/accessibility/global.d.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/app/src/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/canvas-renderer/global.d.ts.html</loc>
@@ -1577,16 +1583,22 @@
     <loc>https://api.pixijs.io/@pixi/core/test/CanvasResource.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/RenderTexturePool.tests.ts.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/core/test/autoDetectResource.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/app/test/Application.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/test/RenderTexturePool.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/Renderer.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/accessibility/global.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh/global.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi.js/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/app/global.d.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/canvas-sprite/global.d.ts.html</loc>
@@ -1595,10 +1607,7 @@
     <loc>https://api.pixijs.io/@pixi/core/test/CubeResource.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/RenderTextureSystem.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mesh/global.d.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/app/test/Application.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/global.d.ts.html</loc>
@@ -1607,10 +1616,10 @@
     <loc>https://api.pixijs.io/@pixi/mesh-extras/global.d.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/basis/src/Basis.ts.html</loc>
+    <loc>https://api.pixijs.io/pixi.js-legacy/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/pixi.js-legacy/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/basis/src/Basis.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/canvas-sprite-tiling/global.d.ts.html</loc>
@@ -1625,10 +1634,19 @@
     <loc>https://api.pixijs.io/@pixi/core/test/Renderer.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/display/global.d.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/mixin-cache-as-bitmap/global.d.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/accessibility/src/AccessibilityManager.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/const.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/deprecations.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/display/global.d.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/events/global.d.ts.html</loc>
@@ -1652,7 +1670,22 @@
     <loc>https://api.pixijs.io/@pixi/core/test/Geometry.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/BatchRenderer.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/test/Shader.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/display/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/test/ShaderSystem.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/display/src/Bounds.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/global.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/display/test/toLocal.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/index.html</loc>
@@ -1682,13 +1715,13 @@
     <loc>https://api.pixijs.io/@pixi-essentials/object-pool.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/react-bindings.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/shader-preprocessor.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/svg.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/shader-preprocessor.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/react-bindings.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator.html</loc>
@@ -1706,13 +1739,16 @@
     <loc>https://api.pixijs.io/@pixi/app.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/basis.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-extract.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/canvas-display.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/canvas-graphics.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-extract.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/canvas-mesh.html</loc>
@@ -1721,43 +1757,40 @@
     <loc>https://api.pixijs.io/@pixi/canvas-particle-container.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-prepare.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/canvas-renderer.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-sprite.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-text.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-prepare.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/canvas-sprite-tiling.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/compressed-textures.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-text.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-sprite.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/compressed-textures.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/constants.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/display.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/extract.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-advanced-bloom.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-adjustment.html</loc>
+    <loc>https://api.pixijs.io/@pixi/display.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-alpha.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-adjustment.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-ascii.html</loc>
@@ -1769,25 +1802,25 @@
     <loc>https://api.pixijs.io/@pixi/filter-bloom.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/filter-bulge-pinch.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/filter-blur.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-color-map.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-bulge-pinch.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-color-matrix.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/filter-color-overlay.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-convolution.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-color-replace.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-convolution.html</loc>
+    <loc>https://api.pixijs.io/@pixi/filter-color-matrix.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-cross-hatch.html</loc>
@@ -1805,6 +1838,9 @@
     <loc>https://api.pixijs.io/@pixi/filter-drop-shadow.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/events.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/filter-emboss.html</loc>
   </url>
   <url>
@@ -1814,16 +1850,13 @@
     <loc>https://api.pixijs.io/@pixi/filter-glow.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/filter-fxaa.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-advanced-bloom.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/filter-godray.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-kawase-blur.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-motion-blur.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-multi-color-replace.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-noise.html</loc>
@@ -1832,16 +1865,16 @@
     <loc>https://api.pixijs.io/@pixi/filter-old-film.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-outline.html</loc>
+    <loc>https://api.pixijs.io/@pixi/filter-multi-color-replace.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-pixelate.html</loc>
+    <loc>https://api.pixijs.io/@pixi/filter-kawase-blur.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-motion-blur.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-radial-blur.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-reflection.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-rgb-split.html</loc>
@@ -1850,25 +1883,28 @@
     <loc>https://api.pixijs.io/@pixi/filter-shockwave.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/filter-pixelate.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/filter-simple-lightmap.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-tilt-shift.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/filter-reflection.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/filter-twist.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-outline.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-zoom-blur.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-fxaa.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/graphics.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics-extras.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/interaction.html</loc>
@@ -1877,19 +1913,19 @@
     <loc>https://api.pixijs.io/@pixi/layers.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/loaders.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/math-extras.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/math.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/mesh.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras.html</loc>
+    <loc>https://api.pixijs.io/@pixi/mixin-cache-as-bitmap.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/mixin-get-child-by-name.html</loc>
@@ -1898,58 +1934,64 @@
     <loc>https://api.pixijs.io/@pixi/mixin-get-global-position.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/particle-container.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/picture.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/polyfill.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/settings.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/runner.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spatial-hash.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/prepare.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/basis.html</loc>
+    <loc>https://api.pixijs.io/@pixi/picture.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/runner.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/settings.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/polyfill.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/sprite.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/spatial-hash.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/sprite-tiling.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spritesheet.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/unsafe-eval.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/sprite-animated.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/text.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/spritesheet.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/tilemap.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics-extras.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/ticker.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer.html</loc>
+    <loc>https://api.pixijs.io/@pixi/unsafe-eval.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-filters-monorepo.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/pixi-essentials.html</loc>
@@ -1958,73 +2000,37 @@
     <loc>https://api.pixijs.io/pixi-filters.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/pixi-filters-monorepo.html</loc>
+    <loc>https://api.pixijs.io/pixi/js.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/pixi/js-legacy.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/pixi/js.html</loc>
+    <loc>https://api.pixijs.io/pixi-batch-renderer.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/pixi/js-monorepo.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/tilemap.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/events.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/constants/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/ImageBitmapResource.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/ShaderSystem.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/Texture.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi.js/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/app/global.d.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/basis/src/BasisLoader.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/const.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/Shader.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/display/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/events/src/FederatedMouseEvent.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mixin-cache-as-bitmap.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/settings.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/display/src/settings.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mixin-cache-as-bitmap/global.d.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/test/Texture.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/test/MaskSystem.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/events/src/FederatedPointerEvent.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawChamferRect.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/deprecations.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/interaction/src/TreeSearch.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/test/FramebufferSystem.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/graphics/src/GraphicsData.ts.html</loc>
@@ -2033,82 +2039,19 @@
     <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawTorus.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/settings.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/UniformBuffer.tests.ts.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/interaction/test/InteractionData.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/TextureSystem.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/display/test/toGlobal.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/RenderTexture.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/display/src/Container.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/display/src/Bounds.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/VideoResource.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/events/src/FederatedEvent.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/test/Loader.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/BaseTexture.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/display/test/toLocal.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/test/ObservablePoint.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/display/test/DisplayObject.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/test/FramebufferSystem.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/events/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/extract/test/Extract.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawRoundedPolygon.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/Transform.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/test/AppLoaderPlugin.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/events/src/EventBoundary.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/events/test/EventBoundary.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/src/InteractionData.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/loaders/test/Loader.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/events/test/EventSystem.tests.ts.html</loc>
@@ -2117,112 +2060,172 @@
     <loc>https://api.pixijs.io/@pixi/core/test/SVGResource.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/display/test/Container.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/display/src/Container.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/ObservablePoint.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/src/Transform.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/events/src/FederatedWheelEvent.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/test/TextureSystem.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/events/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/loaders/src/AppLoaderPlugin.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/extract/src/Extract.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/test/UniformBuffer.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/loaders/test/TextureLoader.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math/test/Point.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/events/src/FederatedEvent.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawFilletRect.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/display/test/toGlobal.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/events/src/EventSystem.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/src/Matrix.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/math/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/extract/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/extract/test/Extract.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math-extras/test/floatEqual.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/GraphicsGeometry.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/SimpleMesh.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/events/src/EventBoundary.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/const.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawRoundedPolygon.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/interaction/src/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/math/test/Rectangle.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/src/InteractionTrackingData.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/loaders/test/AppLoaderPlugin.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mixin-get-child-by-name/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/polyfill/src/Math.sign.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics-extras/test/Graphics.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/test/LoaderBase.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/src/TreeSearch.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/TextureLoader.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/prepare/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/events/src/FederatedPointerEvent.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/math/src/const.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/interaction/src/InteractionTrackingData.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/events/test/EventBoundary.tests.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/math-extras/test/segmentIntersection.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawRegularPolygon.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/src/ObservablePoint.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/IPointData.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/display/test/Container.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawFilletRect.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/mesh-extras/src/SimpleRope.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mixin-get-global-position/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/polyfill/src/Object.assign.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/settings/src/settings.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/test/RoundedRectangle.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/events/src/FederatedWheelEvent.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/math-extras/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/TextureLoader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math/test/Point.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mixin-get-global-position/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math-extras/test/floatEqual.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/test/SimpleMesh.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math/src/IPointData.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math-extras/test/Rectangle.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/polyfill/src/Object.assign.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/const.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh/src/MeshGeometry.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/SimpleMesh.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/polyfill/src/requestAnimationFrame.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics-extras/test/Graphics.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mixin-get-child-by-name/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/LoaderResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/polyfill/src/Math.sign.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/prepare/test/BasePrepare.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/display/src/DisplayObject.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/Loader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math/test/Matrix.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/particle-container/src/ParticleContainer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/settings/src/settings.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/sprite-tiling/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/polyfill/src/Promise.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/prepare/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/interaction/test/MockPointer.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/text/src/const.ts.html</loc>
@@ -2231,73 +2234,70 @@
     <loc>https://api.pixijs.io/@pixi/text-bitmap/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mesh/src/MeshGeometry.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/prepare/test/CountLimiter.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/test/MockPointer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/test/SimpleMesh.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mixin-get-global-position/test/getGlobalPosition.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/sprite/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/prepare/test/BasePrepare.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/test/Matrix.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/Matrix.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spritesheet/src/SpritesheetLoader.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/particle-container/src/ParticleContainer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/ticker/test/Ticker.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/display/src/DisplayObject.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/test/CanvasRenderTarget.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/polyfill/src/requestAnimationFrame.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-display/src/index.ts.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/prepare/test/TimeLimiter.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/Mesh.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/test/Circle.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/Renderer.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/events/src/FederatedEventTarget.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-prepare/src/CanvasPrepare.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/loaders/test/LoaderBase.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mesh/src/Mesh.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/test/RoundedRectangle.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/sprite/src/Sprite.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/NineSlicePlane.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/spritesheet/test/Spritesheet.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/ticker/test/Ticker.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/particle-container/test/ParticleRenderer.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/test/CanvasRenderTarget.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math-extras/src/pointExtras.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/prepare/src/TimeLimiter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/test/fixtureData.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/spritesheet/src/Spritesheet.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/Mesh.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-display/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/test/LoaderResource.test.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/sprite-animated/src/AnimatedSprite.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-prepare/src/CanvasPrepare.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/canvas-sprite/src/Sprite.ts.html</loc>
@@ -2306,601 +2306,232 @@
     <loc>https://api.pixijs.io/@pixi/compressed-textures/src/loaders/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/test/Graphics.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/test/LoaderResource.test.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math-extras/test/Rectangle.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/sprite-animated/src/AnimatedSprite.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/test/ObservablePoint.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spritesheet/src/Spritesheet.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/src/InteractionManager.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/framebuffer/Framebuffer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math-extras/test/Point.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawChamferRect.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/mask/AbstractMaskSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/src/InteractionEvent.ts.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/mixin-cache-as-bitmap/test/cacheAsBitmap.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/IPoint.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/GLProgram.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text/test/Text.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spritesheet/test/Spritesheet.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/TextureGCSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/groupD8.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/NineSlicePlane.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-blur/src/BlurFilterPass.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-displacement/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/GraphicsGeometry.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/IShapeBuildCommand.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/prepare/src/TimeLimiter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mixin-cache-as-bitmap/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/test/Transform.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/particle-container/test/ParticleRenderer.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/settings/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mesh/test/Mesh.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mesh/src/MeshBatchUvs.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/test/BitmapText.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/Graphics.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/base/Signal.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/particle-container/test/ParticleContainer.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/Loader.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/BitmapFont.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/test/fixtureData.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/test/NineSlicePlane.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/shapes/Ellipse.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawStar.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/prepare/src/Prepare.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/sprite-tiling/src/TilingSpriteRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/ticker/src/settings.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/ticker/src/TickerListener.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/test/Circle.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/src/interactiveTarget.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/formats/XMLFormat.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/particle-container/src/ParticleBuffer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/browser/isWebGLSupported.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/polyfill/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/runner/test/Runner.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/logging/deprecation.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/prepare/test/Prepare.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/utils/canUseNewCanvasBlendModes.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/unsafe-eval/src/syncUniforms.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/test/BitmapFontLoader.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/sprite-tiling/src/TilingSprite.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/unsafe-eval/src/bundle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math-extras/src/pointExtras.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/test/trimCanvas.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/LoaderResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/sprite/test/Sprite.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spritesheet/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text/src/TextStyle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/BitmapTextStyle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@internal/integration-tests/test/Container.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/mesh/src/MeshMaterial.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/generateUniformsSync.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/settings/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-extract/src/CanvasExtract.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math-extras/test/Point.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/url.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/mesh/src/Mesh.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math/test/Ellipse.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text/test/Text.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/text/test/TextStyle.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchSystem.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-particle-container/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/mixin-get-global-position/test/getGlobalPosition.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-display/src/DisplayObject.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/sprite-tiling/src/TilingSpriteRenderer.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/test/SimplePlane.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/prepare/test/CountLimiter.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/NineSlicePlane.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/polyfill/src/Promise.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/BaseTexture.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/sprite/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math-extras/src/rectangleExtras.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/framebuffer/Framebuffer.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mesh/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/GLProgram.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/uniformParsers.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-sprite/src/CanvasSpriteRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/ImageBitmapResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-sprite/test/CanvasSpriteRenderer.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/area-allocator/src/AreaAllocator.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/prepare/src/CountLimiter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text/test/TextMetrics.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/resources/BlobResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/test/SimpleRope.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/particle-container/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/runner/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/batch/ObjectRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/test/AsyncQueue.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/framebuffer/GLFramebuffer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/cull/src/Cull.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/CanvasMeshRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/BitmapFontLoader.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-graphics/src/CanvasGraphicsRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/Point.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/Graphics.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/particle-container/src/ParticleRenderer.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/mask/AbstractMaskSystem.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/ticker/src/Ticker.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/BitmapFont.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchShaderGenerator.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/mixin-cache-as-bitmap/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/unsafe-eval/src/install.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/src/groupD8.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/utils/test/utils.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/ticker/src/TickerListener.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-extract/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawStar.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/unsafe-eval/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/interaction/src/InteractionManager.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/SimpleMesh.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/mesh/src/MeshBatchUvs.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/mask/MaskSystem.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/mesh/test/Mesh.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/text/src/TextMetrics.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/filter-blur/src/BlurFilterPass.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/object-pool/src/ObjectPool.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/src/IPoint.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math/test/Polygon.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/interaction/src/interactiveTarget.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/geometry/ViewableBuffer.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/test/NineSlicePlane.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/Shader.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text/src/TextStyle.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/canvasUtils.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/TextureGCSystem.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math-extras/test/lineIntersection.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/BitmapTextStyle.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-text/src/Text.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/filter-displacement/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math/src/Point.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/prepare/src/BasePrepare.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/sprite-animated/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/IShapeBuildCommand.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGImageNode.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/url.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/sprite-animated/test/AnimatedSprite.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-display/src/DisplayObject.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/SimplePlane.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/test/Ellipse.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/AtlasAllocator.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/extract/src/Extract.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/mixin-get-child-by-name/test/getChildByName.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/particle-container/src/ParticleBuffer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/particle-container/test/ParticleContainer.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/runner/src/Runner.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/polyfill/src/Number.isInteger.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/base/Signal.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/prepare/src/settings.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/test/Polygon.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/loaders/KTXLoader.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/unsafe-eval/src/syncUniforms.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/test/SimplePlane.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math-extras/src/rectangleExtras.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/sprite-animated/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/prepare/src/Prepare.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math/src/shapes/Ellipse.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math-extras/test/lineIntersection.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/test/SimpleRope.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math/test/Transform.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/text-bitmap/src/BitmapFontData.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/fragments/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/test/BitmapFontLoader.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/TextureSystem.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/prepare/src/CountLimiter.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@internal/integration-tests/test/Bounds.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/CanvasMeshRenderer.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/utils/Path.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/formats/XMLFormat.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/settings/test/settings.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/unsafe-eval/src/bundle.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-blur/src/generateBlurVertSource.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/polyfill/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/particle-container/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-fxaa/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/browser/isWebGLSupported.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-extract/test/CanvasExtract.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/test/trimCanvas.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/SimpleRope.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text/test/TextMetrics.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/buildCircle.ts.html</loc>
+    <loc>https://api.pixijs.io/@internal/integration-tests/test/Container.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/Renderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-bloom/src/BloomFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@tools/fragments/index.d.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-sprite-tiling/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/resources/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/renderTexture/RenderTextureSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/base/parseUri.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/context/WebGLExtensions.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/batch/AbstractBatchRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-convolution/src/ConvolutionFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/sprite-tiling/test/TilingSprite.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-emboss/src/EmbossFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/BitmapText.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/ticker/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/geometry/Buffer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/settings.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-displacement/src/DisplacementFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text/src/Text.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/shapes/Rectangle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-display/src/Container.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/test/BitmapFont.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-motion-blur/src/MotionBlurFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/ticker/src/const.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-graphics/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/formats/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/mask/StencilSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/filters/Filter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/media/caches.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-radial-blur/src/RadialBlurFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-graphics/test/CanvasGraphicsRenderer.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/ticker/test/TickerPlugin.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-renderer/test/CanvasRenderer.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-tilt-shift/src/TiltShiftAxisFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/UniformGroup.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-mesh/test/NineSlicePlane.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spritesheet/test/SpritesheetLoader.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/utils/Quad.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/test/TextureCache.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-blur/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-noise/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/filters/spriteMask/SpriteMaskFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/geometry/BufferSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-display/test/Container.tests.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/ticker/src/TickerPlugin.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/buildPoly.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/state/utils/mapWebGLBlendModesToPixi.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/middleware/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/logging/deprecation.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/utils/src/const.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/MeshMaterial.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/runner/test/Runner.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/getMaxFragmentPrecision.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/ticker/src/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@internal/integration-tests/test/DisplayObject.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-prepare/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-extract/src/CanvasExtract.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/area-allocator/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/loaders/CompressedTextureLoader.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-sprite/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/geometry/PlaneGeometry.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/utils/canUseNewCanvasBlendModes.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/canvas-graphics/src/Graphics.ts.html</loc>
@@ -2909,94 +2540,514 @@
     <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/settings.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchGeometry.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/extractCharCode.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/test/BitmapText.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/loaders/registerCompressedTextures.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/data/getBufferType.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/projection/ProjectionSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/Texture.ts.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/canvas-text/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/index.d.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchTextureArray.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchDrawCall.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/Resource.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/sprite/test/Sprite.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/loaders/DDSLoader.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/canvasUtils.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/network/decomposeDataUri.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/NineSlicePlane.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/gradients/src/ColorStop.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/spritesheet/src/SpritesheetLoader.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/object-pool/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/unsafe-eval/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/geometry/utils/setVertexAttribArrays.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/prepare/test/Prepare.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-extract/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/spritesheet/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/BaseTexture.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/src/filters/FilterState.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchPluginFactory.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-blur/src/BlurFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/getUniformData.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/state/State.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/sprite-animated/test/AnimatedSprite.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/src/geometry/GLBuffer.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/utils/QuadUv.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-particle-container/src/ParticleContainer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/BezierUtils.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/ArrayResource.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-sprite/test/CanvasSpriteRenderer.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/src/renderTexture/BaseRenderTexture.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/generateUniformsSync.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/resources/BlobResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/batch/ObjectRenderer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/framebuffer/GLFramebuffer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/events/src/EventSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-particle-container/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/extract/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/test/utils.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/SimpleMesh.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/state/StateSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchShaderGenerator.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/uniformParsers.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/ImageBitmapResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/fragments/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-graphics/src/CanvasGraphicsRenderer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-alpha/src/AlphaFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/area-allocator/src/AreaAllocator.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/ticker/src/Ticker.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-text/src/Text.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/test/AsyncQueue.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/unsafe-eval/src/install.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/BitmapText.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-sprite-tiling/src/TilingSprite.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/mask/MaskSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/settings.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-sprite/src/CanvasSpriteRenderer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/SimplePlane.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/Shader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/cull/src/Cull.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text/src/Text.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mixin-get-child-by-name/test/getChildByName.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/prepare/src/settings.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/polyfill/src/Number.isInteger.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/filters/Filter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/geometry/ViewableBuffer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/settings/test/settings.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/BitmapFontLoader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/object-pool/src/ObjectPool.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/ticker/src/const.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/TextureSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/runner/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/CanvasRenderer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGImageNode.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-mesh/test/NineSlicePlane.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-blur/src/generateBlurVertSource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-fxaa/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@internal/integration-tests/test/Bounds.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/sprite-tiling/test/TilingSprite.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/AtlasAllocator.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/events/src/FederatedMouseEvent.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text/test/TextStyle.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/buildCircle.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/SimpleRope.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/resources/CompressedTextureResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/test/BitmapFont.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/Renderer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-sprite-tiling/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/resources/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@internal/integration-tests/test/getLocalBounds.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/geometry/Attribute.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/base/parseUri.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/test/TextureCache.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/batch/AbstractBatchRenderer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/Texture.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/utils/Path.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/formats/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@tools/fragments/index.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-color-matrix/src/ColorMatrixFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-display/test/Container.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-extract/test/CanvasExtract.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-mesh/src/MeshMaterial.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-prepare/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-sprite/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/styles/LineStyle.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-renderer/test/CanvasMaskManager.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/loaders/registerCompressedTextures.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-bloom/src/BloomFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text/src/TextMetrics.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/mask/ScissorSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/geometry/Buffer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/renderTexture/RenderTextureSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-display/src/Container.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-convolution/src/ConvolutionFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/color/premultiply.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/buildRoundedRectangle.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/geometry/BufferSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/ticker/test/TickerPlugin.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/context/WebGLExtensions.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-emboss/src/EmbossFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/loaders/CompressedTextureLoader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-graphics/test/CanvasGraphicsRenderer.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/test/fixtures/data.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/filter-blur/test/BlurFilter.tests.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchTextureArray.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/settings/src/utils/canUploadSameBuffer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-blur/src/BlurFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchGeometry.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/mask/StencilSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-particle-container/src/ParticleContainer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-motion-blur/src/MotionBlurFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/test/RenderTextureSystem.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/data/pow2.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/ShaderSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math/src/shapes/Rectangle.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/compileShader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/UniformGroup.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/projection/ProjectionSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/media/caches.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/utils/Quad.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-renderer/test/CanvasRenderer.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/getMaxFragmentPrecision.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-blur/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-noise/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/logProgramError.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/graphics/src/styles/FillStyle.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/TextureUvs.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-radial-blur/src/RadialBlurFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-blur/src/getMaxBlurKernelSize.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/BezierUtils.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/buildPoly.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/middleware/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-tilt-shift/src/TiltShiftAxisFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-noise/src/NoiseFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/BufferResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/Resource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/geometry/PlaneGeometry.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/extractCharCode.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-displacement/src/DisplacementFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/interaction/src/InteractionData.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/data/getBufferType.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/filters/spriteMask/SpriteMaskFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/framebuffer/FramebufferSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/area-allocator/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/loaders/DDSLoader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/gradients/src/ColorStop.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/filters/IFilterTarget.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/network/decomposeDataUri.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/CanvasTextureAllocator.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/geometry/utils/setVertexAttribArrays.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/base/AsyncQueue.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/index.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/mask/L2RFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/getUniformData.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/mask/MaskData.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/geometry/RopeGeometry.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/batch/BatchPluginFactory.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/geometry/Geometry.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/text-bitmap/src/formats/TextFormat.ts.html</loc>
@@ -3005,616 +3056,235 @@
     <loc>https://api.pixijs.io/@pixi/graphics/src/utils/buildRectangle.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/shapes/Circle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/framebuffer/FramebufferSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/data/uid.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/BatchGeometryFactory.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/filters/FilterSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/middleware/parsing.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/VideoResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/state/StateSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/mask/MaskData.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/redirects/AttributeRedirect.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-alpha/src/AlphaFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/geometry/GeometrySystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-renderer/test/CanvasMaskManager.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/tilemap/src/CanvasTileRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGScene.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/mesh-extras/src/geometry/RopeGeometry.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/styles/LineStyle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/GLTexture.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/ArrayResource.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/src/shader/Program.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/CanvasTextureAllocator.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/utils/CanvasMaskManager.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/mask/L2RFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/bounds/src/OrientedBounds.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/react-bindings/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/buildRoundedRectangle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/utils/buildPath.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGTextEngine.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-adjustment/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/gradients/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/settings/src/utils/canUploadSameBuffer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-cross-hatch/src/CrossHatchFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/generateFillStyle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/renderTexture/RenderTexturePool.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spatial-hash/src/SpatialHashSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-alpha/test/AlphaFilter.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/TextureMatrix.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/data/interleaveTypedArrays.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/layers/src/DisplayMixin.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/base/AsyncQueue.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-bulge-pinch/src/BulgePinchFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/network/determineCrossOrigin.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-blur/src/generateBlurFragSource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-color-matrix/test/ColorMatrixFilter.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-fxaa/src/FXAAFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/TextureAllocator.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/checkMaxIfStatementsInShader.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/BatchPart.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/isPolygonClockwise.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/utils/decomposeTransform.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/test/resources/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/QuadraticUtils.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/splitTextToCharacters.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/paint/InheritedPaintProvider.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/generateUniformBufferSync.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/settings/src/utils/maxRecommendedTextures.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-advanced-bloom/src/ExtractBrightnessFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/BaseImageResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/geometry/Geometry.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/base/encodeBinary.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/data/sign.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/interaction/test/InteractionManager.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/browser/hello.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/conic/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-glitch/src/GlitchFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/setPrecision.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/autoDetectResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/bounds/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/shapes/Polygon.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/formats/XMLStringFormat.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-graphics/src/utils/PolygonUtils.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-crt/src/CRTFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/area-allocator/src/Area.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-reflection/src/ReflectionFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/shader-preprocessor/src/ProgramTemplate.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/generateProgram.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/color/hex.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/object-pool/src/AverageProvider.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-glow/src/GlowFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/loader.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/mapType.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/media/CanvasRenderTarget.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-multi-color-replace/src/MultiColorReplaceFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/CanvasRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGTextEngineImpl.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-filters/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/BaseTexture.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-tilt-shift/src/TiltShiftXFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/TextureSlab.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-color-map/src/ColorMapFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-alpha/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-color-matrix/src/ColorMatrixFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/utils/mapCanvasBlendModesToPixi.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/getAttributeData.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/CubeResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-essentials/global.d.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/data/pow2.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/canvas-sprite-tiling/src/TilingSprite.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/unsafeEvalSupported.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/test/fixtures/data.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/BatchRendererPluginFactory.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/renderTexture/RenderTexture.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/redirects/UniformRedirect.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/network/getResolutionOfUrl.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-color-matrix/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/compileShader.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/conic/src/ConicRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-old-film/src/OldFilmFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-tilt-shift/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/DiffDrawer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/instanced-renderer/src/InstancedRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/logProgramError.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/test/fixtures/spritesheet.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/settings/src/utils/isMobile.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-rgb-split/src/RGBSplitFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/paint/Paint.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-advanced-bloom/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/TransformerWireframe.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/mixin-smart-mask/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/utils/distanceToLine.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/resolveCharacters.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-glow/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-crt/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/tilemap/src/TextileResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-color-map/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/resources/CompressedTextureResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-old-film/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-rgb-split/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/ImageResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/data/removeItems.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/utils/EllipticArcUtils.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-bevel/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/types/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-drop-shadow/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-color-replace/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-kawase-blur/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-pixelate/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/BufferResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-twist/src/TwistFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/conic/src/Conic.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/instanced-renderer/src/InstancedRendererPluginFactory.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/DiffGeometryFactory.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/resolve/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/resolve/resolveConstantOrProperty.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGGraphicsGeometry.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/defaultValue.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/mapSize.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/context/ContextSystem.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/CanvasResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-pbr/diffy/index.d.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/conic/src/Conic.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/geometry/Attribute.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/TransformerHandle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/layers/src/Layer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/StdBatchFactory.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/style/DashedLineStyle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/utils/mapTypeAndFormatToInternalFormat.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/math/src/shapes/Circle.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/shader-preprocessor/src/ShaderPreprocessor.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/pixi-filters-monorepo/global.d.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/buildLine.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/area-allocator/src/GuilloteneAllocator.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/browser/hello.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/cull/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/middleware/caching.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/picture/src/BlendFilter.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/data/uid.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/tilemap/src/TilemapShader.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/generateFillStyle.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/mask/ScissorSystem.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/bounds/src/OrientedBounds.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/object-pool/src/ObjectPoolFactory.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/gradients/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/react-bindings/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/TextureMatrix.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/setPrecision.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/geometry/GeometrySystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/middleware/parsing.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGTextEngine.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math/src/shapes/RoundedRectangle.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGTextNode.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/filter-blur/src/generateBlurFragSource.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-bevel/src/BevelFilter.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/network/determineCrossOrigin.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/color/premultiply.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/drawGlyph.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/picture/src/MaskFilter.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/filter-fxaa/src/FXAAFilter.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/paint/PaintProvider.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/tilemap/src/Tilemap.ts.html</loc>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/BatchGeometryFactory.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/utils/multiplyTransform.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-color-replace/src/ColorReplaceFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGGraphicsNode.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/conic/src/ConicDisplay.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/picture/src/FlipYFilter.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/data/interleaveTypedArrays.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-ascii/src/AsciiFilter.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/layers/src/Stage.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/instanced-renderer/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/test/RenderTexture.tests.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGPathNode.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/data/createIndicesForQuads.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/shader-preprocessor/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/QuadraticUtils.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/utils/uploadBuffer.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/TextureAllocator.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/shader/ShaderSystem.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/utils/CanvasMaskManager.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-simple-lightmap/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGScene.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/tilemap/global.d.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/renderTexture/RenderTexturePool.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGUseNode.ts.html</loc>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/redirects/AttributeRedirect.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-color-overlay/src/ColorOverlayFilter.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/layers/src/RendererMixin.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/media/trimCanvas.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/AtlasResource.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/StdBatch.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-dot/src/DotFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/TextureUvs.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-drop-shadow/src/DropShadowFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/react-bindings/src/utils/applyEventProps.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spatial-hash/src/SpatialHash.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-blur/src/getMaxBlurKernelSize.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/paint/InheritedPaintProvider.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/DepthResource.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-noise/src/NoiseFilter.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/tilemap/src/CanvasTileRenderer.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/picture/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/BaseImageResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/GLTexture.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/bounds/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/src/base/encodeBinary.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-dot/src/DotFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/utils/decomposeTransform.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/utils/buildPath.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/geometry/utils/interleaveTypedArrays.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/object-pool/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-adjustment/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-advanced-bloom/src/ExtractBrightnessFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/layers/src/DisplayMixin.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-color-matrix/test/ColorMatrixFilter.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/area-allocator/src/Area.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/math/src/shapes/Polygon.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-alpha/test/AlphaFilter.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/isPolygonClockwise.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/shader-preprocessor/src/ProgramTemplate.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-godray/src/GodrayFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/formats/XMLStringFormat.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/BatchPart.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/spatial-hash/src/SpatialHashSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-outline/src/OutlineFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/test/resources/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/color/hex.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/splitTextToCharacters.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/data/sign.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/generateUniformBufferSync.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/conic/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/media/CanvasRenderTarget.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-glitch/src/GlitchFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/instanced-renderer/src/InstancedRenderer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/loader.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-shockwave/src/ShockwaveFilter.ts.html</loc>
@@ -3623,25 +3293,370 @@
     <loc>https://api.pixijs.io/@pixi/filter-twist/src/index.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/VideoResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/filters/FilterSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-graphics/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/canvas-graphics/src/utils/PolygonUtils.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/paint/PaintProvider.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/types.d.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/BatchDrawer.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/canvas-renderer/src/utils/mapCanvasBlendModesToPixi.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-kawase-blur/src/KawaseBlurFilter.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/filter-multi-color-replace/src/MultiColorReplaceFilter.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-pixelate/src/PixelateFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-outline/src/OutlineFilter.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/generateProgram.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/pixi-batch-renderer/src/index.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/filter-color-map/src/ColorMapFilter.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/pixi-batch-renderer/src/resolve/resolveFunctionOrProperty.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/renderTexture/RenderTexture.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-alpha/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGTextEngineImpl.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/mapType.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/tilemap/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-reflection/src/ReflectionFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/paint/Paint.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-tilt-shift/src/TiltShiftXFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-glow/src/GlowFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/TransformerWireframe.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/TextureSlab.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/DiffDrawer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/utils/distanceToLine.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/utils/EllipticArcUtils.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/CubeResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-essentials/global.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/picture/src/ShaderParts.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-filters/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-bevel/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/layers/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/autoDetectResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-color-map/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/conic/src/ConicRenderer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-glow/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/BatchRendererPluginFactory.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-old-film/src/OldFilmFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/redirects/UniformRedirect.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-crt/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/object-pool/src/AverageProvider.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-drop-shadow/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-kawase-blur/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/ticker/src/settings.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-pixelate/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-simple-lightmap/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-rgb-split/src/RGBSplitFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-tilt-shift/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/mixin-smart-mask/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/basis/src/BasisLoader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/picture/src/BlendFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/checkMaxIfStatementsInShader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/utils/uploadBuffer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/getAttributeData.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/DiffGeometryFactory.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/BaseTexture.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGGraphicsGeometry.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/StdBatch.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/utils/QuadUv.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-old-film/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/resolve/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-rgb-split/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/settings/src/utils/maxRecommendedTextures.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/ArcUtils.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-twist/src/TwistFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/ImageResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/cull/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-pbr/diffy/index.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/tilemap/global.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/loaders/test/fixtures/spritesheet.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/unsafeEvalSupported.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics-extras/src/drawRegularPolygon.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/layers/src/Layer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/spritesheet/test/SpritesheetLoader.tests.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/resolveCharacters.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/TransformerHandle.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/StdBatchFactory.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/types/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/style/DashedLineStyle.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-filters-monorepo/global.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/tilemap/src/TextileResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/tilemap/src/TilemapShader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-advanced-bloom/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/defaultValue.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/compressed-textures/src/loaders/KTXLoader.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-bulge-pinch/src/BulgePinchFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/utils/src/data/removeItems.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/state/State.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-bevel/src/BevelFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/mapSize.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/area-allocator/src/GuilloteneAllocator.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/tilemap/src/Tilemap.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/object-pool/src/ObjectPoolFactory.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/state/utils/mapWebGLBlendModesToPixi.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-color-replace/src/ColorReplaceFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-cross-hatch/src/CrossHatchFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/picture/src/MaskFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/picture/src/FlipYFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/utils/mapTypeAndFormatToInternalFormat.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/CanvasResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/layers/src/RendererMixin.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/layers/src/Stage.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/resolve/resolveConstantOrProperty.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-drop-shadow/src/DropShadowFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGPathNode.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-crt/src/CRTFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/AtlasResource.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGGraphicsNode.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-kawase-blur/src/KawaseBlurFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/react-bindings/src/utils/applyEventProps.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/conic/src/ConicDisplay.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-pixelate/src/PixelateFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/shader-preprocessor/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-adjustment/src/AdjustmentFilter.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/spatial-hash/src/SpatialHash.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGUseNode.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/picture/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-color-replace/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/instanced-renderer/src/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-simple-lightmap/src/SimpleLightmapFilter.ts.html</loc>
@@ -3650,13 +3665,13 @@
     <loc>https://api.pixijs.io/@pixi/filter-zoom-blur/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/tilemap/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/BatchDrawer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/AggregateUniformsBatchFactory.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/svg/src/utils/buildDashedLine.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-adjustment/src/AdjustmentFilter.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-bloom/src/index.ts.html</loc>
@@ -3674,19 +3689,13 @@
     <loc>https://api.pixijs.io/@pixi/filter-radial-blur/src/index.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/interaction/test/InteractionManager.tests.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/utils/BufferInvalidationQueue.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/picture/src/ShaderParts.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/buildLine.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/loaders/src/middleware/caching.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/layers/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/utils/resolveProperty.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-tilt-shift/src/TiltShiftFilter.ts.html</loc>
@@ -3695,115 +3704,40 @@
     <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/DiffBuffer.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/AggregateUniformsBatchFactory.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/math/src/shapes/RoundedRectangle.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-godray/src/GodrayFilter.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/utils/resolveProperty.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/text-bitmap/src/utils/drawGlyph.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/graphics/test/Graphics.tests.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/tilemap/src/shaderGenerator.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/data/createIndicesForQuads.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/AbstractMultiResource.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/picture/src/TilingSprite.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/filters/IFilterTarget.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/utils/src/media/trimCanvas.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/BatchRenderer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/geometry/utils/interleaveTypedArrays.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/redirects/Redirect.ts.html</loc>
-  </url>
-  <url>
     <loc>https://api.pixijs.io/@pixi/core/src/shader/utils/getTestContext.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/Transformer.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/interaction/src/InteractionEvent.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/AbstractMultiResource.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/utils/src/network/getResolutionOfUrl.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/paint/PaintServer.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/utils/skewTransform.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-ascii/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-color-overlay/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-dot/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-godray/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-outline/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-shockwave/src/index.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/tilemap/src/CompositeTilemap.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/spatial-hash/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/sprite-tiling/src/TilingSprite.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/core/src/textures/resources/SVGResource.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-zoom-blur/src/ZoomBlurFilter.ts.html</loc>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/BatchRenderer.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/layers/src/Group.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/AggregateUniformsBatch.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/utils/BufferInvalidation.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/utils/BufferPool.ts.html</loc>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/redirects/Redirect.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/bounds/src/AxisAlignedBounds.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/tilemap/src/settings.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/picture/src/Sprite.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/gradients/src/GradientFactory.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/graphics/src/utils/ArcUtils.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/react-bindings/src/Transformer.ts.html</loc>
@@ -3812,54 +3746,120 @@
     <loc>https://api.pixijs.io/@pixi-essentials/svg/src/SVGSceneContext.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/RenderTextureAllocator.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/tilemap/src/CompositeTilemap.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/spatial-hash/src/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi-essentials/svg/src/mask/MaskServer.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/texture-allocator/src/RenderTextureAllocator.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi-essentials/svg/src/utils/parseMeasurement.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@internal/integration-tests/test/getLocalBounds.tests.ts.html</loc>
-  </url>
-  <url>
-    <loc>https://api.pixijs.io/@pixi/filter-advanced-bloom/src/AdvancedBloomFilter.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/Transformer.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-bulge-pinch/src/index.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/@pixi/filter-cross-hatch/src/index.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/filter-glitch/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-cross-hatch/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/layers/src/Group.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/transformer/src/utils/skewTransform.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-ascii/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-advanced-bloom/src/AdvancedBloomFilter.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-multi-color-replace/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi/filter-reflection/src/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi-essentials/svg/src/paint/PaintServer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-dot/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-outline/src/index.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/filter-tilt-shift/src/TiltShiftYFilter.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/DiffGeometry.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/filter-shockwave/src/index.ts.html</loc>
   </url>
   <url>
-    <loc>https://api.pixijs.io/pixi-batch-renderer/src/redirects/index.ts.html</loc>
+    <loc>https://api.pixijs.io/@pixi/filter-reflection/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-zoom-blur/src/ZoomBlurFilter.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/pixi-batch-renderer/src/BatchShaderFactory.ts.html</loc>
   </url>
   <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/redirects/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/mixin-get-global-position/global.d.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/AggregateUniformsBatch.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-godray/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/utils/BufferInvalidation.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/tilemap/src/settings.ts.html</loc>
+  </url>
+  <url>
     <loc>https://api.pixijs.io/@pixi/tilemap/src/TileRenderer.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/picture/src/Sprite.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/pixi-batch-renderer/src/utils/BufferPool.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-color-overlay/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/filter-color-matrix/src/index.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/settings/src/utils/isMobile.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/layers/src/LayersTreeSearch.ts.html</loc>
   </url>
   <url>
     <loc>https://api.pixijs.io/@pixi/picture/src/FilterSystemMixin.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi/core/src/context/ContextSystem.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-pbr/diffy/src/DiffGeometry.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://api.pixijs.io/@pixi-essentials/gradients/src/GradientFactory.ts.html</loc>
   </url>
 </urlset>

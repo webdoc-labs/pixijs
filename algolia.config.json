@@ -2,8 +2,12 @@
   "index_name": "pixijs",
   "sitemap_urls": ["http://api.pixijs.io/sitemap.xml"],
   "selectors": {
-    "lvl0": ".document__title",
-    "lvl1": ".document__breadcrumb",
-    "text": ".document__brief, .document__description, .member__title, .member__brief, .member__description"
+    "lvl0": {
+      "selector": ".header__link--current",
+      "global": true,
+      "default_value": "Reference"
+    },
+    "lvl1": ".document__title",
+    "text": ".document__brief p, .document__description p"
   }
 }
