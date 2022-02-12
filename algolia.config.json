@@ -1,6 +1,6 @@
 {
   "index_name": "pixijs",
-  "sitemap_urls": ["http://pixijs.webdoclabs.com/sitemap.xml"],
+  "sitemap_urls": ["http://api.pixijs.io/sitemap.xml"],
   "selectors": {
     "lvl0": ".document__title",
     "lvl1": ".document__breadcrumb",
